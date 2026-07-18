@@ -1,0 +1,166 @@
+import type { MetadataRoute } from "next";
+import { getAllPosts } from "@/data/blog";
+import { getAllCities } from "@/data/cities";
+import { getAllCountries as getMdxCountries } from "@/data/countries";
+import { getAllIndiaDomesticRoutes } from "@/data/indiaDomestic";
+import {
+  getAllCategories,
+  getAllCityHubs,
+  getAllCountries,
+  getAllHospitals,
+  getAllProcedures,
+  getAllSpecialtyHubs,
+  getTestimonialsByCountry,
+  procedurePath,
+} from "@/lib/data";
+import { SITE } from "@/lib/site";
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const lastModified = new Date();
+  const procedures = getAllProcedures();
+  const categories = getAllCategories();
+  const hospitals = getAllHospitals();
+  const cities = getAllCityHubs();
+  const specialties = getAllSpecialtyHubs();
+  const blogPosts = getAllPosts();
+  const mdxCities = getAllCities();
+  const mdxCountries = getMdxCountries();
+
+  const storyCountries = getAllCountries().filter(
+    (c) => getTestimonialsByCountry(c.slug).length > 0
+  );
+
+  const staticRoutes = [
+    "",
+    "/about-us",
+    "/why-india-for-medical-treatment",
+    "/contact-us",
+    "/free-second-opinion",
+    "/get-free-quote",
+    "/how-it-works",
+    "/emergency-urgent-cases",
+    "/insurance-tpa-international-patients",
+    "/accreditations-certifications",
+    "/our-team",
+    "/reviews",
+    "/hospital-network",
+    "/hospitals",
+    "/treatments",
+    "/countries",
+    "/doctors",
+    "/cost-calculator",
+    "/patient-stories",
+    "/blog",
+    "/medical-visa-assistance",
+    "/travel-accommodation-assistance",
+    "/interpreter-language-support",
+    "/faq",
+    "/privacy-policy",
+    "/terms-of-service",
+  ].map((path) => ({
+    url: `${SITE.url}${path}`,
+    lastModified,
+    changeFrequency: "weekly" as const,
+    priority: path === "" ? 1 : 0.8,
+  }));
+
+  const categoryRoutes = categories.map((c) => ({
+    url: `${SITE.url}/treatments/${c.slug}`,
+    lastModified,
+    changeFrequency: "weekly" as const,
+    priority: 0.85,
+  }));
+
+  const procedureRoutes = procedures.flatMap((p) => [
+    {
+      url: `${SITE.url}${procedurePath(p)}`,
+      lastModified,
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    },
+    {
+      url: `${SITE.url}/cost-comparison/${p.slug}`,
+      lastModified,
+      changeFrequency: "weekly" as const,
+      priority: 0.85,
+    },
+  ]);
+
+  const hospitalCityRoutes = cities.map((c) => ({
+    url: `${SITE.url}/hospitals/${c.slug}`,
+    lastModified,
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }));
+
+  const hospitalNetworkRoutes = hospitals.map((h) => ({
+    url: `${SITE.url}/hospital-network/${h.slug}`,
+    lastModified,
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
+  }));
+
+  const specialtyRoutes = specialties.map((s) => ({
+    url: `${SITE.url}/doctors/${s.slug}`,
+    lastModified,
+    changeFrequency: "monthly" as const,
+    priority: 0.75,
+  }));
+
+  const storyRoutes = storyCountries.map((c) => ({
+    url: `${SITE.url}/patient-stories/${c.slug}`,
+    lastModified,
+    changeFrequency: "monthly" as const,
+    priority: 0.75,
+  }));
+
+  const cityGuideRoutes = mdxCities.map((c) => ({
+    url: `${SITE.url}/cities/${c.slug}`,
+    lastModified,
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
+  }));
+
+  const countryRoutes = mdxCountries.map((c) => ({
+    url: `${SITE.url}/countries/${c.slug}`,
+    lastModified,
+    changeFrequency: "weekly" as const,
+    priority: 0.85,
+  }));
+
+  const blogRoutes = blogPosts.map((p) => ({
+    url: `${SITE.url}/blog/${p.slug}`,
+    lastModified,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  const indiaDomesticRoutes = getAllIndiaDomesticRoutes("en").map((slug) => ({
+    url: `${SITE.url}/india/hyderabad${slug ? `/${slug}` : ""}`,
+    lastModified,
+    changeFrequency: "weekly" as const,
+    priority: slug === "" ? 0.95 : 0.85,
+  }));
+
+  const teluguDomesticRoutes = getAllIndiaDomesticRoutes("te").map((slug) => ({
+    url: `${SITE.url}/te/hyderabad${slug ? `/${slug}` : ""}`,
+    lastModified,
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }));
+
+  return [
+    ...staticRoutes,
+    ...categoryRoutes,
+    ...procedureRoutes,
+    ...hospitalCityRoutes,
+    ...hospitalNetworkRoutes,
+    ...specialtyRoutes,
+    ...storyRoutes,
+    ...cityGuideRoutes,
+    ...countryRoutes,
+    ...blogRoutes,
+    ...indiaDomesticRoutes,
+    ...teluguDomesticRoutes,
+  ];
+}

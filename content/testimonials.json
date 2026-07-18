@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "adebayo-nigeria-heart-bypass",
+    "patientName": "Adebayo O.",
+    "country": "Nigeria",
+    "countrySlug": "nigeria",
+    "treatment": "Heart Bypass Surgery (CABG)",
+    "procedureSlug": "heart-bypass-surgery-cost-india",
+    "hospital": "Apollo Hospitals Hyderabad",
+    "summary": "Travelled from Lagos for CABG after receiving a clear package estimate and second opinion within days.",
+    "outcome": "Discharged on schedule and flew home with a structured follow-up plan.",
+    "rating": 5
+  },
+  {
+    "slug": "fatima-kenya-knee-replacement",
+    "patientName": "Fatima W.",
+    "country": "Kenya",
+    "countrySlug": "kenya",
+    "treatment": "Total Knee Replacement",
+    "procedureSlug": "total-knee-replacement-surgery-india",
+    "hospital": "Manipal Hospital Bangalore",
+    "summary": "Chose India for knee replacement after comparing implant options and total package cost to Nairobi quotes.",
+    "outcome": "Walking with support within days and completed early physio before returning home.",
+    "rating": 5
+  },
+  {
+    "slug": "aisha-uae-ivf",
+    "patientName": "Aisha & Omar",
+    "country": "United Arab Emirates",
+    "countrySlug": "uae",
+    "treatment": "IVF Treatment",
+    "procedureSlug": "ivf-treatment-cost-india",
+    "hospital": "Manipal Hospital Bangalore",
+    "summary": "Completed an IVF cycle in Bangalore with transparent cycle pricing and coordinator support.",
+    "outcome": "Positive beta-hCG and continued obstetric follow-up after returning to the UAE.",
+    "rating": 5
+  },
+  {
+    "slug": "james-uk-dental-implants",
+    "patientName": "James H.",
+    "country": "United Kingdom",
+    "countrySlug": "uk",
+    "treatment": "Dental Implants",
+    "procedureSlug": "dental-implants-cost-india",
+    "hospital": "Partner dental center, Hyderabad",
+    "summary": "Combined implant treatment with a short stay, saving significantly versus private UK quotes.",
+    "outcome": "Completed stage-one implants and scheduled follow-up remotely.",
+    "rating": 5
+  }
+]

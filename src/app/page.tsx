@@ -1,65 +1,353 @@
-import Image from "next/image";
+import Link from "next/link";
+import { AnswerBlock } from "@/components/AnswerBlock";
+import { Container } from "@/components/Container";
+import { CTASection } from "@/components/CTASection";
+import { FAQAccordion } from "@/components/FAQAccordion";
+import { UsdRange } from "@/components/CostHighlight";
+import { MediaImage } from "@/components/MediaImage";
+import { NetworkStats } from "@/components/NetworkStats";
+import { Reveal } from "@/components/Reveal";
+import { getAllCities } from "@/data/cities";
+import { getAllCountries } from "@/data/countries";
+import { getAllStories } from "@/data/stories";
+import { getGlobalFaqs } from "@/data/faqs";
+import {
+  getAllProcedures,
+  getCategoryBySlug,
+  procedurePath,
+} from "@/lib/data";
+import { cityImage, MEDIA } from "@/lib/media";
+import { SITE } from "@/lib/site";
 
-export default function Home() {
+export default function HomePage() {
+  const procedures = getAllProcedures();
+  const cities = getAllCities();
+  const countries = getAllCountries();
+  const stories = getAllStories();
+  const globalFaqs = getGlobalFaqs();
+
+  const featuredTreatments = procedures.slice(0, 6);
+  const featuredCountries = countries.slice(0, 8);
+  const featuredStories = stories.slice(0, 3);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      {/* Full-bleed photo hero — brand + one headline + one line + CTAs only */}
+      <section className="relative min-h-[88vh] overflow-hidden sm:min-h-[82vh]">
+        <div className="absolute inset-0">
+          <MediaImage
+            src={MEDIA.hero}
+            alt="Care team supporting a patient in a modern hospital"
+            fillParent
+            priority
+            kenBurns
+            zoomOnHover={false}
+            overlay="hero"
+            sizes="100vw"
+            className="!rounded-none"
+          />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+
+        <Container className="relative flex min-h-[88vh] flex-col justify-end pb-14 pt-28 sm:min-h-[82vh] sm:pb-20 sm:pt-32">
+          <div className="max-w-2xl">
+            <h1 className="hero-enter font-display text-4xl font-medium tracking-tight text-white sm:text-5xl lg:text-[3.5rem] lg:leading-[1.08]">
+              Care in India, planned with you — not left to chance
+            </h1>
+            <p className="hero-enter-delay mt-5 max-w-lg text-base leading-relaxed text-white/85 sm:text-lg">
+              Clear costs, trusted hospitals, and a team that stays with your family from first
+              enquiry through recovery.
+            </p>
+            <div className="hero-enter-delay mt-8 flex flex-col gap-3 sm:flex-row">
+              <Link href="/contact-us#enquiry-form" className="btn btn-light w-full sm:w-auto">
+                Get a treatment estimate
+              </Link>
+              <a
+                href={SITE.whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-secondary w-full sm:w-auto"
+              >
+                Free WhatsApp consultation
+              </a>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <Container className="py-14 sm:py-16">
+        <Reveal>
+          <AnswerBlock>
+            Medical travel works best when hospital matching, cost clarity, visa help, travel
+            planning, and recovery support sit with one team. Techdr coordinates that path for
+            international patients and families — from Hyderabad, across India.
+          </AnswerBlock>
+        </Reveal>
+
+        <Reveal className="mt-16">
+          <div className="grid gap-8 overflow-hidden rounded-[var(--radius)] border border-line bg-white shadow-[var(--shadow-soft)] lg:grid-cols-[1.15fr_0.85fr]">
+            <div className="relative min-h-[260px] lg:min-h-[320px]">
+              <MediaImage
+                src={MEDIA.team}
+                alt="Medical Tours India team dedicated to international patient care"
+                fillParent
+                zoomOnHover={false}
+                sizes="(max-width: 1024px) 100vw, 55vw"
+                className="!rounded-none lg:!rounded-l-[var(--radius)]"
+              />
+            </div>
+            <div className="flex flex-col justify-center p-8 sm:p-10">
+              <p className="data-label">Our team</p>
+              <h2 className="mt-2 font-display text-3xl font-medium tracking-tight text-navy">
+                {SITE.teamCount} people dedicated to your process
+              </h2>
+              <p className="mt-4 text-base leading-relaxed text-muted">
+                Based in Hyderabad, our coordinators stay with international patients and families
+                from first enquiry through recovery — matching hospitals, clarifying costs, and
+                arranging visa and stay support. {SITE.patientCount} families helped ·{" "}
+                {SITE.hospitalCount} hospital partners.
+              </p>
+              <ul className="mt-6 space-y-2.5 text-sm text-ink">
+                {[
+                  "JCI & NABH-linked hospital network",
+                  "Transparent treatment cost ranges",
+                  "Visa, travel, interpreter, and recovery support",
+                ].map((item) => (
+                  <li key={item} className="flex gap-2.5">
+                    <span className="mt-0.5 text-accent" aria-hidden>
+                      ✓
+                    </span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </Reveal>
+
+        {/* Patient stories */}
+        <section className="mt-16">
+          <Reveal>
+            <p className="data-label">Patient stories</p>
+            <h2 className="mt-2 max-w-2xl font-display text-3xl font-medium tracking-tight text-navy">
+              Real journeys from families who travelled for care
+            </h2>
+          </Reveal>
+          <div className="mt-8 grid gap-6 lg:grid-cols-3">
+            {featuredStories.map((story, index) => (
+              <Reveal key={story.slug} delay={index * 80} as="article" className="quote-card">
+                <p className="quote-mark">&ldquo;</p>
+                <p className="mt-3 text-sm leading-relaxed text-ink sm:text-[0.95rem]">
+                  {story.summary}
+                </p>
+                <div className="mt-5 border-t border-line pt-4">
+                  <p className="font-semibold text-navy">{story.patientName}</p>
+                  <p className="mt-1 text-sm text-muted">
+                    {story.country} · {story.treatment}
+                  </p>
+                  <p className="mt-1 text-sm text-accent">{story.hospital}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+          <Reveal className="mt-6">
+            <Link
+              href="/patient-stories"
+              className="text-sm font-semibold text-accent hover:text-navy"
+            >
+              Read more patient stories →
+            </Link>
+          </Reveal>
+        </section>
+
+        {/* How it works — 3 steps, no dossiers */}
+        <section className="mt-16">
+          <Reveal>
+            <p className="data-label">How we help</p>
+            <h2 className="mt-2 max-w-2xl font-display text-3xl font-medium tracking-tight text-navy">
+              Three clear steps from first message to recovery
+            </h2>
+          </Reveal>
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            {[
+              {
+                step: "1",
+                title: "Understand your case",
+                body: "We review reports, clarify goals, and shortlist hospitals and doctors that fit your treatment and budget.",
+              },
+              {
+                step: "2",
+                title: "Plan travel with confidence",
+                body: "Visa invitation, flights guidance, hotel near the hospital, airport pickup, and interpreter support as needed.",
+              },
+              {
+                step: "3",
+                title: "Stay supported on the ground",
+                body: "Admission help, attendant guidance during treatment, and follow-up after discharge so families aren’t left alone.",
+              },
+            ].map((item, index) => (
+              <Reveal key={item.step} delay={index * 70} className="relative pt-2">
+                <span className="font-display text-5xl font-medium text-accent/25">{item.step}</span>
+                <h3 className="-mt-2 text-xl font-semibold text-navy">{item.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted">{item.body}</p>
+              </Reveal>
+            ))}
+          </div>
+        </section>
+
+        <Reveal className="mt-16">
+          <NetworkStats />
+        </Reveal>
+
+        {/* Featured treatments with photos */}
+        <section className="mt-16">
+          <Reveal>
+            <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
+              <div>
+                <p className="data-label">Treatments</p>
+                <h2 className="mt-2 font-display text-3xl font-medium tracking-tight text-navy">
+                  Care pathways patients travel for most often
+                </h2>
+              </div>
+              <Link
+                href="/treatments"
+                className="text-sm font-semibold text-accent hover:text-navy"
+              >
+                View all treatments →
+              </Link>
+            </div>
+          </Reveal>
+          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {featuredTreatments.map((t, index) => {
+              const category = getCategoryBySlug(t.categorySlug);
+              const hero = t.images[0];
+              return (
+                <Reveal key={t.slug} delay={index * 50}>
+                  <Link
+                    href={procedurePath(t)}
+                    className="group lift-card block overflow-hidden border border-line bg-white"
+                  >
+                    <MediaImage
+                      src={hero?.src ?? MEDIA.hero}
+                      alt={hero?.alt ?? t.name}
+                      aspect="aspect-[16/10]"
+                      zoomOnHover
+                      overlay="navy-soft"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="!rounded-none"
+                    />
+                    <div className="p-5">
+                      <p className="data-label">{category?.name ?? t.categorySlug}</p>
+                      <h3 className="mt-1.5 text-lg font-semibold text-navy">{t.name}</h3>
+                      <p className="mt-2 line-clamp-2 text-sm text-muted">{t.overview}</p>
+                      <p className="mt-3 text-sm">
+                        <UsdRange
+                          min={t.costIndia.min}
+                          max={t.costIndia.max}
+                          suffix="USD"
+                        />
+                      </p>
+                    </div>
+                  </Link>
+                </Reveal>
+              );
+            })}
+          </div>
+        </section>
+
+        {/* Countries + cities with imagery */}
+        <section className="mt-16">
+          <Reveal>
+            <p className="data-label">Where patients come from</p>
+            <h2 className="mt-2 max-w-2xl font-display text-3xl font-medium tracking-tight text-navy">
+              Dedicated guidance for patients from your country
+            </h2>
+          </Reveal>
+          <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {featuredCountries.map((country, index) => (
+              <Reveal key={country.slug} delay={index * 40}>
+                <Link
+                  href={`/countries/${country.slug}`}
+                  className="flex items-center rounded-[var(--radius-sm)] border border-line bg-white px-4 py-3.5 text-sm font-semibold text-navy shadow-[var(--shadow-soft)] transition hover:border-accent hover:bg-accent-light"
+                >
+                  {country.demonym} patients
+                </Link>
+              </Reveal>
+            ))}
+          </div>
+
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {cities.slice(0, 4).map((city, index) => (
+              <Reveal key={city.slug} delay={index * 50}>
+                <Link
+                  href={`/hospital-network/${city.slug}`}
+                  className="group lift-card relative block overflow-hidden"
+                >
+                  <MediaImage
+                    src={cityImage(city.slug)}
+                    alt=""
+                    aspect="aspect-[4/3]"
+                    overlay="navy"
+                    sizes="(max-width: 768px) 100vw, 25vw"
+                  />
+                  <div className="absolute inset-0 flex flex-col justify-end p-4">
+                    <p className="font-display text-xl font-medium text-white">{city.name}</p>
+                    <p className="mt-1 line-clamp-2 text-sm text-white/75">{city.shortAnswer}</p>
+                  </div>
+                </Link>
+              </Reveal>
+            ))}
+          </div>
+        </section>
+
+        <Reveal className="mt-16">
+          <div className="grid gap-8 overflow-hidden rounded-[var(--radius)] border border-line bg-white shadow-[var(--shadow-soft)] lg:grid-cols-2">
+            <div className="p-8 sm:p-10">
+              <p className="data-label">Free consultation</p>
+              <h2 className="mt-2 font-display text-3xl font-medium tracking-tight text-navy">
+                Tell us about your case — we’ll help you plan the next step
+              </h2>
+              <p className="mt-4 text-muted">
+                A short WhatsApp or call is enough to start. No pressure — just clearer hospital
+                options, cost ranges, and what travel will look like.
+              </p>
+              <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+                <a
+                  href={SITE.whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-secondary"
+                >
+                  Message us on WhatsApp
+                </a>
+                <Link href="/contact-us" className="btn btn-outline">
+                  Contact form
+                </Link>
+              </div>
+            </div>
+            <div className="relative min-h-[220px]">
+              <MediaImage
+                src={MEDIA.consultation}
+                alt="Medical consultation"
+                fillParent
+                zoomOnHover={false}
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="!rounded-none lg:!rounded-r-[var(--radius)]"
+              />
+            </div>
+          </div>
+        </Reveal>
+
+        <Reveal className="mt-16">
+          <FAQAccordion faqs={globalFaqs} title="Questions families ask before travelling" />
+        </Reveal>
+
+        <Reveal className="mt-16">
+          <CTASection
+            title="Ready for a clearer treatment plan?"
+            description="Share your reports. We’ll help you compare hospitals, understand costs, and plan travel with a care team that stays with you."
+          />
+        </Reveal>
+      </Container>
+    </>
   );
 }

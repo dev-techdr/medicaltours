@@ -1,0 +1,16 @@
+[
+  { "code": "US", "name": "United States", "slug": "usa" },
+  { "code": "GB", "name": "United Kingdom", "slug": "uk" },
+  { "code": "NG", "name": "Nigeria", "slug": "nigeria" },
+  { "code": "KE", "name": "Kenya", "slug": "kenya" },
+  { "code": "AE", "name": "United Arab Emirates", "slug": "uae" },
+  { "code": "OM", "name": "Oman", "slug": "oman" },
+  { "code": "TZ", "name": "Tanzania", "slug": "tanzania" },
+  { "code": "UG", "name": "Uganda", "slug": "uganda" },
+  { "code": "ZM", "name": "Zambia", "slug": "zambia" },
+  { "code": "BD", "name": "Bangladesh", "slug": "bangladesh" },
+  { "code": "IQ", "name": "Iraq", "slug": "iraq" },
+  { "code": "AF", "name": "Afghanistan", "slug": "afghanistan" },
+  { "code": "ET", "name": "Ethiopia", "slug": "ethiopia" },
+  { "code": "YE", "name": "Yemen", "slug": "yemen" }
+]

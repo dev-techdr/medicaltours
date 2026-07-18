@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Techdr Medical Tourism — medicaltoursindia.com
 
-## Getting Started
+Production-grade medical tourism website for international patients seeking treatment in India.
 
-First, run the development server:
+## Stack
+
+- Next.js (App Router) + TypeScript + Tailwind CSS
+- Native Metadata API + JSON-LD structured data
+- `next-sitemap` (postbuild) + `app/sitemap.ts` / `app/robots.ts`
+- Client-side cost calculator (no backend required)
+- Content in **Local MDX** files under `content/` (frontmatter + long-form body)
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Site architecture
 
-## Learn More
+| Route | Purpose |
+| --- | --- |
+| `/` | Homepage |
+| `/treatments/[slug]` | Treatment pages |
+| `/hospital-network` | 200+ hospital partners |
+| `/hospitals/[slug]` | Hospital detail |
+| `/cities/[slug]` | City guides |
+| `/countries/[slug]` | Nationality pages |
+| `/doctors/[slug]` | Specialist profiles |
+| `/cost-calculator` | Interactive cost tool |
+| `/cost/[slug]` | Treatment cost pages |
+| `/medical-visa-assistance` | Visa guidance |
+| `/faq` | FAQ + FAQPage schema |
 
-To learn more about Next.js, take a look at the following resources:
+## SEO / AEO / GEO
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Canonical URLs and hreflang scaffold (`en`, `ar`, `fr`, `bn`, `sw`)
+- Organization, MedicalProcedure, Physician, FAQPage, BreadcrumbList JSON-LD
+- `robots.txt` allows GPTBot, ClaudeBot, PerplexityBot, Google-Extended, CCBot, anthropic-ai
+- `public/llms.txt` for AI crawlers
+- Answer-first content blocks on major pages
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Content (Local MDX)
 
-## Deploy on Vercel
+Edit files in `content/` — see [`content/README.md`](./content/README.md).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Structured fields (costs, FAQs, ratings) live in YAML frontmatter
+- Long-form SEO copy is the MDX body, rendered via `MdxContent`
+- Loaders in `src/data/*.ts` read the filesystem at build/request time
+- Add a new `.mdx` file to a collection to publish a new page (slug = filename)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contact
+
+- Call / WhatsApp: +91 6303225006
+- HQ: Hyderabad, India
+- Patient enquiry form: `/contact-us` → `POST /api/contact` (Resend)
+
+### Email (Resend)
+
+Copy `.env.example` to `.env.local` and set:
+
+```bash
+RESEND_API_KEY=re_xxxxxxxx
+CONTACT_TO_EMAIL=info@medicaltoursindia.com
+# Optional verified sender once your domain is in Resend:
+# CONTACT_FROM_EMAIL=Medical Tours India <hello@medicaltoursindia.com>
+```
+
+Until a domain is verified, Resend’s test sender `onboarding@resend.dev` works for development.
