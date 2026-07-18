@@ -65,6 +65,7 @@ function FlagTile({ country, delay }: { country: FlagCountry; delay: number }) {
       height={30}
       alt=""
       unoptimized
+      loading="lazy"
       className="h-7 w-auto rounded-sm object-cover shadow-sm sm:h-8"
     />
   );
@@ -111,7 +112,8 @@ export function GlobalReach() {
           fillParent
           zoomOnHover={false}
           overlay="none"
-          sizes="100vw"
+          quality={65}
+          sizes="(max-width: 1024px) 100vw, 1100px"
           className="!rounded-none opacity-50 [&_.media-img]:object-[center_25%] sm:[&_.media-img]:object-center"
         />
         <div

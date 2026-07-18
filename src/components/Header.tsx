@@ -20,7 +20,6 @@ export function Header() {
             height={40}
             className="h-8 w-auto max-w-[148px] object-contain object-left sm:h-9 sm:max-w-[180px] md:h-10 md:max-w-none"
             style={{ width: "auto" }}
-            priority
           />
         </Link>
 

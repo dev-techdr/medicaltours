@@ -1,7 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  experimental: {
+    // Inline CSS into HTML to remove the render-blocking stylesheet waterfall (FCP/LCP).
+    // Best for first-time visitors + Tailwind-sized CSS; returning visitors lose CSS cache reuse.
+    inlineCss: true,
+  },
   images: {
+    // Next 16 defaults to [75] only — allow lower qualities for LCP/bandwidth
+    qualities: [65, 75],
     remotePatterns: [
       {
         protocol: "https",

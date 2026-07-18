@@ -6,7 +6,7 @@ export const MEDIA = {
   hero: s("hospital-lobby.jpg"),
   heroSecondary: s("surgery.jpg"),
   careTeam: s("care-team.jpg"),
-  team: "/images/team-photo2.png",
+  team: "/images/team-photo2.jpg",
   consultation: s("consultation.jpg"),
   surgery: s("surgery.jpg"),
   recovery: s("recovery.jpg"),
@@ -17,7 +17,7 @@ export const MEDIA = {
   emiFinance: s("emi-finance.jpg"),
   ayushmanBharat: s("ayushman-bharat.jpg"),
   trainTravel: s("train-travel-hyd.jpg"),
-  globalReach: s("70+counties.png"),
+  globalReach: s("70-countries.jpg"),
 } as const;
 
 export const CITY_IMAGES: Record<string, string> = {

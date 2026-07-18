@@ -67,7 +67,10 @@ export default function HomePage() {
             src={MEDIA.hero}
             alt="Care team supporting a patient in a modern hospital"
             fillParent
-            priority
+            preload
+            fetchPriority="high"
+            loading="eager"
+            quality={75}
             kenBurns
             zoomOnHover={false}
             overlay="hero"

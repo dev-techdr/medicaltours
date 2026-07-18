@@ -8,8 +8,15 @@ type MediaImageProps = {
   aspect?: string;
   /** Stretch to fill positioned parent */
   fillParent?: boolean;
+  /** @deprecated Prefer `preload` in Next.js 16+ */
   priority?: boolean;
+  /** Preload in <head> for LCP heroes */
+  preload?: boolean;
+  fetchPriority?: "high" | "low" | "auto";
+  loading?: "eager" | "lazy";
   sizes?: string;
+  /** next/image quality 1–100; must be in next.config images.qualities */
+  quality?: number;
   zoomOnHover?: boolean;
   kenBurns?: boolean;
   overlay?: "navy" | "navy-soft" | "hero" | "none";
@@ -22,7 +29,11 @@ export function MediaImage({
   aspect = "aspect-[4/3]",
   fillParent = false,
   priority = false,
+  preload = false,
+  fetchPriority,
+  loading,
   sizes = "(max-width: 768px) 100vw, 50vw",
+  quality = 75,
   zoomOnHover = true,
   kenBurns = false,
   overlay = "none",
@@ -37,7 +48,14 @@ export function MediaImage({
         src={src}
         alt={alt}
         fill
-        priority={priority}
+        {...(preload
+          ? { preload: true }
+          : priority
+            ? { priority: true }
+            : {})}
+        {...(fetchPriority ? { fetchPriority } : {})}
+        {...(loading ? { loading } : {})}
+        quality={quality}
         sizes={sizes}
         className={`media-img ${zoomOnHover ? "media-img-hover" : ""} ${
           kenBurns ? "media-ken-burns" : ""
