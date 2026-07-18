@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         hostname: "images.unsplash.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "flagcdn.com",
+        pathname: "/**",
+      },
     ],
   },
   async redirects() {
@@ -216,27 +221,27 @@ const nextConfig: NextConfig = {
       // Legacy /hospitals/:hospital-slug → hospital-network (city pages keep short slugs)
       {
         source: "/hospitals/apollo-hospitals-hyderabad",
-        destination: "/hospital-network/apollo-hospitals-hyderabad",
+        destination: "/hospital-network",
         permanent: true,
       },
       {
         source: "/hospitals/apollo-hospitals-chennai",
-        destination: "/hospital-network/apollo-hospitals-chennai",
+        destination: "/hospital-network",
         permanent: true,
       },
       {
         source: "/hospitals/fortis-hospital-delhi",
-        destination: "/hospital-network/fortis-hospital-delhi",
+        destination: "/hospital-network",
         permanent: true,
       },
       {
         source: "/hospitals/kokilaben-hospital-mumbai",
-        destination: "/hospital-network/kokilaben-hospital-mumbai",
+        destination: "/hospital-network",
         permanent: true,
       },
       {
         source: "/hospitals/manipal-hospital-bangalore",
-        destination: "/hospital-network/manipal-hospital-bangalore",
+        destination: "/hospital-network",
         permanent: true,
       },
       {
@@ -246,12 +251,62 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/hospitals/medanta-gurugram",
-        destination: "/hospital-network/medanta-gurugram",
+        destination: "/hospital-network",
         permanent: true,
       },
       {
         source: "/hospitals/yashoda-hospitals-hyderabad",
-        destination: "/hospital-network/yashoda-hospitals-hyderabad",
+        destination: "/hospital-network",
+        permanent: true,
+      },
+      {
+        source: "/hospital-network/apollo-hospitals-hyderabad",
+        destination: "/hospital-network",
+        permanent: true,
+      },
+      {
+        source: "/hospital-network/apollo-hospitals-chennai",
+        destination: "/hospital-network",
+        permanent: true,
+      },
+      {
+        source: "/hospital-network/fortis-hospital-delhi",
+        destination: "/hospital-network",
+        permanent: true,
+      },
+      {
+        source: "/hospital-network/kokilaben-hospital-mumbai",
+        destination: "/hospital-network",
+        permanent: true,
+      },
+      {
+        source: "/hospital-network/manipal-hospital-bangalore",
+        destination: "/hospital-network",
+        permanent: true,
+      },
+      {
+        source: "/hospital-network/medanta-gurugram",
+        destination: "/hospital-network",
+        permanent: true,
+      },
+      {
+        source: "/hospital-network/yashoda-hospitals-hyderabad",
+        destination: "/hospital-network",
+        permanent: true,
+      },
+      {
+        source: "/hospitals/olive-hospitals",
+        destination: "/hospital-network/olive-hospitals",
+        permanent: true,
+      },
+      {
+        source: "/hospitals/tx-hospitals",
+        destination: "/hospital-network/tx-hospitals",
+        permanent: true,
+      },
+      {
+        source: "/hospitals/medicover-hospitals",
+        destination: "/hospital-network/medicover-hospitals",
         permanent: true,
       },
       {
@@ -267,6 +322,182 @@ const nextConfig: NextConfig = {
       {
         source: "/testimonials",
         destination: "/reviews",
+        permanent: true,
+      },
+      // Short country aliases → SEO hub pages (all markets)
+      {
+        source: "/countries/nigeria",
+        destination: "/countries/medical-tourism-india-for-nigerians",
+        permanent: true,
+      },
+      {
+        source: "/countries/kenya",
+        destination: "/countries/medical-tourism-india-for-kenyans",
+        permanent: true,
+      },
+      {
+        source: "/countries/tanzania",
+        destination: "/countries/medical-tourism-india-for-tanzanians",
+        permanent: true,
+      },
+      {
+        source: "/countries/uganda",
+        destination: "/countries/medical-tourism-india-for-ugandans",
+        permanent: true,
+      },
+      {
+        source: "/countries/zambia",
+        destination: "/countries/medical-tourism-india-for-zambians",
+        permanent: true,
+      },
+      {
+        source: "/countries/ethiopia",
+        destination: "/countries/medical-tourism-india-for-ethiopians",
+        permanent: true,
+      },
+      {
+        source: "/countries/ghana",
+        destination: "/countries/medical-tourism-india-for-ghanaians",
+        permanent: true,
+      },
+      {
+        source: "/countries/south-africa",
+        destination: "/countries/medical-tourism-india-for-south-africans",
+        permanent: true,
+      },
+      {
+        source: "/countries/rwanda",
+        destination: "/countries/medical-tourism-india-for-rwandans",
+        permanent: true,
+      },
+      {
+        source: "/countries/malawi",
+        destination: "/countries/medical-tourism-india-for-malawians",
+        permanent: true,
+      },
+      {
+        source: "/countries/sudan",
+        destination: "/countries/medical-tourism-india-for-sudanese-patients",
+        permanent: true,
+      },
+      {
+        source: "/countries/somalia",
+        destination: "/countries/medical-tourism-india-for-somali-patients",
+        permanent: true,
+      },
+      {
+        source: "/countries/zimbabwe",
+        destination: "/countries/medical-tourism-india-for-zimbabweans",
+        permanent: true,
+      },
+      {
+        source: "/countries/cameroon",
+        destination: "/countries/medical-tourism-india-for-cameroonians",
+        permanent: true,
+      },
+      {
+        source: "/countries/uae",
+        destination: "/countries/medical-tourism-india-for-uae-residents",
+        permanent: true,
+      },
+      {
+        source: "/countries/oman",
+        destination: "/countries/medical-tourism-india-for-omanis",
+        permanent: true,
+      },
+      {
+        source: "/countries/saudi-arabia",
+        destination: "/countries/medical-tourism-india-for-saudi-patients",
+        permanent: true,
+      },
+      {
+        source: "/countries/qatar",
+        destination: "/countries/medical-tourism-india-for-qataris",
+        permanent: true,
+      },
+      {
+        source: "/countries/kuwait",
+        destination: "/countries/medical-tourism-india-for-kuwaitis",
+        permanent: true,
+      },
+      {
+        source: "/countries/bahrain",
+        destination: "/countries/medical-tourism-india-for-bahrainis",
+        permanent: true,
+      },
+      {
+        source: "/countries/iraq",
+        destination: "/countries/medical-tourism-india-for-iraqis",
+        permanent: true,
+      },
+      {
+        source: "/countries/yemen",
+        destination: "/countries/medical-tourism-india-for-yemeni-patients",
+        permanent: true,
+      },
+      {
+        source: "/countries/egypt",
+        destination: "/countries/medical-tourism-india-for-egyptians",
+        permanent: true,
+      },
+      {
+        source: "/countries/jordan",
+        destination: "/countries/medical-tourism-india-for-jordanians",
+        permanent: true,
+      },
+      {
+        source: "/countries/iran",
+        destination: "/countries/medical-tourism-india-for-iranians",
+        permanent: true,
+      },
+      {
+        source: "/countries/afghanistan",
+        destination: "/countries/medical-tourism-india-for-afghan-patients",
+        permanent: true,
+      },
+      {
+        source: "/countries/bangladesh",
+        destination: "/countries/medical-tourism-india-for-bangladeshis",
+        permanent: true,
+      },
+      {
+        source: "/countries/nepal",
+        destination: "/countries/medical-tourism-india-for-nepalis",
+        permanent: true,
+      },
+      {
+        source: "/countries/sri-lanka",
+        destination: "/countries/medical-tourism-india-for-sri-lankans",
+        permanent: true,
+      },
+      {
+        source: "/countries/maldives",
+        destination: "/countries/medical-tourism-india-for-maldivians",
+        permanent: true,
+      },
+      {
+        source: "/countries/kazakhstan",
+        destination: "/countries/medical-tourism-india-for-kazakhstanis",
+        permanent: true,
+      },
+      {
+        source: "/countries/uk",
+        destination: "/countries/medical-tourism-india-for-uk-patients",
+        permanent: true,
+      },
+      {
+        source: "/countries/usa",
+        destination: "/countries/medical-tourism-india-for-usa-patients",
+        permanent: true,
+      },
+      {
+        source: "/countries/canada",
+        destination: "/countries/medical-tourism-india-for-canadian-patients",
+        permanent: true,
+      },
+      {
+        source: "/countries/australia",
+        destination: "/countries/medical-tourism-india-for-australian-patients",
         permanent: true,
       },
     ];

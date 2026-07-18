@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import { useRouter } from "next/navigation";
 import {
   AFRICAN_CONTACT,
@@ -36,6 +36,23 @@ const GADS_LABEL = process.env.NEXT_PUBLIC_GADS_CONVERSION_LABEL;
 const fieldClass =
   "form-field w-full rounded-[14px] border border-[#DDE5E3] bg-[#FBFCFC] px-4 py-3.5 text-[#111B1A]";
 
+function subscribeToSearch() {
+  return () => {};
+}
+
+function getSearchSnapshot() {
+  return window.location.search;
+}
+
+function getServerSearchSnapshot() {
+  return "";
+}
+
+function utmFieldsFromSearch(search: string): Record<string, string> {
+  const params = new URLSearchParams(search);
+  return Object.fromEntries(HIDDEN_UTM_FIELDS.map((field) => [field, params.get(field) ?? ""]));
+}
+
 export function AfricanLeadForm() {
   const router = useRouter();
   const formRef = useRef<HTMLFormElement | null>(null);
@@ -44,14 +61,12 @@ export function AfricanLeadForm() {
   const [submitting, setSubmitting] = useState(false);
   const [showMore, setShowMore] = useState(false);
   const [files, setFiles] = useState<File[]>([]);
-  const [utmFields, setUtmFields] = useState<Record<string, string>>({});
-
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    setUtmFields(
-      Object.fromEntries(HIDDEN_UTM_FIELDS.map((field) => [field, params.get(field) ?? ""]))
-    );
-  }, []);
+  const search = useSyncExternalStore(
+    subscribeToSearch,
+    getSearchSnapshot,
+    getServerSearchSnapshot
+  );
+  const utmFields = useMemo(() => utmFieldsFromSearch(search), [search]);
 
   const heardAbout = useMemo(() => {
     if (utmFields.gclid || utmFields.utm_medium?.toLowerCase().includes("cpc")) {

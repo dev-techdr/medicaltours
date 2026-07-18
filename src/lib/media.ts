@@ -1,56 +1,98 @@
-/** Curated Unsplash photography — medical, hospital, and India travel contexts. */
+/** Local photography in public/images/services/ (replaces Unsplash). */
 
-const u = (id: string, w = 1200) =>
-  `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80`;
+const s = (file: string) => `/images/services/${file}`;
 
 export const MEDIA = {
-  hero: u("photo-1519494026892-80bbd2d6fd0d", 1920),
-  heroSecondary: u("photo-1631217868264-e5b90bb7e133", 1200),
-  careTeam: u("photo-1559839734-2b71ea197ec2", 900),
+  hero: s("hospital-lobby.jpg"),
+  heroSecondary: s("surgery.jpg"),
+  careTeam: s("care-team.jpg"),
   team: "/images/team-photo2.png",
-  consultation: u("photo-1579684385127-1ef15d508118", 900),
-  surgery: u("photo-1551190822-a9333d879b1f", 900),
-  recovery: u("photo-1576091160399-112ba8d25d1d", 900),
-  hospitalLobby: u("photo-1586773860418-d37222d8fce3", 900),
-  patient: u("photo-1576091160550-2173dba999ef", 900),
-  visa: u("photo-1436491865332-7a61a109cc05", 900),
+  consultation: s("consultation.jpg"),
+  surgery: s("surgery.jpg"),
+  recovery: s("recovery.jpg"),
+  hospitalLobby: s("hospital-lobby.jpg"),
+  patient: s("patient-journey.jpg"),
+  visa: s("visa-travel.jpg"),
+  secondOpinion: s("second-opinion.jpg"),
+  emiFinance: s("emi-finance.jpg"),
+  ayushmanBharat: s("ayushman-bharat.jpg"),
+  trainTravel: s("train-travel-hyd.jpg"),
+  globalReach: s("70+counties.png"),
 } as const;
 
 export const CITY_IMAGES: Record<string, string> = {
-  hyderabad: u("photo-1582510003544-4d00b7f74220", 800),
-  delhi: u("photo-1587474260584-136574528ed5", 800),
-  chennai: u("photo-1582510003544-4d00b7f74220", 800),
-  mumbai: u("photo-1566552881560-0be862a7c445", 800),
-  bangalore: u("photo-1596176530529-78163a4f7af2", 800),
+  hyderabad: s("hyderabad.jpg"),
+  delhi: s("delhi.jpg"),
+  chennai: s("chennai.jpg"),
+  mumbai: s("mumbai.jpg"),
+  bangalore: s("bangalore.jpg"),
+  gurugram: s("delhi.jpg"),
 };
 
+/** Category display names used by treatmentImage() helpers. */
 export const CATEGORY_IMAGES: Record<string, string> = {
-  Cardiology: u("photo-1628348068343-c6a848d2b6dd", 800),
-  Orthopedics: u("photo-1576091160399-112ba8d25d1d", 800),
-  Transplant: u("photo-1579684385127-1ef15d508118", 800),
-  Oncology: u("photo-1579154204601-01588f351e67", 800),
-  Fertility: u("photo-1584820927498-cfe5211fd8bf", 800),
-  Cosmetic: u("photo-1512290923902-8a9f81dc236c", 800),
-  Bariatric: u("photo-1490645935967-10de6ba17061", 800),
-  Dental: u("photo-1606811841689-23dfddce3e95", 800),
-  Neurosurgery: u("photo-1559757175-5700dde675bc", 800),
-  ENT: u("photo-1581595220892-b2452abe5b1b", 800),
-  Ophthalmology: u("photo-1551601651-2a8555f1a136", 800),
+  Cardiology: s("cardiac-care.jpg"),
+  Orthopedics: s("orthopaedics.jpg"),
+  Transplant: s("general-surgery.jpg"),
+  Oncology: s("cancer.jpg"),
+  Fertility: s("fertility.jpg"),
+  Cosmetic: s("cosmetic.jpg"),
+  Bariatric: s("general-surgery.jpg"),
+  Dental: s("dental.jpg"),
+  Neurosurgery: s("neurosurgery.jpg"),
+  ENT: s("ent.jpg"),
+  Ophthalmology: s("eye-care.jpg"),
+};
+
+/** Category slug → local hero (treatments hub + category pages). */
+export const CATEGORY_SLUG_IMAGES: Record<string, string> = {
+  "cardiac-care-india": s("cardiac-care.jpg"),
+  "orthopaedic-treatments-india": s("orthopaedics.jpg"),
+  "cancer-treatment-india": s("cancer.jpg"),
+  "fertility-treatments-india": s("fertility.jpg"),
+  "neurology-neurosurgery-india": s("neurosurgery.jpg"),
+  "cosmetic-plastic-surgery-india": s("cosmetic.jpg"),
+  "general-advanced-surgeries-india": s("general-surgery.jpg"),
+  "eye-care-ophthalmology-india": s("eye-care.jpg"),
+  "dental-treatments-india": s("dental.jpg"),
+  "wellness-holistic-healing-india": s("wellness.jpg"),
+  "urology-treatments-india": s("urology.jpg"),
+  "gynecology-womens-health-india": s("gynecology.jpg"),
+  "ent-treatments-india": s("ent.jpg"),
+  "gastroenterology-india": s("gastroenterology.jpg"),
+  "endocrinology-diabetes-india": s("endocrinology.jpg"),
+  "vascular-surgery-india": s("vascular.jpg"),
+  "dermatology-skin-care-india": s("dermatology.jpg"),
+  "pediatric-treatments-india": s("pediatrics.jpg"),
+  "pulmonology-lung-care-india": s("pulmonology.jpg"),
+  "hematology-bone-marrow-india": s("hematology.jpg"),
 };
 
 export const HOSPITAL_IMAGES: Record<string, string> = {
-  "apollo-hospitals-hyderabad": MEDIA.hospitalLobby,
-  "apollo-hospitals-chennai": MEDIA.careTeam,
-  "fortis-hospital-delhi": MEDIA.consultation,
-  "max-healthcare-delhi": MEDIA.surgery,
-  "medanta-gurugram": MEDIA.heroSecondary,
-  "manipal-hospital-bangalore": MEDIA.recovery,
-  "kokilaben-hospital-mumbai": MEDIA.patient,
-  "yashoda-hospitals-hyderabad": MEDIA.hospitalLobby,
+  "olive-hospitals": s("olive-hospitals.jpg"),
+  "tx-hospitals": s("tx-hospitals.jpg"),
+  "medicover-hospitals": s("medicover-hospitals.jpg"),
+  "max-healthcare-delhi": s("max-healthcare-delhi.jpg"),
 };
 
-export function treatmentImage(category: string, slug?: string): string {
+/** Domestic Hyderabad page slug → optional hero image. */
+export const DOMESTIC_PAGE_IMAGES: Record<string, string> = {
+  "": s("hyderabad.jpg"),
+  "ayushman-bharat-hospitals": s("ayushman-bharat.jpg"),
+  "emi-medical-loans": s("emi-finance.jpg"),
+  "second-opinion-doctors": s("second-opinion.jpg"),
+  "train-flight-travel-guide": s("train-travel-hyd.jpg"),
+  "aarogyasri-empanelled-hospitals": s("ayushman-bharat.jpg"),
+  "insurance-schemes-comparison": s("ayushman-bharat.jpg"),
+  "cghs-empanelled-hospitals": s("hospital-lobby.jpg"),
+};
+
+export function treatmentImage(category: string): string {
   return CATEGORY_IMAGES[category] ?? MEDIA.consultation;
+}
+
+export function categoryImage(categorySlug: string): string {
+  return CATEGORY_SLUG_IMAGES[categorySlug] ?? MEDIA.consultation;
 }
 
 export function cityImage(slug: string): string {
@@ -59,4 +101,8 @@ export function cityImage(slug: string): string {
 
 export function hospitalImage(slug: string): string {
   return HOSPITAL_IMAGES[slug] ?? MEDIA.hospitalLobby;
+}
+
+export function domesticPageImage(slug: string): string | undefined {
+  return DOMESTIC_PAGE_IMAGES[slug];
 }

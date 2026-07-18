@@ -4,109 +4,99 @@
     "name": "Dr. Rajesh Kumar",
     "specialty": "Cardiology",
     "specialtySlug": "cardiology",
-    "hospitalSlug": "apollo-hospitals-hyderabad",
+    "hospitalSlug": "olive-hospitals",
     "city": "Hyderabad",
     "experienceYears": 22,
-    "shortAnswer": "Senior cardiac surgeon focusing on CABG and complex coronary cases for international patients.",
-    "image": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=800&q=80"
+    "shortAnswer": "Senior cardiac surgeon focusing on CABG and complex coronary cases for international patients."
   },
   {
     "slug": "dr-vikram-singh-orthopedic",
     "name": "Dr. Vikram Singh",
     "specialty": "Orthopedics",
     "specialtySlug": "orthopedics",
-    "hospitalSlug": "manipal-hospital-bangalore",
-    "city": "Bangalore",
+    "hospitalSlug": "tx-hospitals",
+    "city": "Hyderabad",
     "experienceYears": 18,
-    "shortAnswer": "Joint replacement specialist with high-volume knee and hip arthroplasty experience.",
-    "image": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=80"
+    "shortAnswer": "Joint replacement specialist with high-volume knee and hip arthroplasty experience."
   },
   {
     "slug": "dr-anita-sharma-oncologist",
     "name": "Dr. Anita Sharma",
     "specialty": "Oncology",
     "specialtySlug": "oncology",
-    "hospitalSlug": "apollo-hospitals-chennai",
-    "city": "Chennai",
+    "hospitalSlug": "medicover-hospitals",
+    "city": "Hyderabad",
     "experienceYears": 20,
-    "shortAnswer": "Medical oncologist coordinating chemotherapy and multidisciplinary cancer care for foreign patients.",
-    "image": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80"
+    "shortAnswer": "Medical oncologist coordinating chemotherapy and multidisciplinary cancer care for foreign patients."
   },
   {
     "slug": "dr-priya-reddy-fertility",
     "name": "Dr. Priya Reddy",
     "specialty": "Fertility",
     "specialtySlug": "fertility",
-    "hospitalSlug": "manipal-hospital-bangalore",
-    "city": "Bangalore",
+    "hospitalSlug": "tx-hospitals",
+    "city": "Hyderabad",
     "experienceYears": 15,
-    "shortAnswer": "IVF specialist helping international couples with transparent cycle planning and lab protocols.",
-    "image": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=800&q=80"
+    "shortAnswer": "IVF specialist helping international couples with transparent cycle planning and lab protocols."
   },
   {
     "slug": "dr-meera-nair-neurosurgeon",
     "name": "Dr. Meera Nair",
     "specialty": "Neurosurgery",
     "specialtySlug": "neurosurgery",
-    "hospitalSlug": "medanta-gurugram",
-    "city": "Gurugram",
+    "hospitalSlug": "max-healthcare-delhi",
+    "city": "Delhi",
     "experienceYears": 17,
-    "shortAnswer": "Neurosurgeon experienced in brain tumor resection and complex cranial procedures.",
-    "image": "https://images.unsplash.com/photo-1651008376811-b90baee60c1f?auto=format&fit=crop&w=800&q=80"
+    "shortAnswer": "Neurosurgeon experienced in brain tumor resection and complex cranial procedures."
   },
   {
     "slug": "dr-arjun-patel-transplant",
     "name": "Dr. Arjun Patel",
     "specialty": "Transplant",
     "specialtySlug": "transplant",
-    "hospitalSlug": "medanta-gurugram",
-    "city": "Gurugram",
+    "hospitalSlug": "max-healthcare-delhi",
+    "city": "Delhi",
     "experienceYears": 19,
-    "shortAnswer": "Transplant surgeon supporting liver and kidney transplant pathways for medical tourists.",
-    "image": "https://images.unsplash.com/photo-1537368910025-700362fe463f?auto=format&fit=crop&w=800&q=80"
+    "shortAnswer": "Transplant surgeon supporting liver and kidney transplant pathways for medical tourists."
   },
   {
     "slug": "dr-suresh-mehta-urologist",
     "name": "Dr. Suresh Mehta",
     "specialty": "Urology",
     "specialtySlug": "urology",
-    "hospitalSlug": "medanta-gurugram",
-    "city": "Gurugram",
+    "hospitalSlug": "max-healthcare-delhi",
+    "city": "Delhi",
     "experienceYears": 20,
-    "shortAnswer": "Urologist focusing on prostate surgery, kidney stones, and robotic urology for international patients.",
-    "image": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=800&q=80"
+    "shortAnswer": "Urologist focusing on prostate surgery, kidney stones, and robotic urology for international patients."
   },
   {
     "slug": "dr-neha-kapoor-gynecologist",
     "name": "Dr. Neha Kapoor",
     "specialty": "Gynecology",
     "specialtySlug": "gynecology",
-    "hospitalSlug": "manipal-hospital-bangalore",
-    "city": "Bangalore",
+    "hospitalSlug": "tx-hospitals",
+    "city": "Hyderabad",
     "experienceYears": 16,
-    "shortAnswer": "Gynecologist specializing in laparoscopic hysterectomy, fibroids, and endometriosis care for medical tourists.",
-    "image": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80"
+    "shortAnswer": "Gynecologist specializing in laparoscopic hysterectomy, fibroids, and endometriosis care for medical tourists."
   },
   {
     "slug": "dr-anil-desai-ent",
     "name": "Dr. Anil Desai",
     "specialty": "ENT",
     "specialtySlug": "ent",
-    "hospitalSlug": "apollo-hospitals-chennai",
-    "city": "Chennai",
+    "hospitalSlug": "medicover-hospitals",
+    "city": "Hyderabad",
     "experienceYears": 18,
-    "shortAnswer": "ENT surgeon experienced in cochlear implants, FESS, and thyroid surgery for international patients.",
-    "image": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=80"
+    "shortAnswer": "ENT surgeon experienced in cochlear implants, FESS, and thyroid surgery for international patients."
   },
   {
     "slug": "dr-kavita-rao-gastroenterologist",
     "name": "Dr. Kavita Rao",
     "specialty": "Gastroenterology",
     "specialtySlug": "gastroenterology",
-    "hospitalSlug": "yashoda-hospitals-hyderabad",
+    "hospitalSlug": "medicover-hospitals",
     "city": "Hyderabad",
     "experienceYears": 15,
-    "shortAnswer": "Gastroenterologist focusing on endoscopy, ERCP, IBD, and liver disease pathways for foreign patients.",
-    "image": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=800&q=80"
+    "shortAnswer": "Gastroenterologist focusing on endoscopy, ERCP, IBD, and liver disease pathways for foreign patients."
   }
 ]

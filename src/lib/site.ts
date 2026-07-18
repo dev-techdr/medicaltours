@@ -28,6 +28,16 @@ export const SITE = {
   logo: "/images/new-logo.png",
 } as const;
 
+export const LANGUAGE_OPTIONS = [
+  { code: "en", label: "English", nativeLabel: "English" },
+  { code: "ar", label: "Arabic", nativeLabel: "العربية" },
+  { code: "fr", label: "French", nativeLabel: "Français" },
+  { code: "bn", label: "Bengali", nativeLabel: "বাংলা" },
+  { code: "sw", label: "Swahili", nativeLabel: "Kiswahili" },
+] as const;
+
+export type SiteLanguageCode = (typeof LANGUAGE_OPTIONS)[number]["code"];
+
 export const TRUST_SIGNALS = [
   {
     label: "MOUs with 200+ Hospitals Across India",
@@ -70,7 +80,6 @@ export const NAV_LINKS = [
   { href: "/countries", label: "Countries" },
   { href: "/free-second-opinion", label: "Free Second Opinion" },
   { href: "/cost-calculator", label: "Cost Calculator" },
-  { href: "/patient-stories", label: "Patient Stories" },
   { href: "/about-us", label: "About" },
   { href: "/contact-us", label: "Contact" },
 ] as const;
@@ -98,6 +107,19 @@ export const FOOTER_LINKS = {
       label: "Liver Transplant",
     },
     { href: "/treatments", label: "All Treatments" },
+  ],
+  countries: [
+    { href: "/countries/medical-tourism-india-for-nigerians", label: "Nigeria" },
+    { href: "/countries/medical-tourism-india-for-kenyans", label: "Kenya" },
+    { href: "/countries/medical-tourism-india-for-uae-residents", label: "UAE" },
+    { href: "/countries/medical-tourism-india-for-saudi-patients", label: "Saudi Arabia" },
+    { href: "/countries/medical-tourism-india-for-bangladeshis", label: "Bangladesh" },
+    { href: "/countries/medical-tourism-india-for-uk-patients", label: "United Kingdom" },
+    { href: "/countries/medical-tourism-india-for-usa-patients", label: "United States" },
+    { href: "/countries/medical-tourism-india-for-iraqis", label: "Iraq" },
+    { href: "/countries/medical-tourism-india-for-nepalis", label: "Nepal" },
+    { href: "/countries/medical-tourism-india-for-sri-lankans", label: "Sri Lanka" },
+    { href: "/countries", label: "All Countries" },
   ],
   patients: [
     { href: "/how-it-works", label: "How It Works" },

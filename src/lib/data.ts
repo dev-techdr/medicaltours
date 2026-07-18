@@ -79,7 +79,6 @@ export type ContentDoctor = {
   city: string;
   experienceYears: number;
   shortAnswer: string;
-  image: string;
 };
 
 export type ContentCountry = {
@@ -229,6 +228,26 @@ export function getTestimonialBySlug(slug: string): Testimonial | undefined {
 
 export function getTestimonialsByCountry(countrySlug: string): Testimonial[] {
   return testimonials.filter((t) => t.countrySlug === countrySlug);
+}
+
+export function getTestimonialsByProcedure(procedureSlug: string): Testimonial[] {
+  return testimonials.filter((t) => t.procedureSlug === procedureSlug);
+}
+
+export function getStoryCountries(): ContentCountry[] {
+  const slugs = new Set(testimonials.map((t) => t.countrySlug));
+  return countries
+    .filter((c) => slugs.has(c.slug))
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+export function getStoryProcedures(): Procedure[] {
+  const slugs = new Set(
+    testimonials.map((t) => t.procedureSlug).filter((s): s is string => Boolean(s))
+  );
+  return procedures
+    .filter((p) => slugs.has(p.slug))
+    .sort((a, b) => a.name.localeCompare(b.name));
 }
 
 export function procedurePath(procedure: Procedure): string {

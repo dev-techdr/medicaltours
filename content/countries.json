@@ -1,16 +1,177 @@
 [
-  { "code": "US", "name": "United States", "slug": "usa" },
-  { "code": "GB", "name": "United Kingdom", "slug": "uk" },
-  { "code": "NG", "name": "Nigeria", "slug": "nigeria" },
-  { "code": "KE", "name": "Kenya", "slug": "kenya" },
-  { "code": "AE", "name": "United Arab Emirates", "slug": "uae" },
-  { "code": "OM", "name": "Oman", "slug": "oman" },
-  { "code": "TZ", "name": "Tanzania", "slug": "tanzania" },
-  { "code": "UG", "name": "Uganda", "slug": "uganda" },
-  { "code": "ZM", "name": "Zambia", "slug": "zambia" },
-  { "code": "BD", "name": "Bangladesh", "slug": "bangladesh" },
-  { "code": "IQ", "name": "Iraq", "slug": "iraq" },
-  { "code": "AF", "name": "Afghanistan", "slug": "afghanistan" },
-  { "code": "ET", "name": "Ethiopia", "slug": "ethiopia" },
-  { "code": "YE", "name": "Yemen", "slug": "yemen" }
+  {
+    "code": "US",
+    "name": "United States",
+    "slug": "usa"
+  },
+  {
+    "code": "GB",
+    "name": "United Kingdom",
+    "slug": "uk"
+  },
+  {
+    "code": "NG",
+    "name": "Nigeria",
+    "slug": "nigeria"
+  },
+  {
+    "code": "KE",
+    "name": "Kenya",
+    "slug": "kenya"
+  },
+  {
+    "code": "AE",
+    "name": "United Arab Emirates",
+    "slug": "uae"
+  },
+  {
+    "code": "OM",
+    "name": "Oman",
+    "slug": "oman"
+  },
+  {
+    "code": "TZ",
+    "name": "Tanzania",
+    "slug": "tanzania"
+  },
+  {
+    "code": "UG",
+    "name": "Uganda",
+    "slug": "uganda"
+  },
+  {
+    "code": "ZM",
+    "name": "Zambia",
+    "slug": "zambia"
+  },
+  {
+    "code": "BD",
+    "name": "Bangladesh",
+    "slug": "bangladesh"
+  },
+  {
+    "code": "IQ",
+    "name": "Iraq",
+    "slug": "iraq"
+  },
+  {
+    "code": "AF",
+    "name": "Afghanistan",
+    "slug": "afghanistan"
+  },
+  {
+    "code": "ET",
+    "name": "Ethiopia",
+    "slug": "ethiopia"
+  },
+  {
+    "code": "YE",
+    "name": "Yemen",
+    "slug": "yemen"
+  },
+  {
+    "code": "GH",
+    "name": "Ghana",
+    "slug": "ghana"
+  },
+  {
+    "code": "ZA",
+    "name": "South Africa",
+    "slug": "south-africa"
+  },
+  {
+    "code": "RW",
+    "name": "Rwanda",
+    "slug": "rwanda"
+  },
+  {
+    "code": "SA",
+    "name": "Saudi Arabia",
+    "slug": "saudi-arabia"
+  },
+  {
+    "code": "QA",
+    "name": "Qatar",
+    "slug": "qatar"
+  },
+  {
+    "code": "KW",
+    "name": "Kuwait",
+    "slug": "kuwait"
+  },
+  {
+    "code": "BH",
+    "name": "Bahrain",
+    "slug": "bahrain"
+  },
+  {
+    "code": "EG",
+    "name": "Egypt",
+    "slug": "egypt"
+  },
+  {
+    "code": "SD",
+    "name": "Sudan",
+    "slug": "sudan"
+  },
+  {
+    "code": "MW",
+    "name": "Malawi",
+    "slug": "malawi"
+  },
+  {
+    "code": "NP",
+    "name": "Nepal",
+    "slug": "nepal"
+  },
+  {
+    "code": "LK",
+    "name": "Sri Lanka",
+    "slug": "sri-lanka"
+  },
+  {
+    "code": "IR",
+    "name": "Iran",
+    "slug": "iran"
+  },
+  {
+    "code": "JO",
+    "name": "Jordan",
+    "slug": "jordan"
+  },
+  {
+    "code": "SO",
+    "name": "Somalia",
+    "slug": "somalia"
+  },
+  {
+    "code": "ZW",
+    "name": "Zimbabwe",
+    "slug": "zimbabwe"
+  },
+  {
+    "code": "CM",
+    "name": "Cameroon",
+    "slug": "cameroon"
+  },
+  {
+    "code": "KZ",
+    "name": "Kazakhstan",
+    "slug": "kazakhstan"
+  },
+  {
+    "code": "MV",
+    "name": "Maldives",
+    "slug": "maldives"
+  },
+  {
+    "code": "CA",
+    "name": "Canada",
+    "slug": "canada"
+  },
+  {
+    "code": "AU",
+    "name": "Australia",
+    "slug": "australia"
+  }
 ]

@@ -24,6 +24,7 @@ export function buildMetadata({
   const fullTitle = title.includes(SITE.name)
     ? title
     : `${title} | ${SITE.name}`;
+  const ogImage = absoluteUrl(SITE.logo);
 
   return {
     title: fullTitle,
@@ -31,12 +32,12 @@ export function buildMetadata({
     keywords: keywords?.join(", "),
     alternates: {
       canonical: url,
-      languages: Object.fromEntries(
-        SITE.languages.map((lang) => [
-          lang,
-          lang === SITE.defaultLocale ? url : `${SITE.url}/${lang}${path === "/" ? "" : path}`,
-        ])
-      ),
+      // Only advertise locales that actually exist as crawlable pages.
+      // LanguageSwitcher may offer translate UX; do not invent /ar|/fr|/bn|/sw routes.
+      languages: {
+        en: url,
+        "x-default": url,
+      },
     },
     openGraph: {
       title: fullTitle,
@@ -45,11 +46,13 @@ export function buildMetadata({
       siteName: SITE.name,
       locale: "en_US",
       type: "website",
+      images: [{ url: ogImage, alt: SITE.name }],
     },
     twitter: {
       card: "summary_large_image",
       title: fullTitle,
       description,
+      images: [ogImage],
     },
     robots: noIndex
       ? { index: false, follow: false }
@@ -154,6 +157,129 @@ export function medicalProcedureSchema({
   };
 }
 
+/** Domestic India procedure pricing in INR (Hyderabad budget pages). */
+export function medicalProcedureInrSchema({
+  name,
+  description,
+  url,
+  costMin,
+  costMax,
+  location = "Hyderabad",
+}: {
+  name: string;
+  description: string;
+  url: string;
+  costMin: number;
+  costMax: number;
+  location?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "MedicalProcedure",
+    name,
+    description,
+    url: absoluteUrl(url),
+    procedureType: "https://schema.org/SurgicalProcedure",
+    status: "https://schema.org/ActiveActionStatus",
+    location: {
+      "@type": "Place",
+      name: location,
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: location,
+        addressRegion: "Telangana",
+        addressCountry: "IN",
+      },
+    },
+    offers: {
+      "@type": "AggregateOffer",
+      priceCurrency: "INR",
+      lowPrice: costMin,
+      highPrice: costMax,
+      offerCount: 1,
+      availability: "https://schema.org/InStock",
+    },
+    provider: {
+      "@type": "MedicalOrganization",
+      name: SITE.name,
+      url: SITE.url,
+      telephone: SITE.phone,
+    },
+  };
+}
+
+export function webSiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: SITE.name,
+    url: SITE.url,
+    description: SITE.description,
+    publisher: {
+      "@type": "Organization",
+      name: SITE.name,
+      url: SITE.url,
+      logo: absoluteUrl(SITE.logo),
+    },
+    inLanguage: ["en", "te"],
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${SITE.url}/treatments?q={search_term_string}`,
+      },
+      "query-input": "required name=search_term_string",
+    },
+  };
+}
+
+export function blogPostingSchema({
+  title,
+  description,
+  url,
+  datePublished,
+  dateModified,
+  keywords,
+}: {
+  title: string;
+  description: string;
+  url: string;
+  datePublished: string;
+  dateModified?: string;
+  keywords?: string[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: title,
+    description,
+    url: absoluteUrl(url),
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": absoluteUrl(url),
+    },
+    datePublished,
+    dateModified: dateModified ?? datePublished,
+    author: {
+      "@type": "Organization",
+      name: SITE.name,
+      url: SITE.url,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: SITE.name,
+      url: SITE.url,
+      logo: {
+        "@type": "ImageObject",
+        url: absoluteUrl(SITE.logo),
+      },
+    },
+    image: absoluteUrl(SITE.logo),
+    ...(keywords?.length ? { keywords: keywords.join(", ") } : {}),
+    inLanguage: "en",
+  };
+}
+
 export function hospitalSchema({
   name,
   description,
@@ -218,10 +344,10 @@ export function hospitalItemListSchema(
     name: "Techdr Medical Tourism Partner Hospitals",
     numberOfItems: hospitals.length,
     itemListElement: hospitals.map((hospital, index) => {
-      const { ["@context"]: _ctx, ...org } = hospitalSchema(hospital) as Record<
-        string,
-        unknown
-      > & { "@context"?: string };
+      const schema = hospitalSchema(hospital) as Record<string, unknown>;
+      const org = Object.fromEntries(
+        Object.entries(schema).filter(([key]) => key !== "@context")
+      );
       return {
         "@type": "ListItem",
         position: index + 1,
@@ -387,8 +513,9 @@ export function aggregateReviewSchema({
 }) {
   return {
     "@context": "https://schema.org",
-    "@type": "Product",
+    "@type": "MedicalOrganization",
     name: itemReviewed,
+    url: SITE.url,
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue,

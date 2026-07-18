@@ -14,6 +14,7 @@ import { IconTile, TrustSignalIcon } from "@/components/HomeIcons";
 import { TRUST_SIGNALS } from "@/lib/site";
 import {
   costComparisonPath,
+  getAllCountries,
   getCategoryBySlug,
   getFaqsForProcedure,
   getRelatedProcedures,
@@ -21,6 +22,7 @@ import {
   procedurePath,
   type Procedure,
 } from "@/lib/data";
+import { COUNTRY_HUB_BY_SHORT_SLUG } from "@/data/countryRoutes";
 import {
   breadcrumbSchema,
   faqSchema,
@@ -32,6 +34,17 @@ type ProcedureTemplateProps = {
   procedure: Procedure;
 };
 
+/** Priority markets shown on every treatment page for internal linking. */
+const TREATMENT_COUNTRY_LINKS = [
+  "nigeria",
+  "kenya",
+  "uae",
+  "saudi-arabia",
+  "bangladesh",
+  "uk",
+  "usa",
+] as const;
+
 export function ProcedureTemplate({ procedure }: ProcedureTemplateProps) {
   const category = getCategoryBySlug(procedure.categorySlug);
   const path = procedurePath(procedure);
@@ -40,6 +53,16 @@ export function ProcedureTemplate({ procedure }: ProcedureTemplateProps) {
   const testimonial = procedure.testimonialSlug
     ? getTestimonialBySlug(procedure.testimonialSlug)
     : undefined;
+  const countries = getAllCountries();
+  const countryLinks = TREATMENT_COUNTRY_LINKS.map((short) => {
+    const hub = COUNTRY_HUB_BY_SHORT_SLUG[short];
+    const meta = countries.find((c) => c.slug === short);
+    if (!hub) return null;
+    return {
+      href: `/countries/${hub}`,
+      label: meta?.name ?? short,
+    };
+  }).filter((c): c is { href: string; label: string } => Boolean(c));
   const hero = procedure.images[0];
 
   const crumbs = [
@@ -264,6 +287,43 @@ export function ProcedureTemplate({ procedure }: ProcedureTemplateProps) {
                   </Link>
                 </li>
               ))}
+            </ul>
+          </Reveal>
+        </section>
+      ) : null}
+
+      {countryLinks.length > 0 ? (
+        <section className="mt-14" aria-labelledby="countries-heading">
+          <Reveal>
+            <h2
+              id="countries-heading"
+              className="font-display text-2xl font-medium tracking-tight text-navy sm:text-3xl"
+            >
+              {procedure.name} for international patients
+            </h2>
+            <p className="mt-2 max-w-2xl text-sm text-muted">
+              Country guides covering visa, cost planning, and hospital matching for{" "}
+              {procedure.name.toLowerCase()} in India.
+            </p>
+            <ul className="mt-6 flex flex-wrap gap-2">
+              {countryLinks.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="inline-block rounded-[var(--radius-sm)] border border-line bg-white px-3 py-1.5 text-sm font-semibold text-navy transition-colors hover:border-accent hover:text-accent"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+              <li>
+                <Link
+                  href="/countries"
+                  className="inline-block rounded-[var(--radius-sm)] border border-line bg-white px-3 py-1.5 text-sm font-semibold text-accent"
+                >
+                  All countries →
+                </Link>
+              </li>
             </ul>
           </Reveal>
         </section>

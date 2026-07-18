@@ -5,11 +5,13 @@ import { Container } from "@/components/Container";
 import { CTASection } from "@/components/CTASection";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { IndiaHubNav } from "@/components/india/IndiaHubNav";
+import { MediaImage } from "@/components/MediaImage";
 import { MdxContent } from "@/components/MdxContent";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { getHospitalsByCity } from "@/data/hospitals";
 import { getIndiaDomesticPath } from "@/lib/india-domestic";
-import { faqSchema, webPageSchema } from "@/lib/seo";
+import { domesticPageImage } from "@/lib/media";
+import { faqSchema, medicalProcedureInrSchema, webPageSchema } from "@/lib/seo";
 import type { IndiaDomesticPage } from "@/lib/types";
 
 type DomesticPageTemplateProps = {
@@ -31,6 +33,7 @@ export function DomesticPageTemplate({
 }: DomesticPageTemplateProps) {
   const path = getIndiaDomesticPath(page.slug, page.locale);
   const hospitals = getHospitalsByCity("hyderabad");
+  const pageImage = domesticPageImage(page.slug);
 
   const breadcrumbItems = [
     { name: "India", href: getIndiaDomesticPath("", page.locale) },
@@ -59,6 +62,17 @@ export function DomesticPageTemplate({
             url: path,
           }),
           ...(page.faqs.length ? [faqSchema(page.faqs)] : []),
+          ...(page.costInrMin && page.costInrMax
+            ? [
+                medicalProcedureInrSchema({
+                  name: page.title,
+                  description: page.shortAnswer,
+                  url: path,
+                  costMin: page.costInrMin,
+                  costMax: page.costInrMax,
+                }),
+              ]
+            : []),
         ]}
       />
       <Breadcrumb items={breadcrumbItems} />
@@ -68,6 +82,18 @@ export function DomesticPageTemplate({
       <div className="mt-6">
         <AnswerBlock>{page.shortAnswer}</AnswerBlock>
       </div>
+
+      {pageImage ? (
+        <div className="mt-8 overflow-hidden rounded-[var(--radius)]">
+          <MediaImage
+            src={pageImage}
+            alt={page.title}
+            aspect="aspect-[21/9]"
+            sizes="(max-width: 768px) 100vw, 1100px"
+            zoomOnHover={false}
+          />
+        </div>
+      ) : null}
 
       {page.costInrMin && page.costInrMax ? (
         <div className="quote-card mt-6">

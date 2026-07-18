@@ -18,8 +18,10 @@ import {
   getAllCountrySlugs,
   getCountryBySlug,
 } from "@/data/countries";
+import { patientStoriesPathFromHub } from "@/data/countryRoutes";
 import { getAllStories } from "@/data/stories";
 import { getTreatmentBySlug } from "@/data/treatments";
+import { getTestimonialsByCountry } from "@/lib/data";
 import { MEDIA } from "@/lib/media";
 import {
   buildMetadata,
@@ -59,6 +61,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       `best hospital india for ${country.demonym.toLowerCase()} patients`,
       `india surgery cost for ${country.demonym.toLowerCase()} patients`,
       `${country.name.toLowerCase()} medical tourism india`,
+      `affordable treatment india ${country.name.toLowerCase()}`,
+      `heart surgery india for ${country.demonym.toLowerCase()} patients`,
+      `cancer treatment india for ${country.demonym.toLowerCase()} patients`,
     ],
   });
 }
@@ -97,6 +102,28 @@ export default async function CountryPage({ params }: Props) {
         (country.name === "UAE" && /uae|dubai|emirates/i.test(story.country))
     )
     .slice(0, 2);
+
+  const storiesPath = patientStoriesPathFromHub(country.slug);
+  const shortSlug = storiesPath?.replace("/patient-stories/", "");
+  const jsonStories = shortSlug ? getTestimonialsByCountry(shortSlug).slice(0, 2) : [];
+  const displayStories =
+    relatedStories.length > 0
+      ? relatedStories.map((s) => ({
+          slug: s.slug,
+          patientName: s.patientName,
+          country: s.country,
+          treatment: s.treatment,
+          summary: s.summary,
+          href: shortSlug ? `/patient-stories/${shortSlug}` : "/patient-stories",
+        }))
+      : jsonStories.map((s) => ({
+          slug: s.slug,
+          patientName: s.patientName,
+          country: s.country,
+          treatment: s.treatment,
+          summary: s.summary,
+          href: `/patient-stories/${s.countrySlug}`,
+        }));
 
   return (
     <Container className="py-10 sm:py-14">
@@ -226,14 +253,14 @@ export default async function CountryPage({ params }: Props) {
         />
       </div>
 
-      {relatedStories.length > 0 && (
+      {displayStories.length > 0 && (
         <section className="mt-12" aria-labelledby="stories-heading">
           <p className="data-label">Patient stories</p>
           <h2 id="stories-heading" className="mt-1 font-display text-2xl font-medium text-navy">
             Outcomes shared by families from {country.name}
           </h2>
           <div className="mt-6 grid gap-5 md:grid-cols-2">
-            {relatedStories.map((story) => (
+            {displayStories.map((story) => (
               <article key={story.slug} className="quote-card">
                 <p className="quote-mark">&ldquo;</p>
                 <p className="mt-3 text-sm leading-relaxed text-ink">{story.summary}</p>
@@ -243,15 +270,22 @@ export default async function CountryPage({ params }: Props) {
                     {story.country} · {story.treatment}
                   </p>
                   <Link
-                    href={`/treatments/${story.treatmentSlug}`}
+                    href={story.href}
                     className="mt-3 inline-block text-sm font-semibold text-accent"
                   >
-                    About this treatment →
+                    More {country.name} patient stories →
                   </Link>
                 </div>
               </article>
             ))}
           </div>
+          {storiesPath ? (
+            <p className="mt-4">
+              <Link href={storiesPath} className="text-sm font-semibold text-accent hover:underline">
+                Browse all patient stories from {country.name} →
+              </Link>
+            </p>
+          ) : null}
         </section>
       )}
 

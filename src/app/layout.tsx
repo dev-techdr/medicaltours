@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Fraunces, IBM_Plex_Mono, Source_Sans_3 } from "next/font/google";
 import { AppChrome } from "@/components/AppChrome";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { organizationSchema, buildMetadata } from "@/lib/seo";
 import { SITE } from "@/lib/site";
 import "./globals.css";
+
+const GA_MEASUREMENT_ID = "G-Y26C8Z0VJQ";
 
 const sourceSans = Source_Sans_3({
   variable: "--font-sans",
@@ -57,6 +60,18 @@ export default function RootLayout({
       className={`${sourceSans.variable} ${fraunces.variable} ${ibmPlexMono.variable} h-full`}
     >
       <body className="min-h-full flex flex-col antialiased">
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
         <JsonLd data={organizationSchema()} />
         <AppChrome>{children}</AppChrome>
       </body>

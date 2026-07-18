@@ -1,83 +1,9 @@
 [
   {
-    "slug": "apollo-hospitals-hyderabad",
-    "name": "Apollo Hospitals Hyderabad",
+    "slug": "olive-hospitals",
+    "name": "Olive Hospitals",
     "city": "Hyderabad",
     "citySlug": "hyderabad",
-    "accreditation": [
-      "JCI",
-      "NABH"
-    ],
-    "specialties": [
-      "Cardiology",
-      "Oncology",
-      "Transplant",
-      "Orthopedics",
-      "Neurosurgery",
-      "Urology",
-      "Gynecology",
-      "ENT",
-      "Gastroenterology",
-      "Endocrinology",
-      "Vascular",
-      "Pulmonology"
-    ],
-    "rating": 4.7,
-    "reviewCount": 1240,
-    "shortAnswer": "JCI-accredited multi-specialty campus with a dedicated International Patient Department for cardiac, oncology, transplant, and orthopedic care.",
-    "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=80"
-  },
-  {
-    "slug": "yashoda-hospitals-hyderabad",
-    "name": "Yashoda Hospitals Hyderabad",
-    "city": "Hyderabad",
-    "citySlug": "hyderabad",
-    "accreditation": [
-      "NABH"
-    ],
-    "specialties": [
-      "Oncology",
-      "Cardiology",
-      "Gastroenterology",
-      "Hepatology",
-      "Pulmonology"
-    ],
-    "rating": 4.6,
-    "reviewCount": 980,
-    "shortAnswer": "Major Hyderabad network known for oncology and critical care, with strong international patient coordination.",
-    "image": "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1200&q=80"
-  },
-  {
-    "slug": "medanta-gurugram",
-    "name": "Medanta – The Medicity",
-    "city": "Gurugram",
-    "citySlug": "delhi",
-    "accreditation": [
-      "JCI",
-      "NABH"
-    ],
-    "specialties": [
-      "Cardiology",
-      "Neurosurgery",
-      "Transplant",
-      "Oncology",
-      "Urology",
-      "Gynecology",
-      "Vascular",
-      "Endocrinology",
-      "Pulmonology",
-      "Gastroenterology"
-    ],
-    "rating": 4.8,
-    "reviewCount": 2100,
-    "shortAnswer": "Flagship NCR tertiary hospital for complex cardiac, neuro, and transplant cases for medical tourists.",
-    "image": "https://images.unsplash.com/photo-1538108142227-f6da1df3d8b7?auto=format&fit=crop&w=1200&q=80"
-  },
-  {
-    "slug": "fortis-hospital-delhi",
-    "name": "Fortis Hospital Delhi",
-    "city": "Delhi",
-    "citySlug": "delhi",
     "accreditation": [
       "NABH"
     ],
@@ -85,14 +11,55 @@
       "Cardiology",
       "Orthopedics",
       "Oncology",
-      "Urology",
-      "Vascular",
-      "ENT"
+      "General Surgery",
+      "Gynecology",
+      "Urology"
     ],
     "rating": 4.5,
-    "reviewCount": 1500,
-    "shortAnswer": "Delhi NCR Fortis campus supporting cardiac and orthopedic packages for international patients.",
-    "image": "https://images.unsplash.com/photo-1516544656196-9d0eb7f8e19c?auto=format&fit=crop&w=1200&q=80"
+    "reviewCount": 420,
+    "shortAnswer": "Hyderabad multi-specialty hospital partner for domestic and international patients, with Techdr-coordinated admission and package support.",
+    "image": "/images/services/olive-hospitals.jpg"
+  },
+  {
+    "slug": "tx-hospitals",
+    "name": "TX Hospitals",
+    "city": "Hyderabad",
+    "citySlug": "hyderabad",
+    "accreditation": [
+      "NABH"
+    ],
+    "specialties": [
+      "Cardiology",
+      "Orthopedics",
+      "Neurosurgery",
+      "Oncology",
+      "Gastroenterology"
+    ],
+    "rating": 4.5,
+    "reviewCount": 380,
+    "shortAnswer": "Hyderabad tertiary-care partner hospital for surgical and critical care pathways coordinated by Techdr.",
+    "image": "/images/services/tx-hospitals.jpg"
+  },
+  {
+    "slug": "medicover-hospitals",
+    "name": "Medicover Hospitals",
+    "city": "Hyderabad",
+    "citySlug": "hyderabad",
+    "accreditation": [
+      "NABH"
+    ],
+    "specialties": [
+      "Cardiology",
+      "Oncology",
+      "Orthopedics",
+      "Fertility",
+      "Nephrology",
+      "Gastroenterology"
+    ],
+    "rating": 4.6,
+    "reviewCount": 510,
+    "shortAnswer": "Hyderabad multi-specialty Medicover campus supporting cardiac, oncology, and orthopaedic packages for Indian and international patients.",
+    "image": "/images/services/medicover-hospitals.jpg"
   },
   {
     "slug": "max-healthcare-delhi",
@@ -113,79 +80,6 @@
     "rating": 4.6,
     "reviewCount": 1700,
     "shortAnswer": "Max network hospitals in Delhi NCR for oncology and multi-specialty medical tourism packages.",
-    "image": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&w=1200&q=80"
-  },
-  {
-    "slug": "kokilaben-hospital-mumbai",
-    "name": "Kokilaben Dhirubhai Ambani Hospital",
-    "city": "Mumbai",
-    "citySlug": "mumbai",
-    "accreditation": [
-      "JCI",
-      "NABH"
-    ],
-    "specialties": [
-      "Oncology",
-      "Orthopedics",
-      "Fertility",
-      "Cardiology",
-      "Urology",
-      "Gynecology",
-      "Vascular"
-    ],
-    "rating": 4.7,
-    "reviewCount": 1600,
-    "shortAnswer": "Mumbai JCI hospital offering comprehensive specialty care and international patient services.",
-    "image": "https://images.unsplash.com/photo-1586773860383-dab5f3bc1bcc?auto=format&fit=crop&w=1200&q=80"
-  },
-  {
-    "slug": "apollo-hospitals-chennai",
-    "name": "Apollo Hospitals Chennai",
-    "city": "Chennai",
-    "citySlug": "chennai",
-    "accreditation": [
-      "JCI",
-      "NABH"
-    ],
-    "specialties": [
-      "Cardiology",
-      "Oncology",
-      "Orthopedics",
-      "Transplant",
-      "Urology",
-      "Gynecology",
-      "ENT",
-      "Pediatric",
-      "Pulmonology"
-    ],
-    "rating": 4.7,
-    "reviewCount": 1900,
-    "shortAnswer": "Chennai’s Apollo flagship for cardiac sciences, oncology, and transplant programs for foreign patients.",
-    "image": "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&w=1200&q=80"
-  },
-  {
-    "slug": "manipal-hospital-bangalore",
-    "name": "Manipal Hospital Bangalore",
-    "city": "Bangalore",
-    "citySlug": "bangalore",
-    "accreditation": [
-      "NABH"
-    ],
-    "specialties": [
-      "Orthopedics",
-      "Fertility",
-      "Cardiology",
-      "Oncology",
-      "Gynecology",
-      "ENT",
-      "Dermatology",
-      "Pediatric",
-      "Endocrinology",
-      "Gastroenterology"
-    ],
-    "rating": 4.6,
-    "reviewCount": 1400,
-    "shortAnswer": "Bangalore multi-specialty hospital popular for orthopedics and fertility care among medical tourists.",
-    "image": "https://images.unsplash.com/photo-1666214280557-f1b5022eb634?auto=format&fit=crop&w=1200&q=80"
+    "image": "/images/services/max-healthcare-delhi.jpg"
   }
 ]

@@ -22,16 +22,16 @@ export function TrustBadges({ variant = "bar" }: TrustBadgesProps) {
   }
 
   return (
-    <ul className="flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-white/15 pt-5">
-      <li className="text-sm text-white/80">{SITE.hospitalCount} hospital partners</li>
-      <li className="hidden text-white/30 sm:inline" aria-hidden>
+    <ul className="flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-white/25 pt-5">
+      <li className="text-sm font-medium text-white">{SITE.hospitalCount} hospital partners</li>
+      <li className="hidden text-white/50 sm:inline" aria-hidden>
         ·
       </li>
-      <li className="text-sm text-white/80">{SITE.teamCount} care team</li>
-      <li className="hidden text-white/30 sm:inline" aria-hidden>
+      <li className="text-sm font-medium text-white">{SITE.teamCount} care team</li>
+      <li className="hidden text-white/50 sm:inline" aria-hidden>
         ·
       </li>
-      <li className="text-sm text-white/80">{SITE.patientCount} patients assisted</li>
+      <li className="text-sm font-medium text-white">{SITE.patientCount} patients assisted</li>
     </ul>
   );
 }

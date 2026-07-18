@@ -14,11 +14,13 @@ import { buildMetadata, countryItemListSchema, webPageSchema } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Medical Tourism India by Country — Visa, Cost & Hospitals",
   description:
-    "Nationality guides for medical treatment in India: Nigeria, Kenya, Iraq, Bangladesh, UK, USA, UAE, Oman, and more — with visa help, local-currency costs, and hospital coordination.",
+    "Nationality guides for medical treatment in India: Nigeria, Kenya, Bangladesh, UAE, Saudi Arabia, UK, USA, Nepal, Sri Lanka, Iran, Canada, Australia, and 30+ markets — visa help, local-currency costs, and hospital coordination.",
   path: "/countries",
   keywords: [
     "medical tourism india by country",
     "best hospital india for african patients",
+    "medical tourism india for gulf patients",
+    "medical tourism india for nepalis",
     "medical tourism india for foreigners",
     "medical visa india by nationality",
     "india medical treatment for international patients",

@@ -3,7 +3,7 @@
     "slug": "cardiac-care-india",
     "name": "Cardiac Care",
     "description": "Heart surgery, angioplasty, valve replacement, pacemakers, and pediatric cardiac care for international patients in India.",
-    "heroImage": "https://images.unsplash.com/photo-1628348070889-c81685011187?auto=format&fit=crop&w=1600&q=80",
+    "heroImage": "/images/services/cardiac-care.jpg",
     "procedureSlugs": [
       "heart-bypass-surgery-cost-india",
       "angioplasty-stent-placement-cost-india",
@@ -19,7 +19,7 @@
     "slug": "orthopaedic-treatments-india",
     "name": "Orthopaedic Treatments",
     "description": "Knee and hip replacement, spine surgery, ACL reconstruction, and sports injury care at leading Indian hospitals.",
-    "heroImage": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1600&q=80",
+    "heroImage": "/images/services/orthopaedics.jpg",
     "procedureSlugs": [
       "total-knee-replacement-surgery-india",
       "hip-replacement-surgery-india",
@@ -35,7 +35,7 @@
     "slug": "cancer-treatment-india",
     "name": "Cancer Treatment",
     "description": "Chemotherapy, radiation, immunotherapy, robotic oncology, and related cancer packages in India. For blood cancers and transplant, see Hematology & Bone Marrow.",
-    "heroImage": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80",
+    "heroImage": "/images/services/cancer.jpg",
     "procedureSlugs": [
       "chemotherapy-cost-india",
       "radiation-therapy-india",
@@ -50,7 +50,7 @@
     "slug": "fertility-treatments-india",
     "name": "Fertility Treatments",
     "description": "IVF, ICSI, egg freezing, and male infertility treatment with transparent costs for foreign patients.",
-    "heroImage": "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=1600&q=80",
+    "heroImage": "/images/services/fertility.jpg",
     "procedureSlugs": [
       "ivf-treatment-cost-india",
       "icsi-treatment-india",
@@ -64,7 +64,7 @@
     "slug": "neurology-neurosurgery-india",
     "name": "Neurology & Neurosurgery",
     "description": "Brain tumor surgery, epilepsy surgery, deep brain stimulation, aneurysm repair, and stroke rehab in India.",
-    "heroImage": "https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=1600&q=80",
+    "heroImage": "/images/services/neurosurgery.jpg",
     "procedureSlugs": [
       "brain-tumor-surgery-india",
       "spine-neurosurgery-india",
@@ -78,7 +78,7 @@
     "slug": "cosmetic-plastic-surgery-india",
     "name": "Cosmetic & Plastic Surgery",
     "description": "Rhinoplasty, liposuction, breast surgery, facelift, hair transplant, mommy makeover, BBL, and body contouring with board-certified plastic surgeons across India.",
-    "heroImage": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1600&q=80",
+    "heroImage": "/images/services/cosmetic.jpg",
     "procedureSlugs": [
       "rhinoplasty-cost-india",
       "liposuction-cost-india",
@@ -103,7 +103,7 @@
     "slug": "general-advanced-surgeries-india",
     "name": "General & Advanced Surgeries",
     "description": "Bariatric surgery, gallbladder removal, kidney and liver transplant, hernia repair, and advanced laparoscopy.",
-    "heroImage": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&w=1600&q=80",
+    "heroImage": "/images/services/general-surgery.jpg",
     "procedureSlugs": [
       "bariatric-weight-loss-surgery-india",
       "gallbladder-removal-laparoscopic-india",
@@ -117,7 +117,7 @@
     "slug": "eye-care-ophthalmology-india",
     "name": "Eye Care & Ophthalmology",
     "description": "LASIK, cataract surgery, retina surgery, cornea transplant, and glaucoma treatment packages in India.",
-    "heroImage": "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?auto=format&fit=crop&w=1600&q=80",
+    "heroImage": "/images/services/eye-care.jpg",
     "procedureSlugs": [
       "lasik-eye-surgery-cost-india",
       "cataract-surgery-india",
@@ -130,7 +130,7 @@
     "slug": "dental-treatments-india",
     "name": "Dental Treatments",
     "description": "Dental implants, full mouth rehabilitation, veneers, and orthodontics at a fraction of Western costs.",
-    "heroImage": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1600&q=80",
+    "heroImage": "/images/services/dental.jpg",
     "procedureSlugs": [
       "dental-implants-cost-india",
       "full-mouth-rehabilitation-india",
@@ -143,7 +143,7 @@
     "slug": "wellness-holistic-healing-india",
     "name": "Wellness & Holistic Healing",
     "description": "Ayurveda Panchakarma, yoga retreats, and post-surgery rehabilitation programs for medical tourists.",
-    "heroImage": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1600&q=80",
+    "heroImage": "/images/services/wellness.jpg",
     "procedureSlugs": [
       "ayurveda-panchakarma-packages-india",
       "yoga-wellness-retreats-india",
@@ -154,7 +154,7 @@
     "slug": "urology-treatments-india",
     "name": "Urology",
     "description": "Prostate surgery, kidney stone treatment, robotic prostatectomy, varicocele repair, and male urology care for medical tourists in India.",
-    "heroImage": "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?auto=format&fit=crop&w=1600&q=80",
+    "heroImage": "/images/services/urology.jpg",
     "procedureSlugs": [
       "prostate-surgery-turp-cost-india",
       "robotic-prostatectomy-cost-india",
@@ -169,7 +169,7 @@
     "slug": "gynecology-womens-health-india",
     "name": "Gynecology & Women's Health",
     "description": "Hysterectomy, fibroid removal, endometriosis treatment, ovarian cyst surgery, and laparoscopic gynecology for international patients.",
-    "heroImage": "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=1600&q=80",
+    "heroImage": "/images/services/gynecology.jpg",
     "procedureSlugs": [
       "hysterectomy-cost-india",
       "fibroid-removal-myomectomy-india",
@@ -185,7 +185,7 @@
     "slug": "ent-treatments-india",
     "name": "ENT (Ear, Nose & Throat)",
     "description": "Cochlear implants, sinus surgery (FESS), septoplasty, tonsillectomy, and thyroid/neck surgery packages in India.",
-    "heroImage": "https://images.unsplash.com/photo-1516544656196-9d0eb7f8e19c?auto=format&fit=crop&w=1600&q=80",
+    "heroImage": "/images/services/ent.jpg",
     "procedureSlugs": [
       "cochlear-implant-cost-india",
       "sinus-surgery-fess-india",
@@ -199,7 +199,7 @@
     "slug": "gastroenterology-india",
     "name": "Gastroenterology & Hepatology",
     "description": "GI endoscopy, ERCP, liver disease care, IBD treatment, and advanced digestive surgery for foreign patients in India.",
-    "heroImage": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&w=1600&q=80",
+    "heroImage": "/images/services/gastroenterology.jpg",
     "procedureSlugs": [
       "gi-endoscopy-colonoscopy-india",
       "ercp-treatment-india",
@@ -212,7 +212,7 @@
     "slug": "endocrinology-diabetes-india",
     "name": "Endocrinology & Diabetes",
     "description": "Thyroid surgery, diabetes management packages, pituitary care, and hormone disorder treatment for medical tourists.",
-    "heroImage": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1600&q=80",
+    "heroImage": "/images/services/endocrinology.jpg",
     "procedureSlugs": [
       "thyroid-treatment-india",
       "diabetes-treatment-package-india",
@@ -224,7 +224,7 @@
     "slug": "vascular-surgery-india",
     "name": "Vascular Surgery",
     "description": "Varicose vein treatment, peripheral angioplasty, aneurysm vascular repair, and dialysis access surgery in India.",
-    "heroImage": "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&w=1600&q=80",
+    "heroImage": "/images/services/vascular.jpg",
     "procedureSlugs": [
       "varicose-vein-treatment-india",
       "peripheral-angioplasty-india",
@@ -236,7 +236,7 @@
     "slug": "dermatology-skin-care-india",
     "name": "Dermatology & Skin Care",
     "description": "Skin cancer surgery, vitiligo, psoriasis, acne scars, laser resurfacing, melasma, keloids, and burn scar reconstruction for international patients in India.",
-    "heroImage": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=1600&q=80",
+    "heroImage": "/images/services/dermatology.jpg",
     "procedureSlugs": [
       "skin-cancer-surgery-india",
       "vitiligo-treatment-india",
@@ -256,7 +256,7 @@
     "slug": "pediatric-treatments-india",
     "name": "Pediatric Treatments",
     "description": "Pediatric surgery, congenital care, and child specialty treatment packages for families travelling to India.",
-    "heroImage": "https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?auto=format&fit=crop&w=1600&q=80",
+    "heroImage": "/images/services/pediatrics.jpg",
     "procedureSlugs": [
       "pediatric-surgery-india",
       "pediatric-cancer-treatment-india",
@@ -267,7 +267,7 @@
     "slug": "pulmonology-lung-care-india",
     "name": "Pulmonology & Lung Care",
     "description": "Lung surgery, COPD/asthma care, bronchoscopy, and respiratory treatment packages for medical tourists in India.",
-    "heroImage": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&w=1600&q=80",
+    "heroImage": "/images/services/pulmonology.jpg",
     "procedureSlugs": [
       "lung-surgery-cost-india",
       "lung-cancer-treatment-india",
@@ -279,7 +279,7 @@
     "slug": "hematology-bone-marrow-india",
     "name": "Hematology & Bone Marrow",
     "description": "Bone marrow and stem cell transplant, leukemia, lymphoma, myeloma, thalassemia, sickle cell, aplastic anemia, and CAR-T therapy at specialized Indian hematology centers.",
-    "heroImage": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80",
+    "heroImage": "/images/services/hematology.jpg",
     "procedureSlugs": [
       "bone-marrow-transplant-india",
       "autologous-stem-cell-transplant-india",

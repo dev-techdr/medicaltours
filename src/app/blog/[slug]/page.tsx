@@ -5,8 +5,9 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { Container } from "@/components/Container";
 import { CTASection } from "@/components/CTASection";
 import { MdxContent } from "@/components/MdxContent";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { getAllPostSlugs, getPostBySlug } from "@/data/blog";
-import { buildMetadata } from "@/lib/seo";
+import { blogPostingSchema, buildMetadata, webPageSchema } from "@/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -31,16 +32,38 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getPostBySlug(slug);
   if (!post) notFound();
 
+  const path = `/blog/${post.slug}`;
+
   return (
     <Container className="py-10 sm:py-14">
+      <JsonLd
+        data={[
+          webPageSchema({
+            name: post.title,
+            description: post.excerpt,
+            url: path,
+          }),
+          blogPostingSchema({
+            title: post.title,
+            description: post.excerpt,
+            url: path,
+            datePublished: post.date,
+            keywords: [post.primaryKeyword],
+          }),
+        ]}
+      />
       <Breadcrumb
         items={[
           { name: "Blog", href: "/blog" },
-          { name: post.title, href: `/blog/${post.slug}` },
+          { name: post.title, href: path },
         ]}
       />
-      <time className="text-sm font-medium text-muted">{post.date}</time>
-      <h1 className="mt-2 font-display text-4xl font-medium tracking-tight text-navy">{post.title}</h1>
+      <time className="text-sm font-medium text-muted" dateTime={post.date}>
+        {post.date}
+      </time>
+      <h1 className="mt-2 font-display text-4xl font-medium tracking-tight text-navy">
+        {post.title}
+      </h1>
       <div className="mt-6">
         <AnswerBlock>{post.excerpt}</AnswerBlock>
       </div>

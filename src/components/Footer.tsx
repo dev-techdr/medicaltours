@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="mt-auto bg-navy text-white/70 pb-[max(3.5rem,env(safe-area-inset-bottom))]">
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
           <div className="sm:col-span-2 lg:col-span-1">
             <Link href="/" className="inline-block max-w-full">
               <Image
@@ -15,6 +15,7 @@ export function Footer() {
                 width={220}
                 height={44}
                 className="h-9 w-auto max-w-[200px] object-contain object-left sm:h-10"
+                style={{ width: "auto" }}
               />
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-white/55">
@@ -41,6 +42,7 @@ export function Footer() {
           </div>
 
           <FooterColumn title="Treatments" links={FOOTER_LINKS.treatments} />
+          <FooterColumn title="Countries" links={FOOTER_LINKS.countries} />
           <FooterColumn title="For Patients" links={FOOTER_LINKS.patients} />
           <FooterColumn title="Company" links={FOOTER_LINKS.company} />
         </div>

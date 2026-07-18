@@ -5,33 +5,61 @@ import { CTASection } from "@/components/CTASection";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { UsdRange } from "@/components/CostHighlight";
 import { MediaImage } from "@/components/MediaImage";
+import { GlobalReach } from "@/components/GlobalReach";
 import { NetworkStats } from "@/components/NetworkStats";
 import { Reveal } from "@/components/Reveal";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { getAllCities } from "@/data/cities";
 import { getAllCountries } from "@/data/countries";
+import {
+  COUNTRY_HUB_BY_SHORT_SLUG,
+  PRIORITY_COUNTRY_SHORT_SLUGS,
+} from "@/data/countryRoutes";
 import { getAllStories } from "@/data/stories";
 import { getGlobalFaqs } from "@/data/faqs";
 import {
-  getAllProcedures,
   getCategoryBySlug,
+  getProcedureBySlug,
   procedurePath,
 } from "@/lib/data";
 import { cityImage, MEDIA } from "@/lib/media";
+import { faqSchema, webSiteSchema } from "@/lib/seo";
 import { SITE } from "@/lib/site";
 
+/** One flagship procedure per major specialty — not the raw JSON order (all cardiac). */
+const FEATURED_TREATMENT_SLUGS = [
+  "heart-bypass-surgery-cost-india",
+  "total-knee-replacement-surgery-india",
+  "chemotherapy-cost-india",
+  "ivf-treatment-cost-india",
+  "brain-tumor-surgery-india",
+  "kidney-transplant-india",
+] as const;
+
 export default function HomePage() {
-  const procedures = getAllProcedures();
   const cities = getAllCities();
   const countries = getAllCountries();
   const stories = getAllStories();
   const globalFaqs = getGlobalFaqs();
 
-  const featuredTreatments = procedures.slice(0, 6);
-  const featuredCountries = countries.slice(0, 8);
+  const featuredTreatments = FEATURED_TREATMENT_SLUGS.map((slug) =>
+    getProcedureBySlug(slug),
+  ).filter((p): p is NonNullable<typeof p> => Boolean(p));
+
+  const countryByHub = new Map(countries.map((c) => [c.slug, c]));
+  const featuredCountries = PRIORITY_COUNTRY_SHORT_SLUGS.map(
+    (short) => countryByHub.get(COUNTRY_HUB_BY_SHORT_SLUG[short])
+  ).filter((c): c is NonNullable<typeof c> => Boolean(c));
   const featuredStories = stories.slice(0, 3);
 
   return (
     <>
+      <JsonLd
+        data={[
+          webSiteSchema(),
+          ...(globalFaqs.length ? [faqSchema(globalFaqs)] : []),
+        ]}
+      />
       {/* Full-bleed photo hero — brand + one headline + one line + CTAs only */}
       <section className="relative min-h-[88vh] overflow-hidden sm:min-h-[82vh]">
         <div className="absolute inset-0">
@@ -122,6 +150,10 @@ export default function HomePage() {
               </ul>
             </div>
           </div>
+        </Reveal>
+
+        <Reveal className="mt-16">
+          <GlobalReach />
         </Reveal>
 
         {/* Patient stories */}
@@ -338,7 +370,11 @@ export default function HomePage() {
         </Reveal>
 
         <Reveal className="mt-16">
-          <FAQAccordion faqs={globalFaqs} title="Questions families ask before travelling" />
+          <FAQAccordion
+            faqs={globalFaqs}
+            title="Questions families ask before travelling"
+            includeSchema={false}
+          />
         </Reveal>
 
         <Reveal className="mt-16">

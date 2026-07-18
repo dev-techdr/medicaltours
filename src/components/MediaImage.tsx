@@ -29,7 +29,9 @@ export function MediaImage({
 }: MediaImageProps) {
   return (
     <div
-      className={`media-frame ${fillParent ? "absolute inset-0 h-full w-full" : aspect} ${className}`}
+      className={`media-frame ${
+        fillParent ? "absolute inset-0 min-h-full min-w-full" : aspect
+      } ${className}`}
     >
       <Image
         src={src}

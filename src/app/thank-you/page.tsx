@@ -1,5 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+import { buildMetadata } from "@/lib/seo";
 import { SITE } from "@/lib/site";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Thank You | Enquiry Received",
+  description:
+    "Your medical tourism enquiry has been received. Our care team will respond within 24–48 hours.",
+  path: "/thank-you",
+  noIndex: true,
+});
 
 export default function ThankYouPage() {
   return (

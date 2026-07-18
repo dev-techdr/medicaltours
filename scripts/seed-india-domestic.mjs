@@ -176,7 +176,7 @@ Common referrals from Nizamabad include orthopaedic surgery, cardiac procedures,
     title: "Aarogyasri Empanelled Hospitals in Hyderabad",
     primaryKeyword: "aarogyasri empanelled hospitals hyderabad",
     shortAnswer:
-      "Major Hyderabad hospitals including Apollo, Yashoda, KIMS, and Continental are empanelled under Aarogyasri — covering cardiac surgery, cancer treatment, organ transplant, and orthopaedic procedures for eligible TS & AP patients.",
+      "Major Hyderabad hospitals including Olive, TX, Medicover, KIMS, and Continental are empanelled under Aarogyasri — covering cardiac surgery, cancer treatment, organ transplant, and orthopaedic procedures for eligible TS & AP patients.",
     tier: "tier1",
     highlights: [
       "Pre-authorisation support before admission",
@@ -212,7 +212,7 @@ Common referrals from Nizamabad include orthopaedic surgery, cardiac procedures,
       {
         question: "Which Hyderabad hospitals accept Aarogyasri?",
         answer:
-          "Major empanelled hospitals include Apollo Hospitals (Jubilee Hills), Yashoda Hospitals, KIMS, Continental, and several NABH-accredited centres. The exact list changes — we verify current empanelment for your procedure.",
+          "Major empanelled hospitals include Olive Hospitals, TX Hospitals, Medicover, KIMS, Continental, and several NABH-accredited centres. The exact list changes — we verify current empanelment for your procedure.",
       },
       {
         question: "How long does Aarogyasri pre-authorisation take?",

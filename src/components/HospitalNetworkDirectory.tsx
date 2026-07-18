@@ -5,6 +5,7 @@ import { useMemo, useState } from "react";
 import { MediaImage } from "@/components/MediaImage";
 import { VerifiedPartnerBadge } from "@/components/VerifiedPartnerBadge";
 import { hospitalImage } from "@/lib/media";
+import { SITE } from "@/lib/site";
 import type { HospitalSummary } from "@/lib/types";
 
 type HospitalNetworkDirectoryProps = {
@@ -111,7 +112,8 @@ export function HospitalNetworkDirectory({ hospitals }: HospitalNetworkDirectory
           </label>
         </div>
         <p className="mt-3 text-sm text-muted">
-          Showing {filtered.length} of {hospitals.length} partner hospitals
+          Showing {filtered.length} of {hospitals.length} featured hospitals with profiles
+          (full network: {SITE.hospitalCount} partners — more photos coming soon)
         </p>
       </div>
 

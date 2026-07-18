@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { NAV_LINKS, SITE } from "@/lib/site";
 
 export function Header() {
@@ -18,6 +19,7 @@ export function Header() {
             width={200}
             height={40}
             className="h-8 w-auto max-w-[148px] object-contain object-left sm:h-9 sm:max-w-[180px] md:h-10 md:max-w-none"
+            style={{ width: "auto" }}
             priority
           />
         </Link>
@@ -35,6 +37,7 @@ export function Header() {
         </nav>
 
         <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
+          <LanguageSwitcher className="hidden sm:block" />
           <a
             href={`tel:${SITE.phone}`}
             className="btn btn-outline hidden !px-4 !py-2 sm:inline-flex"
@@ -51,6 +54,7 @@ export function Header() {
             <span className="sm:hidden">WA</span>
             <span className="hidden sm:inline">WhatsApp</span>
           </a>
+          <LanguageSwitcher className="sm:hidden" />
           <button
             type="button"
             className="inline-flex items-center justify-center rounded-lg border border-line p-2 text-navy lg:hidden"
@@ -70,7 +74,10 @@ export function Header() {
       </div>
 
       {open && (
-        <nav className="max-h-[min(70vh,28rem)] overflow-y-auto border-t border-line bg-white px-4 py-3 lg:hidden" aria-label="Mobile">
+        <nav
+          className="max-h-[min(70vh,28rem)] overflow-y-auto border-t border-line bg-white px-4 py-3 lg:hidden"
+          aria-label="Mobile"
+        >
           <ul className="flex flex-col gap-0.5">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
@@ -83,6 +90,14 @@ export function Header() {
                 </Link>
               </li>
             ))}
+            <li className="sm:hidden">
+              <div className="px-1 py-1.5">
+                <p className="mb-1.5 px-2 text-xs font-semibold uppercase tracking-wide text-muted">
+                  Language
+                </p>
+                <LanguageSwitcher fullWidth />
+              </div>
+            </li>
             <li>
               <Link
                 href="/contact-us#enquiry-form"

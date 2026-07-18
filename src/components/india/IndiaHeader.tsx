@@ -23,6 +23,7 @@ export function IndiaHeader() {
             width={200}
             height={40}
             className="h-8 w-auto max-w-[160px] object-contain object-left sm:h-9"
+            style={{ width: "auto" }}
             priority
           />
         </Link>

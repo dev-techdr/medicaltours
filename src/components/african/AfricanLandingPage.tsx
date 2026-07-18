@@ -54,6 +54,7 @@ export function AfricanLandingPage() {
                   width={200}
                   height={40}
                   className="h-9 w-auto sm:h-10"
+                  style={{ width: "auto" }}
                   priority
                 />
               </div>
@@ -575,6 +576,7 @@ export function AfricanLandingPage() {
                   width={200}
                   height={40}
                   className="h-9 w-auto"
+                  style={{ width: "auto" }}
                 />
                 <p className="mt-2 text-sm text-[#4A5E5C]">India treatment coordination for African patients</p>
               </div>

@@ -38,9 +38,9 @@
       "Discharge planning, meds, and follow-up coordination before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-hyderabad",
-      "medanta-gurugram",
-      "fortis-hospital-delhi"
+      "medicover-hospitals",
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [
       "dr-rajesh-kumar-cardiologist"
@@ -53,7 +53,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1628348070889-c81685011187?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cardiac-care.jpg",
         "alt": "Heart Bypass Surgery (CABG) in India for international patients"
       }
     ],
@@ -108,9 +108,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-hyderabad",
-      "apollo-hospitals-chennai",
-      "medanta-gurugram"
+      "max-healthcare-delhi",
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [
       "dr-rajesh-kumar-cardiologist"
@@ -123,7 +123,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1628348070889-c81685011187?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cardiac-care.jpg",
         "alt": "Angioplasty / Stent Placement in India for international patients"
       }
     ],
@@ -177,9 +177,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "medanta-gurugram",
-      "apollo-hospitals-chennai",
-      "kokilaben-hospital-mumbai"
+      "olive-hospitals",
+      "tx-hospitals",
+      "medicover-hospitals"
     ],
     "doctorSlugs": [
       "dr-rajesh-kumar-cardiologist"
@@ -192,7 +192,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1628348070889-c81685011187?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cardiac-care.jpg",
         "alt": "Heart Valve Replacement / Repair in India for international patients"
       }
     ],
@@ -246,8 +246,8 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "fortis-hospital-delhi",
-      "apollo-hospitals-hyderabad",
+      "olive-hospitals",
+      "tx-hospitals",
       "max-healthcare-delhi"
     ],
     "doctorSlugs": [
@@ -260,7 +260,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1628348070889-c81685011187?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cardiac-care.jpg",
         "alt": "Pacemaker Implantation in India for international patients"
       }
     ],
@@ -314,9 +314,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-chennai",
-      "medanta-gurugram",
-      "apollo-hospitals-hyderabad"
+      "olive-hospitals",
+      "tx-hospitals",
+      "medicover-hospitals"
     ],
     "doctorSlugs": [
       "dr-rajesh-kumar-cardiologist"
@@ -328,7 +328,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1628348070889-c81685011187?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cardiac-care.jpg",
         "alt": "Pediatric Heart Surgery in India for international patients"
       }
     ],
@@ -382,9 +382,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-hyderabad",
-      "apollo-hospitals-chennai",
-      "manipal-hospital-bangalore"
+      "tx-hospitals",
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [
       "dr-rajesh-kumar-cardiologist"
@@ -396,7 +396,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1628348070889-c81685011187?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cardiac-care.jpg",
         "alt": "ASD / VSD Closure Surgery in India for international patients"
       }
     ],
@@ -450,9 +450,9 @@
       "Long-term immunosuppression and remote follow-up coordination"
     ],
     "hospitalSlugs": [
-      "medanta-gurugram",
-      "apollo-hospitals-chennai",
-      "kokilaben-hospital-mumbai"
+      "medicover-hospitals",
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [
       "dr-rajesh-kumar-cardiologist",
@@ -466,7 +466,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1628348070889-c81685011187?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cardiac-care.jpg",
         "alt": "Heart Transplant in India for international patients"
       }
     ],
@@ -520,9 +520,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "medanta-gurugram",
-      "apollo-hospitals-hyderabad",
-      "kokilaben-hospital-mumbai"
+      "max-healthcare-delhi",
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [
       "dr-rajesh-kumar-cardiologist"
@@ -534,7 +534,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1628348070889-c81685011187?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cardiac-care.jpg",
         "alt": "TAVR (Transcatheter Aortic Valve Replacement) in India for international patients"
       }
     ],
@@ -588,9 +588,9 @@
       "Discharge with rehab plan and remote follow-up support"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-chennai",
-      "kokilaben-hospital-mumbai"
+      "olive-hospitals",
+      "tx-hospitals",
+      "medicover-hospitals"
     ],
     "doctorSlugs": [
       "dr-vikram-singh-orthopedic"
@@ -603,7 +603,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/orthopaedics.jpg",
         "alt": "Total Knee Replacement in India for international patients"
       }
     ],
@@ -658,9 +658,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "fortis-hospital-delhi",
-      "apollo-hospitals-chennai"
+      "tx-hospitals",
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [
       "dr-vikram-singh-orthopedic"
@@ -673,7 +673,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/orthopaedics.jpg",
         "alt": "Hip Replacement in India for international patients"
       }
     ],
@@ -727,8 +727,8 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "medanta-gurugram",
-      "manipal-hospital-bangalore",
+      "tx-hospitals",
+      "medicover-hospitals",
       "max-healthcare-delhi"
     ],
     "doctorSlugs": [
@@ -743,7 +743,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/orthopaedics.jpg",
         "alt": "Spine Surgery (Discectomy / Fusion) in India for international patients"
       }
     ],
@@ -797,9 +797,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "kokilaben-hospital-mumbai",
-      "fortis-hospital-delhi"
+      "tx-hospitals",
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [
       "dr-vikram-singh-orthopedic"
@@ -811,7 +811,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/orthopaedics.jpg",
         "alt": "ACL Reconstruction in India for international patients"
       }
     ],
@@ -865,9 +865,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-chennai",
-      "manipal-hospital-bangalore",
-      "kokilaben-hospital-mumbai"
+      "medicover-hospitals",
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [
       "dr-vikram-singh-orthopedic"
@@ -879,7 +879,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/orthopaedics.jpg",
         "alt": "Shoulder Replacement in India for international patients"
       }
     ],
@@ -933,9 +933,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-chennai",
-      "medanta-gurugram"
+      "max-healthcare-delhi",
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [
       "dr-vikram-singh-orthopedic"
@@ -947,7 +947,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/orthopaedics.jpg",
         "alt": "Bilateral Knee Replacement in India for international patients"
       }
     ],
@@ -1001,9 +1001,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "kokilaben-hospital-mumbai",
-      "fortis-hospital-delhi"
+      "olive-hospitals",
+      "tx-hospitals",
+      "medicover-hospitals"
     ],
     "doctorSlugs": [
       "dr-vikram-singh-orthopedic"
@@ -1015,7 +1015,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/orthopaedics.jpg",
         "alt": "Sports Injury Surgery in India for international patients"
       }
     ],
@@ -1069,9 +1069,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "medanta-gurugram",
+      "olive-hospitals",
       "max-healthcare-delhi",
-      "apollo-hospitals-chennai"
+      "tx-hospitals"
     ],
     "doctorSlugs": [
       "dr-vikram-singh-orthopedic",
@@ -1084,7 +1084,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/orthopaedics.jpg",
         "alt": "Scoliosis Correction Surgery in India for international patients"
       }
     ],
@@ -1138,9 +1138,8 @@
       "Progress reviews and plan for further therapy or travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-chennai",
       "max-healthcare-delhi",
-      "yashoda-hospitals-hyderabad"
+      "olive-hospitals"
     ],
     "doctorSlugs": [
       "dr-anita-sharma-oncologist"
@@ -1153,7 +1152,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cancer.jpg",
         "alt": "Chemotherapy in India for international patients"
       }
     ],
@@ -1207,9 +1206,8 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-chennai",
-      "max-healthcare-delhi",
-      "yashoda-hospitals-hyderabad"
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [
       "dr-anita-sharma-oncologist"
@@ -1222,7 +1220,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cancer.jpg",
         "alt": "Radiation Therapy in India for international patients"
       }
     ],
@@ -1276,8 +1274,8 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-chennai",
-      "kokilaben-hospital-mumbai",
+      "tx-hospitals",
+      "medicover-hospitals",
       "max-healthcare-delhi"
     ],
     "doctorSlugs": [
@@ -1291,7 +1289,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cancer.jpg",
         "alt": "Breast Cancer Treatment in India for international patients"
       }
     ],
@@ -1345,9 +1343,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-chennai",
-      "medanta-gurugram",
-      "yashoda-hospitals-hyderabad"
+      "tx-hospitals",
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [
       "dr-anita-sharma-oncologist"
@@ -1361,7 +1359,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/hematology.jpg",
         "alt": "Bone Marrow Transplant in India for international patients"
       }
     ],
@@ -1430,9 +1428,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "medanta-gurugram",
-      "apollo-hospitals-hyderabad",
-      "kokilaben-hospital-mumbai"
+      "medicover-hospitals",
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [
       "dr-anita-sharma-oncologist"
@@ -1444,7 +1442,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cancer.jpg",
         "alt": "Robotic Cancer Surgery (da Vinci) in India for international patients"
       }
     ],
@@ -1499,8 +1497,7 @@
     ],
     "hospitalSlugs": [
       "max-healthcare-delhi",
-      "apollo-hospitals-chennai",
-      "yashoda-hospitals-hyderabad"
+      "medicover-hospitals"
     ],
     "doctorSlugs": [
       "dr-anita-sharma-oncologist"
@@ -1512,7 +1509,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cancer.jpg",
         "alt": "Immunotherapy in India for international patients"
       }
     ],
@@ -1566,9 +1563,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-chennai",
+      "tx-hospitals",
       "max-healthcare-delhi",
-      "manipal-hospital-bangalore"
+      "medicover-hospitals"
     ],
     "doctorSlugs": [
       "dr-anita-sharma-oncologist"
@@ -1580,7 +1577,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cancer.jpg",
         "alt": "Oral / Throat Cancer Treatment in India for international patients"
       }
     ],
@@ -1634,9 +1631,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "medanta-gurugram",
-      "kokilaben-hospital-mumbai",
-      "apollo-hospitals-hyderabad"
+      "tx-hospitals",
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [
       "dr-anita-sharma-oncologist"
@@ -1648,7 +1645,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cancer.jpg",
         "alt": "Prostate Cancer Treatment in India for international patients"
       }
     ],
@@ -1702,8 +1699,9 @@
       "Beta-hCG follow-up and guidance for travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "kokilaben-hospital-mumbai"
+      "medicover-hospitals",
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [
       "dr-priya-reddy-fertility"
@@ -1716,7 +1714,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/fertility.jpg",
         "alt": "IVF Treatment in India for international patients"
       }
     ],
@@ -1771,8 +1769,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "kokilaben-hospital-mumbai"
+      "max-healthcare-delhi",
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [
       "dr-priya-reddy-fertility"
@@ -1784,7 +1783,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/fertility.jpg",
         "alt": "ICSI Treatment in India for international patients"
       }
     ],
@@ -1838,8 +1837,9 @@
       "Post-birth documentation guidance as applicable"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "kokilaben-hospital-mumbai"
+      "olive-hospitals",
+      "tx-hospitals",
+      "medicover-hospitals"
     ],
     "doctorSlugs": [
       "dr-priya-reddy-fertility"
@@ -1851,7 +1851,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/fertility.jpg",
         "alt": "Surrogacy for Foreigners in India for international patients"
       }
     ],
@@ -1905,8 +1905,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "kokilaben-hospital-mumbai"
+      "tx-hospitals",
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [
       "dr-priya-reddy-fertility"
@@ -1918,7 +1919,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/fertility.jpg",
         "alt": "Egg Donation / Freezing in India for international patients"
       }
     ],
@@ -1972,8 +1973,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "kokilaben-hospital-mumbai"
+      "medicover-hospitals",
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [
       "dr-priya-reddy-fertility"
@@ -1985,7 +1987,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/fertility.jpg",
         "alt": "IUI Treatment in India for international patients"
       }
     ],
@@ -2039,9 +2041,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "kokilaben-hospital-mumbai",
-      "apollo-hospitals-hyderabad"
+      "max-healthcare-delhi",
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [
       "dr-priya-reddy-fertility"
@@ -2053,7 +2055,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/fertility.jpg",
         "alt": "Male Infertility Treatment in India for international patients"
       }
     ],
@@ -2107,9 +2109,8 @@
       "Discharge plan, meds, and follow-up imaging schedule"
     ],
     "hospitalSlugs": [
-      "medanta-gurugram",
-      "apollo-hospitals-hyderabad",
-      "max-healthcare-delhi"
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [
       "dr-meera-nair-neurosurgeon"
@@ -2122,7 +2123,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/neurosurgery.jpg",
         "alt": "Brain Tumor Surgery in India for international patients"
       }
     ],
@@ -2176,9 +2177,8 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "medanta-gurugram",
-      "max-healthcare-delhi",
-      "apollo-hospitals-chennai"
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [
       "dr-meera-nair-neurosurgeon"
@@ -2191,7 +2191,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/neurosurgery.jpg",
         "alt": "Spine Neurosurgery in India for international patients"
       }
     ],
@@ -2245,9 +2245,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "medanta-gurugram",
-      "apollo-hospitals-hyderabad",
-      "manipal-hospital-bangalore"
+      "medicover-hospitals",
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [
       "dr-meera-nair-neurosurgeon"
@@ -2259,7 +2259,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/neurosurgery.jpg",
         "alt": "Epilepsy Surgery in India for international patients"
       }
     ],
@@ -2313,8 +2313,7 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "medanta-gurugram",
-      "apollo-hospitals-chennai",
+      "medicover-hospitals",
       "max-healthcare-delhi"
     ],
     "doctorSlugs": [
@@ -2327,7 +2326,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/neurosurgery.jpg",
         "alt": "Deep Brain Stimulation (Parkinson's) in India for international patients"
       }
     ],
@@ -2381,9 +2380,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "medanta-gurugram",
-      "apollo-hospitals-hyderabad",
-      "manipal-hospital-bangalore"
+      "medicover-hospitals",
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [
       "dr-meera-nair-neurosurgeon"
@@ -2395,7 +2394,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/neurosurgery.jpg",
         "alt": "Stroke Treatment & Rehab in India for international patients"
       }
     ],
@@ -2449,9 +2448,8 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "medanta-gurugram",
-      "max-healthcare-delhi",
-      "apollo-hospitals-hyderabad"
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [
       "dr-meera-nair-neurosurgeon"
@@ -2463,7 +2461,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/neurosurgery.jpg",
         "alt": "Aneurysm Surgery in India for international patients"
       }
     ],
@@ -2517,9 +2515,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "kokilaben-hospital-mumbai",
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-hyderabad"
+      "medicover-hospitals",
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "rhinoplasty-cost-india",
@@ -2529,7 +2527,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cosmetic.jpg",
         "alt": "Rhinoplasty (Nose Job) in India for international patients"
       }
     ],
@@ -2594,9 +2592,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "kokilaben-hospital-mumbai",
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-chennai"
+      "max-healthcare-delhi",
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "liposuction-cost-india",
@@ -2606,7 +2604,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cosmetic.jpg",
         "alt": "Liposuction in India for international patients"
       }
     ],
@@ -2671,9 +2669,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "kokilaben-hospital-mumbai",
-      "apollo-hospitals-hyderabad",
-      "manipal-hospital-bangalore"
+      "olive-hospitals",
+      "tx-hospitals",
+      "medicover-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "breast-augmentation-reduction-india",
@@ -2683,7 +2681,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cosmetic.jpg",
         "alt": "Breast Augmentation / Reduction in India for international patients"
       }
     ],
@@ -2748,9 +2746,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "kokilaben-hospital-mumbai",
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-chennai"
+      "tx-hospitals",
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "tummy-tuck-abdominoplasty-india",
@@ -2760,7 +2758,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cosmetic.jpg",
         "alt": "Tummy Tuck (Abdominoplasty) in India for international patients"
       }
     ],
@@ -2825,8 +2823,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-hyderabad"
+      "medicover-hospitals",
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "hair-transplant-cost-india",
@@ -2836,7 +2835,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cosmetic.jpg",
         "alt": "Hair Transplant in India for international patients"
       }
     ],
@@ -2901,9 +2900,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "kokilaben-hospital-mumbai",
-      "apollo-hospitals-chennai",
-      "manipal-hospital-bangalore"
+      "max-healthcare-delhi",
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "facelift-surgery-india",
@@ -2913,7 +2912,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cosmetic.jpg",
         "alt": "Facelift Surgery in India for international patients"
       }
     ],
@@ -2978,9 +2977,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "kokilaben-hospital-mumbai",
-      "apollo-hospitals-hyderabad"
+      "olive-hospitals",
+      "tx-hospitals",
+      "medicover-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "gynecomastia-surgery-india",
@@ -2990,7 +2989,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cosmetic.jpg",
         "alt": "Gynecomastia Surgery in India for international patients"
       }
     ],
@@ -3055,9 +3054,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "medanta-gurugram",
-      "apollo-hospitals-chennai"
+      "tx-hospitals",
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [
       "dr-arjun-patel-transplant"
@@ -3069,7 +3068,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/general-surgery.jpg",
         "alt": "Bariatric / Weight Loss Surgery in India for international patients"
       }
     ],
@@ -3123,9 +3122,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-hyderabad",
-      "manipal-hospital-bangalore",
-      "fortis-hospital-delhi"
+      "medicover-hospitals",
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "gallbladder-removal-laparoscopic-india",
@@ -3135,7 +3134,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/general-surgery.jpg",
         "alt": "Gallbladder Removal (Laparoscopic) in India for international patients"
       }
     ],
@@ -3189,9 +3188,9 @@
       "Immunosuppression training and long-term follow-up plan"
     ],
     "hospitalSlugs": [
-      "medanta-gurugram",
-      "apollo-hospitals-chennai",
-      "kokilaben-hospital-mumbai"
+      "max-healthcare-delhi",
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [
       "dr-arjun-patel-transplant"
@@ -3203,7 +3202,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/general-surgery.jpg",
         "alt": "Kidney Transplant in India for international patients"
       }
     ],
@@ -3257,9 +3256,9 @@
       "Long-term immunosuppression and remote follow-up support"
     ],
     "hospitalSlugs": [
-      "medanta-gurugram",
-      "apollo-hospitals-chennai",
-      "yashoda-hospitals-hyderabad"
+      "olive-hospitals",
+      "tx-hospitals",
+      "medicover-hospitals"
     ],
     "doctorSlugs": [
       "dr-arjun-patel-transplant"
@@ -3271,7 +3270,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/general-surgery.jpg",
         "alt": "Liver Transplant in India for international patients"
       }
     ],
@@ -3325,9 +3324,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-hyderabad",
-      "manipal-hospital-bangalore",
-      "fortis-hospital-delhi"
+      "tx-hospitals",
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "hernia-repair-surgery-india",
@@ -3337,7 +3336,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/general-surgery.jpg",
         "alt": "Hernia Repair Surgery in India for international patients"
       }
     ],
@@ -3391,8 +3390,8 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-hyderabad",
-      "manipal-hospital-bangalore",
+      "tx-hospitals",
+      "medicover-hospitals",
       "max-healthcare-delhi"
     ],
     "doctorSlugs": [],
@@ -3403,7 +3402,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/general-surgery.jpg",
         "alt": "Appendix Surgery in India for international patients"
       }
     ],
@@ -3457,9 +3456,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-hyderabad",
-      "kokilaben-hospital-mumbai"
+      "tx-hospitals",
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "lasik-eye-surgery-cost-india",
@@ -3469,7 +3468,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/eye-care.jpg",
         "alt": "LASIK Eye Surgery in India for international patients"
       }
     ],
@@ -3523,9 +3522,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-chennai",
-      "manipal-hospital-bangalore",
-      "fortis-hospital-delhi"
+      "medicover-hospitals",
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "cataract-surgery-india",
@@ -3536,7 +3535,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/eye-care.jpg",
         "alt": "Cataract Surgery in India for international patients"
       }
     ],
@@ -3590,8 +3589,7 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-chennai",
-      "manipal-hospital-bangalore",
+      "medicover-hospitals",
       "max-healthcare-delhi"
     ],
     "doctorSlugs": [],
@@ -3602,7 +3600,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/eye-care.jpg",
         "alt": "Retina Surgery in India for international patients"
       }
     ],
@@ -3656,9 +3654,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-chennai",
-      "manipal-hospital-bangalore",
-      "kokilaben-hospital-mumbai"
+      "medicover-hospitals",
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "cornea-transplant-india",
@@ -3668,7 +3666,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/eye-care.jpg",
         "alt": "Cornea Transplant in India for international patients"
       }
     ],
@@ -3722,9 +3720,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-hyderabad",
-      "apollo-hospitals-chennai"
+      "max-healthcare-delhi",
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "glaucoma-treatment-india",
@@ -3734,7 +3732,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/eye-care.jpg",
         "alt": "Glaucoma Treatment in India for international patients"
       }
     ],
@@ -3788,8 +3786,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-hyderabad",
-      "manipal-hospital-bangalore"
+      "olive-hospitals",
+      "tx-hospitals",
+      "medicover-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "dental-implants-cost-india",
@@ -3799,7 +3798,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/dental.jpg",
         "alt": "Dental Implants in India for international patients"
       }
     ],
@@ -3853,9 +3852,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-hyderabad",
-      "manipal-hospital-bangalore",
-      "kokilaben-hospital-mumbai"
+      "tx-hospitals",
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "full-mouth-rehabilitation-india",
@@ -3865,7 +3864,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/dental.jpg",
         "alt": "Full Mouth Rehabilitation in India for international patients"
       }
     ],
@@ -3919,8 +3918,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-hyderabad",
-      "manipal-hospital-bangalore"
+      "medicover-hospitals",
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "root-canal-treatment-india",
@@ -3930,7 +3930,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/dental.jpg",
         "alt": "Root Canal Treatment in India for international patients"
       }
     ],
@@ -3984,8 +3984,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-hyderabad"
+      "max-healthcare-delhi",
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "smile-makeover-veneers-india",
@@ -3995,7 +3996,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/dental.jpg",
         "alt": "Smile Makeover / Veneers in India for international patients"
       }
     ],
@@ -4049,8 +4050,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-hyderabad"
+      "olive-hospitals",
+      "tx-hospitals",
+      "medicover-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "orthodontic-treatment-india",
@@ -4060,7 +4062,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/dental.jpg",
         "alt": "Orthodontic Treatment (Braces / Invisalign) in India for international patients"
       }
     ],
@@ -4114,7 +4116,9 @@
       "Home-care advice and follow-up guidance"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore"
+      "tx-hospitals",
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "ayurveda-panchakarma-packages-india",
@@ -4124,7 +4128,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/wellness.jpg",
         "alt": "Ayurveda Panchakarma Packages in India for international patients"
       }
     ],
@@ -4177,7 +4181,11 @@
       "Undergo yoga and wellness retreat booking with inpatient monitoring as needed",
       "Discharge planning, medications, and follow-up before travel home"
     ],
-    "hospitalSlugs": [],
+    "hospitalSlugs": [
+      "medicover-hospitals",
+      "max-healthcare-delhi",
+      "olive-hospitals"
+    ],
     "doctorSlugs": [],
     "faqSlugKey": "yoga-wellness-retreats-india",
     "relatedProcedures": [
@@ -4186,7 +4194,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/wellness.jpg",
         "alt": "Yoga & Wellness Retreats in India for international patients"
       }
     ],
@@ -4240,9 +4248,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "medanta-gurugram",
-      "apollo-hospitals-hyderabad"
+      "max-healthcare-delhi",
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [
       "dr-vikram-singh-orthopedic"
@@ -4255,7 +4263,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/wellness.jpg",
         "alt": "Post-Surgery Rehab & Recovery in India for international patients"
       }
     ],
@@ -4309,9 +4317,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "medanta-gurugram",
-      "apollo-hospitals-hyderabad",
-      "kokilaben-hospital-mumbai"
+      "olive-hospitals",
+      "tx-hospitals",
+      "medicover-hospitals"
     ],
     "doctorSlugs": [
       "dr-suresh-mehta-urologist"
@@ -4324,7 +4332,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/urology.jpg",
         "alt": "Prostate Surgery (TURP) for international patients in India"
       }
     ],
@@ -4383,9 +4391,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "medanta-gurugram",
-      "apollo-hospitals-chennai",
-      "kokilaben-hospital-mumbai"
+      "tx-hospitals",
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [
       "dr-suresh-mehta-urologist",
@@ -4399,7 +4407,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/urology.jpg",
         "alt": "Robotic Prostatectomy for international patients in India"
       }
     ],
@@ -4456,9 +4464,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-hyderabad",
-      "manipal-hospital-bangalore",
-      "fortis-hospital-delhi"
+      "medicover-hospitals",
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [
       "dr-suresh-mehta-urologist"
@@ -4471,7 +4479,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/urology.jpg",
         "alt": "Kidney Stone Treatment for international patients in India"
       }
     ],
@@ -4530,9 +4538,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-hyderabad",
-      "kokilaben-hospital-mumbai"
+      "max-healthcare-delhi",
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [
       "dr-suresh-mehta-urologist",
@@ -4546,7 +4554,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/urology.jpg",
         "alt": "Varicocele Surgery for international patients in India"
       }
     ],
@@ -4603,9 +4611,8 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "medanta-gurugram",
-      "apollo-hospitals-chennai",
-      "max-healthcare-delhi"
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [
       "dr-suresh-mehta-urologist"
@@ -4617,7 +4624,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/urology.jpg",
         "alt": "Urethral Stricture Surgery for international patients in India"
       }
     ],
@@ -4673,8 +4680,7 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "medanta-gurugram",
-      "apollo-hospitals-chennai",
+      "medicover-hospitals",
       "max-healthcare-delhi"
     ],
     "doctorSlugs": [
@@ -4689,7 +4695,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/urology.jpg",
         "alt": "Bladder Cancer Surgery for international patients in India"
       }
     ],
@@ -4746,9 +4752,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "kokilaben-hospital-mumbai",
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-hyderabad"
+      "medicover-hospitals",
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [
       "dr-suresh-mehta-urologist"
@@ -4760,7 +4766,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/urology.jpg",
         "alt": "Male Sexual Health Treatment for international patients in India"
       }
     ],
@@ -4817,9 +4823,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-chennai",
-      "kokilaben-hospital-mumbai"
+      "max-healthcare-delhi",
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [
       "dr-neha-kapoor-gynecologist"
@@ -4832,7 +4838,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/gynecology.jpg",
         "alt": "Hysterectomy for international patients in India"
       }
     ],
@@ -4890,9 +4896,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "medanta-gurugram",
-      "apollo-hospitals-hyderabad"
+      "olive-hospitals",
+      "tx-hospitals",
+      "medicover-hospitals"
     ],
     "doctorSlugs": [
       "dr-neha-kapoor-gynecologist",
@@ -4906,7 +4912,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/gynecology.jpg",
         "alt": "Fibroid Removal (Myomectomy) for international patients in India"
       }
     ],
@@ -4964,9 +4970,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "kokilaben-hospital-mumbai",
-      "apollo-hospitals-chennai"
+      "tx-hospitals",
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [
       "dr-neha-kapoor-gynecologist",
@@ -4980,7 +4986,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/gynecology.jpg",
         "alt": "Endometriosis Treatment for international patients in India"
       }
     ],
@@ -5037,9 +5043,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-hyderabad",
-      "manipal-hospital-bangalore",
-      "fortis-hospital-delhi"
+      "medicover-hospitals",
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [
       "dr-neha-kapoor-gynecologist"
@@ -5052,7 +5058,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/gynecology.jpg",
         "alt": "Ovarian Cyst Removal for international patients in India"
       }
     ],
@@ -5108,9 +5114,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "medanta-gurugram",
-      "kokilaben-hospital-mumbai"
+      "max-healthcare-delhi",
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [
       "dr-neha-kapoor-gynecologist"
@@ -5123,7 +5129,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/gynecology.jpg",
         "alt": "Laparoscopic Gynecology Surgery for international patients in India"
       }
     ],
@@ -5179,9 +5185,8 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-chennai",
       "max-healthcare-delhi",
-      "medanta-gurugram"
+      "olive-hospitals"
     ],
     "doctorSlugs": [
       "dr-neha-kapoor-gynecologist",
@@ -5195,7 +5200,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/gynecology.jpg",
         "alt": "Cervical Cancer Treatment for international patients in India"
       }
     ],
@@ -5251,8 +5256,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "kokilaben-hospital-mumbai"
+      "max-healthcare-delhi",
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [
       "dr-neha-kapoor-gynecologist",
@@ -5266,7 +5272,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/gynecology.jpg",
         "alt": "PCOS Treatment for international patients in India"
       }
     ],
@@ -5323,9 +5329,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-chennai",
-      "medanta-gurugram"
+      "olive-hospitals",
+      "tx-hospitals",
+      "medicover-hospitals"
     ],
     "doctorSlugs": [
       "dr-neha-kapoor-gynecologist"
@@ -5337,7 +5343,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/gynecology.jpg",
         "alt": "High-Risk Pregnancy Care for international patients in India"
       }
     ],
@@ -5394,9 +5400,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-chennai",
-      "manipal-hospital-bangalore",
-      "medanta-gurugram"
+      "tx-hospitals",
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [
       "dr-anil-desai-ent"
@@ -5408,7 +5414,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1516544656196-9d0eb7f8e19c?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/ent.jpg",
         "alt": "Cochlear Implant for international patients in India"
       }
     ],
@@ -5466,9 +5472,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-hyderabad",
-      "manipal-hospital-bangalore",
-      "fortis-hospital-delhi"
+      "medicover-hospitals",
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [
       "dr-anil-desai-ent"
@@ -5481,7 +5487,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1516544656196-9d0eb7f8e19c?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/ent.jpg",
         "alt": "Sinus Surgery (FESS) for international patients in India"
       }
     ],
@@ -5538,9 +5544,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-hyderabad",
-      "kokilaben-hospital-mumbai"
+      "max-healthcare-delhi",
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [
       "dr-anil-desai-ent"
@@ -5552,7 +5558,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1516544656196-9d0eb7f8e19c?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/ent.jpg",
         "alt": "Septoplasty for international patients in India"
       }
     ],
@@ -5608,9 +5614,8 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-hyderabad",
-      "manipal-hospital-bangalore",
-      "max-healthcare-delhi"
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [
       "dr-anil-desai-ent"
@@ -5622,7 +5627,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1516544656196-9d0eb7f8e19c?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/ent.jpg",
         "alt": "Tonsillectomy for international patients in India"
       }
     ],
@@ -5678,9 +5683,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "medanta-gurugram",
-      "apollo-hospitals-chennai",
-      "manipal-hospital-bangalore"
+      "max-healthcare-delhi",
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [
       "dr-anil-desai-ent"
@@ -5692,7 +5697,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1516544656196-9d0eb7f8e19c?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/ent.jpg",
         "alt": "Thyroidectomy for international patients in India"
       }
     ],
@@ -5749,9 +5754,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-chennai",
-      "manipal-hospital-bangalore",
-      "medanta-gurugram"
+      "olive-hospitals",
+      "tx-hospitals",
+      "medicover-hospitals"
     ],
     "doctorSlugs": [
       "dr-anil-desai-ent"
@@ -5763,7 +5768,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1516544656196-9d0eb7f8e19c?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/ent.jpg",
         "alt": "Hearing Loss Treatment for international patients in India"
       }
     ],
@@ -5820,9 +5825,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-hyderabad",
-      "yashoda-hospitals-hyderabad",
-      "manipal-hospital-bangalore"
+      "tx-hospitals",
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [
       "dr-kavita-rao-gastroenterologist"
@@ -5835,7 +5840,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/gastroenterology.jpg",
         "alt": "GI Endoscopy & Colonoscopy for international patients in India"
       }
     ],
@@ -5892,9 +5897,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "medanta-gurugram",
-      "apollo-hospitals-chennai",
-      "yashoda-hospitals-hyderabad"
+      "medicover-hospitals",
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [
       "dr-kavita-rao-gastroenterologist"
@@ -5907,7 +5912,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/gastroenterology.jpg",
         "alt": "ERCP Treatment for international patients in India"
       }
     ],
@@ -5964,9 +5969,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "medanta-gurugram",
-      "yashoda-hospitals-hyderabad",
-      "apollo-hospitals-chennai"
+      "max-healthcare-delhi",
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [
       "dr-kavita-rao-gastroenterologist",
@@ -5980,7 +5985,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/gastroenterology.jpg",
         "alt": "Liver Disease Treatment for international patients in India"
       }
     ],
@@ -6037,9 +6042,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-hyderabad",
-      "medanta-gurugram"
+      "olive-hospitals",
+      "tx-hospitals",
+      "medicover-hospitals"
     ],
     "doctorSlugs": [
       "dr-kavita-rao-gastroenterologist"
@@ -6051,7 +6056,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/gastroenterology.jpg",
         "alt": "IBD Treatment (Crohn's / Ulcerative Colitis) for international patients in India"
       }
     ],
@@ -6108,9 +6113,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "medanta-gurugram",
-      "apollo-hospitals-chennai",
-      "yashoda-hospitals-hyderabad"
+      "tx-hospitals",
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [
       "dr-kavita-rao-gastroenterologist"
@@ -6122,7 +6127,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/gastroenterology.jpg",
         "alt": "Pancreatitis Treatment for international patients in India"
       }
     ],
@@ -6178,9 +6183,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-hyderabad",
-      "medanta-gurugram"
+      "medicover-hospitals",
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "thyroid-treatment-india",
@@ -6190,7 +6195,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/endocrinology.jpg",
         "alt": "Thyroid Treatment for international patients in India"
       }
     ],
@@ -6247,8 +6252,7 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-chennai",
+      "medicover-hospitals",
       "max-healthcare-delhi"
     ],
     "doctorSlugs": [],
@@ -6259,7 +6263,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/endocrinology.jpg",
         "alt": "Diabetes Treatment Package for international patients in India"
       }
     ],
@@ -6316,9 +6320,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-hyderabad",
-      "medanta-gurugram",
-      "manipal-hospital-bangalore"
+      "medicover-hospitals",
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "diabetic-foot-treatment-india",
@@ -6329,7 +6333,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/endocrinology.jpg",
         "alt": "Diabetic Foot Treatment for international patients in India"
       }
     ],
@@ -6385,8 +6389,7 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "medanta-gurugram",
-      "apollo-hospitals-hyderabad",
+      "medicover-hospitals",
       "max-healthcare-delhi"
     ],
     "doctorSlugs": [
@@ -6399,7 +6402,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/endocrinology.jpg",
         "alt": "Pituitary Tumor Treatment for international patients in India"
       }
     ],
@@ -6455,9 +6458,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "fortis-hospital-delhi",
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-hyderabad"
+      "medicover-hospitals",
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "varicose-vein-treatment-india",
@@ -6467,7 +6470,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/vascular.jpg",
         "alt": "Varicose Vein Treatment for international patients in India"
       }
     ],
@@ -6524,9 +6527,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "medanta-gurugram",
-      "apollo-hospitals-chennai",
-      "fortis-hospital-delhi"
+      "max-healthcare-delhi",
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [
       "dr-rajesh-kumar-cardiologist"
@@ -6539,7 +6542,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/vascular.jpg",
         "alt": "Peripheral Angioplasty for international patients in India"
       }
     ],
@@ -6596,9 +6599,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "medanta-gurugram",
-      "apollo-hospitals-hyderabad",
-      "kokilaben-hospital-mumbai"
+      "olive-hospitals",
+      "tx-hospitals",
+      "medicover-hospitals"
     ],
     "doctorSlugs": [
       "dr-rajesh-kumar-cardiologist"
@@ -6611,7 +6614,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/vascular.jpg",
         "alt": "Aortic Aneurysm Surgery for international patients in India"
       }
     ],
@@ -6668,9 +6671,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-hyderabad",
-      "medanta-gurugram",
-      "manipal-hospital-bangalore"
+      "tx-hospitals",
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [
       "dr-arjun-patel-transplant"
@@ -6682,7 +6685,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/vascular.jpg",
         "alt": "AV Fistula / Dialysis Access Surgery for international patients in India"
       }
     ],
@@ -6738,8 +6741,8 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-chennai",
+      "tx-hospitals",
+      "medicover-hospitals",
       "max-healthcare-delhi"
     ],
     "doctorSlugs": [
@@ -6752,7 +6755,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/dermatology.jpg",
         "alt": "Skin Cancer Surgery for international patients in India"
       }
     ],
@@ -6820,8 +6823,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-hyderabad"
+      "tx-hospitals",
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "vitiligo-treatment-india",
@@ -6831,7 +6835,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/dermatology.jpg",
         "alt": "Vitiligo Treatment for international patients in India"
       }
     ],
@@ -6899,9 +6903,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
+      "tx-hospitals",
       "max-healthcare-delhi",
-      "apollo-hospitals-chennai"
+      "medicover-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "psoriasis-treatment-india",
@@ -6911,7 +6915,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/dermatology.jpg",
         "alt": "Psoriasis Treatment for international patients in India"
       }
     ],
@@ -6978,9 +6982,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-chennai",
-      "manipal-hospital-bangalore",
-      "medanta-gurugram"
+      "tx-hospitals",
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "pediatric-surgery-india",
@@ -6991,7 +6995,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/pediatrics.jpg",
         "alt": "Pediatric Surgery for international patients in India"
       }
     ],
@@ -7048,8 +7052,8 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-chennai",
-      "medanta-gurugram",
+      "tx-hospitals",
+      "medicover-hospitals",
       "max-healthcare-delhi"
     ],
     "doctorSlugs": [
@@ -7063,7 +7067,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/pediatrics.jpg",
         "alt": "Pediatric Cancer Treatment for international patients in India"
       }
     ],
@@ -7120,9 +7124,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-chennai",
-      "medanta-gurugram"
+      "tx-hospitals",
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [
       "dr-vikram-singh-orthopedic"
@@ -7134,7 +7138,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/pediatrics.jpg",
         "alt": "Pediatric Orthopedic Surgery for international patients in India"
       }
     ],
@@ -7190,8 +7194,8 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "medanta-gurugram",
-      "apollo-hospitals-chennai",
+      "tx-hospitals",
+      "medicover-hospitals",
       "max-healthcare-delhi"
     ],
     "doctorSlugs": [
@@ -7205,7 +7209,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/pulmonology.jpg",
         "alt": "Lung Surgery for international patients in India"
       }
     ],
@@ -7262,9 +7266,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-chennai",
-      "medanta-gurugram",
-      "yashoda-hospitals-hyderabad"
+      "tx-hospitals",
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [
       "dr-anita-sharma-oncologist"
@@ -7277,7 +7281,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/pulmonology.jpg",
         "alt": "Lung Cancer Treatment for international patients in India"
       }
     ],
@@ -7334,9 +7338,9 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-hyderabad",
-      "medanta-gurugram",
-      "manipal-hospital-bangalore"
+      "medicover-hospitals",
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "bronchoscopy-cost-india",
@@ -7347,7 +7351,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/pulmonology.jpg",
         "alt": "Bronchoscopy for international patients in India"
       }
     ],
@@ -7403,8 +7407,7 @@
       "Discharge planning, medications, and follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-chennai",
+      "medicover-hospitals",
       "max-healthcare-delhi"
     ],
     "doctorSlugs": [],
@@ -7415,7 +7418,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/pulmonology.jpg",
         "alt": "COPD & Asthma Treatment for international patients in India"
       }
     ],
@@ -7480,10 +7483,9 @@
       "Recovery monitoring, medications, and travel-clearance guidance before flying home"
     ],
     "hospitalSlugs": [
-      "kokilaben-hospital-mumbai",
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-hyderabad",
-      "apollo-hospitals-chennai"
+      "medicover-hospitals",
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "blepharoplasty-eyelid-surgery-india",
@@ -7493,7 +7495,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cosmetic.jpg",
         "alt": "Blepharoplasty (Eyelid Surgery) in India for international patients"
       }
     ],
@@ -7562,10 +7564,9 @@
       "Recovery monitoring, medications, and travel-clearance guidance before flying home"
     ],
     "hospitalSlugs": [
-      "kokilaben-hospital-mumbai",
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-hyderabad",
-      "apollo-hospitals-chennai"
+      "max-healthcare-delhi",
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "mommy-makeover-india",
@@ -7576,7 +7577,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cosmetic.jpg",
         "alt": "Mommy Makeover in India for international patients"
       }
     ],
@@ -7645,10 +7646,9 @@
       "Recovery monitoring, medications, and travel-clearance guidance before flying home"
     ],
     "hospitalSlugs": [
-      "kokilaben-hospital-mumbai",
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-hyderabad",
-      "apollo-hospitals-chennai"
+      "olive-hospitals",
+      "tx-hospitals",
+      "medicover-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "brazilian-butt-lift-bbl-india",
@@ -7658,7 +7658,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cosmetic.jpg",
         "alt": "Brazilian Butt Lift (BBL) in India for international patients"
       }
     ],
@@ -7727,10 +7727,9 @@
       "Recovery monitoring, medications, and travel-clearance guidance before flying home"
     ],
     "hospitalSlugs": [
-      "kokilaben-hospital-mumbai",
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-hyderabad",
-      "apollo-hospitals-chennai"
+      "tx-hospitals",
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "chin-augmentation-genioplasty-india",
@@ -7740,7 +7739,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cosmetic.jpg",
         "alt": "Chin Augmentation (Genioplasty) in India for international patients"
       }
     ],
@@ -7809,10 +7808,9 @@
       "Recovery monitoring, medications, and travel-clearance guidance before flying home"
     ],
     "hospitalSlugs": [
-      "kokilaben-hospital-mumbai",
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-hyderabad",
-      "apollo-hospitals-chennai"
+      "medicover-hospitals",
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "brow-lift-forehead-lift-india",
@@ -7822,7 +7820,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cosmetic.jpg",
         "alt": "Brow Lift (Forehead Lift) in India for international patients"
       }
     ],
@@ -7891,10 +7889,9 @@
       "Recovery monitoring, medications, and travel-clearance guidance before flying home"
     ],
     "hospitalSlugs": [
-      "kokilaben-hospital-mumbai",
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-hyderabad",
-      "apollo-hospitals-chennai"
+      "max-healthcare-delhi",
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "ear-reshaping-otoplasty-india",
@@ -7904,7 +7901,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cosmetic.jpg",
         "alt": "Ear Reshaping (Otoplasty) in India for international patients"
       }
     ],
@@ -7973,10 +7970,9 @@
       "Recovery monitoring, medications, and travel-clearance guidance before flying home"
     ],
     "hospitalSlugs": [
-      "kokilaben-hospital-mumbai",
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-hyderabad",
-      "apollo-hospitals-chennai"
+      "olive-hospitals",
+      "tx-hospitals",
+      "medicover-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "breast-lift-mastopexy-india",
@@ -7986,7 +7982,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cosmetic.jpg",
         "alt": "Breast Lift (Mastopexy) in India for international patients"
       }
     ],
@@ -8055,10 +8051,9 @@
       "Recovery monitoring, medications, and travel-clearance guidance before flying home"
     ],
     "hospitalSlugs": [
-      "kokilaben-hospital-mumbai",
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-hyderabad",
-      "apollo-hospitals-chennai"
+      "tx-hospitals",
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "body-contouring-after-weight-loss-india",
@@ -8069,7 +8064,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cosmetic.jpg",
         "alt": "Body Contouring After Weight Loss in India for international patients"
       }
     ],
@@ -8138,10 +8133,9 @@
       "Recovery monitoring, medications, and travel-clearance guidance before flying home"
     ],
     "hospitalSlugs": [
-      "kokilaben-hospital-mumbai",
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-hyderabad",
-      "apollo-hospitals-chennai"
+      "medicover-hospitals",
+      "max-healthcare-delhi",
+      "olive-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "fat-grafting-transfer-india",
@@ -8151,7 +8145,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cosmetic.jpg",
         "alt": "Fat Grafting / Fat Transfer in India for international patients"
       }
     ],
@@ -8220,10 +8214,9 @@
       "Recovery monitoring, medications, and travel-clearance guidance before flying home"
     ],
     "hospitalSlugs": [
-      "kokilaben-hospital-mumbai",
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-hyderabad",
-      "apollo-hospitals-chennai"
+      "max-healthcare-delhi",
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "scar-revision-surgery-india",
@@ -8233,7 +8226,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/cosmetic.jpg",
         "alt": "Scar Revision Surgery in India for international patients"
       }
     ],
@@ -8302,10 +8295,9 @@
       "Follow-up plan, medications/creams, and remote check-ins after you return home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-chennai",
       "max-healthcare-delhi",
-      "apollo-hospitals-hyderabad"
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "acne-scar-treatment-india",
@@ -8315,7 +8307,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/dermatology.jpg",
         "alt": "Acne Scar Treatment in India for international patients"
       }
     ],
@@ -8384,10 +8376,9 @@
       "Follow-up plan, medications/creams, and remote check-ins after you return home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-chennai",
       "max-healthcare-delhi",
-      "apollo-hospitals-hyderabad"
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "laser-skin-resurfacing-india",
@@ -8397,7 +8388,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/dermatology.jpg",
         "alt": "Laser Skin Resurfacing in India for international patients"
       }
     ],
@@ -8466,10 +8457,9 @@
       "Follow-up plan, medications/creams, and remote check-ins after you return home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-chennai",
       "max-healthcare-delhi",
-      "apollo-hospitals-hyderabad"
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "mole-skin-lesion-removal-india",
@@ -8479,7 +8469,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/dermatology.jpg",
         "alt": "Mole & Skin Lesion Removal in India for international patients"
       }
     ],
@@ -8548,10 +8538,9 @@
       "Follow-up plan, medications/creams, and remote check-ins after you return home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-chennai",
       "max-healthcare-delhi",
-      "apollo-hospitals-hyderabad"
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "eczema-atopic-dermatitis-treatment-india",
@@ -8561,7 +8550,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/dermatology.jpg",
         "alt": "Eczema / Atopic Dermatitis Treatment in India for international patients"
       }
     ],
@@ -8630,10 +8619,9 @@
       "Follow-up plan, medications/creams, and remote check-ins after you return home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-chennai",
       "max-healthcare-delhi",
-      "apollo-hospitals-hyderabad"
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "chemical-peel-india",
@@ -8643,7 +8631,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/dermatology.jpg",
         "alt": "Chemical Peel in India for international patients"
       }
     ],
@@ -8712,10 +8700,9 @@
       "Follow-up plan, medications/creams, and remote check-ins after you return home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-chennai",
       "max-healthcare-delhi",
-      "apollo-hospitals-hyderabad"
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "hair-loss-treatment-prp-india",
@@ -8725,7 +8712,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/dermatology.jpg",
         "alt": "Hair Loss Treatment (PRP / Medical) in India for international patients"
       }
     ],
@@ -8794,10 +8781,9 @@
       "Follow-up plan, medications/creams, and remote check-ins after you return home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-chennai",
       "max-healthcare-delhi",
-      "apollo-hospitals-hyderabad"
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "keloid-scar-treatment-india",
@@ -8807,7 +8793,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/dermatology.jpg",
         "alt": "Keloid Scar Treatment in India for international patients"
       }
     ],
@@ -8876,10 +8862,9 @@
       "Follow-up plan, medications/creams, and remote check-ins after you return home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-chennai",
       "max-healthcare-delhi",
-      "apollo-hospitals-hyderabad"
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "hyperpigmentation-melasma-treatment-india",
@@ -8889,7 +8874,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/dermatology.jpg",
         "alt": "Hyperpigmentation & Melasma Treatment in India for international patients"
       }
     ],
@@ -8958,10 +8943,9 @@
       "Follow-up plan, medications/creams, and remote check-ins after you return home"
     ],
     "hospitalSlugs": [
-      "manipal-hospital-bangalore",
-      "apollo-hospitals-chennai",
       "max-healthcare-delhi",
-      "apollo-hospitals-hyderabad"
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "burn-scar-reconstruction-india",
@@ -8971,7 +8955,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/dermatology.jpg",
         "alt": "Burn Scar Reconstruction in India for international patients"
       }
     ],
@@ -9040,11 +9024,10 @@
       "Discharge planning, infection precautions, and remote follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-chennai",
-      "medanta-gurugram",
-      "yashoda-hospitals-hyderabad",
       "max-healthcare-delhi",
-      "fortis-hospital-delhi"
+      "olive-hospitals",
+      "tx-hospitals",
+      "medicover-hospitals"
     ],
     "doctorSlugs": [
       "dr-anita-sharma-oncologist"
@@ -9057,7 +9040,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/hematology.jpg",
         "alt": "Leukemia Treatment in India for international patients"
       }
     ],
@@ -9126,11 +9109,10 @@
       "Discharge planning, infection precautions, and remote follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-chennai",
-      "medanta-gurugram",
-      "yashoda-hospitals-hyderabad",
-      "max-healthcare-delhi",
-      "fortis-hospital-delhi"
+      "olive-hospitals",
+      "tx-hospitals",
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [
       "dr-anita-sharma-oncologist"
@@ -9143,7 +9125,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/hematology.jpg",
         "alt": "Lymphoma Treatment in India for international patients"
       }
     ],
@@ -9212,11 +9194,10 @@
       "Discharge planning, infection precautions, and remote follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-chennai",
-      "medanta-gurugram",
-      "yashoda-hospitals-hyderabad",
+      "tx-hospitals",
+      "medicover-hospitals",
       "max-healthcare-delhi",
-      "fortis-hospital-delhi"
+      "olive-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "thalassemia-treatment-india",
@@ -9227,7 +9208,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/hematology.jpg",
         "alt": "Thalassemia Treatment in India for international patients"
       }
     ],
@@ -9296,11 +9277,10 @@
       "Discharge planning, infection precautions, and remote follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-chennai",
-      "medanta-gurugram",
-      "yashoda-hospitals-hyderabad",
+      "medicover-hospitals",
       "max-healthcare-delhi",
-      "fortis-hospital-delhi"
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "sickle-cell-treatment-india",
@@ -9311,7 +9291,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/hematology.jpg",
         "alt": "Sickle Cell Disease Treatment in India for international patients"
       }
     ],
@@ -9380,11 +9360,10 @@
       "Discharge planning, infection precautions, and remote follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-chennai",
-      "medanta-gurugram",
-      "yashoda-hospitals-hyderabad",
       "max-healthcare-delhi",
-      "fortis-hospital-delhi"
+      "olive-hospitals",
+      "tx-hospitals",
+      "medicover-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "aplastic-anemia-treatment-india",
@@ -9395,7 +9374,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/hematology.jpg",
         "alt": "Aplastic Anemia Treatment in India for international patients"
       }
     ],
@@ -9464,11 +9443,10 @@
       "Discharge planning, infection precautions, and remote follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-chennai",
-      "medanta-gurugram",
-      "yashoda-hospitals-hyderabad",
-      "max-healthcare-delhi",
-      "fortis-hospital-delhi"
+      "olive-hospitals",
+      "tx-hospitals",
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [
       "dr-anita-sharma-oncologist"
@@ -9481,7 +9459,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/hematology.jpg",
         "alt": "Multiple Myeloma Treatment in India for international patients"
       }
     ],
@@ -9550,11 +9528,10 @@
       "Discharge planning, infection precautions, and remote follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-chennai",
-      "medanta-gurugram",
-      "yashoda-hospitals-hyderabad",
+      "tx-hospitals",
+      "medicover-hospitals",
       "max-healthcare-delhi",
-      "fortis-hospital-delhi"
+      "olive-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "car-t-cell-therapy-india",
@@ -9565,7 +9542,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/hematology.jpg",
         "alt": "CAR-T Cell Therapy in India for international patients"
       }
     ],
@@ -9634,11 +9611,10 @@
       "Discharge planning, infection precautions, and remote follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-chennai",
-      "medanta-gurugram",
-      "yashoda-hospitals-hyderabad",
+      "medicover-hospitals",
       "max-healthcare-delhi",
-      "fortis-hospital-delhi"
+      "olive-hospitals",
+      "tx-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "autologous-stem-cell-transplant-india",
@@ -9649,7 +9625,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/hematology.jpg",
         "alt": "Autologous Stem Cell Transplant in India for international patients"
       }
     ],
@@ -9718,11 +9694,10 @@
       "Discharge planning, infection precautions, and remote follow-up before travel home"
     ],
     "hospitalSlugs": [
-      "apollo-hospitals-chennai",
-      "medanta-gurugram",
-      "yashoda-hospitals-hyderabad",
       "max-healthcare-delhi",
-      "fortis-hospital-delhi"
+      "olive-hospitals",
+      "tx-hospitals",
+      "medicover-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "allogeneic-stem-cell-transplant-india",
@@ -9733,7 +9708,7 @@
     ],
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/services/hematology.jpg",
         "alt": "Allogeneic Stem Cell Transplant in India for international patients"
       }
     ],

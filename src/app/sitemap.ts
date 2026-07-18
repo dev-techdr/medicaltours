@@ -6,11 +6,11 @@ import { getAllIndiaDomesticRoutes } from "@/data/indiaDomestic";
 import {
   getAllCategories,
   getAllCityHubs,
-  getAllCountries,
   getAllHospitals,
   getAllProcedures,
   getAllSpecialtyHubs,
-  getTestimonialsByCountry,
+  getStoryCountries,
+  getStoryProcedures,
   procedurePath,
 } from "@/lib/data";
 import { SITE } from "@/lib/site";
@@ -26,9 +26,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const mdxCities = getAllCities();
   const mdxCountries = getMdxCountries();
 
-  const storyCountries = getAllCountries().filter(
-    (c) => getTestimonialsByCountry(c.slug).length > 0
-  );
+  const storyCountries = getStoryCountries();
+  const storyTreatments = getStoryProcedures();
 
   const staticRoutes = [
     "",
@@ -114,6 +113,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
+  const storyTreatmentRoutes = storyTreatments.map((p) => ({
+    url: `${SITE.url}/patient-stories/treatment/${p.slug}`,
+    lastModified,
+    changeFrequency: "monthly" as const,
+    priority: 0.75,
+  }));
+
   const cityGuideRoutes = mdxCities.map((c) => ({
     url: `${SITE.url}/cities/${c.slug}`,
     lastModified,
@@ -157,6 +163,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...hospitalNetworkRoutes,
     ...specialtyRoutes,
     ...storyRoutes,
+    ...storyTreatmentRoutes,
     ...cityGuideRoutes,
     ...countryRoutes,
     ...blogRoutes,
