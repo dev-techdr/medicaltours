@@ -139,7 +139,7 @@ export function GlobalReach() {
               ensure a seamless experience for international patients.
             </p>
             <Link href="/countries" className="btn btn-light mt-8 w-fit">
-              Read More
+              Browse country guides
             </Link>
           </Reveal>
 
