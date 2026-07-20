@@ -43,7 +43,7 @@ function emailShell(opts: {
   bodyHtml: string;
   footerNote: string;
 }) {
-  const brand = "Medical Tours India";
+  const brand = SITE.name;
   const year = new Date().getFullYear();
 
   return `<!DOCTYPE html>
@@ -121,7 +121,7 @@ export function teamEnquiryEmail(data: EnquiryPayload) {
 
     <div style="margin-top:22px">
       <a href="${whatsappLink}" style="display:inline-block;padding:12px 18px;border-radius:10px;background:#25D366;color:#fff;font-size:14px;font-weight:700;text-decoration:none">Reply on WhatsApp</a>
-      <a href="mailto:${escapeHtml(data.email)}?subject=${encodeURIComponent(`Re: ${data.reference} — Medical Tours India`)}" style="display:inline-block;margin-left:8px;padding:12px 18px;border-radius:10px;background:#1A7A72;color:#fff;font-size:14px;font-weight:700;text-decoration:none">Reply by email</a>
+      <a href="mailto:${escapeHtml(data.email)}?subject=${encodeURIComponent(`Re: ${data.reference} — ${SITE.name}`)}" style="display:inline-block;margin-left:8px;padding:12px 18px;border-radius:10px;background:#1A7A72;color:#fff;font-size:14px;font-weight:700;text-decoration:none">Reply by email</a>
     </div>
   `;
 
@@ -162,7 +162,7 @@ export function patientConfirmationEmail(data: EnquiryPayload) {
       Dear ${escapeHtml(firstName)},
     </p>
     <p style="margin:14px 0 0;font-size:15px;line-height:1.75;color:#5B6B7C">
-      Thank you for contacting <strong style="color:#143352">Medical Tours India</strong>. We have received your enquiry and our Hyderabad care team will review your details shortly.
+      Thank you for contacting <strong style="color:#143352">${SITE.name}</strong>. We have received your enquiry and our Hyderabad care team will review your details shortly.
     </p>
 
     <div style="margin:22px 0;padding:16px 18px;border-radius:14px;background:#F7FAFC;border:1px solid #E6EDF2">
@@ -198,7 +198,7 @@ export function patientConfirmationEmail(data: EnquiryPayload) {
   `;
 
   return {
-    subject: `We received your enquiry · ${data.reference} · Medical Tours India`,
+    subject: `We received your enquiry · ${data.reference} · ${SITE.name}`,
     html: emailShell({
       preheader: `Thanks ${firstName} — your enquiry ${data.reference} is with our care team.`,
       eyebrow: "Enquiry confirmation",
@@ -210,7 +210,7 @@ export function patientConfirmationEmail(data: EnquiryPayload) {
     text: [
       `Dear ${firstName},`,
       ``,
-      `Thank you for contacting Medical Tours India. We have received your enquiry.`,
+      `Thank you for contacting ${SITE.name}. We have received your enquiry.`,
       `Reference: ${data.reference}`,
       ``,
       `Treatment: ${data.treatment}`,
@@ -224,7 +224,7 @@ export function patientConfirmationEmail(data: EnquiryPayload) {
       `WhatsApp: ${SITE.whatsappUrl}`,
       `Call: ${SITE.phoneDisplay}`,
       ``,
-      `— Medical Tours India, Hyderabad`,
+      `— ${SITE.name}, Hyderabad`,
     ].join("\n"),
   };
 }

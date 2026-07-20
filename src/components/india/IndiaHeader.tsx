@@ -19,7 +19,7 @@ export function IndiaHeader() {
         <Link href={getIndiaDomesticPath("")} className="min-w-0 shrink">
           <Image
             src={SITE.logo}
-            alt="Medical Tours India — Domestic"
+            alt={`${SITE.name} — Domestic`}
             width={200}
             height={40}
             className="h-8 w-auto max-w-[160px] object-contain object-left sm:h-9"

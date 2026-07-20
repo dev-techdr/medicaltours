@@ -63,16 +63,16 @@ function hospitalFaqs(name: string): FAQItem[] {
   return [
     {
       question: `How do I book at ${name}?`,
-      answer: `Share your medical reports with Techdr Medical Tourism on WhatsApp. We coordinate a free opinion, package estimate, and admission at ${name} — including visa invitation letters when required.`,
+      answer: `Share your medical reports with Medical Tours India on WhatsApp. We coordinate a free opinion, package estimate, and admission at ${name} — including visa invitation letters when required.`,
     },
     {
       question: "What does the MOU mean for my treatment cost?",
       answer:
-        "Our MOU is a direct partnership with the hospital. You receive transparent package pricing through Techdr without an extra middleman markup on clinical fees. Final quotes depend on medical evaluation and package inclusions.",
+        "Our MOU is a direct partnership with the hospital. You receive transparent package pricing through TechdrHealth without an extra middleman markup on clinical fees. Final quotes depend on medical evaluation and package inclusions.",
     },
     {
       question: `Does ${name} treat international patients?`,
-      answer: `Yes. ${name} works with Techdr’s international patient pathway for admissions, interpreters on request, and discharge planning for foreign patients.`,
+      answer: `Yes. ${name} works with TechdrHealth’s international patient pathway for admissions, interpreters on request, and discharge planning for foreign patients.`,
     },
     {
       question: "Can I get a second opinion before I travel?",
@@ -205,7 +205,7 @@ export default async function HospitalNetworkSlugPage({ params }: Props) {
             </div>
           ) : (
             <p className="mt-4 text-sm text-muted">
-              Ask Techdr for specialist profiles matched to your diagnosis at {hospital.name}.
+              Ask TechdrHealth for specialist profiles matched to your diagnosis at {hospital.name}.
             </p>
           )}
         </section>

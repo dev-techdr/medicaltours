@@ -69,7 +69,7 @@ export default function CountriesPage() {
         </h1>
         <div className="mt-6">
           <AnswerBlock label="Who are these guides for?">
-            Techdr Medical Tourism publishes nationality-specific guides for patients from Africa,
+            Medical Tours India publishes nationality-specific guides for patients from Africa,
             the Middle East, South Asia, Europe, and the Americas — covering medical visas, local
             currency cost context, preferred Indian cities, and how hospital coordination works
             before you travel.

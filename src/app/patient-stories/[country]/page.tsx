@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const nameLower = country.name.toLowerCase();
   return buildMetadata({
     title: `Patient Stories from ${country.name} | Medical Tourism India`,
-    description: `Real ${country.name} patient success stories who travelled to India for surgery, IVF, dental, and cancer care with Techdr Medical Tourism — costs, hospitals, and outcomes.`,
+    description: `Real ${country.name} patient success stories who travelled to India for surgery, IVF, dental, and cancer care with Medical Tours India — costs, hospitals, and outcomes.`,
     path: `/patient-stories/${country.slug}`,
     keywords: [
       `medical tourism india ${nameLower}`,

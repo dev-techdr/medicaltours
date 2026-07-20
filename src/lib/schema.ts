@@ -1,4 +1,4 @@
-import { SITE } from "@/lib/site";
+import { SITE, SOCIAL_SAME_AS } from "@/lib/site";
 import { absoluteUrl } from "@/lib/metadata";
 import type { FAQItem } from "@/lib/data";
 
@@ -33,7 +33,7 @@ export function organizationSchema() {
     },
     areaServed: "Worldwide",
     priceRange: "$$",
-    sameAs: [SITE.whatsappUrl],
+    sameAs: [SITE.whatsappUrl, ...SOCIAL_SAME_AS],
     contactPoint: {
       "@type": "ContactPoint",
       telephone: SITE.phone,

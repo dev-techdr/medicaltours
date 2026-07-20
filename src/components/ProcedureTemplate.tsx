@@ -161,7 +161,7 @@ export function ProcedureTemplate({ procedure }: ProcedureTemplateProps) {
             Where to get {procedure.name.toLowerCase()} in India
           </h2>
           <p className="mt-2 max-w-2xl text-sm text-muted sm:text-base">
-            Techdr coordinates {procedure.name.toLowerCase()} packages for foreign patients at
+            TechdrHealth coordinates {procedure.name.toLowerCase()} packages for foreign patients at
             accredited hospitals across major medical tourism cities.
           </p>
           <ul className="mt-4 flex flex-wrap gap-2">
@@ -197,7 +197,7 @@ export function ProcedureTemplate({ procedure }: ProcedureTemplateProps) {
             Why choose India for {procedure.name.toLowerCase()}
           </h2>
           <p className="mt-2 max-w-2xl text-sm text-muted sm:text-base">
-            Techdr coordinates care across accredited partner hospitals with end-to-end support for
+            TechdrHealth coordinates care across accredited partner hospitals with end-to-end support for
             visa, travel, and recovery.
           </p>
           <ul className="mt-6 grid gap-3 sm:grid-cols-2">

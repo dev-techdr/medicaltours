@@ -14,7 +14,7 @@ import { SITE } from "@/lib/site";
 const pagePath = "/reviews";
 const pageTitle = "Patient Reviews & Ratings | Medical Tourism India";
 const pageDescription =
-  "Read verified patient reviews and ratings for medical tourism in India — heart surgery, knee replacement, IVF, dental, and more through Techdr Medical Tourism.";
+  "Read verified patient reviews and ratings for medical tourism in India — heart surgery, knee replacement, IVF, dental, and more through Medical Tours India.";
 
 export const metadata: Metadata = buildMetadata({
   title: pageTitle,
@@ -23,7 +23,7 @@ export const metadata: Metadata = buildMetadata({
   keywords: [
     "medical tourism india reviews",
     "india hospital reviews international patients",
-    "techdr medical tourism reviews",
+    "techdr health team reviews",
   ],
 });
 
@@ -76,7 +76,7 @@ export default function ReviewsPage() {
 
       <Reveal className="mt-8">
         <AnswerBlock label="Quick answer">
-          Techdr Medical Tourism has supported {SITE.patientCount} international patients with
+          Medical Tours India has supported {SITE.patientCount} international patients with
           coordinated hospital care in India. Published reviews cover cardiac surgery, orthopedics,
           fertility, and dental treatment from patients in Nigeria, Kenya, UAE, UK, and more.
         </AnswerBlock>

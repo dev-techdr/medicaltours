@@ -90,7 +90,7 @@ export default async function CategoryPage({ params }: Props) {
             {minCost != null && maxCost != null
               ? `, with typical package ranges from $${minCost.toLocaleString()}–$${maxCost.toLocaleString()} USD depending on the procedure`
               : ""}
-            . Techdr coordinates written estimates, visa support, and travel logistics.
+            . TechdrHealth coordinates written estimates, visa support, and travel logistics.
           </AnswerBlock>
         </div>
         <p className="mt-6 max-w-3xl text-base text-muted sm:text-lg">{category.description}</p>

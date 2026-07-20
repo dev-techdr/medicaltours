@@ -69,37 +69,7 @@ body {
     color: var(--navy);
   }
 
-  /* African landing dark bands — headings without text-white still need contrast */
-  .african-landing .african-dark h1,
-  .african-landing .african-dark h2,
-  .african-landing .african-dark h3,
-  .african-landing .african-dark h4 {
-    color: #ffffff;
-  }
 }
-
-/* Visible-by-default entrance (never opacity:0 — Ads must see copy) */
-@keyframes african-enter {
-  from {
-    opacity: 0.01;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.african-landing .african-enter {
-  animation: african-enter 520ms cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .african-landing .african-enter {
-    animation: none;
-  }
-}
-
 ::selection {
   background: var(--accent-light);
   color: var(--navy);
@@ -501,22 +471,9 @@ a.divider-grid-item:hover,
   white-space: nowrap;
 }
 
-.cost-highlight-african {
-  display: inline;
-  font-family: var(--font-african-mono, var(--font-mono)), ui-monospace, monospace;
-  font-variant-numeric: tabular-nums;
-  font-weight: 700;
-  color: #0a3d35;
-  background: #d8f0e8;
-  padding: 0.15em 0.5em;
-  border-radius: 8px;
-  white-space: nowrap;
-}
-
 @media (max-width: 639px) {
   .cost-highlight,
-  .cost-highlight-light,
-  .cost-highlight-african {
+  .cost-highlight-light {
     white-space: normal;
   }
 }
@@ -579,9 +536,9 @@ a:hover .media-img-hover {
 .media-overlay-hero {
   background: linear-gradient(
     115deg,
-    rgba(14, 36, 56, 0.82) 0%,
-    rgba(14, 36, 56, 0.55) 42%,
-    rgba(14, 36, 56, 0.28) 100%
+    rgba(11, 28, 45, 0.92) 0%,
+    rgba(11, 28, 45, 0.66) 42%,
+    rgba(11, 28, 45, 0.34) 100%
   );
 }
 
@@ -705,6 +662,24 @@ a:hover .media-img-hover {
   color: var(--accent);
 }
 
+.hero-typing-caret {
+  width: 0.08em;
+  height: 0.85em;
+  background: rgba(232, 196, 120, 0.95);
+  animation: hero-caret-blink 900ms steps(1, end) infinite;
+}
+
+@keyframes hero-caret-blink {
+  0%,
+  45% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .hero-enter,
   .hero-enter-delay,
@@ -712,6 +687,11 @@ a:hover .media-img-hover {
   .media-ken-burns,
   .pulse-ring {
     animation: none;
+  }
+
+  .hero-typing-caret {
+    animation: none;
+    opacity: 0;
   }
 
   .reveal {

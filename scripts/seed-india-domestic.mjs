@@ -9,10 +9,10 @@ const PAGES = {
     title: "Surgery in Hyderabad for Indian Patients",
     primaryKeyword: "surgery in hyderabad for indian patients",
     shortAnswer:
-      "Hyderabad offers JCI and NABH hospitals, Aarogyasri and Ayushman Bharat coverage, and surgery costs 40–60% lower than Mumbai or Delhi — with Techdr coordinating travel, admission, and discharge for patients from across India.",
+      "Hyderabad offers JCI and NABH hospitals, Aarogyasri and Ayushman Bharat coverage, and surgery costs 40–60% lower than Mumbai or Delhi — with TechdrHealth coordinating travel, admission, and discharge for patients from across India.",
     tier: "hub",
     highlights: [
-      "HQ of Techdr Medical Tourism — local coordination team",
+      "HQ of TechdrHealth — local coordination team",
       "Aarogyasri & Ayushman Bharat empanelled hospitals",
       "EMI and medical loan assistance available",
       "Strong cardiac, oncology, orthopaedic, and transplant programs",
@@ -98,7 +98,7 @@ See our dedicated [Aarogyasri empanelled hospitals guide](/india/hyderabad/aarog
     title: "Hyderabad Surgery Guide for Warangal Patients",
     primaryKeyword: "surgery hyderabad for warangal patients",
     shortAnswer:
-      "Warangal patients reach Hyderabad in under 3 hours by road or train for advanced surgery — with Aarogyasri coverage, affordable stay options, and Techdr coordinating admission from Warangal to discharge.",
+      "Warangal patients reach Hyderabad in under 3 hours by road or train for advanced surgery — with Aarogyasri coverage, affordable stay options, and TechdrHealth coordinating admission from Warangal to discharge.",
     tier: "tier1",
     body: `## From Warangal to Hyderabad for surgery
 
@@ -164,7 +164,7 @@ While Chennai is closer geographically, Hyderabad frequently offers lower packag
     title: "Hyderabad Surgery Guide for Nizamabad Patients",
     primaryKeyword: "surgery hyderabad for nizamabad patients",
     shortAnswer:
-      "Nizamabad patients travel 3 hours to Hyderabad for specialised surgery — with direct road access, Aarogyasri empanelled hospitals, and Techdr handling admission and family updates in Telugu.",
+      "Nizamabad patients travel 3 hours to Hyderabad for specialised surgery — with direct road access, Aarogyasri empanelled hospitals, and TechdrHealth handling admission and family updates in Telugu.",
     tier: "tier1",
     body: `## Nizamabad to Hyderabad for medical care
 
@@ -225,7 +225,7 @@ Common referrals from Nizamabad include orthopaedic surgery, cardiac procedures,
     title: "EMI & Medical Loans for Surgery in Hyderabad",
     primaryKeyword: "emi medical loan surgery hyderabad",
     shortAnswer:
-      "Pay for surgery in Hyderabad through EMIs starting from ₹3,000/month — via hospital tie-ups with Bajaj Finserv, HDFC, and other medical loan providers, with Techdr helping you compare options before admission.",
+      "Pay for surgery in Hyderabad through EMIs starting from ₹3,000/month — via hospital tie-ups with Bajaj Finserv, HDFC, and other medical loan providers, with TechdrHealth helping you compare options before admission.",
     tier: "tier1",
     body: `## EMI and medical loans for surgery
 

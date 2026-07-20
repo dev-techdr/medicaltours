@@ -1,4 +1,4 @@
-# Techdr Medical Tourism — medicaltoursindia.com
+# TechdrHealth — medicaltoursindia.com
 
 Production-grade medical tourism website for international patients seeking treatment in India.
 
@@ -69,7 +69,7 @@ Copy `.env.example` to `.env.local` and set:
 
 ```bash
 RESEND_API_KEY=re_xxxxxxxx
-CONTACT_TO_EMAIL=info@medicaltoursindia.com
+CONTACT_TO_EMAIL=hi@medicaltoursindia.com
 # Optional verified sender once your domain is in Resend:
 # CONTACT_FROM_EMAIL=Medical Tours India <hello@medicaltoursindia.com>
 ```

@@ -86,7 +86,7 @@ export default function PatientStoriesPage() {
         <p className="mt-4 max-w-2xl text-muted">
           Real journeys from {storyCountries.length}+ countries — filter by your country or
           treatment to see how patients planned heart surgery, joint replacement, IVF, dental care,
-          and oncology packages in India with Techdr.
+          and oncology packages in India with TechdrHealth.
         </p>
       </Reveal>
 

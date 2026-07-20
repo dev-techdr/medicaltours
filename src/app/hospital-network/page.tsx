@@ -15,7 +15,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = buildMetadata({
   title: "200+ MOU Hospital Partners Across India",
   description:
-    "Techdr Medical Tourism partners directly with 200+ JCI and NABH accredited hospitals across India — no middleman markup. Browse by city, specialty, and accreditation.",
+    "Medical Tours India partners directly with 200+ JCI and NABH accredited hospitals across India — no middleman markup. Browse by city, specialty, and accreditation.",
   path: "/hospital-network",
   keywords: [
     "medical tourism company with hospital tie ups india",
@@ -29,7 +29,7 @@ export default function HospitalNetworkPage() {
 
   const schemaHospitals = hospitals.map((h) => ({
     name: h.name,
-    description: `${h.name} in ${h.city} — Techdr MOU partner hospital for international patients.`,
+    description: `${h.name} in ${h.city} — TechdrHealth MOU partner hospital for international patients.`,
     url: `/hospital-network/${h.slug}`,
     city: h.city,
     rating: h.rating,

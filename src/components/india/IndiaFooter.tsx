@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SocialLinks } from "@/components/SocialLinks";
 import { SITE } from "@/lib/site";
 import {
   getIndiaDomesticPath,
@@ -53,8 +54,19 @@ export function IndiaFooter() {
                   WhatsApp
                 </a>
               </li>
+              <li>
+                <a href={`mailto:${SITE.email}`} className="hover:text-accent">
+                  {SITE.email}
+                </a>
+              </li>
               <li>Hyderabad, Telangana</li>
             </ul>
+            <div className="mt-4">
+              <p className="data-label">Follow us</p>
+              <div className="mt-2">
+                <SocialLinks variant="light" />
+              </div>
+            </div>
             <p className="mt-4 text-xs text-muted">
               International patients:{" "}
               <Link href="/" className="text-accent hover:underline">

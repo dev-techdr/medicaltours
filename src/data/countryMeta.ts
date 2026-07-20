@@ -58,7 +58,7 @@ export const countryMetaBySlug: Record<string, CountryMeta> = {
       },
       {
         title: "Hospital invitation letter",
-        body: "Techdr obtains an invitation/appointment letter from a partner hospital for your medical visa file.",
+        body: "TechdrHealth obtains an invitation/appointment letter from a partner hospital for your medical visa file.",
       },
       {
         title: "Apply for medical visa (MED)",

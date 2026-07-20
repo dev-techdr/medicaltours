@@ -12,7 +12,7 @@ import { buildMetadata, webPageSchema } from "@/lib/seo";
 const pagePath = "/how-it-works";
 const pageTitle = "How Medical Tourism in India Works";
 const pageDescription =
-  "Step-by-step patient journey for medical tourism in India: enquiry, report review, quote, visa, travel, treatment, recovery, and follow-up with Techdr Medical Tourism.";
+  "Step-by-step patient journey for medical tourism in India: enquiry, report review, quote, visa, travel, treatment, recovery, and follow-up with Medical Tours India.";
 
 export const metadata: Metadata = buildMetadata({
   title: pageTitle,
@@ -37,7 +37,7 @@ export default function HowItWorksPage() {
           How medical tourism in India works — step by step
         </h1>
         <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted">
-          From first enquiry to follow-up after you return home — here is the full pathway Techdr
+          From first enquiry to follow-up after you return home — here is the full pathway TechdrHealth
           coordinates for international patients and families.
         </p>
       </Reveal>
@@ -46,7 +46,7 @@ export default function HowItWorksPage() {
         <AnswerBlock label="Quick answer">
           Medical tourism in India typically follows eight steps: enquiry, medical report review,
           hospital matching and quote, medical visa, travel planning, treatment, recovery, and
-          follow-up. Techdr coordinates each stage so families are not navigating India alone.
+          follow-up. TechdrHealth coordinates each stage so families are not navigating India alone.
         </AnswerBlock>
       </Reveal>
 

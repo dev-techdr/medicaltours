@@ -10,7 +10,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Medical Tourism India Cost Calculator",
   description:
-    "Estimate medical treatment costs in India. Select a treatment and request an exact WhatsApp quote from Techdr Medical Tourism.",
+    "Estimate medical treatment costs in India. Select a treatment and request an exact WhatsApp quote from Medical Tours India.",
   path: "/cost-calculator",
   keywords: [
     "medical tourism india cost breakdown",

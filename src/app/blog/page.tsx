@@ -3,8 +3,9 @@ import Link from "next/link";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { Container } from "@/components/Container";
 import { Reveal } from "@/components/Reveal";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { getAllPosts } from "@/data/blog";
-import { buildMetadata } from "@/lib/seo";
+import { blogCollectionSchema, buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
   title: "Medical Tourism Blog — Guides & Advice",
@@ -18,6 +19,14 @@ export default function BlogIndexPage() {
 
   return (
     <Container className="py-10 sm:py-14">
+      <JsonLd
+        data={blogCollectionSchema(
+          blogPosts.map((post) => ({
+            title: post.title,
+            url: `/blog/${post.slug}`,
+          })),
+        )}
+      />
       <Breadcrumb items={[{ name: "Blog", href: "/blog" }]} />
       <Reveal>
         <h1 className="font-display text-4xl font-medium tracking-tight text-navy">

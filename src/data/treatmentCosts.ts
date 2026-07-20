@@ -117,7 +117,7 @@ function buildConfig(seed: CostSeed): TreatmentCostConfig {
       "Hospital package charges",
       "Surgeon fees (package scope)",
       "Stay for package days",
-      "Care coordination by Techdr",
+      "Care coordination by TechdrHealth",
     ],
     recoverySteps: seed.recoverySteps ?? DEFAULT_RECOVERY,
     processSteps: seed.processSteps ?? DEFAULT_PROCESS,
@@ -144,7 +144,7 @@ const seeds: CostSeed[] = [
       "Hospital stay (package days)",
       "ICU as clinically indicated",
       "Medications during admission",
-      "Care coordination by Techdr",
+      "Care coordination by TechdrHealth",
     ],
     recoverySteps: [
       {

@@ -54,7 +54,7 @@ export function buildCountryAeoFaqs(country: Country): FAQItem[] {
   const baseline: FAQItem[] = [
     {
       question: `Is medical tourism in India safe for ${demonym} patients?`,
-      answer: `Yes — when you choose JCI or NABH accredited hospitals and coordinated facilitation. Techdr matches ${demonym} patients with verified partner hospitals, arranges visa invitation letters, and supports airport pickup, admission, and recovery stay so families are not navigating India alone.`,
+      answer: `Yes — when you choose JCI or NABH accredited hospitals and coordinated facilitation. TechdrHealth matches ${demonym} patients with verified partner hospitals, arranges visa invitation letters, and supports airport pickup, admission, and recovery stay so families are not navigating India alone.`,
     },
     {
       question: `How much does medical treatment in India cost for patients from ${name}?`,
@@ -70,10 +70,10 @@ export function buildCountryAeoFaqs(country: Country): FAQItem[] {
     },
     {
       question: `Will language be a problem for ${demonym} patients in Indian hospitals?`,
-      answer: `English is widely used in major international patient departments. Techdr also arranges interpreters when needed for languages such as ${languages.filter((l) => l !== "English").slice(0, 3).join(", ") || "Arabic and regional languages"}.`,
+      answer: `English is widely used in major international patient departments. TechdrHealth also arranges interpreters when needed for languages such as ${languages.filter((l) => l !== "English").slice(0, 3).join(", ") || "Arabic and regional languages"}.`,
     },
     {
-      question: `How long does Techdr take to respond to a ${demonym} patient enquiry?`,
+      question: `How long does TechdrHealth take to respond to a ${demonym} patient enquiry?`,
       answer: `Most families receive hospital options and an indicative package range within 24–48 hours after sharing reports on WhatsApp or email. Complex transplant or oncology cases may need an extra specialist review cycle.`,
     },
   ];

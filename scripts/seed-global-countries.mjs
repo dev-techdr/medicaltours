@@ -210,7 +210,7 @@ popularTreatments:
 ${c.treatments.map((t) => `  - ${t}`).join("\n")}
 faqs:
   - question: "Is medical tourism in India safe for ${c.demonym} patients?"
-    answer: "Yes — when you choose JCI or NABH accredited hospitals with coordinated facilitation. Techdr matches ${c.demonym} patients with verified partner hospitals, arranges visa invitation letters, and supports airport pickup, admission, and recovery stay."
+    answer: "Yes — when you choose JCI or NABH accredited hospitals with coordinated facilitation. TechdrHealth matches ${c.demonym} patients with verified partner hospitals, arranges visa invitation letters, and supports airport pickup, admission, and recovery stay."
   - question: "What documents do ${c.demonym} patients need for a medical visa to India?"
     answer: "Typically a valid passport, photos, hospital invitation or appointment letter, medical reports, and the forms required by the Indian mission or e-visa channel serving ${c.name}. We help obtain the hospital letter and guide attendant visas."
   - question: "How long should ${c.demonym} patients plan to stay in India?"
@@ -218,14 +218,14 @@ faqs:
   - question: "Can a family member accompany a ${c.demonym} patient?"
     answer: "Yes. Medical attendant visas are commonly available. We help plan hotel stay near the hospital and airport pickup for both patient and attendant."
   - question: "Which Indian cities do ${c.demonym} patients choose most?"
-    answer: "Patients often choose accredited centres in ${c.citiesList.join(", ")} depending on specialty. Techdr shortlists based on diagnosis, budget, and doctor fit."
+    answer: "Patients often choose accredited centres in ${c.citiesList.join(", ")} depending on specialty. TechdrHealth shortlists based on diagnosis, budget, and doctor fit."
   - question: "How do ${c.demonym} families pay for treatment packages?"
     answer: "Hospitals typically quote in USD or INR with a ${c.currencyCode} planning reference. Families often pay by bank transfer, card, or cash as arranged with hospital finance. We explain inclusions before travel."
 ---
 
 ## Medical tourism in India for ${c.demonym} patients
 
-India is a leading destination for ${c.demonym} patients seeking cardiac surgery, cancer treatment, joint replacement, fertility care, transplants, and complex specialty procedures. Techdr Medical Tourism arranges hospital selection, medical visa invitation letters, flights guidance, accommodation near campus, and transparent treatment packages for families from ${c.name}.
+India is a leading destination for ${c.demonym} patients seeking cardiac surgery, cancer treatment, joint replacement, fertility care, transplants, and complex specialty procedures. TechdrHealth arranges hospital selection, medical visa invitation letters, flights guidance, accommodation near campus, and transparent treatment packages for families from ${c.name}.
 
 Compared with referral networks that only book appointments, our Hyderabad-based team stays with your case from first WhatsApp enquiry through discharge and remote follow-up — so attendants know who to call in India.
 
@@ -239,7 +239,7 @@ ${c.travelNote}
 
 Packages are quoted in USD with an approximate ${c.currencyCode} reference for family budgeting. Final estimates follow specialist review of reports. Typical savings versus US or UK private care are 50–80% for comparable procedure classes — always confirm inclusions (surgeon fees, implants, ICU days, investigations) before travel.
 
-## How Techdr helps patients from ${c.name}
+## How TechdrHealth helps patients from ${c.name}
 
 We arrange hospital and doctor shortlists, free specialist opinions, medical visa invitation letters, airport pickup, interpreters for ${c.languages.filter((l) => l !== "English").slice(0, 2).join(" and ") || "local languages"} when needed, hotel planning near campus, and post-treatment follow-up tailored for ${c.demonym} patients and families.
 `;

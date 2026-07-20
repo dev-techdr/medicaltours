@@ -12,7 +12,7 @@ import { SITE } from "@/lib/site";
 const treatments = getAllTreatmentCostOptions();
 
 function whatsappQuoteUrl(treatmentName: string) {
-  const text = `Hello Techdr Medical Tourism — I would like an exact quote for ${treatmentName} in India.`;
+  const text = `Hello Medical Tours India — I would like an exact quote for ${treatmentName} in India.`;
   return `${SITE.whatsappUrl}?text=${encodeURIComponent(text)}`;
 }
 

@@ -3,8 +3,8 @@ import type { ReactNode } from "react";
 type CostHighlightProps = {
   children: ReactNode;
   className?: string;
-  /** Soft tint for dark / African surfaces */
-  tone?: "default" | "light" | "african";
+  /** Soft tint for dark surfaces */
+  tone?: "default" | "light";
 };
 
 export function CostHighlight({
@@ -12,12 +12,7 @@ export function CostHighlight({
   className = "",
   tone = "default",
 }: CostHighlightProps) {
-  const toneClass =
-    tone === "light"
-      ? "cost-highlight-light"
-      : tone === "african"
-        ? "cost-highlight-african"
-        : "cost-highlight";
+  const toneClass = tone === "light" ? "cost-highlight-light" : "cost-highlight";
 
   return <span className={`${toneClass} ${className}`.trim()}>{children}</span>;
 }

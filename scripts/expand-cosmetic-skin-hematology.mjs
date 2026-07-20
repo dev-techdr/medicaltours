@@ -80,7 +80,7 @@ function faqsFor(slug, name, min, max, recovery, extras = []) {
     {
       question: `Is ${name.toLowerCase()} available for foreign patients in India?`,
       answer:
-        "Yes. Techdr coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore.",
+        "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore.",
     },
     {
       question: "Can I get a written estimate before I travel?",
@@ -1022,7 +1022,7 @@ for (const slug of [
     faqs[slug].push({
       question: `Is ${slug.replace(/-/g, " ").replace(/india|cost/g, "").trim()} available for foreign patients in India?`,
       answer:
-        "Yes. Techdr coordinates care for international patients at partner hospitals in Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore — including second opinions, written estimates, visa support, and travel logistics.",
+        "Yes. TechdrHealth coordinates care for international patients at partner hospitals in Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore — including second opinions, written estimates, visa support, and travel logistics.",
     });
   }
 }

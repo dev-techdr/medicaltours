@@ -13,7 +13,7 @@ import type { FAQItem } from "@/lib/types";
 
 const pageTitle = "Free Second Opinion in India - Send Your Medical Reports";
 const pageDescription =
-  "Send medical reports for a free second opinion from India. Techdr Medical Tourism reviews your case, shortlists hospitals, and shares treatment cost guidance within 24-48 hours.";
+  "Send medical reports for a free second opinion from India. Medical Tours India reviews your case, shortlists hospitals, and shares treatment cost guidance within 24-48 hours.";
 const pagePath = "/free-second-opinion";
 
 const reportChecklist = [
@@ -43,7 +43,7 @@ const secondOpinionFaqs: FAQItem[] = [
   {
     question: "Can I send medical reports for free consultation in India?",
     answer:
-      "Yes. You can share your medical reports with Techdr Medical Tourism for an initial free consultation. Our team reviews the case details and helps shortlist hospitals or doctors in India before you decide to travel.",
+      "Yes. You can share your medical reports with Medical Tours India for an initial free consultation. Our team reviews the case details and helps shortlist hospitals or doctors in India before you decide to travel.",
   },
   {
     question: "How long does a free second opinion from India take?",
@@ -116,7 +116,7 @@ export default function FreeSecondOpinionPage() {
 
           <Reveal className="mt-8">
             <AnswerBlock label="Quick answer">
-              You can send medical reports to Techdr Medical Tourism for a free second opinion in
+              You can send medical reports to Medical Tours India for a free second opinion in
               India. We review your case, identify suitable hospitals or doctors, and share expected
               treatment cost guidance within 24-48 hours when reports are complete.
             </AnswerBlock>

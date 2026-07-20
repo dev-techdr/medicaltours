@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SITE } from "@/lib/site";
+import { SITE, SOCIAL_SAME_AS } from "@/lib/site";
 import type { BreadcrumbItem, FAQItem } from "@/lib/types";
 
 export function absoluteUrl(path = "/"): string {
@@ -86,7 +86,7 @@ export function organizationSchema() {
     },
     areaServed: "Worldwide",
     priceRange: "$$",
-    sameAs: [SITE.whatsappUrl],
+    sameAs: [SITE.whatsappUrl, ...SOCIAL_SAME_AS],
     contactPoint: {
       "@type": "ContactPoint",
       telephone: SITE.phone,
@@ -280,6 +280,33 @@ export function blogPostingSchema({
   };
 }
 
+export function blogCollectionSchema(
+  posts: readonly { title: string; url: string }[],
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Medical Tourism Blog",
+    description:
+      "Guides on choosing hospitals in India, medical visas, cost comparisons, and how to avoid medical tourism scams.",
+    url: absoluteUrl("/blog"),
+    publisher: {
+      "@type": "MedicalOrganization",
+      name: SITE.name,
+      url: SITE.url,
+    },
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: posts.map((post, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: post.title,
+        url: absoluteUrl(post.url),
+      })),
+    },
+  };
+}
+
 export function hospitalSchema({
   name,
   description,
@@ -341,7 +368,7 @@ export function hospitalItemListSchema(
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Techdr Medical Tourism Partner Hospitals",
+    name: "Medical Tours India Partner Hospitals",
     numberOfItems: hospitals.length,
     itemListElement: hospitals.map((hospital, index) => {
       const schema = hospitalSchema(hospital) as Record<string, unknown>;

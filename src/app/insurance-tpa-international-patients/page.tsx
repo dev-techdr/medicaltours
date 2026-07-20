@@ -34,10 +34,10 @@ const insuranceFaqs: FAQItem[] = [
   {
     question: "What if my insurance does not cover treatment in India?",
     answer:
-      "Most medical tourists self-pay using transparent hospital packages quoted in USD. Techdr helps compare package inclusions so families can plan total cost before travel — often still far below US or UK private rates.",
+      "Most medical tourists self-pay using transparent hospital packages quoted in USD. TechdrHealth helps compare package inclusions so families can plan total cost before travel — often still far below US or UK private rates.",
   },
   {
-    question: "Can Techdr help with insurance paperwork?",
+    question: "Can TechdrHealth help with insurance paperwork?",
     answer:
       "We help you understand what documents hospitals typically need for insurance or reimbursement claims — itemized bills, discharge summaries, and procedure codes. Final claim approval remains with your insurer.",
   },

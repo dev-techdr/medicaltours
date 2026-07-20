@@ -11,7 +11,7 @@ import { buildMetadata } from "@/lib/metadata";
 export const metadata: Metadata = buildMetadata({
   title: "Doctors in India for Medical Tourism",
   description:
-    "Browse specialists by specialty — cardiology, orthopedics, oncology, fertility, neurosurgery, and transplant — across Techdr partner hospitals.",
+    "Browse specialists by specialty — cardiology, orthopedics, oncology, fertility, neurosurgery, and transplant — across TechdrHealth partner hospitals.",
   path: "/doctors",
   keywords: ["best doctors in india for foreigners", "specialist doctors india medical tourism"],
 });

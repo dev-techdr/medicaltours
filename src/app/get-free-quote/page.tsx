@@ -14,7 +14,7 @@ import type { FAQItem } from "@/lib/types";
 const pagePath = "/get-free-quote";
 const pageTitle = "Get a Free Treatment Quote in India";
 const pageDescription =
-  "Request a free written treatment quote from a Techdr care coordinator. We compare hospital options, package inclusions, and costs — not just a calculator estimate.";
+  "Request a free written treatment quote from a TechdrHealth care coordinator. We compare hospital options, package inclusions, and costs — not just a calculator estimate.";
 
 const quoteFaqs: FAQItem[] = [
   {
@@ -80,7 +80,7 @@ export default function GetFreeQuotePage() {
           <Reveal className="mt-8">
             <AnswerBlock label="Quick answer">
               Submit your details and medical reports to receive a free treatment quote for India.
-              Techdr coordinators compare accredited hospitals, clarify package inclusions, and share
+              TechdrHealth coordinators compare accredited hospitals, clarify package inclusions, and share
               indicative costs within 24–48 hours.
             </AnswerBlock>
           </Reveal>

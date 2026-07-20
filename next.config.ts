@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { LEGACY_REDIRECTS } from "./src/lib/legacy-redirects";
 
 const nextConfig: NextConfig = {
   experimental: {
@@ -24,6 +25,7 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      ...LEGACY_REDIRECTS,
       // Mapped procedures (flat MDX → nested JSON)
       {
         source: "/treatments/heart-surgery-india",

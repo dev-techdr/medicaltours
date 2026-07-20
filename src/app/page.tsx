@@ -1,9 +1,10 @@
 import Link from "next/link";
-import { AnswerBlock } from "@/components/AnswerBlock";
 import { Container } from "@/components/Container";
 import { CTASection } from "@/components/CTASection";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { UsdRange } from "@/components/CostHighlight";
+import { HeroIntroCopy } from "@/components/HeroIntroCopy";
+import { HeroVideoBackground } from "@/components/HeroVideoBackground";
 import { MediaImage } from "@/components/MediaImage";
 import { GlobalReach } from "@/components/GlobalReach";
 import { NetworkStats } from "@/components/NetworkStats";
@@ -60,66 +61,26 @@ export default function HomePage() {
           ...(globalFaqs.length ? [faqSchema(globalFaqs)] : []),
         ]}
       />
-      {/* Full-bleed photo hero — brand + one headline + one line + CTAs only */}
-      <section className="relative min-h-[88vh] overflow-hidden sm:min-h-[82vh]">
-        <div className="absolute inset-0">
-          <MediaImage
-            src={MEDIA.hero}
-            alt="Care team supporting a patient in a modern hospital"
-            fillParent
-            preload
-            fetchPriority="high"
-            loading="eager"
-            quality={75}
-            kenBurns
-            zoomOnHover={false}
-            overlay="hero"
-            sizes="100vw"
-            className="!rounded-none"
-          />
-        </div>
+      {/* Full-bleed video hero — brand + one headline + one line + CTAs only */}
+      <section className="relative min-h-[50vh] overflow-hidden sm:min-h-[82vh]">
+        <HeroVideoBackground
+          src={MEDIA.heroVideo}
+          poster={MEDIA.hero}
+          posterAlt="World-class international hospital care in India"
+        />
 
-        <Container className="relative flex min-h-[88vh] flex-col justify-end pb-14 pt-28 sm:min-h-[82vh] sm:pb-20 sm:pt-32">
-          <div className="max-w-2xl">
-            <h1 className="hero-enter font-display text-4xl font-medium tracking-tight text-white sm:text-5xl lg:text-[3.5rem] lg:leading-[1.08]">
-              Care in India, planned with you — not left to chance
-            </h1>
-            <p className="hero-enter-delay mt-5 max-w-lg text-base leading-relaxed text-white/85 sm:text-lg">
-              Clear costs, trusted hospitals, and a team that stays with your family from first
-              enquiry through recovery.
-            </p>
-            <div className="hero-enter-delay mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link href="/contact-us#enquiry-form" className="btn btn-light w-full sm:w-auto">
-                Get a treatment estimate
-              </Link>
-              <a
-                href={SITE.whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-secondary w-full sm:w-auto"
-              >
-                Free WhatsApp consultation
-              </a>
-            </div>
-          </div>
+        <Container className="relative flex min-h-[50vh] flex-col justify-end pb-8 pt-20 sm:min-h-[82vh] sm:pb-20 sm:pt-32">
+          <HeroIntroCopy />
         </Container>
       </section>
 
       <Container className="py-14 sm:py-16">
         <Reveal>
-          <AnswerBlock>
-            Medical travel works best when hospital matching, cost clarity, visa help, travel
-            planning, and recovery support sit with one team. Techdr coordinates that path for
-            international patients and families — from Hyderabad, across India.
-          </AnswerBlock>
-        </Reveal>
-
-        <Reveal className="mt-16">
           <div className="grid gap-8 overflow-hidden rounded-[var(--radius)] border border-line bg-white shadow-[var(--shadow-soft)] lg:grid-cols-[1.15fr_0.85fr]">
             <div className="relative min-h-[260px] lg:min-h-[320px]">
               <MediaImage
                 src={MEDIA.team}
-                alt="Medical Tours India team dedicated to international patient care"
+                alt={`${SITE.name} team dedicated to international patient care`}
                 fillParent
                 zoomOnHover={false}
                 sizes="(max-width: 1024px) 100vw, 55vw"
@@ -321,7 +282,7 @@ export default function HomePage() {
                     src={cityImage(city.slug)}
                     alt=""
                     aspect="aspect-[4/3]"
-                    overlay="navy"
+                    overlay="navy-soft"
                     sizes="(max-width: 768px) 100vw, 25vw"
                   />
                   <div className="absolute inset-0 flex flex-col justify-end p-4">

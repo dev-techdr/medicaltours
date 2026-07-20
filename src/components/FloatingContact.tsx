@@ -34,7 +34,7 @@ export function FloatingContact() {
         className="pointer-events-auto inline-flex max-w-[calc(100vw-2rem)] items-center gap-2 rounded-full bg-accent px-3.5 py-2.5 text-sm font-semibold text-white shadow-[0_14px_28px_rgba(26,122,114,0.28)] transition hover:bg-accent/90 sm:gap-3 sm:px-5 sm:py-3"
         aria-label="Get a free cost estimate"
       >
-        <span className="sm:hidden">Estimate</span>
+        <span className="sm:hidden">Get cost</span>
         <span className="hidden sm:inline">Get cost estimate</span>
         <span
           className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white/15 sm:h-7 sm:w-7"

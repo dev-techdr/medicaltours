@@ -3,7 +3,9 @@ import type { BlogPost } from "@/lib/types";
 
 type BlogFrontmatter = {
   title: string;
+  metaTitle?: string;
   primaryKeyword: string;
+  keywords?: string[];
   excerpt: string;
   date: string;
 };
@@ -14,7 +16,9 @@ function normalize(
   return {
     slug: doc.slug,
     title: doc.title,
+    metaTitle: doc.metaTitle,
     primaryKeyword: doc.primaryKeyword,
+    keywords: doc.keywords,
     excerpt: doc.excerpt,
     date: doc.date,
     content: doc.content,

@@ -1,16 +1,16 @@
 export const SITE = {
-  name: "Techdr Medical Tourism",
-  legalName: "Techdr Medical Tourism",
+  name: "Medical Tours India",
+  legalName: "TechdrHealth",
   domain: "medicaltoursindia.com",
   url: "https://medicaltoursindia.com",
   tagline: "Trusted Medical Tourism Partner for International Patients",
   description:
-    "Techdr Medical Tourism connects international patients with 200+ partner hospitals across India. End-to-end care for treatment, visa, travel, and recovery — headquartered in Hyderabad.",
+    "Medical Tours India connects international patients with 200+ partner hospitals across India. End-to-end care for treatment, visa, travel, and recovery — headquartered in Hyderabad.",
   phone: "+916303225006",
   phoneDisplay: "+91 6303225006",
   whatsapp: "916303225006",
   whatsappUrl: "https://wa.me/916303225006",
-  email: "info@medicaltoursindia.com",
+  email: "hi@medicaltoursindia.com",
   address: {
     street: "Hyderabad",
     city: "Hyderabad",
@@ -26,7 +26,50 @@ export const SITE = {
   languages: ["en", "ar", "fr", "bn", "sw"] as const,
   defaultLocale: "en" as const,
   logo: "/images/new-logo.png",
+  footerLogo: "/images/footer-logo.png",
 } as const;
+
+export const SOCIAL_LINKS = [
+  {
+    href: "https://x.com/medtoursindia",
+    label: "Follow us on X",
+    icon: "x",
+  },
+  {
+    href: "https://www.instagram.com/medicaltours.india",
+    label: "Follow us on Instagram",
+    icon: "instagram",
+  },
+  {
+    href: "https://www.facebook.com/medicaltoursindia1",
+    label: "Follow us on Facebook",
+    icon: "facebook",
+  },
+  {
+    href: "https://www.linkedin.com/company/medical-tours-india",
+    label: "Follow us on LinkedIn",
+    icon: "linkedin",
+  },
+  {
+    href: "https://www.youtube.com/@medical-tourism-india",
+    label: "Subscribe on YouTube",
+    icon: "youtube",
+  },
+  {
+    href: "https://maps.app.goo.gl/QURcqiRDh1iSLo6f8",
+    label: "Find us on Google Maps",
+    icon: "map",
+  },
+  {
+    href: "https://share.google/Zz3Td1gtEf4j0CLoJ",
+    label: "View our Google Business Profile",
+    icon: "google",
+  },
+] as const;
+
+export type SocialLinkIcon = (typeof SOCIAL_LINKS)[number]["icon"];
+
+export const SOCIAL_SAME_AS = SOCIAL_LINKS.map((link) => link.href);
 
 export const LANGUAGE_OPTIONS = [
   { code: "en", label: "English", nativeLabel: "English" },
@@ -80,6 +123,7 @@ export const NAV_LINKS = [
   { href: "/countries", label: "Countries" },
   { href: "/free-second-opinion", label: "Free Second Opinion" },
   { href: "/cost-calculator", label: "Cost Calculator" },
+  { href: "/blog", label: "Blog" },
   { href: "/about-us", label: "About" },
   { href: "/contact-us", label: "Contact" },
 ] as const;
@@ -131,6 +175,7 @@ export const FOOTER_LINKS = {
     { href: "/travel-accommodation-assistance", label: "Travel & Stay" },
     { href: "/interpreter-language-support", label: "Interpreters" },
     { href: "/cost-calculator", label: "Cost Calculator" },
+    { href: "/blog", label: "Blog & Guides" },
     { href: "/patient-stories", label: "Success Stories" },
     { href: "/reviews", label: "Reviews" },
     { href: "/faq", label: "FAQ" },

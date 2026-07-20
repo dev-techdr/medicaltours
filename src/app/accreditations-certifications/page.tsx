@@ -14,7 +14,7 @@ import { SITE } from "@/lib/site";
 const pagePath = "/accreditations-certifications";
 const pageTitle = "Hospital Accreditations — JCI, NABH & NABL Explained";
 const pageDescription =
-  "What JCI, NABH, and NABL accreditations mean for international patients choosing hospitals in India. How Techdr selects accredited partner hospitals.";
+  "What JCI, NABH, and NABL accreditations mean for international patients choosing hospitals in India. How TechdrHealth selects accredited partner hospitals.";
 
 export const metadata: Metadata = buildMetadata({
   title: pageTitle,
@@ -43,7 +43,7 @@ export default function AccreditationsPage() {
       <Reveal className="mt-8">
         <AnswerBlock label="Quick answer">
           JCI, NABH, and NABL are independent quality standards for hospitals and laboratories in
-          India. Techdr prioritizes partner hospitals with recognized accreditations so international
+          India. TechdrHealth prioritizes partner hospitals with recognized accreditations so international
           patients can compare safety and quality — not just marketing claims.
         </AnswerBlock>
       </Reveal>
@@ -78,7 +78,7 @@ export default function AccreditationsPage() {
 
       <Reveal className="mt-12 rounded-[var(--radius)] bg-navy p-6 text-white sm:p-8">
         <h2 className="font-display text-2xl font-medium tracking-tight text-white">
-          How Techdr uses accreditations
+          How TechdrHealth uses accreditations
         </h2>
         <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/75">
           Accreditation is one filter — not the only one. We also match hospitals by specialty depth,

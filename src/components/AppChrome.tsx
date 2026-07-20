@@ -11,10 +11,9 @@ type AppChromeProps = {
 
 export function AppChrome({ children }: AppChromeProps) {
   const pathname = usePathname();
-  const isAfricanLanding = pathname.startsWith("/african");
   const isDomesticSection =
     pathname.startsWith("/india") || pathname.startsWith("/te");
-  const hideGlobalChrome = isAfricanLanding || isDomesticSection;
+  const hideGlobalChrome = isDomesticSection;
 
   return (
     <>

@@ -8,6 +8,7 @@ import { CTASection } from "@/components/CTASection";
 import { MediaImage } from "@/components/MediaImage";
 import { MdxContent } from "@/components/MdxContent";
 import { Reveal } from "@/components/Reveal";
+import { SocialLinks } from "@/components/SocialLinks";
 import { TrustBadges } from "@/components/TrustBadges";
 import { getContentPage } from "@/data/pages";
 import { MEDIA } from "@/lib/media";
@@ -17,10 +18,10 @@ import { FOUNDERS, SITE } from "@/lib/site";
 const page = getContentPage("about-us");
 
 export const metadata: Metadata = buildMetadata({
-  title: page?.title ?? "About Us — Techdr Medical Tourism",
+  title: page?.title ?? `About Us — ${SITE.name}`,
   description:
     page?.description ??
-    "Techdr Medical Tourism is a Hyderabad-based medical tourism facilitator with MOUs with 200+ hospitals across India.",
+    `${SITE.name} is a Hyderabad-based medical tourism facilitator with MOUs with 200+ hospitals across India.`,
   path: "/about-us",
   keywords: ["best medical tourism company in india", "reliable medical tourism company india"],
 });
@@ -82,7 +83,7 @@ export default function AboutUsPage() {
           <div className="overflow-hidden rounded-[var(--radius-sm)] border border-line bg-white shadow-[var(--shadow-soft)]">
             <MediaImage
               src={MEDIA.team}
-              alt="Medical Tours India team — care coordinators dedicated to international patients"
+              alt={`${SITE.name} team — care coordinators dedicated to international patients`}
               aspect="aspect-[16/9]"
               zoomOnHover={false}
               sizes="(max-width: 640px) 100vw, 352px"
@@ -105,7 +106,7 @@ export default function AboutUsPage() {
 
       <Reveal className="mt-10">
         <AnswerBlock>
-          Techdr Medical Tourism is a Hyderabad-based facilitator helping international patients
+          Medical Tours India is a Hyderabad-based facilitator helping international patients
           access treatment at {SITE.hospitalCount} partner hospitals across India. Our{" "}
           {SITE.teamCount} care team arranges hospital selection, medical visas, travel,
           interpreters, and transparent packages — with local support you can call or WhatsApp
@@ -134,6 +135,9 @@ export default function AboutUsPage() {
           </a>
           . Headquarters: Hyderabad, Telangana, India.
         </p>
+        <div className="mt-4">
+          <SocialLinks variant="light" />
+        </div>
       </Reveal>
 
       <Reveal className="mt-12">

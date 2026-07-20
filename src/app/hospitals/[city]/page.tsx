@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!city) return {};
   return buildMetadata({
     title: `Hospitals in ${city.name} for International Patients`,
-    description: `Partner hospitals in ${city.name} for medical tourists — accreditation, specialties, and Techdr coordination support.`,
+    description: `Partner hospitals in ${city.name} for medical tourists — accreditation, specialties, and TechdrHealth coordination support.`,
     path: `/hospitals/${city.slug}`,
     keywords: [`hospitals in ${city.name.toLowerCase()}`, `medical tourism ${city.name.toLowerCase()}`],
   });
@@ -67,7 +67,7 @@ export default async function HospitalsByCityPage({ params }: Props) {
           Hospitals in {city.name}
         </h1>
         <p className="mt-4 max-w-2xl text-muted">
-          Techdr-coordinated hospitals in {city.name} for international patients seeking surgery,
+          TechdrHealth-coordinated hospitals in {city.name} for international patients seeking surgery,
           oncology, transplant, and specialty care.
         </p>
       </Reveal>

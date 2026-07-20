@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { SocialLinks } from "@/components/SocialLinks";
 import { FOOTER_LINKS, SITE } from "@/lib/site";
 
 export function Footer() {
@@ -10,8 +11,8 @@ export function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <Link href="/" className="inline-block max-w-full">
               <Image
-                src={SITE.logo}
-                alt="Medical Tours India"
+                src={SITE.footerLogo}
+                alt={SITE.name}
                 width={220}
                 height={44}
                 className="h-9 w-auto max-w-[200px] object-contain object-left sm:h-10"
@@ -37,8 +38,22 @@ export function Footer() {
               >
                 WhatsApp {SITE.phoneDisplay}
               </a>
+              <a
+                href={`mailto:${SITE.email}`}
+                className="font-medium text-white transition-colors duration-150 hover:text-accent-light"
+              >
+                {SITE.email}
+              </a>
             </p>
             <p className="mt-1 text-sm text-white/45">Hyderabad, India</p>
+            <div className="mt-5">
+              <p className="text-xs font-semibold uppercase tracking-wide text-white/40">
+                Follow us
+              </p>
+              <div className="mt-3">
+                <SocialLinks variant="dark" />
+              </div>
+            </div>
           </div>
 
           <FooterColumn title="Treatments" links={FOOTER_LINKS.treatments} />

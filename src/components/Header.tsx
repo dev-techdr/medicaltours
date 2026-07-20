@@ -15,7 +15,7 @@ export function Header() {
         <Link href="/" className="min-w-0 shrink">
           <Image
             src={SITE.logo}
-            alt="Medical Tours India"
+            alt={SITE.name}
             width={200}
             height={40}
             className="h-8 w-auto max-w-[148px] object-contain object-left sm:h-9 sm:max-w-[180px] md:h-10 md:max-w-none"
@@ -47,11 +47,10 @@ export function Header() {
             href={SITE.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-secondary !px-3 !py-2 text-sm sm:!px-4"
+            className="btn btn-secondary !hidden !px-4 !py-2 text-sm lg:!inline-flex"
             aria-label="Chat on WhatsApp"
           >
-            <span className="sm:hidden">WA</span>
-            <span className="hidden sm:inline">WhatsApp</span>
+            WhatsApp
           </a>
           <LanguageSwitcher className="sm:hidden" />
           <button

@@ -36,7 +36,7 @@ export default function MedicalVisaPage() {
       <h1 className="font-display text-4xl font-medium tracking-tight text-navy">{page.title}</h1>
       <div className="mt-6">
         <AnswerBlock>
-          Techdr Medical Tourism helps international patients obtain medical visas for India by
+          Medical Tours India helps international patients obtain medical visas for India by
           arranging hospital invitation letters, document checklists, and guidance for attendant
           visas — so applications are complete and processing is as fast as possible.
         </AnswerBlock>

@@ -6,6 +6,7 @@ import { CTASection } from "@/components/CTASection";
 import { MediaImage } from "@/components/MediaImage";
 import { PatientEnquiryForm } from "@/components/PatientEnquiryForm";
 import { Reveal } from "@/components/Reveal";
+import { SocialLinks } from "@/components/SocialLinks";
 import { buildMetadata } from "@/lib/seo";
 import { MEDIA } from "@/lib/media";
 import { SITE } from "@/lib/site";
@@ -13,7 +14,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = buildMetadata({
   title: "Contact Us | Free Medical Tourism Consultation",
   description:
-    "Contact Techdr Medical Tourism in Hyderabad for a free consultation. Call or WhatsApp +91 6303225006 for hospital options and cost estimates.",
+    `Contact ${SITE.name} in Hyderabad for a free consultation. Call or WhatsApp +91 6303225006 for hospital options and cost estimates.`,
   path: "/contact-us",
   keywords: [
     "free consultation medical tourism india",
@@ -31,7 +32,7 @@ export default function ContactUsPage() {
         </h1>
         <div className="mt-6">
           <AnswerBlock>
-            Reach Techdr Medical Tourism on{" "}
+            Reach {SITE.name} on{" "}
             <a href={`tel:${SITE.phone}`} className="font-semibold text-accent hover:underline">
               Call {SITE.phoneDisplay}
             </a>{" "}
@@ -60,7 +61,7 @@ export default function ContactUsPage() {
             <div className="relative h-52 sm:h-56">
               <MediaImage
                 src={MEDIA.team}
-                alt="Medical Tours India care team in Hyderabad"
+                alt={`${SITE.name} care team in Hyderabad`}
                 fillParent
                 zoomOnHover={false}
                 sizes="(max-width: 1024px) 100vw, 45vw"
@@ -104,6 +105,12 @@ export default function ContactUsPage() {
                 <div className="flex flex-col gap-0.5 sm:flex-row sm:justify-between">
                   <dt className="text-muted">Headquarters</dt>
                   <dd className="font-semibold text-navy">Hyderabad, Telangana, India</dd>
+                </div>
+                <div className="flex flex-col gap-2 pt-4 sm:flex-row sm:items-center sm:justify-between">
+                  <dt className="text-muted">Follow us</dt>
+                  <dd>
+                    <SocialLinks variant="light" />
+                  </dd>
                 </div>
               </dl>
             </div>

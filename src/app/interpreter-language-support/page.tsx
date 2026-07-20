@@ -32,7 +32,7 @@ export default function InterpreterPage() {
       <h1 className="font-display text-4xl font-medium tracking-tight text-navy">{page.title}</h1>
       <div className="mt-6">
         <AnswerBlock>
-          Techdr provides interpreter services for international patients in India so you can
+          TechdrHealth provides interpreter services for international patients in India so you can
           communicate clearly with doctors and nurses. Arabic, French, and other languages are
           available at partner hospitals depending on your needs.
         </AnswerBlock>

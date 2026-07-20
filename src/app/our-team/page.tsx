@@ -15,7 +15,7 @@ import { FOUNDERS, SITE } from "@/lib/site";
 const pagePath = "/our-team";
 const pageTitle = "Our Team — Medical Tourism Coordinators in Hyderabad";
 const pageDescription =
-  "Meet the Techdr Medical Tourism team in Hyderabad — co-founders and care coordinators who support international patients from enquiry through recovery.";
+  "Meet the Medical Tours India team in Hyderabad — co-founders and care coordinators who support international patients from enquiry through recovery.";
 
 const coordinatorRoles = [
   "Hospital matching and second-opinion coordination",
@@ -55,7 +55,7 @@ export default function OurTeamPage() {
 
       <Reveal className="mt-8">
         <AnswerBlock label="Quick answer">
-          Techdr Medical Tourism is headquartered in Hyderabad with {SITE.teamCount} care coordinators
+          Medical Tours India is headquartered in Hyderabad with {SITE.teamCount} care coordinators
           and healthcare management leadership. The team supports international patients from report
           review and hospital matching through visa, travel, treatment, and follow-up.
         </AnswerBlock>
@@ -96,7 +96,7 @@ export default function OurTeamPage() {
         <div className="relative min-h-[260px] lg:min-h-[320px]">
           <MediaImage
             src={MEDIA.team}
-            alt="Techdr Medical Tourism care coordination team"
+            alt="Medical Tours India care coordination team"
             fillParent
             zoomOnHover={false}
             sizes="(max-width: 1024px) 100vw, 55vw"

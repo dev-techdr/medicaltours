@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!specialty) return {};
   return buildMetadata({
     title: `${specialty.name} Doctors in India for Foreign Patients`,
-    description: `Find ${specialty.name.toLowerCase()} specialists at Techdr partner hospitals for international medical tourists.`,
+    description: `Find ${specialty.name.toLowerCase()} specialists at TechdrHealth partner hospitals for international medical tourists.`,
     path: `/doctors/${specialty.slug}`,
     keywords: [`${specialty.name.toLowerCase()} doctors india`, `best ${specialty.name.toLowerCase()} India`],
   });
@@ -67,7 +67,7 @@ export default async function DoctorsBySpecialtyPage({ params }: Props) {
         </h1>
         <p className="mt-4 max-w-2xl text-muted">
           Specialists experienced with international patients seeking {specialty.name.toLowerCase()}{" "}
-          care through Techdr’s hospital partners.
+          care through TechdrHealth’s hospital partners.
         </p>
       </Reveal>
 

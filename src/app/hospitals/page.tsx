@@ -11,7 +11,7 @@ import { buildMetadata } from "@/lib/metadata";
 export const metadata: Metadata = buildMetadata({
   title: "Hospitals in India for Medical Tourism",
   description:
-    "Browse Techdr partner hospitals by city — Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore — for international patients.",
+    "Browse TechdrHealth partner hospitals by city — Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore — for international patients.",
   path: "/hospitals",
   keywords: ["hospitals in india for foreigners", "jci hospitals india medical tourism"],
 });
@@ -28,7 +28,7 @@ export default function HospitalsHubPage() {
           Partner hospitals by city
         </h1>
         <p className="mt-4 max-w-2xl text-muted">
-          Explore accredited hospitals Techdr coordinates for international patients across India’s
+          Explore accredited hospitals TechdrHealth coordinates for international patients across India’s
           major medical hubs.
         </p>
       </Reveal>

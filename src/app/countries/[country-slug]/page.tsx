@@ -191,8 +191,8 @@ export default async function CountryPage({ params }: Props) {
       </Reveal>
 
       <Reveal className="mt-6">
-        <AnswerBlock label={`How does Techdr help families from ${country.name}?`}>
-          Techdr Medical Tourism coordinates hospital matching, transparent package estimates,
+        <AnswerBlock label={`How does TechdrHealth help families from ${country.name}?`}>
+          Medical Tours India coordinates hospital matching, transparent package estimates,
           medical visa invitation letters, airport pickup, interpreters when needed, and recovery
           stay support for {country.demonym} patients — with a Hyderabad-based team available on
           call and WhatsApp.

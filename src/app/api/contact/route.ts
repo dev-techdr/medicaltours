@@ -6,7 +6,7 @@ import { SITE } from "@/lib/site";
 const resendApiKey = process.env.RESEND_API_KEY;
 const contactToEmail = process.env.CONTACT_TO_EMAIL || SITE.email;
 const contactFromEmail =
-  process.env.CONTACT_FROM_EMAIL || "Medical Tours India <onboarding@resend.dev>";
+  process.env.CONTACT_FROM_EMAIL || `${SITE.name} <onboarding@resend.dev>`;
 
 const DISPOSABLE_DOMAINS = new Set([
   "mailinator.com",

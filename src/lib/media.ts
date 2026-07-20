@@ -4,6 +4,7 @@ const s = (file: string) => `/images/services/${file}`;
 
 export const MEDIA = {
   hero: s("hospital-lobby.jpg"),
+  heroVideo: "/download (1).mp4",
   heroSecondary: s("surgery.jpg"),
   careTeam: s("care-team.jpg"),
   team: "/images/team-photo2.jpg",

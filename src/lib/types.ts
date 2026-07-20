@@ -106,7 +106,9 @@ export type PatientStory = {
 export type BlogPost = {
   slug: string;
   title: string;
+  metaTitle?: string;
   primaryKeyword: string;
+  keywords?: string[];
   excerpt: string;
   date: string;
   content: string;
