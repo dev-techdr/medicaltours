@@ -56,7 +56,7 @@ export function HeroVideoBackground({ src, poster, posterAlt }: HeroVideoBackgro
           muted
           loop
           playsInline
-          preload="auto"
+          preload="metadata"
           poster={poster}
         >
           <source src={src} type="video/mp4" />

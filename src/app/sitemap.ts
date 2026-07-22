@@ -6,11 +6,13 @@ import { getAllIndiaDomesticRoutes } from "@/data/indiaDomestic";
 import {
   getAllCategories,
   getAllCityHubs,
+  getAllDoctors,
   getAllHospitals,
   getAllProcedures,
   getAllSpecialtyHubs,
   getStoryCountries,
   getStoryProcedures,
+  doctorPath,
   procedurePath,
 } from "@/lib/data";
 import { SITE } from "@/lib/site";
@@ -106,6 +108,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
+  const doctorRoutes = getAllDoctors().map((d) => ({
+    url: `${SITE.url}${doctorPath(d)}`,
+    lastModified,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
   const storyRoutes = storyCountries.map((c) => ({
     url: `${SITE.url}/patient-stories/${c.slug}`,
     lastModified,
@@ -162,6 +171,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...hospitalCityRoutes,
     ...hospitalNetworkRoutes,
     ...specialtyRoutes,
+    ...doctorRoutes,
     ...storyRoutes,
     ...storyTreatmentRoutes,
     ...cityGuideRoutes,

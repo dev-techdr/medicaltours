@@ -42,19 +42,19 @@ export function CTASection({
           </p>
         </div>
         <div className="flex flex-col gap-2.5 sm:flex-row sm:flex-wrap lg:justify-end">
-          <Link href="/contact-us#enquiry-form" className="btn btn-light w-full sm:w-auto">
-            Get cost estimate
+          <Link href="/get-free-quote" className="btn btn-light w-full sm:w-auto">
+            Get free quote
+          </Link>
+          <Link href="/contact-us#enquiry-form" className="btn btn-secondary w-full sm:w-auto">
+            Contact us
           </Link>
           <a
             href={SITE.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-secondary w-full sm:w-auto"
+            className="btn btn-outline-light w-full sm:w-auto"
           >
             WhatsApp us
-          </a>
-          <a href={`tel:${SITE.phone}`} className="btn btn-outline-light w-full sm:w-auto">
-            Call {SITE.phoneDisplay}
           </a>
         </div>
       </div>

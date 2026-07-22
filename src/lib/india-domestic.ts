@@ -251,8 +251,10 @@ export function getPagesByTier(tier: IndiaDomesticTier) {
 export function getDomesticHreflangAlternates(slug: string) {
   const enPath = getIndiaDomesticPath(slug, "en");
   const meta = getIndiaDomesticPageMeta(slug);
+  const enUrl = `${SITE.url}${enPath}`;
   const alternates: Record<string, string> = {
-    en: `${SITE.url}${enPath}`,
+    en: enUrl,
+    "x-default": enUrl,
   };
   if (meta?.telugu) {
     alternates.te = `${SITE.url}${getIndiaDomesticPath(slug, "te")}`;

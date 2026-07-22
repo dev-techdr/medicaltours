@@ -13,22 +13,32 @@ export function buildMetadata({
   path = "/",
   keywords,
   noIndex = false,
+  ogLocale = "en_US",
 }: {
   title: string;
   description: string;
   path?: string;
   keywords?: string[];
   noIndex?: boolean;
+  /** Open Graph locale, e.g. en_GB / en_US / en_IN */
+  ogLocale?: string;
 }): Metadata {
   const url = absoluteUrl(path);
-  const fullTitle = title.includes(SITE.name)
-    ? title
-    : `${title} | ${SITE.name}`;
+  const brandSuffix = ` | ${SITE.name}`;
+  let fullTitle = title.includes(SITE.name) ? title : `${title}${brandSuffix}`;
+  if (!title.includes(SITE.name) && fullTitle.length > 60) {
+    const maxBase = Math.max(20, 60 - brandSuffix.length);
+    const trimmed =
+      title.length > maxBase ? `${title.slice(0, maxBase - 1).trimEnd()}…` : title;
+    fullTitle = `${trimmed}${brandSuffix}`;
+  }
+  const metaDescription =
+    description.length > 160 ? `${description.slice(0, 157).trimEnd()}…` : description;
   const ogImage = absoluteUrl(SITE.logo);
 
   return {
     title: fullTitle,
-    description,
+    description: metaDescription,
     keywords: keywords?.join(", "),
     alternates: {
       canonical: url,
@@ -41,17 +51,17 @@ export function buildMetadata({
     },
     openGraph: {
       title: fullTitle,
-      description,
+      description: metaDescription,
       url,
       siteName: SITE.name,
-      locale: "en_US",
+      locale: ogLocale,
       type: "website",
       images: [{ url: ogImage, alt: SITE.name }],
     },
     twitter: {
       card: "summary_large_image",
       title: fullTitle,
-      description,
+      description: metaDescription,
       images: [ogImage],
     },
     robots: noIndex

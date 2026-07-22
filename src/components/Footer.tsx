@@ -64,7 +64,20 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col gap-3 border-t border-white/10 pt-6 text-sm text-white/40 sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} {SITE.name}. All rights reserved.</p>
-          <p>Partnered with {SITE.hospitalCount} hospitals across India.</p>
+          <p className="flex flex-wrap items-center gap-x-3 gap-y-1">
+            <span>Partnered with {SITE.hospitalCount} hospitals across India.</span>
+            <span className="hidden text-white/20 sm:inline" aria-hidden>
+              ·
+            </span>
+            <a
+              href="https://www.techdr.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors duration-150 hover:text-accent-light"
+            >
+              Powered by TechDr
+            </a>
+          </p>
         </div>
       </div>
     </footer>

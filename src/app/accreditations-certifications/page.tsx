@@ -72,6 +72,16 @@ export default function AccreditationsPage() {
             <p className="mt-3 text-sm leading-relaxed text-muted">
               <strong className="text-navy">Why it matters:</strong> {item.whyItMatters}
             </p>
+            <p className="mt-4">
+              <a
+                href={item.verifyUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-semibold text-accent hover:underline"
+              >
+                Verify on {item.acronym} official site →
+              </a>
+            </p>
           </Reveal>
         ))}
       </div>

@@ -10,6 +10,8 @@ const TREATMENT_OPTIONS = [
   "Cancer treatment",
   "Liver or kidney transplant",
   "IVF & fertility",
+  "Women's health / MTP (confidential)",
+  "Women's health (confidential)",
   "Neurosurgery / Spine",
   "Cosmetic or plastic surgery",
   "Dental implants",
@@ -32,6 +34,9 @@ type PatientEnquiryFormProps = {
   submitLabel?: string;
   messagePlaceholder?: string;
   sourcePage?: string;
+  /** Soft private CTA: hide WhatsApp paths; prefer form/email for sensitive care. */
+  confidentialMode?: boolean;
+  defaultTreatment?: (typeof TREATMENT_OPTIONS)[number] | "";
 };
 
 export function PatientEnquiryForm({
@@ -43,6 +48,8 @@ export function PatientEnquiryForm({
   submitLabel = "Get free estimate",
   messagePlaceholder = "Briefly describe the diagnosis, reports available, and what you need help with.",
   sourcePage,
+  confidentialMode = false,
+  defaultTreatment = "",
 }: PatientEnquiryFormProps) {
   const router = useRouter();
   const formRef = useRef<HTMLFormElement | null>(null);
@@ -71,7 +78,11 @@ export function PatientEnquiryForm({
       if (!response.ok || !data?.ok) {
         setStatus({
           kind: "error",
-          message: data?.error || "Something went wrong. Please try WhatsApp instead.",
+          message:
+            data?.error ||
+            (confidentialMode
+              ? `Something went wrong. Please email ${SITE.email} instead.`
+              : "Something went wrong. Please try WhatsApp instead."),
         });
         setSubmitting(false);
         return;
@@ -85,7 +96,9 @@ export function PatientEnquiryForm({
     } catch {
       setStatus({
         kind: "error",
-        message: "Network error. Please try again or message us on WhatsApp.",
+        message: confidentialMode
+          ? `Network error. Please try again or email ${SITE.email}.`
+          : "Network error. Please try again or message us on WhatsApp.",
       });
       setSubmitting(false);
     }
@@ -104,19 +117,29 @@ export function PatientEnquiryForm({
       {!compact && (
         <p className="mt-2 text-sm leading-relaxed text-muted">
           {description ?? (
-            <>
-              Share a few details and we will reply within 24–48 hours with hospital options and a
-              cost estimate — or{" "}
-              <a
-                href={SITE.whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-semibold text-accent hover:underline"
-              >
-                WhatsApp us now
-              </a>
-              .
-            </>
+            confidentialMode ? (
+              <>
+                Share a few details and we will reply discreetly within 24–48 hours. Prefer email?{" "}
+                <a href={`mailto:${SITE.email}`} className="font-semibold text-accent hover:underline">
+                  {SITE.email}
+                </a>
+                .
+              </>
+            ) : (
+              <>
+                Share a few details and we will reply within 24–48 hours with hospital options and a
+                cost estimate — or{" "}
+                <a
+                  href={SITE.whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-accent hover:underline"
+                >
+                  WhatsApp us now
+                </a>
+                .
+              </>
+            )
           )}
         </p>
       )}
@@ -143,7 +166,9 @@ export function PatientEnquiryForm({
           />
         </label>
         <label className="block sm:col-span-1">
-          <span className="mb-1.5 block text-sm font-medium text-navy">WhatsApp / phone *</span>
+          <span className="mb-1.5 block text-sm font-medium text-navy">
+            {confidentialMode ? "Phone *" : "WhatsApp / phone *"}
+          </span>
           <input
             name="whatsapp"
             type="tel"
@@ -177,7 +202,12 @@ export function PatientEnquiryForm({
         </label>
         <label className="block sm:col-span-2">
           <span className="mb-1.5 block text-sm font-medium text-navy">Treatment interest *</span>
-          <select name="treatment" required className="form-field" defaultValue="">
+          <select
+            name="treatment"
+            required
+            className="form-field"
+            defaultValue={defaultTreatment}
+          >
             <option value="" disabled>
               Select a treatment
             </option>
@@ -244,14 +274,20 @@ export function PatientEnquiryForm({
         <button type="submit" className="btn btn-primary w-full sm:w-auto" disabled={submitting}>
           {submitting ? "Sending…" : submitLabel}
         </button>
-        <a
-          href={SITE.whatsappUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-outline w-full sm:w-auto"
-        >
-          Prefer WhatsApp
-        </a>
+        {confidentialMode ? (
+          <a href={`mailto:${SITE.email}`} className="btn btn-outline w-full sm:w-auto">
+            Email instead
+          </a>
+        ) : (
+          <a
+            href={SITE.whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-outline w-full sm:w-auto"
+          >
+            Prefer WhatsApp
+          </a>
+        )}
       </div>
     </form>
   );

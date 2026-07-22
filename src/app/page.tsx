@@ -45,7 +45,10 @@ export default function HomePage() {
 
   const featuredTreatments = FEATURED_TREATMENT_SLUGS.map((slug) =>
     getProcedureBySlug(slug),
-  ).filter((p): p is NonNullable<typeof p> => Boolean(p));
+  ).filter(
+    (p): p is NonNullable<typeof p> & { costIndia: NonNullable<NonNullable<typeof p>["costIndia"]> } =>
+      Boolean(p?.costIndia),
+  );
 
   const countryByHub = new Map(countries.map((c) => [c.slug, c]));
   const featuredCountries = PRIORITY_COUNTRY_SHORT_SLUGS.map(

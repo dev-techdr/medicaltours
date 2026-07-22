@@ -8,8 +8,9 @@ import { CTASection } from "@/components/CTASection";
 import { Reveal } from "@/components/Reveal";
 import { JsonLd } from "@/components/seo/JsonLd";
 import {
-  getAllProcedures,
+  getCostComparableProcedures,
   getProcedureBySlug,
+  isConfidentialClinicalProcedure,
   procedurePath,
 } from "@/lib/data";
 import { buildMetadata } from "@/lib/metadata";
@@ -18,13 +19,19 @@ import { medicalProcedureSchema } from "@/lib/schema";
 type Props = { params: Promise<{ procedure: string }> };
 
 export function generateStaticParams() {
-  return getAllProcedures().map((p) => ({ procedure: p.slug }));
+  return getCostComparableProcedures().map((p) => ({ procedure: p.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { procedure: slug } = await params;
   const procedure = getProcedureBySlug(slug);
-  if (!procedure) return {};
+  if (
+    !procedure ||
+    isConfidentialClinicalProcedure(procedure) ||
+    !procedure.costIndia
+  ) {
+    return {};
+  }
   return buildMetadata({
     title: `${procedure.name} Cost: India vs USA, UK & UAE`,
     description: `Compare ${procedure.name.toLowerCase()} costs in India versus the USA, UK, and UAE. Typical India range $${procedure.costIndia.min.toLocaleString()}–$${procedure.costIndia.max.toLocaleString()} USD.`,
@@ -41,7 +48,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function CostComparisonPage({ params }: Props) {
   const { procedure: slug } = await params;
   const procedure = getProcedureBySlug(slug);
-  if (!procedure) notFound();
+  if (
+    !procedure ||
+    isConfidentialClinicalProcedure(procedure) ||
+    !procedure.costIndia ||
+    !procedure.costComparison?.length
+  ) {
+    notFound();
+  }
 
   const path = `/cost-comparison/${procedure.slug}`;
 

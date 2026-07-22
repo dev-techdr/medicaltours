@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { formatLocalCurrency } from "@/data/countryMeta";
+import { treatmentCanonicalHref } from "@/data/treatmentCanonicalPaths";
 import type { Treatment } from "@/lib/types";
 
 type CountryCostMeta = {
@@ -76,7 +77,7 @@ export function CountryCostComparison({
                       <p className="font-semibold text-navy">{t.name}</p>
                       <p className="mt-0.5 text-xs text-muted">{t.category}</p>
                       <Link
-                        href={`/treatments/${t.slug}`}
+                        href={treatmentCanonicalHref(t.slug)}
                         className="mt-2 inline-block text-xs font-semibold text-accent hover:underline"
                       >
                         Details →
@@ -159,7 +160,7 @@ export function CountryCostComparison({
               </dl>
 
               <Link
-                href={`/treatments/${t.slug}`}
+                href={treatmentCanonicalHref(t.slug)}
                 className="mt-4 inline-block text-sm font-semibold text-accent hover:underline"
               >
                 {t.name} details →

@@ -196,6 +196,16 @@ const nextConfig: NextConfig = {
         destination: "/cost-comparison/lasik-eye-surgery-cost-india",
         permanent: true,
       },
+      {
+        source: "/cost/cosmetic-surgery-india",
+        destination: "/treatments/cosmetic-plastic-surgery-india",
+        permanent: true,
+      },
+      {
+        source: "/cost/organ-transplant-india",
+        destination: "/treatments/general-advanced-surgeries-india",
+        permanent: true,
+      },
       // Doctor profiles → specialty hubs
       {
         source: "/doctors/dr-rajesh-kumar-cardiologist",
@@ -507,6 +517,95 @@ const nextConfig: NextConfig = {
       {
         source: "/countries/australia",
         destination: "/countries/medical-tourism-india-for-australian-patients",
+        permanent: true,
+      },
+      {
+        source: "/mtp-treatment-india",
+        destination:
+          "/treatments/gynecology-womens-health-india/mtp-treatment-india",
+        permanent: true,
+      },
+      // Flat women's-health / fertility SEO aliases → nested treatment URLs
+      {
+        source: "/gynecology-treatment-india",
+        destination: "/treatments/gynecology-womens-health-india",
+        permanent: true,
+      },
+      {
+        source: "/hysterectomy-surgery-india",
+        destination:
+          "/treatments/gynecology-womens-health-india/hysterectomy-cost-india",
+        permanent: true,
+      },
+      {
+        source: "/laparoscopic-gynecology-surgery-india",
+        destination:
+          "/treatments/gynecology-womens-health-india/laparoscopic-gynecology-surgery-india",
+        permanent: true,
+      },
+      {
+        source: "/fibroid-treatment-india",
+        destination:
+          "/treatments/gynecology-womens-health-india/fibroid-removal-myomectomy-india",
+        permanent: true,
+      },
+      {
+        source: "/ovarian-cyst-treatment-india",
+        destination:
+          "/treatments/gynecology-womens-health-india/ovarian-cyst-removal-india",
+        permanent: true,
+      },
+      {
+        source: "/endometriosis-treatment-india",
+        destination:
+          "/treatments/gynecology-womens-health-india/endometriosis-treatment-india",
+        permanent: true,
+      },
+      {
+        source: "/ivf-treatment-india",
+        destination:
+          "/treatments/fertility-treatments-india/ivf-treatment-cost-india",
+        permanent: true,
+      },
+      {
+        source: "/iui-treatment-india",
+        destination:
+          "/treatments/fertility-treatments-india/iui-treatment-cost-india",
+        permanent: true,
+      },
+      {
+        source: "/infertility-treatment-india",
+        destination:
+          "/treatments/fertility-treatments-india/infertility-treatment-india",
+        permanent: true,
+      },
+      {
+        source: "/egg-freezing-india",
+        destination: "/treatments/fertility-treatments-india/egg-freezing-india",
+        permanent: true,
+      },
+      {
+        source: "/cosmetic-gynecology-india",
+        destination:
+          "/treatments/gynecology-womens-health-india/cosmetic-gynecology-india",
+        permanent: true,
+      },
+      {
+        source: "/vaginal-rejuvenation-india",
+        destination:
+          "/treatments/gynecology-womens-health-india/vaginal-rejuvenation-india",
+        permanent: true,
+      },
+      {
+        source: "/pcos-pcod-treatment-india",
+        destination:
+          "/treatments/gynecology-womens-health-india/pcos-treatment-india",
+        permanent: true,
+      },
+      {
+        source: "/menstrual-disorders-treatment-india",
+        destination:
+          "/treatments/gynecology-womens-health-india/menstrual-disorders-treatment-india",
         permanent: true,
       },
     ];

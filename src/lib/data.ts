@@ -5,6 +5,8 @@ import doctorsData from "../../content/doctors.json";
 import countriesData from "../../content/countries.json";
 import faqsData from "../../content/faqs.json";
 import testimonialsData from "../../content/testimonials.json";
+import procedureDepthData from "../../content/procedure-depth.json";
+import categoryHubsData from "../../content/category-hubs.json";
 
 export type CostRange = {
   min: number;
@@ -23,6 +25,16 @@ export type ProcedureImage = {
   alt: string;
 };
 
+export type DepthSection = {
+  id: string;
+  heading: string;
+  paragraphs: string[];
+  bullets?: string[];
+  links?: { href: string; label: string }[];
+};
+
+export type ProcedurePageVariant = "standard" | "confidential-clinical";
+
 export type Procedure = {
   slug: string;
   categorySlug: string;
@@ -35,8 +47,12 @@ export type Procedure = {
   shortAnswer?: string;
   /** GEO: cities commonly associated with this treatment in India */
   geoCities?: string[];
-  costIndia: CostRange;
-  costComparison: CostComparisonRow[];
+  /**
+   * Omit for confidential-clinical pages (e.g. MTP) that must not lead with price.
+   * Standard procedure pages always include cost fields.
+   */
+  costIndia?: CostRange;
+  costComparison?: CostComparisonRow[];
   recoveryTime: string;
   procedureSteps: string[];
   hospitalSlugs: string[];
@@ -47,6 +63,11 @@ export type Procedure = {
   /** SEO keywords for generateMetadata (primary + long-tail) */
   keywords?: string[];
   testimonialSlug?: string;
+  /**
+   * confidential-clinical: no cost tables, soft private CTA, legal disclaimer.
+   * Defaults to standard when omitted.
+   */
+  pageVariant?: ProcedurePageVariant;
 };
 
 export type Category = {
@@ -55,6 +76,8 @@ export type Category = {
   description: string;
   heroImage: string;
   procedureSlugs: string[];
+  /** Hub long-form for specialty overview pages (target ~800–1,200 words) */
+  hubSections?: DepthSection[];
 };
 
 export type ContentHospital = {
@@ -117,6 +140,16 @@ const doctors = doctorsData as ContentDoctor[];
 const countries = countriesData as ContentCountry[];
 const faqs = faqsData as Record<string, FAQItem[]>;
 const testimonials = testimonialsData as Testimonial[];
+const procedureDepth = procedureDepthData as Record<string, DepthSection[]>;
+const categoryHubs = categoryHubsData as Record<string, DepthSection[]>;
+
+export function getProcedureDepth(slug: string): DepthSection[] {
+  return procedureDepth[slug] ?? [];
+}
+
+export function getCategoryHubSections(slug: string): DepthSection[] {
+  return categoryHubs[slug] ?? [];
+}
 
 export function getAllCategories(): Category[] {
   return categories;
@@ -128,6 +161,20 @@ export function getCategoryBySlug(slug: string): Category | undefined {
 
 export function getAllProcedures(): Procedure[] {
   return procedures;
+}
+
+/** Procedures that publish India vs overseas cost comparison pages. */
+export function getCostComparableProcedures(): Procedure[] {
+  return procedures.filter(
+    (p) =>
+      p.pageVariant !== "confidential-clinical" &&
+      p.costIndia != null &&
+      (p.costComparison?.length ?? 0) > 0
+  );
+}
+
+export function isConfidentialClinicalProcedure(procedure: Procedure): boolean {
+  return procedure.pageVariant === "confidential-clinical";
 }
 
 export function getProcedureBySlug(slug: string): Procedure | undefined {
@@ -256,4 +303,8 @@ export function procedurePath(procedure: Procedure): string {
 
 export function costComparisonPath(procedureSlug: string): string {
   return `/cost-comparison/${procedureSlug}`;
+}
+
+export function doctorPath(doctor: Pick<ContentDoctor, "specialtySlug" | "slug">): string {
+  return `/doctors/${doctor.specialtySlug}/${doctor.slug}`;
 }

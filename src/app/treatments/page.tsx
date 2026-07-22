@@ -85,7 +85,9 @@ export default function TreatmentsHubPage() {
                 >
                   <span className="font-semibold text-navy">{p.name}</span>
                   <span className="mt-1 block text-sm text-muted">
-                    ${p.costIndia.min.toLocaleString()}–${p.costIndia.max.toLocaleString()} USD
+                    {p.costIndia
+                      ? `$${p.costIndia.min.toLocaleString()}–$${p.costIndia.max.toLocaleString()} USD`
+                      : "Confidential clinical care"}
                   </span>
                 </Link>
               </li>

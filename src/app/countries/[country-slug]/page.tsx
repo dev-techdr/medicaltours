@@ -49,10 +49,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? `${country.shortAnswer.slice(0, 152)}…`
       : country.shortAnswer;
 
+  const ogLocaleByIso: Record<string, string> = {
+    GB: "en_GB",
+    US: "en_US",
+    KE: "en_KE",
+    NG: "en_NG",
+    GH: "en_GH",
+    ZA: "en_ZA",
+    AU: "en_AU",
+    CA: "en_CA",
+    IN: "en_IN",
+  };
+
   return buildMetadata({
     title,
     description,
     path: `/countries/${country.slug}`,
+    ogLocale: ogLocaleByIso[country.isoCountryCode] ?? "en_US",
     keywords: [
       country.primaryKeyword,
       `medical tourism india for ${country.demonym.toLowerCase()} patients`,

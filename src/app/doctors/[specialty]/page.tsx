@@ -48,7 +48,7 @@ export default async function DoctorsBySpecialtyPage({ params }: Props) {
           physicianSchema({
             name: d.name,
             description: d.shortAnswer,
-            url: `/doctors/${specialty.slug}`,
+            url: `/doctors/${specialty.slug}/${d.slug}`,
             specialty: d.specialty,
             hospitalName: getHospitalBySlug(d.hospitalSlug)?.name ?? d.city,
           })

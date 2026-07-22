@@ -49,7 +49,7 @@
   {
     "slug": "fertility-treatments-india",
     "name": "Fertility Treatments",
-    "description": "IVF, ICSI, egg freezing, and male infertility treatment with transparent costs for foreign patients.",
+    "description": "IVF, ICSI, IUI, egg freezing, infertility evaluation, and related fertility care with transparent coordination for foreign patients \u2014 cross-linked with gynecology when surgery may help.",
     "heroImage": "/images/services/fertility.jpg",
     "procedureSlugs": [
       "ivf-treatment-cost-india",
@@ -57,7 +57,9 @@
       "surrogacy-india-for-foreigners",
       "egg-donation-freezing-india",
       "iui-treatment-cost-india",
-      "male-infertility-treatment-india"
+      "male-infertility-treatment-india",
+      "infertility-treatment-india",
+      "egg-freezing-india"
     ]
   },
   {
@@ -168,7 +170,7 @@
   {
     "slug": "gynecology-womens-health-india",
     "name": "Gynecology & Women's Health",
-    "description": "Hysterectomy, fibroid removal, endometriosis treatment, ovarian cyst surgery, and laparoscopic gynecology for international patients.",
+    "description": "Hysterectomy, fibroids, endometriosis, ovarian cysts, laparoscopic gynecology, PCOS, menstrual disorders, and confidential reproductive or aesthetic gynecology pathways for international patients.",
     "heroImage": "/images/services/gynecology.jpg",
     "procedureSlugs": [
       "hysterectomy-cost-india",
@@ -178,7 +180,11 @@
       "laparoscopic-gynecology-surgery-india",
       "cervical-cancer-treatment-india",
       "pcos-treatment-india",
-      "high-risk-pregnancy-care-india"
+      "high-risk-pregnancy-care-india",
+      "mtp-treatment-india",
+      "menstrual-disorders-treatment-india",
+      "cosmetic-gynecology-india",
+      "vaginal-rejuvenation-india"
     ]
   },
   {

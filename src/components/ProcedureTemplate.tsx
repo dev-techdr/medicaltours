@@ -6,6 +6,7 @@ import { Container } from "@/components/Container";
 import { CostComparisonTable } from "@/components/CostComparisonTable";
 import { CostHighlight } from "@/components/CostHighlight";
 import { CTASection } from "@/components/CTASection";
+import { DepthSections } from "@/components/DepthSections";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { Reveal } from "@/components/Reveal";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -14,9 +15,12 @@ import { IconTile, TrustSignalIcon } from "@/components/HomeIcons";
 import { TRUST_SIGNALS } from "@/lib/site";
 import {
   costComparisonPath,
+  doctorPath,
   getAllCountries,
   getCategoryBySlug,
+  getDoctorsBySlugs,
   getFaqsForProcedure,
+  getProcedureDepth,
   getRelatedProcedures,
   getTestimonialBySlug,
   procedurePath,
@@ -46,10 +50,20 @@ const TREATMENT_COUNTRY_LINKS = [
 ] as const;
 
 export function ProcedureTemplate({ procedure }: ProcedureTemplateProps) {
+  if (!procedure.costIndia || !procedure.costComparison?.length) {
+    throw new Error(
+      `Procedure "${procedure.slug}" is missing cost data for the standard template. Use pageVariant confidential-clinical instead.`
+    );
+  }
+  const costIndia = procedure.costIndia;
+  const costComparison = procedure.costComparison;
+
   const category = getCategoryBySlug(procedure.categorySlug);
   const path = procedurePath(procedure);
   const faqs = getFaqsForProcedure(procedure.faqSlugKey);
   const related = getRelatedProcedures(procedure);
+  const depthSections = getProcedureDepth(procedure.slug);
+  const linkedDoctors = getDoctorsBySlugs(procedure.doctorSlugs ?? []).slice(0, 3);
   const testimonial = procedure.testimonialSlug
     ? getTestimonialBySlug(procedure.testimonialSlug)
     : undefined;
@@ -80,7 +94,7 @@ export function ProcedureTemplate({ procedure }: ProcedureTemplateProps) {
 
   const aeoAnswer =
     procedure.shortAnswer ??
-    `${procedure.name} in India for international patients typically costs $${procedure.costIndia.min.toLocaleString()}–$${procedure.costIndia.max.toLocaleString()} USD at accredited partner hospitals — often 50–80% less than USA or UK packages, with care available in ${geoCities.join(", ")}.`;
+    `${procedure.name} in India for international patients typically costs $${costIndia.min.toLocaleString()}–$${costIndia.max.toLocaleString()} USD at accredited partner hospitals — often 50–80% less than USA or UK packages, with care available in ${geoCities.join(", ")}.`;
 
   const schemas = [
     breadcrumbSchema(crumbs),
@@ -88,8 +102,8 @@ export function ProcedureTemplate({ procedure }: ProcedureTemplateProps) {
       name: procedure.name,
       description: procedure.shortAnswer ?? procedure.overview,
       url: path,
-      costMin: procedure.costIndia.min,
-      costMax: procedure.costIndia.max,
+      costMin: costIndia.min,
+      costMax: costIndia.max,
     }),
     faqSchema(faqs),
     ...(testimonial
@@ -141,8 +155,8 @@ export function ProcedureTemplate({ procedure }: ProcedureTemplateProps) {
           <AnswerBlock>
             {aeoAnswer} Typical India range:{" "}
             <CostHighlight>
-              ${procedure.costIndia.min.toLocaleString()}–$
-              {procedure.costIndia.max.toLocaleString()} USD
+              ${costIndia.min.toLocaleString()}–$
+              {costIndia.max.toLocaleString()} USD
             </CostHighlight>
             .
           </AnswerBlock>
@@ -151,6 +165,12 @@ export function ProcedureTemplate({ procedure }: ProcedureTemplateProps) {
           {procedure.overview}
         </p>
       </Reveal>
+
+      {depthSections.length > 0 ? (
+        <div className="mt-14">
+          <DepthSections sections={depthSections} />
+        </div>
+      ) : null}
 
       <section className="mt-10" aria-labelledby="geo-heading">
         <Reveal>
@@ -165,14 +185,29 @@ export function ProcedureTemplate({ procedure }: ProcedureTemplateProps) {
             accredited hospitals across major medical tourism cities.
           </p>
           <ul className="mt-4 flex flex-wrap gap-2">
-            {geoCities.map((city) => (
-              <li
-                key={city}
-                className="rounded-full border border-line bg-white px-3 py-1.5 text-sm font-medium text-navy"
-              >
-                {city}
-              </li>
-            ))}
+            {geoCities.map((city) => {
+              const citySlugMap: Record<string, string> = {
+                Hyderabad: "hyderabad",
+                "Delhi NCR": "delhi",
+                Delhi: "delhi",
+                Mumbai: "mumbai",
+                Chennai: "chennai",
+                Bangalore: "bangalore",
+                Bengaluru: "bangalore",
+              };
+              const citySlug = citySlugMap[city];
+              const href = citySlug ? `/cities/${citySlug}` : "/hospital-network";
+              return (
+                <li key={city}>
+                  <Link
+                    href={href}
+                    className="inline-block rounded-full border border-line bg-white px-3 py-1.5 text-sm font-medium text-navy transition-colors hover:border-accent hover:text-accent"
+                  >
+                    {city}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </Reveal>
       </section>
@@ -180,8 +215,8 @@ export function ProcedureTemplate({ procedure }: ProcedureTemplateProps) {
       <div className="mt-12">
         <Reveal>
           <CostComparisonTable
-            india={procedure.costIndia}
-            comparisons={procedure.costComparison}
+            india={costIndia}
+            comparisons={costComparison}
             procedureName={procedure.name}
             comparisonHref={costComparisonPath(procedure.slug)}
           />
@@ -259,6 +294,42 @@ export function ProcedureTemplate({ procedure }: ProcedureTemplateProps) {
         </section>
       ) : null}
 
+      {linkedDoctors.length > 0 ? (
+        <section className="mt-14" aria-labelledby="doctors-heading">
+          <Reveal>
+            <h2
+              id="doctors-heading"
+              className="font-display text-2xl font-medium tracking-tight text-navy sm:text-3xl"
+            >
+              Specialists for {procedure.name.toLowerCase()}
+            </h2>
+            <p className="mt-2 max-w-2xl text-sm text-muted sm:text-base">
+              Coordinating doctors experienced with international patients. Clinical decisions
+              remain with the treating hospital team after evaluation.
+            </p>
+            <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {linkedDoctors.map((doctor) => (
+                <li key={doctor.slug}>
+                  <Link
+                    href={doctorPath(doctor)}
+                    className="block rounded-[var(--radius-sm)] border border-line bg-white px-4 py-3 transition-colors hover:border-accent"
+                  >
+                    <p className="text-sm font-semibold text-navy">{doctor.name}</p>
+                    <p className="mt-1 text-xs text-muted">
+                      {doctor.specialty} · {doctor.city} · {doctor.experienceYears}+ years
+                    </p>
+                    <p className="mt-2 line-clamp-2 text-sm text-muted">{doctor.shortAnswer}</p>
+                    <span className="mt-2 inline-block text-xs font-semibold text-accent">
+                      View profile →
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+        </section>
+      ) : null}
+
       <div className="mt-14">
         <FAQAccordion faqs={faqs} includeSchema={false} />
       </div>
@@ -281,8 +352,9 @@ export function ProcedureTemplate({ procedure }: ProcedureTemplateProps) {
                   >
                     {item.name}
                     <span className="mt-1 block text-xs font-normal text-muted">
-                      ${item.costIndia.min.toLocaleString()}–$
-                      {item.costIndia.max.toLocaleString()} USD
+                      {item.costIndia
+                        ? `$${item.costIndia.min.toLocaleString()}–$${item.costIndia.max.toLocaleString()} USD`
+                        : "Confidential clinical care"}
                     </span>
                   </Link>
                 </li>

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { ContentDoctor } from "@/lib/data";
-import { getHospitalBySlug } from "@/lib/data";
+import { doctorPath, getHospitalBySlug } from "@/lib/data";
 
 type DoctorCardProps = {
   doctor: ContentDoctor;
@@ -8,11 +8,16 @@ type DoctorCardProps = {
 
 export function DoctorCard({ doctor }: DoctorCardProps) {
   const hospital = getHospitalBySlug(doctor.hospitalSlug);
+  const href = doctorPath(doctor);
 
   return (
     <article className="rounded-[var(--radius)] border border-line bg-white p-4 shadow-[var(--shadow-soft)]">
       <p className="data-label">{doctor.specialty}</p>
-      <h3 className="mt-1 text-base font-semibold text-navy">{doctor.name}</h3>
+      <h3 className="mt-1 text-base font-semibold text-navy">
+        <Link href={href} className="hover:text-accent">
+          {doctor.name}
+        </Link>
+      </h3>
       <p className="mt-1 text-sm text-muted">
         {doctor.experienceYears}+ years · {doctor.city}
         {hospital ? ` · ${hospital.name}` : ""}
@@ -21,10 +26,10 @@ export function DoctorCard({ doctor }: DoctorCardProps) {
         {doctor.shortAnswer}
       </p>
       <Link
-        href={`/doctors/${doctor.specialtySlug}`}
+        href={href}
         className="mt-3 inline-block text-sm font-semibold text-accent hover:underline"
       >
-        More {doctor.specialty.toLowerCase()} doctors →
+        View profile →
       </Link>
     </article>
   );

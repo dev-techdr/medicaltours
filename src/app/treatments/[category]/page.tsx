@@ -10,10 +10,12 @@ import { Reveal } from "@/components/Reveal";
 import {
   getAllCategories,
   getCategoryBySlug,
+  getCategoryHubSections,
   getProceduresByCategory,
   procedurePath,
 } from "@/lib/data";
 import { buildMetadata } from "@/lib/metadata";
+import { DepthSections } from "@/components/DepthSections";
 
 type Props = { params: Promise<{ category: string }> };
 
@@ -47,11 +49,13 @@ export default async function CategoryPage({ params }: Props) {
   if (!category) notFound();
 
   const procedures = getProceduresByCategory(category.slug);
-  const minCost = procedures.length
-    ? Math.min(...procedures.map((p) => p.costIndia.min))
+  const hubSections = getCategoryHubSections(category.slug);
+  const priced = procedures.filter((p) => p.costIndia != null);
+  const minCost = priced.length
+    ? Math.min(...priced.map((p) => p.costIndia!.min))
     : null;
-  const maxCost = procedures.length
-    ? Math.max(...procedures.map((p) => p.costIndia.max))
+  const maxCost = priced.length
+    ? Math.max(...priced.map((p) => p.costIndia!.max))
     : null;
 
   return (
@@ -96,6 +100,12 @@ export default async function CategoryPage({ params }: Props) {
         <p className="mt-6 max-w-3xl text-base text-muted sm:text-lg">{category.description}</p>
       </Reveal>
 
+      {hubSections.length > 0 ? (
+        <div className="mt-12">
+          <DepthSections sections={hubSections} />
+        </div>
+      ) : null}
+
       {procedures.length > 0 ? (
         <div className="mt-10 grid gap-4 sm:grid-cols-2">
           {procedures.map((procedure, i) => (
@@ -108,10 +118,16 @@ export default async function CategoryPage({ params }: Props) {
                 <p className="mt-2 text-sm text-muted line-clamp-3">
                   {procedure.shortAnswer ?? procedure.overview}
                 </p>
-                <p className="mt-3 text-sm font-medium text-accent">
-                  ${procedure.costIndia.min.toLocaleString()}–$
-                  {procedure.costIndia.max.toLocaleString()} USD
-                </p>
+                {procedure.costIndia ? (
+                  <p className="mt-3 text-sm font-medium text-accent">
+                    ${procedure.costIndia.min.toLocaleString()}–$
+                    {procedure.costIndia.max.toLocaleString()} USD
+                  </p>
+                ) : (
+                  <p className="mt-3 text-sm font-medium text-accent">
+                    Confidential clinical care →
+                  </p>
+                )}
               </Link>
             </Reveal>
           ))}
