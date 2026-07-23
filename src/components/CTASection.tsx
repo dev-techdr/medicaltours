@@ -5,13 +5,18 @@ type CTASectionProps = {
   title?: string;
   description?: string;
   compact?: boolean;
+  /** Optional pre-filled WhatsApp deep link (defaults to SITE.whatsappUrl). */
+  whatsappHref?: string;
 };
 
 export function CTASection({
   title = "Ready to plan your treatment in India?",
   description = "Share your reports and we’ll help you compare hospital options, clarify costs, and organize visa, travel, and recovery support — usually within 24–48 hours.",
   compact = false,
+  whatsappHref,
 }: CTASectionProps) {
+  const waHref = whatsappHref ?? SITE.whatsappUrl;
+
   return (
     <section
       className={`relative overflow-hidden rounded-[var(--radius)] bg-navy text-white ${
@@ -49,7 +54,7 @@ export function CTASection({
             Contact us
           </Link>
           <a
-            href={SITE.whatsappUrl}
+            href={waHref}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-outline-light w-full sm:w-auto"

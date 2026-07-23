@@ -22,8 +22,8 @@ export function IndiaHeader() {
             alt={`${SITE.name} — Domestic`}
             width={200}
             height={40}
-            className="h-8 w-auto max-w-[160px] object-contain object-left sm:h-9"
-            style={{ width: "auto" }}
+            className="h-6 w-auto max-w-[120px] object-contain object-left sm:h-7 sm:max-w-[140px]"
+            style={{ width: "auto", height: "auto" }}
             priority
           />
         </Link>

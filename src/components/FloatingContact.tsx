@@ -15,8 +15,15 @@ export function FloatingContact() {
   const pathname = usePathname();
   const onContactForm = pathname.startsWith("/contact-us");
 
+  const treatmentMatch = pathname.match(/^\/treatments\/[^/]+\/([^/]+)/);
+  const treatmentLabel = treatmentMatch?.[1]
+    ?.replace(/-india$/, "")
+    .replace(/-/g, " ");
+
   const message = encodeURIComponent(
-    "Hello, I am interested in medical treatment in India. Please help me with options and a cost estimate."
+    treatmentLabel
+      ? `Hello, I am interested in ${treatmentLabel} in India. Please help me with hospital options, costs, and visa support.`
+      : "Hello, I am interested in medical treatment in India. Please help me with options and a cost estimate."
   );
   const whatsappHref = `${SITE.whatsappUrl}?text=${message}`;
   const estimateHref = onContactForm ? "#enquiry-form" : "/contact-us#enquiry-form";

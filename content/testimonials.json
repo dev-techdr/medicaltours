@@ -490,5 +490,17 @@
     "summary": "Travelled from Sydney for IVF treatment cost in India for Australian patients — transparent pricing versus private Australian clinic quotes.",
     "outcome": "Positive pregnancy test; antenatal care continued in Australia.",
     "rating": 5
+  },
+  {
+    "slug": "amina-nigeria-fibroid-myomectomy",
+    "patientName": "Amina O.",
+    "country": "Nigeria",
+    "countrySlug": "nigeria",
+    "treatment": "Fibroid Removal (Myomectomy)",
+    "procedureSlug": "fibroid-removal-myomectomy-india",
+    "hospital": "Olive Hospitals Hyderabad",
+    "summary": "Travelled from Lagos for laparoscopic myomectomy in India after years of heavy bleeding — clear package estimate, fertility-preserving plan, and medical visa invitation letter arranged by TechdrHealth.",
+    "outcome": "Fibroids removed with uterus preserved; recovered well and returned to Nigeria with follow-up guidance.",
+    "rating": 5
   }
 ]

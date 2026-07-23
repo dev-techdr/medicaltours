@@ -18,8 +18,9 @@ export function Header() {
             alt={SITE.name}
             width={200}
             height={40}
-            className="h-8 w-auto max-w-[148px] object-contain object-left sm:h-9 sm:max-w-[180px] md:h-10 md:max-w-none"
-            style={{ width: "auto" }}
+            priority
+            className="h-6 w-auto max-w-[120px] object-contain object-left sm:h-7 sm:max-w-[140px] md:h-8 md:max-w-[160px]"
+            style={{ width: "auto", height: "auto" }}
           />
         </Link>
 
