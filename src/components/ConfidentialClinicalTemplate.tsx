@@ -9,7 +9,6 @@ import { Reveal } from "@/components/Reveal";
 import { JsonLd } from "@/components/seo/JsonLd";
 import {
   getCategoryBySlug,
-  getDoctorBySlug,
   getFaqsForProcedure,
   getProcedureDepth,
   getRelatedProcedures,
@@ -23,7 +22,6 @@ type ConfidentialClinicalTemplateProps = {
   procedure: Procedure;
   /** Soft treatment dropdown default for the private form */
   defaultTreatment?: string;
-  reviewerCredentialLine?: string;
 };
 
 /**
@@ -33,14 +31,12 @@ type ConfidentialClinicalTemplateProps = {
 export function ConfidentialClinicalTemplate({
   procedure,
   defaultTreatment = "Women's health (confidential)",
-  reviewerCredentialLine = "MS Obstetrics & Gynecology",
 }: ConfidentialClinicalTemplateProps) {
   const category = getCategoryBySlug(procedure.categorySlug);
   const path = procedurePath(procedure);
   const faqs = getFaqsForProcedure(procedure.faqSlugKey);
   const related = getRelatedProcedures(procedure);
   const depthSections = getProcedureDepth(procedure.slug);
-  const reviewer = procedure.doctorSlugs.map((slug) => getDoctorBySlug(slug)).find(Boolean);
 
   const crumbs = [
     { name: "Treatments", href: "/treatments" },
@@ -126,23 +122,6 @@ export function ConfidentialClinicalTemplate({
             </h2>
             <div className="mt-6">
               <FAQAccordion faqs={faqs} />
-            </div>
-          </Reveal>
-        </section>
-      ) : null}
-
-      {reviewer ? (
-        <section className="mt-14 max-w-3xl">
-          <Reveal>
-            <div className="rounded-[var(--radius)] border border-line bg-white p-5 sm:p-6">
-              <p className="data-label">Clinical review</p>
-              <h2 className="mt-2 font-display text-xl font-medium text-navy">
-                Medically reviewed framing with {reviewer.name}, {reviewerCredentialLine}
-              </h2>
-              <p className="mt-3 text-sm leading-relaxed text-muted">
-                {reviewer.shortAnswer} Based in {reviewer.city} ({reviewer.experienceYears}+ years).
-                Content emphasises counselling quality and safety language for sensitive care.
-              </p>
             </div>
           </Reveal>
         </section>

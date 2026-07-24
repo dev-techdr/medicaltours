@@ -17,11 +17,11 @@ export function DepthSections({ sections, className = "" }: DepthSectionsProps) 
           <section aria-labelledby={`depth-${section.id}`} className="max-w-3xl">
             <h2
               id={`depth-${section.id}`}
-              className="font-display text-2xl font-medium tracking-tight text-navy sm:text-3xl"
+              className="text-balance font-display text-2xl font-medium tracking-tight text-navy sm:text-3xl"
             >
               {section.heading}
             </h2>
-            <div className="mt-4 space-y-4 text-base leading-relaxed text-ink">
+            <div className="mt-4 space-y-4 text-base leading-relaxed text-ink [overflow-wrap:anywhere]">
               {section.paragraphs.map((paragraph) => (
                 <p key={paragraph.slice(0, 48)}>{paragraph}</p>
               ))}

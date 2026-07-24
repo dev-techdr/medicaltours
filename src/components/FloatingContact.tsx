@@ -14,6 +14,7 @@ const WhatsAppIcon = ({ className = "h-6 w-6" }: { className?: string }) => (
 export function FloatingContact() {
   const pathname = usePathname();
   const onContactForm = pathname.startsWith("/contact-us");
+  const onTreatmentDetail = /^\/treatments\/[^/]+\/[^/]+/.test(pathname);
 
   const treatmentMatch = pathname.match(/^\/treatments\/[^/]+\/([^/]+)/);
   const treatmentLabel = treatmentMatch?.[1]
@@ -36,27 +37,30 @@ export function FloatingContact() {
         bottom: "max(1rem, env(safe-area-inset-bottom))",
       }}
     >
-      <Link
-        href={estimateHref}
-        className="pointer-events-auto inline-flex max-w-[calc(100vw-2rem)] items-center gap-2 rounded-full bg-accent px-3.5 py-2.5 text-sm font-semibold text-white shadow-[0_14px_28px_rgba(26,122,114,0.28)] transition hover:bg-accent/90 sm:gap-3 sm:px-5 sm:py-3"
-        aria-label="Get a free cost estimate"
-      >
-        <span className="sm:hidden">Get cost</span>
-        <span className="hidden sm:inline">Get cost estimate</span>
-        <span
-          className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white/15 sm:h-7 sm:w-7"
-          aria-hidden
+      {/* Estimate CTA already appears in the treatment page sidebar / mobile cost card */}
+      {!onTreatmentDetail ? (
+        <Link
+          href={estimateHref}
+          className="pointer-events-auto inline-flex max-w-[calc(100vw-2rem)] items-center gap-2 rounded-full bg-accent px-3.5 py-2.5 text-sm font-semibold text-white shadow-[0_14px_28px_rgba(26,122,114,0.28)] transition hover:bg-accent/90 sm:gap-3 sm:px-5 sm:py-3"
+          aria-label="Get a free cost estimate"
         >
-          <svg className="h-3.5 w-3.5 sm:h-4 sm:w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M9 7h6m-6 4h6m-7 8h8a2 2 0 002-2V7a2 2 0 00-2-2H8a2 2 0 00-2 2v10a2 2 0 002 2z"
-            />
-          </svg>
-        </span>
-      </Link>
+          <span className="sm:hidden">Get cost</span>
+          <span className="hidden sm:inline">Get cost estimate</span>
+          <span
+            className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white/15 sm:h-7 sm:w-7"
+            aria-hidden
+          >
+            <svg className="h-3.5 w-3.5 sm:h-4 sm:w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 7h6m-6 4h6m-7 8h8a2 2 0 002-2V7a2 2 0 00-2-2H8a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+          </span>
+        </Link>
+      ) : null}
 
       <a
         href={whatsappHref}

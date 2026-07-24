@@ -59,7 +59,7 @@ export default async function CategoryPage({ params }: Props) {
     : null;
 
   return (
-    <Container className="py-10 sm:py-14">
+    <Container className="pb-28 pt-10 sm:pb-32 sm:pt-14">
       <Breadcrumb
         items={[
           { name: "Treatments", href: "/treatments" },
@@ -68,23 +68,25 @@ export default async function CategoryPage({ params }: Props) {
       />
 
       <Reveal>
-        <div className="relative mb-8 overflow-hidden rounded-[var(--radius)] border border-line">
-          <div className="relative aspect-[21/9] min-h-[180px]">
+        <div className="relative mb-6 overflow-hidden rounded-[var(--radius)] border border-line sm:mb-8">
+          <div className="relative h-[200px] sm:h-[260px] md:h-[300px] lg:h-[340px]">
             <Image
               src={category.heroImage}
               alt={category.name}
               fill
               priority
-              className="object-cover"
-              sizes="100vw"
+              className="object-cover object-center"
+              sizes="(max-width: 1280px) 100vw, 1280px"
             />
-          </div>
-          <div className="media-overlay media-overlay-navy-soft" />
-          <div className="absolute bottom-0 left-0 p-5 text-white sm:p-8">
-            <p className="text-sm font-semibold text-white/80">Treatment category</p>
-            <h1 className="mt-1 font-display text-3xl font-medium tracking-tight text-white sm:text-4xl">
-              {category.name} in India
-            </h1>
+            <div className="media-overlay media-overlay-hero" aria-hidden />
+            <div className="absolute inset-x-0 bottom-0 p-4 text-white sm:p-6 lg:p-8">
+              <p className="text-xs font-semibold uppercase tracking-wide text-white/80 sm:text-sm sm:normal-case sm:tracking-normal">
+                Treatment category
+              </p>
+              <h1 className="mt-1 max-w-4xl text-balance font-display text-2xl font-medium leading-tight tracking-tight text-white sm:text-3xl lg:text-4xl">
+                {category.name} in India
+              </h1>
+            </div>
           </div>
         </div>
         <div className="max-w-3xl">

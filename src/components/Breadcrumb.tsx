@@ -11,20 +11,27 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
   const allItems: BreadcrumbItem[] = [{ name: "Home", href: "/" }, ...items];
 
   return (
-    <nav aria-label="Breadcrumb" className="mb-6">
+    <nav aria-label="Breadcrumb" className="mb-6 min-w-0">
       <JsonLd data={breadcrumbSchema(allItems)} />
-      <ol className="flex flex-wrap items-center gap-1.5 text-sm text-muted">
+      <ol className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-sm text-muted">
         {allItems.map((item, index) => {
           const isLast = index === allItems.length - 1;
           return (
-            <li key={item.href} className="flex items-center gap-1.5">
-              {index > 0 && <span className="text-line">/</span>}
+            <li key={item.href} className="flex min-w-0 max-w-full items-center gap-1.5">
+              {index > 0 && <span className="shrink-0 text-line">/</span>}
               {isLast ? (
-                <span className="font-medium text-navy" aria-current="page">
+                <span
+                  className="truncate font-medium text-navy"
+                  aria-current="page"
+                  title={item.name}
+                >
                   {item.name}
                 </span>
               ) : (
-                <Link href={item.href} className="transition-colors duration-150 hover:text-accent">
+                <Link
+                  href={item.href}
+                  className="shrink-0 transition-colors duration-150 hover:text-accent"
+                >
                   {item.name}
                 </Link>
               )}

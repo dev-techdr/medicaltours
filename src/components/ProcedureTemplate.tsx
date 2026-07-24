@@ -15,10 +15,8 @@ import { IconTile, TrustSignalIcon } from "@/components/HomeIcons";
 import { SITE, TRUST_SIGNALS } from "@/lib/site";
 import {
   costComparisonPath,
-  doctorPath,
   getAllCountries,
   getCategoryBySlug,
-  getDoctorsBySlugs,
   getFaqsForProcedure,
   getHospitalsBySlugs,
   getProcedureDepth,
@@ -76,6 +74,56 @@ function procedureWhatsAppHref(procedureName: string) {
   return `${SITE.whatsappUrl}?text=${text}`;
 }
 
+function ProcedureCostSidebar({
+  procedureName,
+  costIndia,
+  recoveryTime,
+  whatsappHref,
+}: {
+  procedureName: string;
+  costIndia: { min: number; max: number };
+  recoveryTime: string;
+  whatsappHref: string;
+}) {
+  return (
+    <div className="space-y-4 rounded-[var(--radius)] border border-line bg-white p-4 shadow-[var(--shadow-soft)] sm:p-5">
+      <p className="text-xs font-semibold uppercase tracking-wide text-accent">
+        Typical India cost
+      </p>
+      <p className="font-display text-2xl font-medium tracking-tight text-navy sm:text-3xl">
+        <CostHighlight>
+          ${costIndia.min.toLocaleString()}–${costIndia.max.toLocaleString()}
+        </CostHighlight>
+      </p>
+      <p className="text-sm text-muted">USD package range for international patients</p>
+      <p className="text-sm leading-relaxed text-muted">
+        <span className="font-semibold text-navy">Recovery:</span> {recoveryTime}
+      </p>
+      <div className="flex flex-col gap-2.5 pt-1">
+        <a
+          href={whatsappHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex w-full items-center justify-center gap-2 rounded-[var(--radius-sm)] bg-[#25D366] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#1ebe57]"
+        >
+          WhatsApp about {procedureName.toLowerCase()}
+        </a>
+        <Link
+          href="/contact-us#enquiry-form"
+          className="inline-flex w-full items-center justify-center rounded-[var(--radius-sm)] border border-line bg-neutral px-4 py-3 text-sm font-semibold text-navy transition hover:border-accent hover:text-accent"
+        >
+          Get a free written estimate
+        </Link>
+      </div>
+      <ul className="space-y-2 border-t border-line pt-4 text-sm text-muted">
+        <li>Visa invitation letter support</li>
+        <li>Hospital matching from reports</li>
+        <li>Travel & recovery coordination</li>
+      </ul>
+    </div>
+  );
+}
+
 export function ProcedureTemplate({ procedure }: ProcedureTemplateProps) {
   if (!procedure.costIndia || !procedure.costComparison?.length) {
     throw new Error(
@@ -90,7 +138,6 @@ export function ProcedureTemplate({ procedure }: ProcedureTemplateProps) {
   const faqs = getFaqsForProcedure(procedure.faqSlugKey);
   const related = getRelatedProcedures(procedure);
   const depthSections = getProcedureDepth(procedure.slug);
-  const linkedDoctors = getDoctorsBySlugs(procedure.doctorSlugs ?? []).slice(0, 3);
   const linkedHospitals = getHospitalsBySlugs(procedure.hospitalSlugs ?? []).slice(0, 6);
   const testimonial = procedure.testimonialSlug
     ? getTestimonialBySlug(procedure.testimonialSlug)
@@ -147,378 +194,367 @@ export function ProcedureTemplate({ procedure }: ProcedureTemplateProps) {
       : []),
   ];
 
+  const citySlugMap: Record<string, string> = {
+    Hyderabad: "hyderabad",
+    "Delhi NCR": "delhi",
+    Delhi: "delhi",
+    Mumbai: "mumbai",
+    Chennai: "chennai",
+    Bangalore: "bangalore",
+    Bengaluru: "bangalore",
+  };
+
   return (
-    <Container className="py-10 sm:py-14">
+    <Container className="pb-28 pt-10 sm:pb-32 sm:pt-14">
       <JsonLd data={schemas} />
       <Breadcrumb items={crumbs} />
 
       <Reveal>
         {hero ? (
-          <div className="group relative mb-8 overflow-hidden rounded-[var(--radius)] border border-line">
-            <div className="relative aspect-[21/9] min-h-[200px]">
+          <div className="group relative mb-6 overflow-hidden rounded-[var(--radius)] border border-line sm:mb-8">
+            <div className="relative h-[220px] sm:h-[280px] md:h-[320px] lg:h-[360px]">
               <Image
                 src={hero.src}
                 alt={hero.alt}
                 fill
                 priority
-                className="object-cover"
-                sizes="100vw"
+                className="object-cover object-center"
+                sizes="(max-width: 1280px) 100vw, 1280px"
               />
-            </div>
-            <div className="media-overlay media-overlay-navy-soft" />
-            <div className="absolute bottom-0 left-0 p-5 text-white sm:p-8">
-              {category ? (
-                <p className="text-sm font-semibold text-white/80">{category.name}</p>
-              ) : null}
-              <h1 className="mt-1 font-display text-3xl font-medium tracking-tight text-white sm:text-4xl">
-                {procedure.h1}
-              </h1>
+              <div className="media-overlay media-overlay-hero" aria-hidden />
+              <div className="absolute inset-x-0 bottom-0 p-4 sm:p-6 lg:p-8">
+                {category ? (
+                  <p className="text-xs font-semibold uppercase tracking-wide text-white/80 sm:text-sm sm:normal-case sm:tracking-normal">
+                    {category.name}
+                  </p>
+                ) : null}
+                <h1 className="mt-1 max-w-4xl text-balance font-display text-2xl font-medium leading-tight tracking-tight text-white sm:text-3xl lg:text-4xl">
+                  {procedure.h1}
+                </h1>
+              </div>
             </div>
           </div>
         ) : (
-          <h1 className="font-display text-3xl font-medium tracking-tight text-navy sm:text-4xl">
+          <h1 className="text-balance font-display text-3xl font-medium tracking-tight text-navy sm:text-4xl">
             {procedure.h1}
           </h1>
         )}
-        <div className="mt-6 max-w-3xl">
-          <AnswerBlock>
-            {aeoAnswer} Typical India range:{" "}
-            <CostHighlight>
-              ${costIndia.min.toLocaleString()}–$
-              {costIndia.max.toLocaleString()} USD
-            </CostHighlight>
-            .
-          </AnswerBlock>
-        </div>
-        <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted sm:text-lg">
-          {procedure.overview}
-        </p>
       </Reveal>
 
-      {depthSections.length > 0 ? (
-        <div className="mt-14">
-          <DepthSections sections={depthSections} />
-        </div>
-      ) : null}
-
-      <section className="mt-10" aria-labelledby="geo-heading">
+      <div className="mt-6 lg:hidden">
         <Reveal>
-          <h2
-            id="geo-heading"
-            className="font-display text-xl font-medium tracking-tight text-navy sm:text-2xl"
-          >
-            Where to get {procedure.name.toLowerCase()} in India
-          </h2>
-          <p className="mt-2 max-w-2xl text-sm text-muted sm:text-base">
-            TechdrHealth coordinates {procedure.name.toLowerCase()} packages for foreign patients at
-            accredited hospitals across major medical tourism cities.
-          </p>
-          <ul className="mt-4 flex flex-wrap gap-2">
-            {geoCities.map((city) => {
-              const citySlugMap: Record<string, string> = {
-                Hyderabad: "hyderabad",
-                "Delhi NCR": "delhi",
-                Delhi: "delhi",
-                Mumbai: "mumbai",
-                Chennai: "chennai",
-                Bangalore: "bangalore",
-                Bengaluru: "bangalore",
-              };
-              const citySlug = citySlugMap[city];
-              const href = citySlug ? `/cities/${citySlug}` : "/hospital-network";
-              return (
-                <li key={city}>
-                  <Link
-                    href={href}
-                    className="inline-block rounded-full border border-line bg-white px-3 py-1.5 text-sm font-medium text-navy transition-colors hover:border-accent hover:text-accent"
-                  >
-                    {city}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </Reveal>
-      </section>
-
-      <div className="mt-12">
-        <Reveal>
-          <CostComparisonTable
-            india={costIndia}
-            comparisons={costComparison}
+          <ProcedureCostSidebar
             procedureName={procedure.name}
-            comparisonHref={costComparisonPath(procedure.slug)}
+            costIndia={costIndia}
+            recoveryTime={procedure.recoveryTime}
+            whatsappHref={whatsappHref}
           />
         </Reveal>
       </div>
 
-      <div className="mt-8">
-        <Reveal>
-          <a
-            href={whatsappHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex w-full items-center justify-center gap-2 rounded-[var(--radius-sm)] bg-[#25D366] px-5 py-3.5 text-sm font-semibold text-white transition hover:bg-[#1ebe57] sm:w-auto"
-          >
-            WhatsApp us about {procedure.name.toLowerCase()}
-          </a>
-        </Reveal>
-      </div>
-
-      {linkedHospitals.length > 0 ? (
-        <section className="mt-14" aria-labelledby="hospitals-heading">
+      <div className="mt-6 grid gap-8 lg:mt-8 lg:grid-cols-[minmax(0,1fr)_minmax(260px,320px)] lg:items-start lg:gap-10 xl:gap-12">
+        <div className="min-w-0 space-y-10 sm:space-y-12 lg:space-y-14">
           <Reveal>
-            <h2
-              id="hospitals-heading"
-              className="font-display text-2xl font-medium tracking-tight text-navy sm:text-3xl"
-            >
-              Partner hospitals for {procedure.name.toLowerCase()}
-            </h2>
-            <p className="mt-2 max-w-2xl text-sm text-muted sm:text-base">
-              Accredited hospitals we coordinate for international patients. Final hospital matching
-              depends on your reports, timing, and clinical fit.
+            <AnswerBlock>
+              {aeoAnswer} Typical India range:{" "}
+              <CostHighlight>
+                ${costIndia.min.toLocaleString()}–$
+                {costIndia.max.toLocaleString()} USD
+              </CostHighlight>
+              .
+            </AnswerBlock>
+            <p className="mt-5 text-base leading-relaxed text-muted sm:text-lg">
+              {procedure.overview}
             </p>
-            <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {linkedHospitals.map((hospital) => (
-                <li key={hospital.slug}>
-                  <Link
-                    href={`/hospital-network/${hospital.slug}`}
-                    className="block rounded-[var(--radius-sm)] border border-line bg-white px-4 py-3 transition-colors hover:border-accent"
-                  >
-                    <p className="text-sm font-semibold text-navy">{hospital.name}</p>
-                    <p className="mt-1 text-xs text-muted">
-                      {hospital.city}
-                      {hospital.accreditation.length > 0
-                        ? ` · ${hospital.accreditation.join(", ")}`
-                        : ""}
-                    </p>
-                    <p className="mt-2 line-clamp-2 text-sm text-muted">{hospital.shortAnswer}</p>
-                    <span className="mt-2 inline-block text-xs font-semibold text-accent">
-                      View hospital →
-                    </span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
           </Reveal>
-        </section>
-      ) : null}
 
-      <section className="mt-14" aria-labelledby="why-india-heading">
-        <Reveal>
-          <h2
-            id="why-india-heading"
-            className="font-display text-2xl font-medium tracking-tight text-navy sm:text-3xl"
-          >
-            Why choose India for {procedure.name.toLowerCase()}
-          </h2>
-          <p className="mt-2 max-w-2xl text-sm text-muted sm:text-base">
-            TechdrHealth coordinates care across accredited partner hospitals with end-to-end support for
-            visa, travel, and recovery.
-          </p>
-          <ul className="mt-6 grid gap-3 sm:grid-cols-2">
-            {TRUST_SIGNALS.map((signal) => (
-              <li
-                key={signal.label}
-                className="flex items-start gap-3 rounded-[var(--radius-sm)] border border-line bg-white px-4 py-3"
+          {depthSections.length > 0 ? (
+            <DepthSections sections={depthSections} className="[&_section]:max-w-none" />
+          ) : null}
+
+          <section aria-labelledby="geo-heading">
+            <Reveal>
+              <h2
+                id="geo-heading"
+                className="font-display text-xl font-medium tracking-tight text-navy sm:text-2xl"
               >
-                <IconTile>
-                  <TrustSignalIcon icon={signal.icon} />
-                </IconTile>
-                <span className="text-sm font-medium leading-snug text-navy">{signal.label}</span>
-              </li>
-            ))}
-          </ul>
-        </Reveal>
-      </section>
+                Where to get {procedure.name.toLowerCase()} in India
+              </h2>
+              <p className="mt-2 max-w-2xl text-sm text-muted sm:text-base">
+                TechdrHealth coordinates {procedure.name.toLowerCase()} packages for foreign patients
+                at accredited hospitals across major medical tourism cities.
+              </p>
+              <ul className="mt-4 flex flex-wrap gap-2">
+                {geoCities.map((city) => {
+                  const citySlug = citySlugMap[city];
+                  const href = citySlug ? `/cities/${citySlug}` : "/hospital-network";
+                  return (
+                    <li key={city}>
+                      <Link
+                        href={href}
+                        className="inline-block rounded-full border border-line bg-white px-3 py-1.5 text-sm font-medium text-navy transition-colors hover:border-accent hover:text-accent"
+                      >
+                        {city}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </Reveal>
+          </section>
 
-      <section className="mt-14" aria-labelledby="steps-heading">
-        <Reveal>
-          <h2
-            id="steps-heading"
-            className="font-display text-2xl font-medium tracking-tight text-navy sm:text-3xl"
-          >
-            Procedure steps & recovery
-          </h2>
-          <p className="mt-2 text-sm text-muted sm:text-base">
-            <span className="font-semibold text-navy">Recovery:</span> {procedure.recoveryTime}
-          </p>
-          <ol className="mt-6 space-y-3">
-            {procedure.procedureSteps.map((step, index) => (
-              <li
-                key={step}
-                className="flex gap-3 rounded-[var(--radius-sm)] border border-line bg-white px-4 py-3"
-              >
-                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-accent-light text-sm font-semibold text-accent">
-                  {index + 1}
-                </span>
-                <span className="text-sm leading-relaxed text-muted sm:text-base">{step}</span>
-              </li>
-            ))}
-          </ol>
-        </Reveal>
-      </section>
-
-      {linkedDoctors.length > 0 ? (
-        <section className="mt-14" aria-labelledby="doctors-heading">
           <Reveal>
-            <h2
-              id="doctors-heading"
-              className="font-display text-2xl font-medium tracking-tight text-navy sm:text-3xl"
-            >
-              Specialists for {procedure.name.toLowerCase()}
-            </h2>
-            <p className="mt-2 max-w-2xl text-sm text-muted sm:text-base">
-              Coordinating doctors experienced with international patients. Clinical decisions
-              remain with the treating hospital team after evaluation.
-            </p>
-            <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {linkedDoctors.map((doctor) => (
-                <li key={doctor.slug}>
-                  <Link
-                    href={doctorPath(doctor)}
-                    className="block rounded-[var(--radius-sm)] border border-line bg-white px-4 py-3 transition-colors hover:border-accent"
-                  >
-                    <p className="text-sm font-semibold text-navy">{doctor.name}</p>
-                    <p className="mt-1 text-xs text-muted">
-                      {doctor.specialty} · {doctor.city} · {doctor.experienceYears}+ years
-                    </p>
-                    <p className="mt-2 line-clamp-2 text-sm text-muted">{doctor.shortAnswer}</p>
-                    <span className="mt-2 inline-block text-xs font-semibold text-accent">
-                      View profile →
-                    </span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <CostComparisonTable
+              india={costIndia}
+              comparisons={costComparison}
+              procedureName={procedure.name}
+              comparisonHref={costComparisonPath(procedure.slug)}
+            />
           </Reveal>
-        </section>
-      ) : null}
 
-      {testimonial ? (
-        <section className="mt-14" aria-labelledby="story-heading">
-          <Reveal>
-            <h2
-              id="story-heading"
-              className="font-display text-2xl font-medium tracking-tight text-navy sm:text-3xl"
-            >
-              Patient testimonials
-            </h2>
-            <div className="mt-6">
-              <TestimonialCard testimonial={testimonial} />
-            </div>
-          </Reveal>
-        </section>
-      ) : null}
-
-      <section className="mt-14" aria-labelledby="visa-heading">
-        <Reveal>
-          <h2
-            id="visa-heading"
-            className="font-display text-2xl font-medium tracking-tight text-navy sm:text-3xl"
-          >
-            Visa assistance for {procedure.name.toLowerCase()}
-          </h2>
-          <p className="mt-2 max-w-2xl text-sm text-muted sm:text-base">
-            We help international patients secure India medical visas — including hospital invitation
-            letters and guidance for attendant visas — so travel planning stays aligned with your
-            treatment dates.
-          </p>
-          <ol className="mt-6 grid gap-3 sm:grid-cols-2">
-            {VISA_ASSISTANCE_STEPS.map((step, index) => (
-              <li
-                key={step.title}
-                className="rounded-[var(--radius-sm)] border border-line bg-white px-4 py-3"
-              >
-                <p className="text-xs font-semibold uppercase tracking-wide text-accent">
-                  Step {index + 1}
-                </p>
-                <h3 className="mt-1 text-sm font-semibold text-navy">{step.title}</h3>
-                <p className="mt-1.5 text-sm leading-relaxed text-muted">{step.body}</p>
-              </li>
-            ))}
-          </ol>
-          <p className="mt-4">
-            <Link
-              href="/medical-visa-assistance"
-              className="text-sm font-semibold text-accent transition-colors hover:text-navy"
-            >
-              Full medical visa guide →
-            </Link>
-          </p>
-        </Reveal>
-      </section>
-
-      <div className="mt-14">
-        <FAQAccordion faqs={faqs} includeSchema={false} />
-      </div>
-
-      {related.length > 0 ? (
-        <section className="mt-14" aria-labelledby="related-heading">
-          <Reveal>
-            <h2
-              id="related-heading"
-              className="font-display text-2xl font-medium tracking-tight text-navy sm:text-3xl"
-            >
-              Related procedures
-            </h2>
-            <ul className="mt-6 grid gap-3 sm:grid-cols-2">
-              {related.map((item) => (
-                <li key={item.slug}>
-                  <Link
-                    href={procedurePath(item)}
-                    className="block rounded-[var(--radius-sm)] border border-line bg-white px-4 py-3 text-sm font-semibold text-navy transition-colors hover:border-accent hover:text-accent"
-                  >
-                    {item.name}
-                    <span className="mt-1 block text-xs font-normal text-muted">
-                      {item.costIndia
-                        ? `$${item.costIndia.min.toLocaleString()}–$${item.costIndia.max.toLocaleString()} USD`
-                        : "Confidential clinical care"}
-                    </span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </Reveal>
-        </section>
-      ) : null}
-
-      {countryLinks.length > 0 ? (
-        <section className="mt-14" aria-labelledby="countries-heading">
-          <Reveal>
-            <h2
-              id="countries-heading"
-              className="font-display text-2xl font-medium tracking-tight text-navy sm:text-3xl"
-            >
-              {procedure.name} for international patients
-            </h2>
-            <p className="mt-2 max-w-2xl text-sm text-muted">
-              Country guides covering visa, cost planning, and hospital matching for{" "}
-              {procedure.name.toLowerCase()} in India.
-            </p>
-            <ul className="mt-6 flex flex-wrap gap-2">
-              {countryLinks.map((item) => (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className="inline-block rounded-[var(--radius-sm)] border border-line bg-white px-3 py-1.5 text-sm font-semibold text-navy transition-colors hover:border-accent hover:text-accent"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-              <li>
-                <Link
-                  href="/countries"
-                  className="inline-block rounded-[var(--radius-sm)] border border-line bg-white px-3 py-1.5 text-sm font-semibold text-accent"
+          {linkedHospitals.length > 0 ? (
+            <section aria-labelledby="hospitals-heading">
+              <Reveal>
+                <h2
+                  id="hospitals-heading"
+                  className="font-display text-2xl font-medium tracking-tight text-navy sm:text-3xl"
                 >
-                  All countries →
+                  Partner hospitals for {procedure.name.toLowerCase()}
+                </h2>
+                <p className="mt-2 max-w-2xl text-sm text-muted sm:text-base">
+                  Accredited hospitals we coordinate for international patients. Final hospital
+                  matching depends on your reports, timing, and clinical fit.
+                </p>
+                <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+                  {linkedHospitals.map((hospital) => (
+                    <li key={hospital.slug} className="min-w-0">
+                      <Link
+                        href={`/hospital-network/${hospital.slug}`}
+                        className="block h-full rounded-[var(--radius-sm)] border border-line bg-white px-4 py-3 transition-colors hover:border-accent"
+                      >
+                        <p className="text-sm font-semibold text-navy">{hospital.name}</p>
+                        <p className="mt-1 text-xs text-muted">
+                          {hospital.city}
+                          {hospital.accreditation.length > 0
+                            ? ` · ${hospital.accreditation.join(", ")}`
+                            : ""}
+                        </p>
+                        <p className="mt-2 line-clamp-2 text-sm text-muted">
+                          {hospital.shortAnswer}
+                        </p>
+                        <span className="mt-2 inline-block text-xs font-semibold text-accent">
+                          View hospital →
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-4">
+                  <Link
+                    href="/hospital-network"
+                    className="text-sm font-semibold text-accent transition-colors hover:text-navy"
+                  >
+                    + {SITE.hospitalCount} hospitals in our network →
+                  </Link>
+                </p>
+              </Reveal>
+            </section>
+          ) : null}
+
+          <section aria-labelledby="why-india-heading">
+            <Reveal>
+              <h2
+                id="why-india-heading"
+                className="font-display text-2xl font-medium tracking-tight text-navy sm:text-3xl"
+              >
+                Why choose India for {procedure.name.toLowerCase()}
+              </h2>
+              <p className="mt-2 max-w-2xl text-sm text-muted sm:text-base">
+                TechdrHealth coordinates care across accredited partner hospitals with end-to-end
+                support for visa, travel, and recovery.
+              </p>
+              <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+                {TRUST_SIGNALS.map((signal) => (
+                  <li
+                    key={signal.label}
+                    className="flex min-w-0 items-start gap-3 rounded-[var(--radius-sm)] border border-line bg-white px-4 py-3"
+                  >
+                    <IconTile>
+                      <TrustSignalIcon icon={signal.icon} />
+                    </IconTile>
+                    <span className="text-sm font-medium leading-snug text-navy">
+                      {signal.label}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+          </section>
+
+          <section aria-labelledby="steps-heading">
+            <Reveal>
+              <h2
+                id="steps-heading"
+                className="font-display text-2xl font-medium tracking-tight text-navy sm:text-3xl"
+              >
+                Procedure steps & recovery
+              </h2>
+              <p className="mt-2 text-sm text-muted sm:text-base">
+                <span className="font-semibold text-navy">Recovery:</span> {procedure.recoveryTime}
+              </p>
+              <ol className="mt-6 space-y-3">
+                {procedure.procedureSteps.map((step, index) => (
+                  <li
+                    key={step}
+                    className="flex gap-3 rounded-[var(--radius-sm)] border border-line bg-white px-4 py-3"
+                  >
+                    <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-accent-light text-sm font-semibold text-accent">
+                      {index + 1}
+                    </span>
+                    <span className="min-w-0 text-sm leading-relaxed text-muted sm:text-base">
+                      {step}
+                    </span>
+                  </li>
+                ))}
+              </ol>
+            </Reveal>
+          </section>
+
+          {testimonial ? (
+            <section aria-labelledby="story-heading">
+              <Reveal>
+                <h2
+                  id="story-heading"
+                  className="font-display text-2xl font-medium tracking-tight text-navy sm:text-3xl"
+                >
+                  Patient testimonials
+                </h2>
+                <div className="mt-6">
+                  <TestimonialCard testimonial={testimonial} />
+                </div>
+              </Reveal>
+            </section>
+          ) : null}
+
+          <section aria-labelledby="visa-heading">
+            <Reveal>
+              <h2
+                id="visa-heading"
+                className="font-display text-2xl font-medium tracking-tight text-navy sm:text-3xl"
+              >
+                Visa assistance for {procedure.name.toLowerCase()}
+              </h2>
+              <p className="mt-2 max-w-2xl text-sm text-muted sm:text-base">
+                We help international patients secure India medical visas — including hospital
+                invitation letters and guidance for attendant visas — so travel planning stays
+                aligned with your treatment dates.
+              </p>
+              <ol className="mt-6 grid gap-3 sm:grid-cols-2">
+                {VISA_ASSISTANCE_STEPS.map((step, index) => (
+                  <li
+                    key={step.title}
+                    className="rounded-[var(--radius-sm)] border border-line bg-white px-4 py-3"
+                  >
+                    <p className="text-xs font-semibold uppercase tracking-wide text-accent">
+                      Step {index + 1}
+                    </p>
+                    <h3 className="mt-1 text-sm font-semibold text-navy">{step.title}</h3>
+                    <p className="mt-1.5 text-sm leading-relaxed text-muted">{step.body}</p>
+                  </li>
+                ))}
+              </ol>
+              <p className="mt-4">
+                <Link
+                  href="/medical-visa-assistance"
+                  className="text-sm font-semibold text-accent transition-colors hover:text-navy"
+                >
+                  Full medical visa guide →
                 </Link>
-              </li>
-            </ul>
+              </p>
+            </Reveal>
+          </section>
+
+          <FAQAccordion faqs={faqs} includeSchema={false} />
+
+          {related.length > 0 ? (
+            <section aria-labelledby="related-heading">
+              <Reveal>
+                <h2
+                  id="related-heading"
+                  className="font-display text-2xl font-medium tracking-tight text-navy sm:text-3xl"
+                >
+                  Related procedures
+                </h2>
+                <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+                  {related.map((item) => (
+                    <li key={item.slug} className="min-w-0">
+                      <Link
+                        href={procedurePath(item)}
+                        className="block rounded-[var(--radius-sm)] border border-line bg-white px-4 py-3 text-sm font-semibold text-navy transition-colors hover:border-accent hover:text-accent"
+                      >
+                        {item.name}
+                        <span className="mt-1 block text-xs font-normal text-muted">
+                          {item.costIndia
+                            ? `$${item.costIndia.min.toLocaleString()}–$${item.costIndia.max.toLocaleString()} USD`
+                            : "Confidential clinical care"}
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </Reveal>
+            </section>
+          ) : null}
+
+          {countryLinks.length > 0 ? (
+            <section aria-labelledby="countries-heading">
+              <Reveal>
+                <h2
+                  id="countries-heading"
+                  className="font-display text-2xl font-medium tracking-tight text-navy sm:text-3xl"
+                >
+                  {procedure.name} for international patients
+                </h2>
+                <p className="mt-2 max-w-2xl text-sm text-muted">
+                  Country guides covering visa, cost planning, and hospital matching for{" "}
+                  {procedure.name.toLowerCase()} in India.
+                </p>
+                <ul className="mt-6 flex flex-wrap gap-2">
+                  {countryLinks.map((item) => (
+                    <li key={item.href}>
+                      <Link
+                        href={item.href}
+                        className="inline-block rounded-[var(--radius-sm)] border border-line bg-white px-3 py-1.5 text-sm font-semibold text-navy transition-colors hover:border-accent hover:text-accent"
+                      >
+                        {item.label}
+                      </Link>
+                    </li>
+                  ))}
+                  <li>
+                    <Link
+                      href="/countries"
+                      className="inline-block rounded-[var(--radius-sm)] border border-line bg-white px-3 py-1.5 text-sm font-semibold text-accent"
+                    >
+                      All countries →
+                    </Link>
+                  </li>
+                </ul>
+              </Reveal>
+            </section>
+          ) : null}
+        </div>
+
+        <aside className="hidden min-w-0 lg:sticky lg:top-24 lg:block">
+          <Reveal>
+            <ProcedureCostSidebar
+              procedureName={procedure.name}
+              costIndia={costIndia}
+              recoveryTime={procedure.recoveryTime}
+              whatsappHref={whatsappHref}
+            />
           </Reveal>
-        </section>
-      ) : null}
+        </aside>
+      </div>
 
       <div className="mt-14">
         <CTASection

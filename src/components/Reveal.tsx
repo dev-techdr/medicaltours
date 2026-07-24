@@ -33,8 +33,22 @@ export function Reveal({
       typeof window !== "undefined" &&
       window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-    if (reduced) return;
+    if (reduced) {
+      setVisible(true);
+      return;
+    }
 
+    // If already in view on mount (common on short screens / fast nav), show immediately.
+    const rect = node.getBoundingClientRect();
+    const alreadyVisible =
+      rect.top < window.innerHeight * 0.92 && rect.bottom > 0 && rect.height > 0;
+    if (alreadyVisible) {
+      setVisible(true);
+      return;
+    }
+
+    // Reveal early as content approaches the viewport so short screens
+    // and sticky headers don't leave large sections stuck at opacity 0.
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -42,7 +56,7 @@ export function Reveal({
           observer.disconnect();
         }
       },
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.01, rootMargin: "0px 0px -8% 0px" }
     );
 
     observer.observe(node);

@@ -74,10 +74,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/gynecology",
-          "label": "Gynecology doctors"
-        },
-        {
           "href": "/accreditations-certifications",
           "label": "Accreditations"
         },
@@ -201,10 +197,6 @@
         {
           "href": "/treatments/gynecology-womens-health-india/laparoscopic-gynecology-surgery-india",
           "label": "Laparoscopic gynecology"
-        },
-        {
-          "href": "/doctors/gynecology",
-          "label": "Gynecology doctors"
         }
       ]
     },
@@ -1466,14 +1458,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/cardiology/dr-rajesh-kumar-cardiologist",
-          "label": "Cardiology profile"
-        },
-        {
-          "href": "/doctors/cardiology",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/heart-bypass-surgery-cost-india",
           "label": "Cost comparison"
         },
@@ -1574,14 +1558,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/cardiology/dr-rajesh-kumar-cardiologist",
-          "label": "Cardiology profile"
-        },
-        {
-          "href": "/doctors/cardiology",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/angioplasty-stent-placement-cost-india",
           "label": "Cost comparison"
         },
@@ -1681,14 +1657,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/cardiology/dr-rajesh-kumar-cardiologist",
-          "label": "Cardiology profile"
-        },
-        {
-          "href": "/doctors/cardiology",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/heart-valve-replacement-surgery-india",
           "label": "Cost comparison"
         },
@@ -1786,14 +1754,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/cardiology/dr-rajesh-kumar-cardiologist",
-          "label": "Cardiology profile"
-        },
-        {
-          "href": "/doctors/cardiology",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/pacemaker-implantation-india",
           "label": "Cost comparison"
         },
@@ -1890,14 +1850,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/cardiology/dr-rajesh-kumar-cardiologist",
-          "label": "Cardiology profile"
-        },
-        {
-          "href": "/doctors/cardiology",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/tavr-india",
           "label": "Cost comparison"
@@ -1998,14 +1950,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/orthopedics/dr-vikram-singh-orthopedic",
-          "label": "Orthopedic profile"
-        },
-        {
-          "href": "/doctors/orthopedics",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/total-knee-replacement-surgery-india",
           "label": "Cost comparison"
         },
@@ -2103,14 +2047,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/orthopedics/dr-vikram-singh-orthopedic",
-          "label": "Orthopedic profile"
-        },
-        {
-          "href": "/doctors/orthopedics",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/hip-replacement-surgery-india",
           "label": "Cost comparison"
@@ -2211,14 +2147,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/orthopedics/dr-vikram-singh-orthopedic",
-          "label": "Orthopedic profile"
-        },
-        {
-          "href": "/doctors/orthopedics",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/spine-surgery-india",
           "label": "Cost comparison"
         },
@@ -2315,14 +2243,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/orthopedics/dr-vikram-singh-orthopedic",
-          "label": "Orthopedic profile"
-        },
-        {
-          "href": "/doctors/orthopedics",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/shoulder-replacement-surgery-india",
           "label": "Cost comparison"
@@ -2421,14 +2341,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/orthopedics/dr-vikram-singh-orthopedic",
-          "label": "Orthopedic profile"
-        },
-        {
-          "href": "/doctors/orthopedics",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/acl-reconstruction-surgery-india",
           "label": "Cost comparison"
@@ -2530,14 +2442,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/oncology/dr-anita-sharma-oncologist",
-          "label": "Oncology profile"
-        },
-        {
-          "href": "/doctors/oncology",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/chemotherapy-cost-india",
           "label": "Cost comparison"
         },
@@ -2633,14 +2537,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/oncology/dr-anita-sharma-oncologist",
-          "label": "Oncology profile"
-        },
-        {
-          "href": "/doctors/oncology",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/radiation-therapy-india",
           "label": "Cost comparison"
@@ -2740,14 +2636,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/neurosurgery/dr-meera-nair-neurosurgeon",
-          "label": "Neurosurgery profile"
-        },
-        {
-          "href": "/doctors/neurosurgery",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/brain-tumor-surgery-india",
           "label": "Cost comparison"
         },
@@ -2845,14 +2733,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/transplant/dr-arjun-patel-transplant",
-          "label": "Transplant profile"
-        },
-        {
-          "href": "/doctors/transplant",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/kidney-transplant-india",
           "label": "Cost comparison"
@@ -2952,14 +2832,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/transplant/dr-arjun-patel-transplant",
-          "label": "Transplant profile"
-        },
-        {
-          "href": "/doctors/transplant",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/liver-transplant-india",
           "label": "Cost comparison"
         },
@@ -3058,14 +2930,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/oncology/dr-anita-sharma-oncologist",
-          "label": "Oncology profile"
-        },
-        {
-          "href": "/doctors/oncology",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/bone-marrow-transplant-india",
           "label": "Cost comparison"
         },
@@ -3163,14 +3027,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/urology/dr-suresh-mehta-urologist",
-          "label": "Urology profile"
-        },
-        {
-          "href": "/doctors/urology",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/robotic-prostatectomy-cost-india",
           "label": "Cost comparison"
@@ -3560,14 +3416,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/ent/dr-anil-desai-ent",
-          "label": "ENT profile"
-        },
-        {
-          "href": "/doctors/ent",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/cochlear-implant-cost-india",
           "label": "Cost comparison"
         },
@@ -3664,14 +3512,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/transplant/dr-arjun-patel-transplant",
-          "label": "Transplant profile"
-        },
-        {
-          "href": "/doctors/transplant",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/bariatric-weight-loss-surgery-india",
           "label": "Cost comparison"
@@ -4158,14 +3998,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/orthopedics/dr-vikram-singh-orthopedic",
-          "label": "Orthopedic profile"
-        },
-        {
-          "href": "/doctors/orthopedics",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/bilateral-knee-replacement-india",
           "label": "Cost comparison"
         },
@@ -4269,14 +4101,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/cardiology/dr-rajesh-kumar-cardiologist",
-          "label": "Cardiology profile"
-        },
-        {
-          "href": "/doctors/cardiology",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/pediatric-heart-surgery-india",
           "label": "Cost comparison"
@@ -4385,14 +4209,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/cardiology/dr-rajesh-kumar-cardiologist",
-          "label": "Cardiology profile"
-        },
-        {
-          "href": "/doctors/cardiology",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/asd-vsd-closure-surgery-india",
           "label": "Cost comparison"
         },
@@ -4499,14 +4315,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/cardiology/dr-rajesh-kumar-cardiologist",
-          "label": "Cardiology profile"
-        },
-        {
-          "href": "/doctors/cardiology",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/heart-transplant-india",
           "label": "Cost comparison"
@@ -4615,14 +4423,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/orthopedics/dr-vikram-singh-orthopedic",
-          "label": "Orthopedic profile"
-        },
-        {
-          "href": "/doctors/orthopedics",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/sports-injury-surgery-india",
           "label": "Cost comparison"
         },
@@ -4729,14 +4529,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/orthopedics/dr-vikram-singh-orthopedic",
-          "label": "Orthopedic profile"
-        },
-        {
-          "href": "/doctors/orthopedics",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/scoliosis-correction-surgery-india",
           "label": "Cost comparison"
@@ -4845,14 +4637,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/oncology/dr-anita-sharma-oncologist",
-          "label": "Oncology profile"
-        },
-        {
-          "href": "/doctors/oncology",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/breast-cancer-treatment-india",
           "label": "Cost comparison"
         },
@@ -4959,14 +4743,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/oncology/dr-anita-sharma-oncologist",
-          "label": "Oncology profile"
-        },
-        {
-          "href": "/doctors/oncology",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/robotic-cancer-surgery-india",
           "label": "Cost comparison"
@@ -5075,14 +4851,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/oncology/dr-anita-sharma-oncologist",
-          "label": "Oncology profile"
-        },
-        {
-          "href": "/doctors/oncology",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/immunotherapy-cost-india",
           "label": "Cost comparison"
         },
@@ -5189,14 +4957,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/oncology/dr-anita-sharma-oncologist",
-          "label": "Oncology profile"
-        },
-        {
-          "href": "/doctors/oncology",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/oral-throat-cancer-treatment-india",
           "label": "Cost comparison"
@@ -5305,14 +5065,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/oncology/dr-anita-sharma-oncologist",
-          "label": "Oncology profile"
-        },
-        {
-          "href": "/doctors/oncology",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/prostate-cancer-treatment-india",
           "label": "Cost comparison"
         },
@@ -5419,14 +5171,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/fertility/dr-priya-reddy-fertility",
-          "label": "Fertility profile"
-        },
-        {
-          "href": "/doctors/fertility",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/icsi-treatment-india",
           "label": "Cost comparison"
@@ -5535,14 +5279,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/fertility/dr-priya-reddy-fertility",
-          "label": "Fertility profile"
-        },
-        {
-          "href": "/doctors/fertility",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/surrogacy-india-for-foreigners",
           "label": "Cost comparison"
         },
@@ -5649,14 +5385,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/fertility/dr-priya-reddy-fertility",
-          "label": "Fertility profile"
-        },
-        {
-          "href": "/doctors/fertility",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/male-infertility-treatment-india",
           "label": "Cost comparison"
@@ -5765,14 +5493,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/neurosurgery/dr-meera-nair-neurosurgeon",
-          "label": "Neurosurgery profile"
-        },
-        {
-          "href": "/doctors/neurosurgery",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/spine-neurosurgery-india",
           "label": "Cost comparison"
         },
@@ -5879,14 +5599,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/neurosurgery/dr-meera-nair-neurosurgeon",
-          "label": "Neurosurgery profile"
-        },
-        {
-          "href": "/doctors/neurosurgery",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/epilepsy-surgery-india",
           "label": "Cost comparison"
@@ -5995,14 +5707,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/neurosurgery/dr-meera-nair-neurosurgeon",
-          "label": "Neurosurgery profile"
-        },
-        {
-          "href": "/doctors/neurosurgery",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/deep-brain-stimulation-india",
           "label": "Cost comparison"
         },
@@ -6110,14 +5814,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/neurosurgery/dr-meera-nair-neurosurgeon",
-          "label": "Neurosurgery profile"
-        },
-        {
-          "href": "/doctors/neurosurgery",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/stroke-treatment-rehab-india",
           "label": "Cost comparison"
         },
@@ -6224,14 +5920,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/neurosurgery/dr-meera-nair-neurosurgeon",
-          "label": "Neurosurgery profile"
-        },
-        {
-          "href": "/doctors/neurosurgery",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/aneurysm-surgery-india",
           "label": "Cost comparison"
@@ -7945,14 +7633,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/orthopedics/dr-vikram-singh-orthopedic",
-          "label": "Orthopedic profile"
-        },
-        {
-          "href": "/doctors/orthopedics",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/post-surgery-rehab-recovery-india",
           "label": "Cost comparison"
         },
@@ -8059,14 +7739,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/urology/dr-suresh-mehta-urologist",
-          "label": "Urology profile"
-        },
-        {
-          "href": "/doctors/urology",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/prostate-surgery-turp-cost-india",
           "label": "Cost comparison"
@@ -8175,14 +7847,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/urology/dr-suresh-mehta-urologist",
-          "label": "Urology profile"
-        },
-        {
-          "href": "/doctors/urology",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/kidney-stone-treatment-india",
           "label": "Cost comparison"
         },
@@ -8289,14 +7953,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/urology/dr-suresh-mehta-urologist",
-          "label": "Urology profile"
-        },
-        {
-          "href": "/doctors/urology",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/varicocele-surgery-india",
           "label": "Cost comparison"
@@ -8405,14 +8061,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/urology/dr-suresh-mehta-urologist",
-          "label": "Urology profile"
-        },
-        {
-          "href": "/doctors/urology",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/urethral-stricture-surgery-india",
           "label": "Cost comparison"
         },
@@ -8519,14 +8167,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/urology/dr-suresh-mehta-urologist",
-          "label": "Urology profile"
-        },
-        {
-          "href": "/doctors/urology",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/bladder-cancer-surgery-india",
           "label": "Cost comparison"
@@ -8635,14 +8275,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/urology/dr-suresh-mehta-urologist",
-          "label": "Urology profile"
-        },
-        {
-          "href": "/doctors/urology",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/male-sexual-health-treatment-india",
           "label": "Cost comparison"
         },
@@ -8749,14 +8381,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/gynecology/dr-neha-kapoor-gynecologist",
-          "label": "Gynecology profile"
-        },
-        {
-          "href": "/doctors/gynecology",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/cervical-cancer-treatment-india",
           "label": "Cost comparison"
@@ -8865,14 +8489,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/gynecology/dr-neha-kapoor-gynecologist",
-          "label": "Gynecology profile"
-        },
-        {
-          "href": "/doctors/gynecology",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/high-risk-pregnancy-care-india",
           "label": "Cost comparison"
         },
@@ -8979,14 +8595,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/ent/dr-anil-desai-ent",
-          "label": "ENT profile"
-        },
-        {
-          "href": "/doctors/ent",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/sinus-surgery-fess-india",
           "label": "Cost comparison"
@@ -9095,14 +8703,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/ent/dr-anil-desai-ent",
-          "label": "ENT profile"
-        },
-        {
-          "href": "/doctors/ent",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/septoplasty-cost-india",
           "label": "Cost comparison"
         },
@@ -9209,14 +8809,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/ent/dr-anil-desai-ent",
-          "label": "ENT profile"
-        },
-        {
-          "href": "/doctors/ent",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/tonsillectomy-cost-india",
           "label": "Cost comparison"
@@ -9325,14 +8917,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/ent/dr-anil-desai-ent",
-          "label": "ENT profile"
-        },
-        {
-          "href": "/doctors/ent",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/thyroidectomy-cost-india",
           "label": "Cost comparison"
         },
@@ -9439,14 +9023,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/ent/dr-anil-desai-ent",
-          "label": "ENT profile"
-        },
-        {
-          "href": "/doctors/ent",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/hearing-loss-treatment-india",
           "label": "Cost comparison"
@@ -9555,14 +9131,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/gastroenterology/dr-kavita-rao-gastroenterologist",
-          "label": "Gastroenterology profile"
-        },
-        {
-          "href": "/doctors/gastroenterology",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/gi-endoscopy-colonoscopy-india",
           "label": "Cost comparison"
         },
@@ -9669,14 +9237,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/gastroenterology/dr-kavita-rao-gastroenterologist",
-          "label": "Gastroenterology profile"
-        },
-        {
-          "href": "/doctors/gastroenterology",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/ercp-treatment-india",
           "label": "Cost comparison"
@@ -9785,14 +9345,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/gastroenterology/dr-kavita-rao-gastroenterologist",
-          "label": "Gastroenterology profile"
-        },
-        {
-          "href": "/doctors/gastroenterology",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/liver-disease-treatment-india",
           "label": "Cost comparison"
         },
@@ -9900,14 +9452,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/gastroenterology/dr-kavita-rao-gastroenterologist",
-          "label": "Gastroenterology profile"
-        },
-        {
-          "href": "/doctors/gastroenterology",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/ibd-treatment-india",
           "label": "Cost comparison"
         },
@@ -10014,14 +9558,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/gastroenterology/dr-kavita-rao-gastroenterologist",
-          "label": "Gastroenterology profile"
-        },
-        {
-          "href": "/doctors/gastroenterology",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/pancreatitis-treatment-india",
           "label": "Cost comparison"
@@ -10451,14 +9987,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/neurosurgery/dr-meera-nair-neurosurgeon",
-          "label": "Neurosurgery profile"
-        },
-        {
-          "href": "/doctors/neurosurgery",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/pituitary-tumor-treatment-india",
           "label": "Cost comparison"
         },
@@ -10673,14 +10201,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/cardiology/dr-rajesh-kumar-cardiologist",
-          "label": "Cardiology profile"
-        },
-        {
-          "href": "/doctors/cardiology",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/peripheral-angioplasty-india",
           "label": "Cost comparison"
         },
@@ -10787,14 +10307,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/cardiology/dr-rajesh-kumar-cardiologist",
-          "label": "Cardiology profile"
-        },
-        {
-          "href": "/doctors/cardiology",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/aortic-aneurysm-surgery-india",
           "label": "Cost comparison"
@@ -10903,14 +10415,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/transplant/dr-arjun-patel-transplant",
-          "label": "Transplant profile"
-        },
-        {
-          "href": "/doctors/transplant",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/av-fistula-dialysis-access-india",
           "label": "Cost comparison"
         },
@@ -11017,14 +10521,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/oncology/dr-anita-sharma-oncologist",
-          "label": "Oncology profile"
-        },
-        {
-          "href": "/doctors/oncology",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/skin-cancer-surgery-india",
           "label": "Cost comparison"
@@ -11454,14 +10950,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/oncology/dr-anita-sharma-oncologist",
-          "label": "Oncology profile"
-        },
-        {
-          "href": "/doctors/oncology",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/pediatric-cancer-treatment-india",
           "label": "Cost comparison"
         },
@@ -11568,14 +11056,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/orthopedics/dr-vikram-singh-orthopedic",
-          "label": "Orthopedic profile"
-        },
-        {
-          "href": "/doctors/orthopedics",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/pediatric-orthopedic-surgery-india",
           "label": "Cost comparison"
@@ -11684,14 +11164,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/oncology/dr-anita-sharma-oncologist",
-          "label": "Oncology profile"
-        },
-        {
-          "href": "/doctors/oncology",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/lung-surgery-cost-india",
           "label": "Cost comparison"
         },
@@ -11798,14 +11270,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/oncology/dr-anita-sharma-oncologist",
-          "label": "Oncology profile"
-        },
-        {
-          "href": "/doctors/oncology",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/lung-cancer-treatment-india",
           "label": "Cost comparison"
@@ -14161,14 +13625,6 @@
       ],
       "links": [
         {
-          "href": "/doctors/oncology/dr-anita-sharma-oncologist",
-          "label": "Oncology profile"
-        },
-        {
-          "href": "/doctors/oncology",
-          "label": "Specialty doctors"
-        },
-        {
           "href": "/cost-comparison/leukemia-treatment-india",
           "label": "Cost comparison"
         },
@@ -14275,14 +13731,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/oncology/dr-anita-sharma-oncologist",
-          "label": "Oncology profile"
-        },
-        {
-          "href": "/doctors/oncology",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/lymphoma-treatment-india",
           "label": "Cost comparison"
@@ -14711,14 +14159,6 @@
         "TechdrHealth shortlists partner teams across Hyderabad, Delhi NCR, Mumbai, Chennai, Bangalore and helps you obtain written package outlines before travel. Verify credentials on the hospital letter you receive."
       ],
       "links": [
-        {
-          "href": "/doctors/oncology/dr-anita-sharma-oncologist",
-          "label": "Oncology profile"
-        },
-        {
-          "href": "/doctors/oncology",
-          "label": "Specialty doctors"
-        },
         {
           "href": "/cost-comparison/multiple-myeloma-treatment-india",
           "label": "Cost comparison"

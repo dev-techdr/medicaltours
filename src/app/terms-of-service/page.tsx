@@ -16,7 +16,9 @@ export default function TermsOfServicePage() {
       <Breadcrumb items={[{ name: "Terms of Service", href: "/terms-of-service" }]} />
       <h1 className="font-display text-4xl font-medium tracking-tight text-navy">Terms of Service</h1>
       <div className="mt-8 max-w-3xl space-y-4 text-ink leading-relaxed">
-        <p>Last updated: July 4, 2026</p>
+        <p>Last updated: July 24, 2026</p>
+        <h2 className="text-xl font-semibold text-navy">Authorization / ownership</h2>
+        <p>{SITE.ownershipDeclaration}</p>
         <p>
           By using medicaltoursindia.com and engaging {SITE.name}, you agree to these terms.
         </p>
@@ -38,7 +40,7 @@ export default function TermsOfServicePage() {
         </p>
         <h2 className="text-xl font-semibold text-navy">Contact</h2>
         <p>
-          {SITE.name}, Hyderabad, India ·{" "}
+          {SITE.name} (a brand of {SITE.legalName}), Hyderabad, India ·{" "}
           <a href={`tel:${SITE.phone}`} className="text-accent hover:underline">
             Call {SITE.phoneDisplay}
           </a>

@@ -206,35 +206,15 @@ const nextConfig: NextConfig = {
         destination: "/treatments/general-advanced-surgeries-india",
         permanent: true,
       },
-      // Doctor profiles → specialty hubs
+      // Doctor pages removed — redirect all doctor URLs to treatments
       {
-        source: "/doctors/dr-rajesh-kumar-cardiologist",
-        destination: "/doctors/cardiology",
+        source: "/doctors",
+        destination: "/treatments",
         permanent: true,
       },
       {
-        source: "/doctors/dr-vikram-singh-orthopedic",
-        destination: "/doctors/orthopedics",
-        permanent: true,
-      },
-      {
-        source: "/doctors/dr-anita-sharma-oncologist",
-        destination: "/doctors/oncology",
-        permanent: true,
-      },
-      {
-        source: "/doctors/dr-priya-reddy-fertility",
-        destination: "/doctors/fertility",
-        permanent: true,
-      },
-      {
-        source: "/doctors/dr-meera-nair-neurosurgeon",
-        destination: "/doctors/neurosurgery",
-        permanent: true,
-      },
-      {
-        source: "/doctors/dr-arjun-patel-transplant",
-        destination: "/doctors/transplant",
+        source: "/doctors/:path*",
+        destination: "/treatments",
         permanent: true,
       },
       // Legacy /hospitals/:hospital-slug → hospital-network (city pages keep short slugs)

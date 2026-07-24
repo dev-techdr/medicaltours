@@ -171,7 +171,7 @@ export default function HomePage() {
               {
                 step: "1",
                 title: "Understand your case",
-                body: "We review reports, clarify goals, and shortlist hospitals and doctors that fit your treatment and budget.",
+                body: "We review reports, clarify goals, and shortlist hospitals that fit your treatment and budget.",
               },
               {
                 step: "2",

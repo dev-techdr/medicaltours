@@ -35,7 +35,7 @@ export const LEGACY_REDIRECTS: Redirect[] = [
   { source: "/get-quote.html", destination: "/get-free-quote", permanent: true },
   { source: "/patient-stories.html", destination: "/patient-stories", permanent: true },
   { source: "/countries.html", destination: "/countries", permanent: true },
-  { source: "/doctors.html", destination: "/doctors", permanent: true },
+  { source: "/doctors.html", destination: "/treatments", permanent: true },
   { source: "/accreditations.html", destination: "/accreditations-certifications", permanent: true },
   { source: "/why-india.html", destination: "/why-india-for-medical-treatment", permanent: true },
   { source: "/travel.html", destination: "/travel-accommodation-assistance", permanent: true },

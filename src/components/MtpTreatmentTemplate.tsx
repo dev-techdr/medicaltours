@@ -8,7 +8,6 @@ import { Reveal } from "@/components/Reveal";
 import { JsonLd } from "@/components/seo/JsonLd";
 import {
   getCategoryBySlug,
-  getDoctorBySlug,
   getFaqsForProcedure,
   getRelatedProcedures,
   procedurePath,
@@ -29,9 +28,6 @@ export function MtpTreatmentTemplate({ procedure }: MtpTreatmentTemplateProps) {
   const path = procedurePath(procedure);
   const faqs = getFaqsForProcedure(procedure.faqSlugKey);
   const related = getRelatedProcedures(procedure);
-  const reviewer = procedure.doctorSlugs
-    .map((slug) => getDoctorBySlug(slug))
-    .find(Boolean);
 
   const crumbs = [
     { name: "Treatments", href: "/treatments" },
@@ -302,25 +298,6 @@ export function MtpTreatmentTemplate({ procedure }: MtpTreatmentTemplateProps) {
             </h2>
             <div className="mt-6">
               <FAQAccordion faqs={faqs} />
-            </div>
-          </Reveal>
-        </section>
-      ) : null}
-
-      {reviewer ? (
-        <section className="mt-14 max-w-3xl" aria-labelledby="mtp-reviewer">
-          <Reveal>
-            <div className="rounded-[var(--radius)] border border-line bg-white p-5 sm:p-6">
-              <p className="data-label">Clinical review</p>
-              <h2 id="mtp-reviewer" className="mt-2 font-display text-xl font-medium text-navy">
-                Medically reviewed by {reviewer.name}, MS Obstetrics &amp; Gynecology
-              </h2>
-              <p className="mt-3 text-sm leading-relaxed text-muted">
-                {reviewer.shortAnswer} Based in {reviewer.city} ({reviewer.experienceYears}+ years).
-                Page content last reviewed July 2026 for clinical framing and patient-safety
-                language. Legal citations should still be confirmed with counsel and the treating
-                hospital before reliance.
-              </p>
             </div>
           </Reveal>
         </section>

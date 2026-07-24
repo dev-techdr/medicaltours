@@ -16,10 +16,12 @@ export default function PrivacyPolicyPage() {
       <Breadcrumb items={[{ name: "Privacy Policy", href: "/privacy-policy" }]} />
       <h1 className="font-display text-4xl font-medium tracking-tight text-navy">Privacy Policy</h1>
       <div className="mt-8 max-w-3xl space-y-4 text-ink leading-relaxed">
-        <p>Last updated: July 23, 2026</p>
+        <p>Last updated: July 24, 2026</p>
+        <h2 className="text-xl font-semibold text-navy">Authorization / ownership</h2>
+        <p>{SITE.ownershipDeclaration}</p>
         <p>
-          {SITE.name} (“we”, “us”) respects your privacy. This policy explains how we collect and use
-          information when you contact us or use medicaltoursindia.com.
+          {SITE.name} (“we”, “us”), operated by {SITE.legalName}, respects your privacy. This policy
+          explains how we collect and use information when you contact us or use medicaltoursindia.com.
         </p>
         <h2 className="text-xl font-semibold text-navy">Information we collect</h2>
         <p>

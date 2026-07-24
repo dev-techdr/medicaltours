@@ -6,13 +6,10 @@ import { getAllIndiaDomesticRoutes } from "@/data/indiaDomestic";
 import {
   getAllCategories,
   getAllCityHubs,
-  getAllDoctors,
   getAllHospitals,
   getAllProcedures,
-  getAllSpecialtyHubs,
   getStoryCountries,
   getStoryProcedures,
-  doctorPath,
   procedurePath,
 } from "@/lib/data";
 import { SITE } from "@/lib/site";
@@ -23,7 +20,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const categories = getAllCategories();
   const hospitals = getAllHospitals();
   const cities = getAllCityHubs();
-  const specialties = getAllSpecialtyHubs();
   const blogPosts = getAllPosts();
   const mdxCities = getAllCities();
   const mdxCountries = getMdxCountries();
@@ -48,7 +44,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/hospitals",
     "/treatments",
     "/countries",
-    "/doctors",
     "/cost-calculator",
     "/patient-stories",
     "/blog",
@@ -98,20 +93,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${SITE.url}/hospital-network/${h.slug}`,
     lastModified,
     changeFrequency: "weekly" as const,
-    priority: 0.7,
-  }));
-
-  const specialtyRoutes = specialties.map((s) => ({
-    url: `${SITE.url}/doctors/${s.slug}`,
-    lastModified,
-    changeFrequency: "monthly" as const,
-    priority: 0.75,
-  }));
-
-  const doctorRoutes = getAllDoctors().map((d) => ({
-    url: `${SITE.url}${doctorPath(d)}`,
-    lastModified,
-    changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
 
@@ -170,8 +151,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...procedureRoutes,
     ...hospitalCityRoutes,
     ...hospitalNetworkRoutes,
-    ...specialtyRoutes,
-    ...doctorRoutes,
     ...storyRoutes,
     ...storyTreatmentRoutes,
     ...cityGuideRoutes,

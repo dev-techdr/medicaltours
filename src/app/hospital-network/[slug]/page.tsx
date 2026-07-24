@@ -14,7 +14,6 @@ import { VerifiedPartnerBadge } from "@/components/VerifiedPartnerBadge";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { hospitalImage } from "@/lib/media";
 import { getAllCitySlugs, getCityBySlug } from "@/data/cities";
-import { getDoctorsByHospital } from "@/data/doctors";
 import {
   getAllHospitalSlugs,
   getHospitalBySlug,
@@ -87,7 +86,6 @@ export default async function HospitalNetworkSlugPage({ params }: Props) {
   const hospital = getHospitalBySlug(slug);
 
   if (hospital) {
-    const doctors = getDoctorsByHospital(hospital.slug);
     const faqs = hospitalFaqs(hospital.name);
 
     return (
@@ -175,7 +173,7 @@ export default async function HospitalNetworkSlugPage({ params }: Props) {
         <section className="mt-12">
           <p className="data-label">Clinical focus</p>
           <h2 className="mt-1 font-display text-2xl font-medium text-navy">
-            Specialties & top doctors
+            Specialties
           </h2>
           <div className="mt-4 flex flex-wrap gap-2">
             {hospital.specialties.map((s) => (
@@ -187,27 +185,6 @@ export default async function HospitalNetworkSlugPage({ params }: Props) {
               </span>
             ))}
           </div>
-          {doctors.length > 0 ? (
-            <div className="divider-grid mt-6 sm:grid-cols-2">
-              {doctors.map((d) => (
-                <Link
-                  key={d.slug}
-                  href={`/doctors/${d.slug}`}
-                  className="divider-grid-item block"
-                >
-                  <p className="data-label">{d.specialty}</p>
-                  <h3 className="mt-2 text-base font-semibold text-navy">{d.name}</h3>
-                  <p className="mt-2 text-sm text-muted">
-                    {d.experienceYears}+ years · View profile →
-                  </p>
-                </Link>
-              ))}
-            </div>
-          ) : (
-            <p className="mt-4 text-sm text-muted">
-              Ask TechdrHealth for specialist profiles matched to your diagnosis at {hospital.name}.
-            </p>
-          )}
         </section>
 
         <section className="mt-12">

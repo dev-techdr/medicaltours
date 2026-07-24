@@ -1,11 +1,13 @@
 export const SITE = {
   name: "Medical Tours India",
-  legalName: "TechdrHealth",
+  legalName: "TechDr",
   domain: "medicaltoursindia.com",
   url: "https://medicaltoursindia.com",
   tagline: "Trusted Medical Tourism Partner for International Patients",
   description:
     "Medical Tours India connects international patients with 200+ partner hospitals across India. End-to-end care for treatment, visa, travel, and recovery — headquartered in Hyderabad.",
+  ownershipDeclaration:
+    "Medical Tours India is a brand owned and operated by TechDr. All medical value travel facilitation services are provided under the legal entity TechDr.",
   phone: "+916303225006",
   phoneDisplay: "+91 6303225006",
   whatsapp: "916303225006",

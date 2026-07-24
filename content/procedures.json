@@ -4899,7 +4899,8 @@
     "hospitalSlugs": [
       "olive-hospitals",
       "tx-hospitals",
-      "medicover-hospitals"
+      "medicover-hospitals",
+      "max-healthcare-delhi"
     ],
     "doctorSlugs": [
       "dr-neha-kapoor-gynecologist",
@@ -4914,7 +4915,7 @@
     "testimonialSlug": "amina-nigeria-fibroid-myomectomy",
     "images": [
       {
-        "src": "/images/services/gynecology.jpg",
+        "src": "/images/services/firboids-treatment.webp",
         "alt": "Fibroid Removal (Myomectomy) for international patients in India"
       }
     ],
