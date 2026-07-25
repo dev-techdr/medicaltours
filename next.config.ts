@@ -26,6 +26,17 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       ...LEGACY_REDIRECTS,
+      // Andrology re-homes (from Urology)
+      {
+        source: "/treatments/urology-treatments-india/varicocele-surgery-india",
+        destination: "/treatments/andrology-treatments-india/varicocele-surgery-india",
+        permanent: true,
+      },
+      {
+        source: "/treatments/urology-treatments-india/male-sexual-health-treatment-india",
+        destination: "/treatments/andrology-treatments-india/male-sexual-health-treatment-india",
+        permanent: true,
+      },
       // Mapped procedures (flat MDX → nested JSON)
       {
         source: "/treatments/heart-surgery-india",
@@ -37,11 +48,7 @@ const nextConfig: NextConfig = {
         destination: "/treatments/orthopaedic-treatments-india/total-knee-replacement-surgery-india",
         permanent: true,
       },
-      {
-        source: "/treatments/cancer-treatment-india",
-        destination: "/treatments/cancer-treatment-india/chemotherapy-cost-india",
-        permanent: true,
-      },
+      // Note: /treatments/cancer-treatment-india is the live category hub — do not redirect it.
       {
         source: "/treatments/ivf-treatment-india",
         destination: "/treatments/fertility-treatments-india/ivf-treatment-cost-india",

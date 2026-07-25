@@ -7,8 +7,7 @@ export const TREATMENT_CANONICAL_PATH: Record<string, string> = {
     "/treatments/cardiac-care-india/heart-bypass-surgery-cost-india",
   "knee-replacement-india":
     "/treatments/orthopaedic-treatments-india/total-knee-replacement-surgery-india",
-  "cancer-treatment-india":
-    "/treatments/cancer-treatment-india/chemotherapy-cost-india",
+  "cancer-treatment-india": "/treatments/cancer-treatment-india",
   "ivf-treatment-india":
     "/treatments/fertility-treatments-india/ivf-treatment-cost-india",
   "neurosurgery-india":

@@ -2,38 +2,52 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { NAV_LINKS, SITE } from "@/lib/site";
 
+function linkIsActive(pathname: string, href: string) {
+  if (href === "/") return pathname === "/";
+  return pathname === href || pathname.startsWith(`${href}/`);
+}
+
 export function Header() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname() || "/";
 
   return (
     <header className="sticky top-0 z-50 border-b border-line/80 bg-white/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-2 px-4 py-3 sm:gap-4 sm:px-6 sm:py-3.5 lg:px-8">
-        <Link href="/" className="min-w-0 shrink">
+        <Link href="/" className="relative block h-6 w-[120px] shrink-0 sm:h-7 sm:w-[140px] md:h-8 md:w-[160px]">
           <Image
             src={SITE.logo}
             alt={SITE.name}
-            width={200}
-            height={40}
+            fill
             priority
-            className="h-6 w-auto max-w-[120px] object-contain object-left sm:h-7 sm:max-w-[140px] md:h-8 md:max-w-[160px]"
-            style={{ width: "auto", height: "auto" }}
+            sizes="160px"
+            className="object-contain object-left"
           />
         </Link>
 
         <nav className="hidden items-center gap-0.5 lg:flex" aria-label="Primary">
-          {NAV_LINKS.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="rounded-lg px-3 py-2 text-sm font-medium text-ink transition-[background-color,color] duration-150 hover:bg-accent-light hover:text-navy"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {NAV_LINKS.map((link) => {
+            const active = linkIsActive(pathname, link.href);
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                aria-current={active ? "page" : undefined}
+                className={`rounded-lg px-3 py-2 text-sm font-medium transition-[background-color,color] duration-150 ${
+                  active
+                    ? "bg-accent-light text-navy"
+                    : "text-ink hover:bg-accent-light hover:text-navy"
+                }`}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </nav>
 
         <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
@@ -78,17 +92,25 @@ export function Header() {
           aria-label="Mobile"
         >
           <ul className="flex flex-col gap-0.5">
-            {NAV_LINKS.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className="block rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-accent-light"
-                  onClick={() => setOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
+            {NAV_LINKS.map((link) => {
+              const active = linkIsActive(pathname, link.href);
+              return (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    aria-current={active ? "page" : undefined}
+                    className={`block rounded-lg px-3 py-2.5 text-sm font-medium ${
+                      active
+                        ? "bg-accent-light text-navy"
+                        : "text-ink hover:bg-accent-light"
+                    }`}
+                    onClick={() => setOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              );
+            })}
             <li className="sm:hidden">
               <div className="px-1 py-1.5">
                 <p className="mb-1.5 px-2 text-xs font-semibold uppercase tracking-wide text-muted">

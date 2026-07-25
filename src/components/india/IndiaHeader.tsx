@@ -16,15 +16,17 @@ export function IndiaHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-line/80 bg-white/95 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
-        <Link href={getIndiaDomesticPath("")} className="min-w-0 shrink">
+        <Link
+          href={getIndiaDomesticPath("")}
+          className="relative block h-6 w-[120px] shrink-0 sm:h-7 sm:w-[140px]"
+        >
           <Image
             src={SITE.logo}
             alt={`${SITE.name} — Domestic`}
-            width={200}
-            height={40}
-            className="h-6 w-auto max-w-[120px] object-contain object-left sm:h-7 sm:max-w-[140px]"
-            style={{ width: "auto", height: "auto" }}
+            fill
             priority
+            sizes="140px"
+            className="object-contain object-left"
           />
         </Link>
         <p className="hidden text-xs font-medium uppercase tracking-wide text-accent sm:block">

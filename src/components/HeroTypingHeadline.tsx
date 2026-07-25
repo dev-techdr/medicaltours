@@ -22,6 +22,28 @@ type HeroTypingHeadlineProps = {
   onComplete?: () => void;
 };
 
+function TypedLines({ text, showCaret }: { text: string; showCaret: boolean }) {
+  const [visibleLine1 = "", visibleLine2 = ""] = text.split("\n");
+  const line1PrefixShown = visibleLine1.slice(0, LINE_1_PREFIX.length);
+  const highlightShown = visibleLine1.slice(LINE_1_PREFIX.length);
+
+  return (
+    <span aria-hidden>
+      {line1PrefixShown}
+      <span className="text-[#E8C478]">{highlightShown}</span>
+      {text.includes("\n") ? (
+        <>
+          <br />
+          {visibleLine2}
+        </>
+      ) : null}
+      {showCaret ? (
+        <span className="hero-typing-caret ml-0.5 inline-block align-[-0.08em]" />
+      ) : null}
+    </span>
+  );
+}
+
 export function HeroTypingHeadline({ className = "", onComplete }: HeroTypingHeadlineProps) {
   const reduceMotion = useSyncExternalStore(subscribeReducedMotion, getReducedMotion, () => true);
   const [charCount, setCharCount] = useState(FULL_TEXT.length);
@@ -67,24 +89,18 @@ export function HeroTypingHeadline({ className = "", onComplete }: HeroTypingHea
   }, [reduceMotion, onComplete]);
 
   const visible = FULL_TEXT.slice(0, charCount);
-  const [visibleLine1 = "", visibleLine2 = ""] = visible.split("\n");
-  const line1PrefixShown = visibleLine1.slice(0, LINE_1_PREFIX.length);
-  const highlightShown = visibleLine1.slice(LINE_1_PREFIX.length);
 
   return (
-    <h1 className={className} aria-label="Spreading Smiles Across The Globe">
-      <span aria-hidden>
-        {line1PrefixShown}
-        <span className="text-[#E8C478]">{highlightShown}</span>
-        {visible.includes("\n") ? (
-          <>
-            <br />
-            {visibleLine2}
-          </>
-        ) : null}
-        {showCaret && !done ? (
-          <span className="hero-typing-caret ml-0.5 inline-block align-[-0.08em]" />
-        ) : null}
+    <h1 className={`relative ${className}`} aria-label="Spreading Smiles Across The Globe">
+      {/* Invisible full copy reserves 2-line height so typing never collapses layout */}
+      <span className="invisible" aria-hidden>
+        {LINE_1_PREFIX}
+        <span className="text-[#E8C478]">{HIGHLIGHT}</span>
+        <br />
+        {LINE_2}
+      </span>
+      <span className="absolute inset-0">
+        <TypedLines text={visible} showCaret={showCaret && !done} />
       </span>
     </h1>
   );

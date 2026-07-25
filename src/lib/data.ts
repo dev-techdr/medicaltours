@@ -73,6 +73,8 @@ export type Procedure = {
 export type Category = {
   slug: string;
   name: string;
+  /** Banner / on-page H1 — SEO phrase for the specialty hub */
+  h1: string;
   description: string;
   heroImage: string;
   procedureSlugs: string[];

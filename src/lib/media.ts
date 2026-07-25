@@ -58,6 +58,7 @@ export const CATEGORY_SLUG_IMAGES: Record<string, string> = {
   "dental-treatments-india": s("dental.jpg"),
   "wellness-holistic-healing-india": s("wellness.jpg"),
   "urology-treatments-india": s("urology.jpg"),
+  "andrology-treatments-india": "/images/services/andrology/andrology.jpg",
   "gynecology-womens-health-india": s("gynecology.jpg"),
   "ent-treatments-india": s("ent.jpg"),
   "gastroenterology-india": s("gastroenterology.jpg"),

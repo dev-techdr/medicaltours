@@ -140,8 +140,8 @@ export const FOOTER_LINKS = {
       label: "Knee Replacement",
     },
     {
-      href: "/treatments/cancer-treatment-india/chemotherapy-cost-india",
-      label: "Chemotherapy",
+      href: "/treatments/cancer-treatment-india",
+      label: "Cancer Treatment",
     },
     {
       href: "/treatments/fertility-treatments-india/ivf-treatment-cost-india",

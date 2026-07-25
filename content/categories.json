@@ -2,6 +2,7 @@
   {
     "slug": "cardiac-care-india",
     "name": "Cardiac Care",
+    "h1": "Cardiac Care & Heart Surgery in India for International Patients",
     "description": "Heart surgery, angioplasty, valve replacement, pacemakers, and pediatric cardiac care for international patients in India.",
     "heroImage": "/images/services/cardiac-care.jpg",
     "procedureSlugs": [
@@ -18,6 +19,7 @@
   {
     "slug": "orthopaedic-treatments-india",
     "name": "Orthopaedic Treatments",
+    "h1": "Orthopaedic Treatments in India for International Patients",
     "description": "Knee and hip replacement, spine surgery, ACL reconstruction, and sports injury care at leading Indian hospitals.",
     "heroImage": "/images/services/orthopaedics.jpg",
     "procedureSlugs": [
@@ -34,6 +36,7 @@
   {
     "slug": "cancer-treatment-india",
     "name": "Cancer Treatment",
+    "h1": "Cancer Treatment in India for International Patients",
     "description": "Chemotherapy, radiation, immunotherapy, robotic oncology, and related cancer packages in India. For blood cancers and transplant, see Hematology & Bone Marrow.",
     "heroImage": "/images/services/cancer.jpg",
     "procedureSlugs": [
@@ -49,7 +52,8 @@
   {
     "slug": "fertility-treatments-india",
     "name": "Fertility Treatments",
-    "description": "IVF, ICSI, IUI, egg freezing, infertility evaluation, and related fertility care with transparent coordination for foreign patients \u2014 cross-linked with gynecology when surgery may help.",
+    "h1": "Fertility Treatments in India for International Patients",
+    "description": "IVF, ICSI, IUI, egg freezing, infertility evaluation, and related fertility care with transparent coordination for foreign patients — cross-linked with gynecology when surgery may help.",
     "heroImage": "/images/services/fertility.jpg",
     "procedureSlugs": [
       "ivf-treatment-cost-india",
@@ -65,6 +69,7 @@
   {
     "slug": "neurology-neurosurgery-india",
     "name": "Neurology & Neurosurgery",
+    "h1": "Neurology & Neurosurgery in India for International Patients",
     "description": "Brain tumor surgery, epilepsy surgery, deep brain stimulation, aneurysm repair, and stroke rehab in India.",
     "heroImage": "/images/services/neurosurgery.jpg",
     "procedureSlugs": [
@@ -79,6 +84,7 @@
   {
     "slug": "cosmetic-plastic-surgery-india",
     "name": "Cosmetic & Plastic Surgery",
+    "h1": "Cosmetic & Plastic Surgery in India for International Patients",
     "description": "Rhinoplasty, liposuction, breast surgery, facelift, hair transplant, mommy makeover, BBL, and body contouring with board-certified plastic surgeons across India.",
     "heroImage": "/images/services/cosmetic.jpg",
     "procedureSlugs": [
@@ -104,6 +110,7 @@
   {
     "slug": "general-advanced-surgeries-india",
     "name": "General & Advanced Surgeries",
+    "h1": "General & Advanced Surgeries in India for International Patients",
     "description": "Bariatric surgery, gallbladder removal, kidney and liver transplant, hernia repair, and advanced laparoscopy.",
     "heroImage": "/images/services/general-surgery.jpg",
     "procedureSlugs": [
@@ -118,6 +125,7 @@
   {
     "slug": "eye-care-ophthalmology-india",
     "name": "Eye Care & Ophthalmology",
+    "h1": "Eye Care & Ophthalmology in India for International Patients",
     "description": "LASIK, cataract surgery, retina surgery, cornea transplant, and glaucoma treatment packages in India.",
     "heroImage": "/images/services/eye-care.jpg",
     "procedureSlugs": [
@@ -131,6 +139,7 @@
   {
     "slug": "dental-treatments-india",
     "name": "Dental Treatments",
+    "h1": "Dental Treatments in India for International Patients",
     "description": "Dental implants, full mouth rehabilitation, veneers, and orthodontics at a fraction of Western costs.",
     "heroImage": "/images/services/dental.jpg",
     "procedureSlugs": [
@@ -144,6 +153,7 @@
   {
     "slug": "wellness-holistic-healing-india",
     "name": "Wellness & Holistic Healing",
+    "h1": "Wellness & Holistic Healing in India for International Patients",
     "description": "Ayurveda Panchakarma, yoga retreats, and post-surgery rehabilitation programs for medical tourists.",
     "heroImage": "/images/services/wellness.jpg",
     "procedureSlugs": [
@@ -155,21 +165,21 @@
   {
     "slug": "urology-treatments-india",
     "name": "Urology",
-    "description": "Prostate surgery, kidney stone treatment, robotic prostatectomy, varicocele repair, and male urology care for medical tourists in India.",
+    "h1": "Urology Treatments in India for International Patients",
+    "description": "Prostate surgery, kidney stone treatment, robotic prostatectomy, urethral stricture, and bladder cancer surgery for medical tourists in India. Male sexual health and varicocele pathways are listed under Andrology.",
     "heroImage": "/images/services/urology.jpg",
     "procedureSlugs": [
       "prostate-surgery-turp-cost-india",
       "robotic-prostatectomy-cost-india",
       "kidney-stone-treatment-india",
-      "varicocele-surgery-india",
       "urethral-stricture-surgery-india",
-      "bladder-cancer-surgery-india",
-      "male-sexual-health-treatment-india"
+      "bladder-cancer-surgery-india"
     ]
   },
   {
     "slug": "gynecology-womens-health-india",
     "name": "Gynecology & Women's Health",
+    "h1": "Gynecology & Women's Health Treatment in India for International Patients",
     "description": "Hysterectomy, fibroids, endometriosis, ovarian cysts, laparoscopic gynecology, PCOS, menstrual disorders, and confidential reproductive or aesthetic gynecology pathways for international patients.",
     "heroImage": "/images/services/gynecology.jpg",
     "procedureSlugs": [
@@ -190,6 +200,7 @@
   {
     "slug": "ent-treatments-india",
     "name": "ENT (Ear, Nose & Throat)",
+    "h1": "ENT Treatments in India for International Patients",
     "description": "Cochlear implants, sinus surgery (FESS), septoplasty, tonsillectomy, and thyroid/neck surgery packages in India.",
     "heroImage": "/images/services/ent.jpg",
     "procedureSlugs": [
@@ -204,6 +215,7 @@
   {
     "slug": "gastroenterology-india",
     "name": "Gastroenterology & Hepatology",
+    "h1": "Gastroenterology & Hepatology in India for International Patients",
     "description": "GI endoscopy, ERCP, liver disease care, IBD treatment, and advanced digestive surgery for foreign patients in India.",
     "heroImage": "/images/services/gastroenterology.jpg",
     "procedureSlugs": [
@@ -217,6 +229,7 @@
   {
     "slug": "endocrinology-diabetes-india",
     "name": "Endocrinology & Diabetes",
+    "h1": "Endocrinology & Diabetes Treatment in India for International Patients",
     "description": "Thyroid surgery, diabetes management packages, pituitary care, and hormone disorder treatment for medical tourists.",
     "heroImage": "/images/services/endocrinology.jpg",
     "procedureSlugs": [
@@ -229,6 +242,7 @@
   {
     "slug": "vascular-surgery-india",
     "name": "Vascular Surgery",
+    "h1": "Vascular Surgery in India for International Patients",
     "description": "Varicose vein treatment, peripheral angioplasty, aneurysm vascular repair, and dialysis access surgery in India.",
     "heroImage": "/images/services/vascular.jpg",
     "procedureSlugs": [
@@ -241,6 +255,7 @@
   {
     "slug": "dermatology-skin-care-india",
     "name": "Dermatology & Skin Care",
+    "h1": "Dermatology & Skin Care in India for International Patients",
     "description": "Skin cancer surgery, vitiligo, psoriasis, acne scars, laser resurfacing, melasma, keloids, and burn scar reconstruction for international patients in India.",
     "heroImage": "/images/services/dermatology.jpg",
     "procedureSlugs": [
@@ -261,6 +276,7 @@
   {
     "slug": "pediatric-treatments-india",
     "name": "Pediatric Treatments",
+    "h1": "Pediatric Treatments in India for International Patients",
     "description": "Pediatric surgery, congenital care, and child specialty treatment packages for families travelling to India.",
     "heroImage": "/images/services/pediatrics.jpg",
     "procedureSlugs": [
@@ -272,6 +288,7 @@
   {
     "slug": "pulmonology-lung-care-india",
     "name": "Pulmonology & Lung Care",
+    "h1": "Pulmonology & Lung Care in India for International Patients",
     "description": "Lung surgery, COPD/asthma care, bronchoscopy, and respiratory treatment packages for medical tourists in India.",
     "heroImage": "/images/services/pulmonology.jpg",
     "procedureSlugs": [
@@ -284,6 +301,7 @@
   {
     "slug": "hematology-bone-marrow-india",
     "name": "Hematology & Bone Marrow",
+    "h1": "Hematology & Bone Marrow Transplant in India for International Patients",
     "description": "Bone marrow and stem cell transplant, leukemia, lymphoma, myeloma, thalassemia, sickle cell, aplastic anemia, and CAR-T therapy at specialized Indian hematology centers.",
     "heroImage": "/images/services/hematology.jpg",
     "procedureSlugs": [
@@ -297,6 +315,27 @@
       "sickle-cell-treatment-india",
       "aplastic-anemia-treatment-india",
       "car-t-cell-therapy-india"
+    ]
+  },
+  {
+    "slug": "andrology-treatments-india",
+    "name": "Andrology",
+    "h1": "Andrology Treatments in India for International Patients",
+    "description": "Male sexual health, erectile dysfunction, penile implants, Peyronie's disease, male infertility microsurgery, vasectomy reversal, and related andrology care for international patients in India.",
+    "heroImage": "/images/services/andrology/andrology.jpg",
+    "procedureSlugs": [
+      "erectile-dysfunction-treatment-india",
+      "penile-implant-surgery-india",
+      "peyronies-disease-treatment-india",
+      "micro-tese-sperm-retrieval-india",
+      "vasectomy-reversal-india",
+      "hydrocele-surgery-india",
+      "circumcision-phimosis-treatment-india",
+      "testosterone-replacement-therapy-india",
+      "premature-ejaculation-treatment-india",
+      "azoospermia-treatment-india",
+      "varicocele-surgery-india",
+      "male-sexual-health-treatment-india"
     ]
   }
 ]

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useSyncExternalStore } from "react";
 
 type HeroVideoBackgroundProps = {
   src: string;
@@ -9,17 +9,19 @@ type HeroVideoBackgroundProps = {
   posterAlt: string;
 };
 
-export function HeroVideoBackground({ src, poster, posterAlt }: HeroVideoBackgroundProps) {
-  const [reduceMotion, setReduceMotion] = useState(true);
-  const videoRef = useRef<HTMLVideoElement | null>(null);
+function subscribeReducedMotion(onChange: () => void) {
+  const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+  mq.addEventListener("change", onChange);
+  return () => mq.removeEventListener("change", onChange);
+}
 
-  useEffect(() => {
-    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const update = () => setReduceMotion(mq.matches);
-    update();
-    mq.addEventListener("change", update);
-    return () => mq.removeEventListener("change", update);
-  }, []);
+function getReducedMotion() {
+  return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+}
+
+export function HeroVideoBackground({ src, poster, posterAlt }: HeroVideoBackgroundProps) {
+  const reduceMotion = useSyncExternalStore(subscribeReducedMotion, getReducedMotion, () => true);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
 
   useEffect(() => {
     if (reduceMotion) return;
@@ -31,27 +33,27 @@ export function HeroVideoBackground({ src, poster, posterAlt }: HeroVideoBackgro
     video.playbackRate = 0.75;
 
     // Some browsers require an explicit play() call after muting/autoplay rules.
-    // Ignore failures since we still render the poster fallback when motion is reduced.
+    // Ignore failures — poster Image underneath still covers the hero.
     void video.play().catch(() => undefined);
   }, [reduceMotion]);
 
   return (
     <div className="absolute inset-0" aria-hidden>
-      {reduceMotion ? (
-        <Image
-          src={poster}
-          alt={posterAlt}
-          fill
-          priority
-          fetchPriority="high"
-          quality={75}
-          sizes="100vw"
-          className="object-cover object-[center_25%]"
-        />
-      ) : (
+      {/* Always-on poster reserves LCP paint; video fades in on top when allowed */}
+      <Image
+        src={poster}
+        alt={posterAlt}
+        fill
+        priority
+        fetchPriority="high"
+        quality={75}
+        sizes="100vw"
+        className="object-cover object-[center_25%]"
+      />
+      {!reduceMotion ? (
         <video
           ref={videoRef}
-          className="h-full w-full object-cover object-[center_25%]"
+          className="absolute inset-0 h-full w-full object-cover object-[center_25%]"
           autoPlay
           muted
           loop
@@ -61,7 +63,7 @@ export function HeroVideoBackground({ src, poster, posterAlt }: HeroVideoBackgro
         >
           <source src={src} type="video/mp4" />
         </video>
-      )}
+      ) : null}
       <div className="media-overlay media-overlay-hero absolute inset-0" />
     </div>
   );

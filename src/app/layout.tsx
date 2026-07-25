@@ -14,6 +14,7 @@ const sourceSans = Source_Sans_3({
   variable: "--font-sans",
   subsets: ["latin"],
   display: "swap",
+  adjustFontFallback: true,
 });
 
 const fraunces = Fraunces({
@@ -21,6 +22,7 @@ const fraunces = Fraunces({
   subsets: ["latin"],
   weight: ["500", "600"],
   display: "swap",
+  adjustFontFallback: true,
 });
 
 const ibmPlexMono = IBM_Plex_Mono({
@@ -28,6 +30,7 @@ const ibmPlexMono = IBM_Plex_Mono({
   subsets: ["latin"],
   weight: ["400", "500"],
   display: "swap",
+  adjustFontFallback: true,
 });
 
 export const metadata: Metadata = {

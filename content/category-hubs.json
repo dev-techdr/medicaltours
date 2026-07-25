@@ -174,6 +174,10 @@
           "label": "Infertility overview"
         },
         {
+          "href": "/treatments/andrology-treatments-india",
+          "label": "Andrology hub (male factor)"
+        },
+        {
           "href": "/treatments/fertility-treatments-india/egg-freezing-india",
           "label": "Egg freezing"
         },
@@ -279,6 +283,83 @@
         {
           "href": "/free-second-opinion",
           "label": "Free second opinion"
+        }
+      ]
+    }
+  ],
+  "andrology-treatments-india": [
+    {
+      "id": "overview",
+      "heading": "Andrology treatment in India for international patients",
+      "paragraphs": [
+        "Andrology focuses on male reproductive and sexual health — erectile dysfunction, Peyronie's disease, hypogonadism, premature ejaculation, varicocele, azoospermia, surgical sperm retrieval, vasectomy reversal, and related scrotal surgery. International patients travel to India for discreet specialist care, transparent USD packages, and shorter waits than many self-pay markets in Africa, the Middle East, the UK, and the USA.",
+        "This hub introduces TechdrHealth-coordinated pathways at partner hospitals in Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore. Each linked service page provides 1,200+ words of clinical substance, cost ranges, estimated stay days, risks, and FAQs written for SEO, answer-engine clarity, and geographic intent.",
+        "Care is delivered by andrologists and urologists at partner centres; TechdrHealth facilitates matching, second opinions, visa invitation letters, travel planning, and follow-up — we do not replace your treating clinician."
+      ]
+    },
+    {
+      "id": "who",
+      "heading": "Who this andrology hub is for",
+      "paragraphs": [
+        "Men seeking evaluation or treatment for erectile problems, ejaculatory disorders, penile curvature, low testosterone symptoms, infertility with zero or low sperm counts, post-vasectomy parenthood plans, or symptomatic hydrocele and phimosis. Couples coordinating male-factor care alongside IVF/ICSI also use these pages.",
+        "Suitability for medical travel depends on whether your pathway is clinic-based (often 3–7 days in India) or surgical (commonly 5–10 days, longer for implants)."
+      ],
+      "bullets": [
+        "Prefer written USD estimates before booking flights",
+        "Need confidential scheduling for sexual-medicine visits",
+        "Want microsurgical fertility options linked to embryology labs",
+        "Require attendant or interpreter support during admission"
+      ]
+    },
+    {
+      "id": "pathways",
+      "heading": "Sexual medicine, fertility, and scrotal surgery pathways",
+      "paragraphs": [
+        "Sexual-medicine pages cover erectile dysfunction, premature ejaculation, male sexual health overviews, Peyronie's disease, and penile implant surgery for refractory ED. Hormonal care is addressed on the testosterone replacement page with fertility warnings made explicit.",
+        "Fertility-andrology pages cover azoospermia, micro-TESE/surgical sperm retrieval, vasectomy reversal, and varicocele repair — with cross-links to the fertility hub for IVF/ICSI. Day-care scrotal procedures include hydrocele repair and circumcision/phimosis treatment."
+      ],
+      "links": [
+        {
+          "href": "/treatments/fertility-treatments-india",
+          "label": "Fertility treatments hub"
+        },
+        {
+          "href": "/treatments/urology-treatments-india",
+          "label": "Urology hub"
+        },
+        {
+          "href": "/how-it-works",
+          "label": "How care coordination works"
+        }
+      ]
+    },
+    {
+      "id": "quality",
+      "heading": "Quality, accreditation, and coordination",
+      "paragraphs": [
+        "Partner hospitals are prioritised for recognised accreditation such as JCI and/or NABH where available, experienced andrology/urology teams, and international patient infrastructure. Package quotes should clarify device brands for implants, microscope use for microsurgery, room class, and inpatient nights.",
+        "Before travel, share medicines (especially nitrates), labs, ultrasound, semen analyses, and fertility goals. Remote triage prevents unsafe prescribing and mismatched surgery."
+      ]
+    },
+    {
+      "id": "costs-nav",
+      "heading": "Costs, stay days, and next steps",
+      "paragraphs": [
+        "Each child page lists USD ranges with India versus USA/UK/UAE directional comparisons and an estimated stay in India tied to clinic versus surgical pathways. Use the service directory above to open deep guides, then request a confidential review of your reports for hospital options and a written estimate.",
+        "Ready to talk discreetly? Request a free second opinion or quote with your reports attached."
+      ],
+      "links": [
+        {
+          "href": "/free-second-opinion",
+          "label": "Free second opinion"
+        },
+        {
+          "href": "/get-free-quote",
+          "label": "Get a free quote"
+        },
+        {
+          "href": "/cost-calculator",
+          "label": "Cost calculator"
         }
       ]
     }
