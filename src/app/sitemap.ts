@@ -41,6 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/our-team",
     "/reviews",
     "/hospital-network",
+    "/hospital-empanelment",
     "/hospitals",
     "/treatments",
     "/countries",

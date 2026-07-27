@@ -80,9 +80,24 @@ export async function POST(request: Request) {
   const preferredCity = String(formData.get("preferredCity") || "").trim();
   const sourcePage = String(formData.get("sourcePage") || "").trim();
   const consent = String(formData.get("consent") || "").trim();
+  const enquiryTypeRaw = String(formData.get("enquiryType") || "").trim();
+  const hospitalName = String(formData.get("hospitalName") || "").trim();
+  const accreditation = String(formData.get("accreditation") || "").trim();
+  const specialties = String(formData.get("specialties") || "").trim();
+  const designation = String(formData.get("designation") || "").trim();
+  const isHospitalEnquiry =
+    enquiryTypeRaw === "hospital" || sourcePage === "hospital-empanelment" || Boolean(hospitalName);
 
   if (fullName.length < 2) {
-    return NextResponse.json({ ok: false, error: "Please enter your full name." }, { status: 400 });
+    return NextResponse.json(
+      {
+        ok: false,
+        error: isHospitalEnquiry
+          ? "Please enter the contact person’s full name."
+          : "Please enter your full name.",
+      },
+      { status: 400 }
+    );
   }
 
   if (whatsapp.length < 7) {
@@ -107,20 +122,58 @@ export async function POST(request: Request) {
     );
   }
 
-  if (country.length < 2) {
-    return NextResponse.json({ ok: false, error: "Please enter your country." }, { status: 400 });
-  }
+  if (isHospitalEnquiry) {
+    if (hospitalName.length < 2) {
+      return NextResponse.json(
+        { ok: false, error: "Please enter the hospital name." },
+        { status: 400 }
+      );
+    }
+    if (preferredCity.length < 2) {
+      return NextResponse.json(
+        { ok: false, error: "Please enter the hospital city." },
+        { status: 400 }
+      );
+    }
+    if (!accreditation) {
+      return NextResponse.json(
+        { ok: false, error: "Please select an accreditation." },
+        { status: 400 }
+      );
+    }
+    if (specialties.length < 3) {
+      return NextResponse.json(
+        { ok: false, error: "Please list key specialties." },
+        { status: 400 }
+      );
+    }
+    if (designation.length < 2) {
+      return NextResponse.json(
+        { ok: false, error: "Please enter your designation." },
+        { status: 400 }
+      );
+    }
+  } else {
+    if (country.length < 2) {
+      return NextResponse.json({ ok: false, error: "Please enter your country." }, { status: 400 });
+    }
 
-  if (!treatment) {
-    return NextResponse.json(
-      { ok: false, error: "Please select a treatment interest." },
-      { status: 400 }
-    );
+    if (!treatment) {
+      return NextResponse.json(
+        { ok: false, error: "Please select a treatment interest." },
+        { status: 400 }
+      );
+    }
   }
 
   if (message.length < 10) {
     return NextResponse.json(
-      { ok: false, error: "Please describe your condition or needs (at least 10 characters)." },
+      {
+        ok: false,
+        error: isHospitalEnquiry
+          ? "Please share partnership notes (at least 10 characters)."
+          : "Please describe your condition or needs (at least 10 characters).",
+      },
       { status: 400 }
     );
   }
@@ -139,12 +192,17 @@ export async function POST(request: Request) {
     fullName,
     whatsapp,
     email,
-    country,
-    treatment,
+    country: country || (isHospitalEnquiry ? "India" : ""),
+    treatment: treatment || (isHospitalEnquiry ? "Hospital Empanelment / MOU Partnership" : ""),
     preferredCity,
     message,
     sourcePage: sourcePage || undefined,
     ip,
+    enquiryType: isHospitalEnquiry ? ("hospital" as const) : ("patient" as const),
+    hospitalName: hospitalName || undefined,
+    accreditation: accreditation || undefined,
+    specialties: specialties || undefined,
+    designation: designation || undefined,
   };
 
   const teamMail = teamEnquiryEmail(payload);

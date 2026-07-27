@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { Container } from "@/components/Container";
 import { CTASection } from "@/components/CTASection";
@@ -88,6 +89,14 @@ export default function HospitalNetworkPage() {
             title="Need help choosing the right hospital?"
             description="Share your reports on WhatsApp. We shortlist partner hospitals by specialty, city, and budget — with written estimates, not pressure."
           />
+        </Reveal>
+
+        <Reveal className="mt-8 text-center text-sm text-muted">
+          Hospital administrator?{" "}
+          <Link href="/hospital-empanelment" className="font-semibold text-accent hover:underline">
+            Apply for empanelment
+          </Link>{" "}
+          to join our MOU partner network.
         </Reveal>
       </Container>
     </>

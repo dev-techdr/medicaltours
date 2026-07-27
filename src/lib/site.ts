@@ -188,6 +188,7 @@ export const FOOTER_LINKS = {
     { href: "/why-india-for-medical-treatment", label: "Why India" },
     { href: "/india/hyderabad", label: "Indian Patients (Hyderabad)" },
     { href: "/hospitals", label: "Hospitals" },
+    { href: "/hospital-empanelment", label: "Hospital Empanelment" },
     { href: "/contact-us", label: "Contact Us" },
     { href: "/privacy-policy", label: "Privacy Policy" },
     { href: "/terms-of-service", label: "Terms of Service" },

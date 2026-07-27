@@ -59,6 +59,10 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-icon.png", type: "image/png", sizes: "180x180" }],
     shortcut: "/favicon.png",
   },
+  other: {
+    "dmca-site-verification":
+      "aWs0cEgwL1duUmw2Tk11RnNPcWllQ3hmZHJFZlhDZnl3bUVJQ1IzdTN6MD01",
+  },
 };
 
 export default function RootLayout({
