@@ -112,6 +112,10 @@ export default function RootLayout({
             alt=""
           />
         </noscript>
+        <Script
+          src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"
+          strategy="lazyOnload"
+        />
         <JsonLd data={organizationSchema()} />
         <AppChrome>{children}</AppChrome>
       </body>

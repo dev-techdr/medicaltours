@@ -75,7 +75,22 @@ export function Footer() {
               </a>
               .
             </p>
-            <p>Partnered with {SITE.hospitalCount} hospitals across India.</p>
+            <div className="flex flex-wrap items-center gap-4">
+              <p>Partnered with {SITE.hospitalCount} hospitals across India.</p>
+              <a
+                href="https://www.dmca.com/Protection/Status.aspx?ID=3195a781-4573-4465-adce-f7856b69b4f8"
+                title="DMCA.com Protection Status"
+                className="dmca-badge"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="https://images.dmca.com/Badges/dmca_protected_sml_120m.png?ID=3195a781-4573-4465-adce-f7856b69b4f8"
+                  alt="DMCA.com Protection Status"
+                />
+              </a>
+            </div>
           </div>
           <p className="max-w-3xl text-xs leading-relaxed text-white/35">
             {SITE.ownershipDeclaration}
