@@ -61,7 +61,7 @@ export const metadata: Metadata = {
   },
   other: {
     "dmca-site-verification":
-      "aWs0cEgwL1duUmw2Tk11RnNPcWllQ3hmZHJFZlhDZnl3bUVJQ1IzdTN6MD01",
+      "cGVxUThEN0psd1ZyVmlML1ZXeTgyZElrZGZFbGgzTldGTk9RVUNKSTlxcz01",
   },
 };
 
