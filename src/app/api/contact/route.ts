@@ -79,6 +79,9 @@ export async function POST(request: Request) {
   const message = String(formData.get("message") || "").trim();
   const preferredCity = String(formData.get("preferredCity") || "").trim();
   const sourcePage = String(formData.get("sourcePage") || "").trim();
+  const audience = String(formData.get("audience") || "").trim();
+  const careContext = String(formData.get("careContext") || "").trim();
+  const preferredContact = String(formData.get("preferredContact") || "").trim();
   const consent = String(formData.get("consent") || "").trim();
   const enquiryTypeRaw = String(formData.get("enquiryType") || "").trim();
   const hospitalName = String(formData.get("hospitalName") || "").trim();
@@ -197,6 +200,9 @@ export async function POST(request: Request) {
     preferredCity,
     message,
     sourcePage: sourcePage || undefined,
+    audience: audience || undefined,
+    careContext: careContext || undefined,
+    preferredContact: preferredContact || undefined,
     ip,
     enquiryType: isHospitalEnquiry ? ("hospital" as const) : ("patient" as const),
     hospitalName: hospitalName || undefined,

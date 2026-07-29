@@ -77,6 +77,25 @@ export default function CountriesPage() {
         </div>
       </Reveal>
 
+      <Reveal className="mt-8">
+        <Link
+          href="/for-usa-uk-canada-australia"
+          className="group flex flex-col gap-2 rounded-[var(--radius)] border border-line bg-white p-6 shadow-[var(--shadow-soft)] transition hover:border-accent sm:flex-row sm:items-center sm:justify-between"
+        >
+          <div>
+            <p className="data-label">Western markets</p>
+            <p className="mt-1 font-display text-xl font-medium text-navy group-hover:text-accent">
+              USA · UK · Canada · Australia
+            </p>
+            <p className="mt-1 max-w-xl text-sm text-muted">
+              Accreditation-first pathways for self-pay, NHS wait-list, and provincial wait-list
+              patients — start with a free written second opinion.
+            </p>
+          </div>
+          <span className="text-sm font-semibold text-accent shrink-0">Open campaign guide →</span>
+        </Link>
+      </Reveal>
+
       <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {countries.map((c, i) => (
           <Reveal key={c.slug} delay={(i % 3) * 50}>

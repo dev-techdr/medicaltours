@@ -19,6 +19,7 @@ import {
   getCountryBySlug,
 } from "@/data/countries";
 import { patientStoriesPathFromHub } from "@/data/countryRoutes";
+import { isWesternHubSlug } from "@/data/westernMarkets";
 import { getAllStories } from "@/data/stories";
 import { getTreatmentBySlug } from "@/data/treatments";
 import { getTestimonialsByCountry } from "@/lib/data";
@@ -112,6 +113,8 @@ export default async function CountryPage({ params }: Props) {
         story.country.toLowerCase().includes(country.demonym.toLowerCase()) ||
         (country.name === "United States" && /usa|united states|america/i.test(story.country)) ||
         (country.name === "United Kingdom" && /uk|united kingdom|britain/i.test(story.country)) ||
+        (country.name === "Canada" && /canada/i.test(story.country)) ||
+        (country.name === "Australia" && /australia/i.test(story.country)) ||
         (country.name === "UAE" && /uae|dubai|emirates/i.test(story.country))
     )
     .slice(0, 2);
@@ -137,6 +140,8 @@ export default async function CountryPage({ params }: Props) {
           summary: s.summary,
           href: `/patient-stories/${s.countrySlug}`,
         }));
+
+  const western = isWesternHubSlug(country.slug);
 
   return (
     <Container className="py-10 sm:py-14">
@@ -205,10 +210,9 @@ export default async function CountryPage({ params }: Props) {
 
       <Reveal className="mt-6">
         <AnswerBlock label={`How does TechdrHealth help families from ${country.name}?`}>
-          Medical Tours India coordinates hospital matching, transparent package estimates,
-          medical visa invitation letters, airport pickup, interpreters when needed, and recovery
-          stay support for {country.demonym} patients — with a Hyderabad-based team available on
-          call and WhatsApp.
+          {western
+            ? `Medical Tours India coordinates hospital matching, transparent package estimates, medical visa invitation letters, airport pickup, and recovery stay support for ${country.demonym} patients — with email-first replies and records prepared for your home clinician. A Hyderabad-based team stays available throughout admission.`
+            : `Medical Tours India coordinates hospital matching, transparent package estimates, medical visa invitation letters, airport pickup, interpreters when needed, and recovery stay support for ${country.demonym} patients — with a Hyderabad-based team available on call and WhatsApp.`}
         </AnswerBlock>
       </Reveal>
 
@@ -338,6 +342,21 @@ export default async function CountryPage({ params }: Props) {
               Cost calculator →
             </Link>
           </li>
+          {western ? (
+            <li>
+              <Link
+                href="/for-usa-uk-canada-australia"
+                className="text-sm font-semibold text-accent hover:text-navy"
+              >
+                USA · UK · Canada · Australia guide →
+              </Link>
+            </li>
+          ) : null}
+          <li>
+            <Link href="/free-second-opinion" className="text-sm font-semibold text-accent hover:text-navy">
+              Free second opinion →
+            </Link>
+          </li>
           <li>
             <Link href="/countries" className="text-sm font-semibold text-accent hover:text-navy">
               All nationality guides →
@@ -348,8 +367,13 @@ export default async function CountryPage({ params }: Props) {
 
       <div className="mt-12">
         <CTASection
+          audience={western ? "western" : "default"}
           title={`Planning treatment from ${country.name}?`}
-          description={`Share your reports on WhatsApp for a free opinion, ${country.currencyCode}-aware cost estimate, and medical visa guidance for ${country.demonym} patients.`}
+          description={
+            western
+              ? `Share your reports for a free second opinion and a written ${country.currencyCode}-aware USD package estimate — email-first, with medical visa guidance for ${country.demonym} patients.`
+              : `Share your reports on WhatsApp for a free opinion, ${country.currencyCode}-aware cost estimate, and medical visa guidance for ${country.demonym} patients.`
+          }
         />
       </div>
     </Container>

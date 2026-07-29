@@ -54,7 +54,14 @@ export default function HomePage() {
   const featuredCountries = PRIORITY_COUNTRY_SHORT_SLUGS.map(
     (short) => countryByHub.get(COUNTRY_HUB_BY_SHORT_SLUG[short])
   ).filter((c): c is NonNullable<typeof c> => Boolean(c));
-  const featuredStories = stories.slice(0, 3);
+  const featuredStories = (() => {
+    const western = stories.filter((s) =>
+      /united states|united kingdom|usa|uk|canada|australia|britain|america/i.test(s.country)
+    );
+    if (western.length === 0) return stories.slice(0, 3);
+    const rest = stories.filter((s) => !western.includes(s));
+    return [...western.slice(0, 1), ...rest].slice(0, 3);
+  })();
 
   return (
     <>
@@ -121,6 +128,58 @@ export default function HomePage() {
 
         <Reveal className="mt-16">
           <GlobalReach />
+        </Reveal>
+
+        <Reveal className="mt-16">
+          <div className="overflow-hidden rounded-[var(--radius)] border border-line bg-white shadow-[var(--shadow-soft)]">
+            <div className="grid gap-6 p-8 sm:p-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+              <div>
+                <p className="data-label">USA · UK · Canada · Australia</p>
+                <h2 className="mt-2 font-display text-3xl font-medium tracking-tight text-navy">
+                  Patients from the US, UK, Canada &amp; Australia
+                </h2>
+                <p className="mt-4 max-w-2xl text-muted">
+                  Accreditation-first pathways for self-pay Americans, NHS wait-list families in the
+                  UK, provincial wait-list care in Canada, and elective travellers from Australia —
+                  remote second opinion before you fly.
+                </p>
+                <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+                  <Link href="/for-usa-uk-canada-australia" className="btn btn-primary w-full sm:w-auto">
+                    Western markets guide
+                  </Link>
+                  <Link href="/free-second-opinion" className="btn btn-outline w-full sm:w-auto">
+                    Free second opinion
+                  </Link>
+                </div>
+              </div>
+              <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-1">
+                {[
+                  { href: "/countries/medical-tourism-india-for-usa-patients", label: "United States" },
+                  { href: "/countries/medical-tourism-india-for-uk-patients", label: "United Kingdom" },
+                  {
+                    href: "/countries/medical-tourism-india-for-canadian-patients",
+                    label: "Canada",
+                  },
+                  {
+                    href: "/countries/medical-tourism-india-for-australian-patients",
+                    label: "Australia",
+                  },
+                ].map((item) => (
+                  <li key={item.href}>
+                    <Link
+                      href={item.href}
+                      className="flex items-center justify-between rounded-[var(--radius-sm)] border border-line px-4 py-3 text-sm font-semibold text-navy transition hover:border-accent hover:bg-accent-light"
+                    >
+                      {item.label}
+                      <span className="text-accent" aria-hidden>
+                        →
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </Reveal>
 
         {/* Patient stories */}

@@ -45,6 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/hospitals",
     "/treatments",
     "/countries",
+    "/for-usa-uk-canada-australia",
     "/cost-calculator",
     "/patient-stories",
     "/blog",

@@ -7,6 +7,8 @@ type CTASectionProps = {
   compact?: boolean;
   /** Optional pre-filled WhatsApp deep link (defaults to SITE.whatsappUrl). */
   whatsappHref?: string;
+  /** Email / second-opinion first CTAs for US·UK·CA·AU pages. */
+  audience?: "default" | "western";
 };
 
 export function CTASection({
@@ -14,8 +16,10 @@ export function CTASection({
   description = "Share your reports and we’ll help you compare hospital options, clarify costs, and organize visa, travel, and recovery support — usually within 24–48 hours.",
   compact = false,
   whatsappHref,
+  audience = "default",
 }: CTASectionProps) {
   const waHref = whatsappHref ?? SITE.whatsappUrl;
+  const western = audience === "western";
 
   return (
     <section
@@ -47,20 +51,39 @@ export function CTASection({
           </p>
         </div>
         <div className="flex flex-col gap-2.5 sm:flex-row sm:flex-wrap lg:justify-end">
-          <Link href="/get-free-quote" className="btn btn-light w-full sm:w-auto">
-            Get free quote
-          </Link>
-          <Link href="/contact-us#enquiry-form" className="btn btn-secondary w-full sm:w-auto">
-            Contact us
-          </Link>
-          <a
-            href={waHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-outline-light w-full sm:w-auto"
-          >
-            WhatsApp us
-          </a>
+          {western ? (
+            <>
+              <Link href="/free-second-opinion" className="btn btn-light w-full sm:w-auto">
+                Free second opinion
+              </Link>
+              <Link href="/cost-calculator" className="btn btn-secondary w-full sm:w-auto">
+                Compare costs
+              </Link>
+              <a
+                href={`mailto:${SITE.email}`}
+                className="btn btn-outline-light w-full sm:w-auto"
+              >
+                Email us
+              </a>
+            </>
+          ) : (
+            <>
+              <Link href="/get-free-quote" className="btn btn-light w-full sm:w-auto">
+                Get free quote
+              </Link>
+              <Link href="/contact-us#enquiry-form" className="btn btn-secondary w-full sm:w-auto">
+                Contact us
+              </Link>
+              <a
+                href={waHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-outline-light w-full sm:w-auto"
+              >
+                WhatsApp us
+              </a>
+            </>
+          )}
         </div>
       </div>
     </section>

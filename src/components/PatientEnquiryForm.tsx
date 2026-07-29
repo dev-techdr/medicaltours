@@ -20,6 +20,17 @@ const TREATMENT_OPTIONS = [
   "Other / not sure yet",
 ] as const;
 
+const CARE_CONTEXT_OPTIONS = [
+  "Self-pay / high deductible",
+  "NHS or public wait-list",
+  "Provincial / insurance wait-list",
+  "Private quote too high",
+  "Seeking second opinion only",
+  "Other / not sure",
+] as const;
+
+const PREFERRED_CONTACT_OPTIONS = ["Email", "Phone", "WhatsApp"] as const;
+
 type FormStatus =
   | { kind: "idle" }
   | { kind: "error"; message: string }
@@ -36,6 +47,9 @@ type PatientEnquiryFormProps = {
   sourcePage?: string;
   /** Soft private CTA: hide WhatsApp paths; prefer form/email for sensitive care. */
   confidentialMode?: boolean;
+  /** Email-first path for US/UK/Canada/Australia patients. */
+  audience?: "default" | "western";
+  defaultCountry?: string;
   defaultTreatment?: (typeof TREATMENT_OPTIONS)[number] | "";
 };
 
@@ -49,12 +63,16 @@ export function PatientEnquiryForm({
   messagePlaceholder = "Briefly describe the diagnosis, reports available, and what you need help with.",
   sourcePage,
   confidentialMode = false,
+  audience = "default",
+  defaultCountry = "",
   defaultTreatment = "",
 }: PatientEnquiryFormProps) {
   const router = useRouter();
   const formRef = useRef<HTMLFormElement | null>(null);
   const [status, setStatus] = useState<FormStatus>({ kind: "idle" });
   const [submitting, setSubmitting] = useState(false);
+  const western = audience === "western";
+  const emailFirst = confidentialMode || western;
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -80,7 +98,7 @@ export function PatientEnquiryForm({
           kind: "error",
           message:
             data?.error ||
-            (confidentialMode
+            (emailFirst
               ? `Something went wrong. Please email ${SITE.email} instead.`
               : "Something went wrong. Please try WhatsApp instead."),
         });
@@ -91,12 +109,12 @@ export function PatientEnquiryForm({
       setStatus({ kind: "success", reference: data.reference || "" });
       form.reset();
       window.setTimeout(() => {
-        router.push("/thank-you");
+        router.push(western ? "/thank-you?audience=western" : "/thank-you");
       }, 1200);
     } catch {
       setStatus({
         kind: "error",
-        message: confidentialMode
+        message: emailFirst
           ? `Network error. Please try again or email ${SITE.email}.`
           : "Network error. Please try again or message us on WhatsApp.",
       });
@@ -117,7 +135,7 @@ export function PatientEnquiryForm({
       {!compact && (
         <p className="mt-2 text-sm leading-relaxed text-muted">
           {description ?? (
-            confidentialMode ? (
+            emailFirst ? (
               <>
                 Share a few details and we will reply discreetly within 24–48 hours. Prefer email?{" "}
                 <a href={`mailto:${SITE.email}`} className="font-semibold text-accent hover:underline">
@@ -145,6 +163,7 @@ export function PatientEnquiryForm({
       )}
 
       {sourcePage ? <input type="hidden" name="sourcePage" value={sourcePage} /> : null}
+      {western ? <input type="hidden" name="audience" value="western" /> : null}
 
       {/* Honeypot — clipped so it cannot cause horizontal page scroll */}
       <div className="pointer-events-none absolute h-0 w-0 overflow-hidden opacity-0" aria-hidden>
@@ -167,7 +186,7 @@ export function PatientEnquiryForm({
         </label>
         <label className="block sm:col-span-1">
           <span className="mb-1.5 block text-sm font-medium text-navy">
-            {confidentialMode ? "Phone *" : "WhatsApp / phone *"}
+            {emailFirst ? "Phone *" : "WhatsApp / phone *"}
           </span>
           <input
             name="whatsapp"
@@ -175,7 +194,7 @@ export function PatientEnquiryForm({
             required
             autoComplete="tel"
             className="form-field"
-            placeholder="+91 or country code + number"
+            placeholder="+1 / +44 / +61 or country code + number"
           />
         </label>
         <label className="block sm:col-span-1">
@@ -197,7 +216,8 @@ export function PatientEnquiryForm({
             required
             autoComplete="country-name"
             className="form-field"
-            placeholder="e.g. Nigeria, UAE, UK"
+            placeholder={western ? "e.g. United States, UK, Canada, Australia" : "e.g. Nigeria, UAE, UK"}
+            defaultValue={defaultCountry}
           />
         </label>
         <label className="block sm:col-span-2">
@@ -218,6 +238,40 @@ export function PatientEnquiryForm({
             ))}
           </select>
         </label>
+        {western ? (
+          <>
+            <label className="block sm:col-span-1">
+              <span className="mb-1.5 block text-sm font-medium text-navy">
+                Care context <span className="font-normal text-muted">(optional)</span>
+              </span>
+              <select name="careContext" className="form-field" defaultValue="">
+                <option value="">Select if relevant</option>
+                {CARE_CONTEXT_OPTIONS.map((option) => (
+                  <option key={option} value={option}>
+                    {option}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label className="block sm:col-span-1">
+              <span className="mb-1.5 block text-sm font-medium text-navy">
+                Preferred contact <span className="font-normal text-muted">(optional)</span>
+              </span>
+              <select name="preferredContact" className="form-field" defaultValue="Email">
+                {PREFERRED_CONTACT_OPTIONS.map((option) => (
+                  <option key={option} value={option}>
+                    {option}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <p className="sm:col-span-2 rounded-[var(--radius-sm)] border border-line bg-neutral/40 px-4 py-3 text-xs leading-relaxed text-muted">
+              Helpful to attach later by email: recent diagnosis or discharge summary, imaging
+              reports (MRI/CT/X-ray), current medications, and any cash-pay or wait-list quotes from
+              home. Incomplete files are fine — we will say what is missing.
+            </p>
+          </>
+        ) : null}
         <label className="block sm:col-span-2">
           <span className="mb-1.5 block text-sm font-medium text-navy">
             Medical condition / message *
@@ -274,7 +328,7 @@ export function PatientEnquiryForm({
         <button type="submit" className="btn btn-primary w-full sm:w-auto" disabled={submitting}>
           {submitting ? "Sending…" : submitLabel}
         </button>
-        {confidentialMode ? (
+        {emailFirst ? (
           <a href={`mailto:${SITE.email}`} className="btn btn-outline w-full sm:w-auto">
             Email instead
           </a>

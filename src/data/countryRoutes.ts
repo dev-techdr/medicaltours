@@ -43,16 +43,16 @@ export const COUNTRY_HUB_BY_SHORT_SLUG: Record<string, string> = {
 /** High-search-volume markets to feature on homepage / footer */
 export const PRIORITY_COUNTRY_SHORT_SLUGS = [
   "nigeria",
+  "bangladesh",
+  "iraq",
+  "usa",
+  "uk",
+  "canada",
+  "australia",
   "kenya",
   "uae",
   "saudi-arabia",
-  "bangladesh",
-  "uk",
-  "usa",
-  "iraq",
   "ghana",
-  "oman",
-  "egypt",
 ] as const;
 
 export function countryHubPathFromShortSlug(shortSlug: string): string | undefined {

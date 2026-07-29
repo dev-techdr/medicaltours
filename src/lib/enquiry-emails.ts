@@ -10,6 +10,9 @@ export type EnquiryPayload = {
   preferredCity: string;
   message: string;
   sourcePage?: string;
+  audience?: string;
+  careContext?: string;
+  preferredContact?: string;
   ip?: string;
   enquiryType?: "patient" | "hospital";
   hospitalName?: string;
@@ -126,6 +129,9 @@ export function teamEnquiryEmail(data: EnquiryPayload) {
         detailRow("Email", data.email),
         detailRow("Country", data.country),
         detailRow("Treatment", data.treatment),
+        detailRow("Care context", data.careContext || "Not specified"),
+        detailRow("Preferred contact", data.preferredContact || "Not specified"),
+        detailRow("Audience", data.audience || "default"),
         detailRow("Preferred city", data.preferredCity || "Not specified"),
         detailRow("Source page", data.sourcePage || "Website form"),
       ].join("");
@@ -184,12 +190,14 @@ export function teamEnquiryEmail(data: EnquiryPayload) {
   }
 
   return {
-    subject: `New patient enquiry · ${data.fullName} · ${data.treatment} (${data.country})`,
+    subject: `${data.audience === "western" ? "[Western] " : ""}New patient enquiry · ${data.fullName} · ${data.treatment} (${data.country})`,
     html: emailShell({
       preheader: `New enquiry ${data.reference} from ${data.fullName}`,
-      eyebrow: "Care team alert",
+      eyebrow: data.audience === "western" ? "Western market alert" : "Care team alert",
       title: "New patient enquiry received",
-      subtitle: `A potential patient submitted the website form. Reply within 24–48 hours.`,
+      subtitle: `A potential patient submitted the website form. Reply within 24–48 hours${
+        data.audience === "western" ? " — prefer email unless they asked for WhatsApp" : ""
+      }.`,
       bodyHtml,
       footerNote: `Submitted from ${SITE.domain}${data.ip ? ` · IP ${escapeHtml(data.ip)}` : ""}. Reply-to is set to the patient’s email.`,
     }),
@@ -201,6 +209,9 @@ export function teamEnquiryEmail(data: EnquiryPayload) {
       `Email: ${data.email}`,
       `Country: ${data.country}`,
       `Treatment: ${data.treatment}`,
+      `Care context: ${data.careContext || "—"}`,
+      `Preferred contact: ${data.preferredContact || "—"}`,
+      `Audience: ${data.audience || "default"}`,
       `Preferred city: ${data.preferredCity || "—"}`,
       `Source page: ${data.sourcePage || "Website form"}`,
       ``,

@@ -99,7 +99,7 @@ export default function FreeSecondOpinionPage() {
               hospital options, likely treatment pathways, and cost ranges before you commit to a
               trip.
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Link href="#enquiry-form" className="btn btn-primary w-full sm:w-auto">
                 Send reports for review
               </Link>
@@ -111,6 +111,12 @@ export default function FreeSecondOpinionPage() {
               >
                 Send on WhatsApp
               </a>
+              <Link
+                href="/for-usa-uk-canada-australia"
+                className="btn btn-outline w-full sm:w-auto"
+              >
+                From USA · UK · CA · AU?
+              </Link>
             </div>
           </Reveal>
 

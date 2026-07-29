@@ -154,6 +154,10 @@ export const FOOTER_LINKS = {
     { href: "/treatments", label: "All Treatments" },
   ],
   countries: [
+    {
+      href: "/for-usa-uk-canada-australia",
+      label: "USA · UK · Canada · Australia",
+    },
     { href: "/countries/medical-tourism-india-for-nigerians", label: "Nigeria" },
     { href: "/countries/medical-tourism-india-for-kenyans", label: "Kenya" },
     { href: "/countries/medical-tourism-india-for-uae-residents", label: "UAE" },
@@ -161,9 +165,9 @@ export const FOOTER_LINKS = {
     { href: "/countries/medical-tourism-india-for-bangladeshis", label: "Bangladesh" },
     { href: "/countries/medical-tourism-india-for-uk-patients", label: "United Kingdom" },
     { href: "/countries/medical-tourism-india-for-usa-patients", label: "United States" },
+    { href: "/countries/medical-tourism-india-for-canadian-patients", label: "Canada" },
+    { href: "/countries/medical-tourism-india-for-australian-patients", label: "Australia" },
     { href: "/countries/medical-tourism-india-for-iraqis", label: "Iraq" },
-    { href: "/countries/medical-tourism-india-for-nepalis", label: "Nepal" },
-    { href: "/countries/medical-tourism-india-for-sri-lankans", label: "Sri Lanka" },
     { href: "/countries", label: "All Countries" },
   ],
   patients: [

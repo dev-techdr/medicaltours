@@ -31,8 +31,10 @@ export function CostComparisonTable({
       >
         {procedureName} cost: India vs other countries
       </h2>
-      <p className="mt-2 max-w-2xl text-sm text-muted sm:text-base">
-        Typical package ranges in USD for international patients. Final quotes follow medical review.
+        <p className="mt-2 max-w-2xl text-sm text-muted sm:text-base">
+        Typical package ranges in USD for international patients. Families from Canada and Australia
+        often convert the mid-range for CAD/AUD planning; UK patients compare against private GBP
+        quotes. Final quotes follow medical review.
       </p>
 
       {/* Mobile: stacked cards — avoids cramped horizontal tables */}
