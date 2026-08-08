@@ -2,7 +2,9 @@ export const SITE = {
   name: "Medical Tours India",
   legalName: "TechDr",
   domain: "medicaltoursindia.com",
-  url: "https://medicaltoursindia.com",
+  // Must match the live host Google indexes. Vercel primary domain is www
+  // (apex medicaltoursindia.com 308s → www). Canonicals/sitemap/OG use this.
+  url: "https://www.medicaltoursindia.com",
   tagline: "Trusted Medical Tourism Partner for International Patients",
   description:
     "Medical Tours India connects international patients with 200+ partner hospitals across India. End-to-end care for treatment, visa, travel, and recovery — headquartered in Hyderabad.",

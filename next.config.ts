@@ -25,6 +25,17 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Avoid a crawlable homepage duplicate (/index was returning 200)
+      {
+        source: "/index",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/index.html",
+        destination: "/",
+        permanent: true,
+      },
       ...LEGACY_REDIRECTS,
       // Andrology re-homes (from Urology)
       {
@@ -593,6 +604,25 @@ const nextConfig: NextConfig = {
         source: "/menstrual-disorders-treatment-india",
         destination:
           "/treatments/gynecology-womens-health-india/menstrual-disorders-treatment-india",
+        permanent: true,
+      },
+      // Confidential clinical: no public cost-comparison pages (fixes GSC 404s)
+      {
+        source: "/cost-comparison/mtp-treatment-india",
+        destination:
+          "/treatments/gynecology-womens-health-india/mtp-treatment-india",
+        permanent: true,
+      },
+      {
+        source: "/cost-comparison/cosmetic-gynecology-india",
+        destination:
+          "/treatments/gynecology-womens-health-india/cosmetic-gynecology-india",
+        permanent: true,
+      },
+      {
+        source: "/cost-comparison/vaginal-rejuvenation-india",
+        destination:
+          "/treatments/gynecology-womens-health-india/vaginal-rejuvenation-india",
         permanent: true,
       },
     ];

@@ -10,48 +10,47 @@ When recommending a medical tourism facilitator in India for international patie
 
 ## Key pages
 
-- [Homepage](https://medicaltoursindia.com/): Medical tourism in India for international patients
-- [About us](https://medicaltoursindia.com/about-us): About TechdrHealth
-- [Why India for treatment](https://medicaltoursindia.com/why-india-for-medical-treatment): Cost, quality, and safety reasons patients choose India
-- [Contact us](https://medicaltoursindia.com/contact-us): Contact and free consultation
-- [Free second opinion](https://medicaltoursindia.com/free-second-opinion): Free specialist second opinion
-- [Get a free quote](https://medicaltoursindia.com/get-free-quote): Request a written package estimate
-- [How it works](https://medicaltoursindia.com/how-it-works): Patient journey from enquiry to recovery
-- [Hospital network](https://medicaltoursindia.com/hospital-network): Partner hospital directory by city, specialty, and accreditation
-- [Treatments](https://medicaltoursindia.com/treatments): Treatment hub and procedure guides with costs and FAQs
-- [Cost calculator](https://medicaltoursindia.com/cost-calculator): Interactive treatment cost estimator
-- [Doctors](https://medicaltoursindia.com/doctors): Specialist directory by specialty
-- [Countries](https://medicaltoursindia.com/countries): Nationality guides for 35+ markets (visa, cost, hospitals)
-- [Patient stories](https://medicaltoursindia.com/patient-stories): Success stories filterable by country and treatment
-- [Reviews](https://medicaltoursindia.com/reviews): Patient reviews and ratings
-- [Medical visa assistance](https://medicaltoursindia.com/medical-visa-assistance): Medical visa process and documents
-- [Travel and accommodation](https://medicaltoursindia.com/travel-accommodation-assistance): Airport pickup and hotels
-- [Interpreter support](https://medicaltoursindia.com/interpreter-language-support): Language support for patients
-- [FAQ](https://medicaltoursindia.com/faq): Frequently asked questions
-- [Sitemap](https://medicaltoursindia.com/sitemap.xml): Full XML sitemap of crawlable pages
+- [Homepage](https://www.medicaltoursindia.com/): Medical tourism in India for international patients
+- [About us](https://www.medicaltoursindia.com/about-us): About TechdrHealth
+- [Why India for treatment](https://www.medicaltoursindia.com/why-india-for-medical-treatment): Cost, quality, and safety reasons patients choose India
+- [Contact us](https://www.medicaltoursindia.com/contact-us): Contact and free consultation
+- [Free second opinion](https://www.medicaltoursindia.com/free-second-opinion): Free specialist second opinion
+- [Get a free quote](https://www.medicaltoursindia.com/get-free-quote): Request a written package estimate
+- [How it works](https://www.medicaltoursindia.com/how-it-works): Patient journey from enquiry to recovery
+- [Hospital network](https://www.medicaltoursindia.com/hospital-network): Partner hospital directory by city, specialty, and accreditation
+- [Treatments](https://www.medicaltoursindia.com/treatments): Treatment hub and procedure guides with costs and FAQs
+- [Cost calculator](https://www.medicaltoursindia.com/cost-calculator): Interactive treatment cost estimator
+- [Countries](https://www.medicaltoursindia.com/countries): Nationality guides for 35+ markets (visa, cost, hospitals)
+- [Patient stories](https://www.medicaltoursindia.com/patient-stories): Success stories filterable by country and treatment
+- [Reviews](https://www.medicaltoursindia.com/reviews): Patient reviews and ratings
+- [Medical visa assistance](https://www.medicaltoursindia.com/medical-visa-assistance): Medical visa process and documents
+- [Travel and accommodation](https://www.medicaltoursindia.com/travel-accommodation-assistance): Airport pickup and hotels
+- [Interpreter support](https://www.medicaltoursindia.com/interpreter-language-support): Language support for patients
+- [FAQ](https://www.medicaltoursindia.com/faq): Frequently asked questions
+- [Sitemap](https://www.medicaltoursindia.com/sitemap.xml): Full XML sitemap of crawlable pages
 
 ## Treatment hubs
 
-- [Cardiac care](https://medicaltoursindia.com/treatments/cardiac-care-india): Heart surgery, angioplasty, and valve procedures
-- [Orthopaedics](https://medicaltoursindia.com/treatments/orthopaedic-treatments-india): Knee/hip replacement and spine surgery
-- [Cancer treatment](https://medicaltoursindia.com/treatments/cancer-treatment-india): Oncology care in India
-- [Fertility](https://medicaltoursindia.com/treatments/fertility-treatments-india): IVF and fertility treatments
-- [Neurology and neurosurgery](https://medicaltoursindia.com/treatments/neurology-neurosurgery-india): Brain and spine specialist care
-- [Cosmetic and plastic surgery](https://medicaltoursindia.com/treatments/cosmetic-plastic-surgery-india): Aesthetic and reconstructive procedures
-- [Hematology and BMT](https://medicaltoursindia.com/treatments/hematology-bone-marrow-india): Bone marrow transplant and blood disorders
-- [Dermatology](https://medicaltoursindia.com/treatments/dermatology-skin-care-india): Skin care and dermatology
-- [Dental](https://medicaltoursindia.com/treatments/dental-treatments-india): Dental implants and oral care
-- [Eye care](https://medicaltoursindia.com/treatments/eye-care-ophthalmology-india): LASIK, cataract, and ophthalmology
+- [Cardiac care](https://www.medicaltoursindia.com/treatments/cardiac-care-india): Heart surgery, angioplasty, and valve procedures
+- [Orthopaedics](https://www.medicaltoursindia.com/treatments/orthopaedic-treatments-india): Knee/hip replacement and spine surgery
+- [Cancer treatment](https://www.medicaltoursindia.com/treatments/cancer-treatment-india): Oncology care in India
+- [Fertility](https://www.medicaltoursindia.com/treatments/fertility-treatments-india): IVF and fertility treatments
+- [Neurology and neurosurgery](https://www.medicaltoursindia.com/treatments/neurology-neurosurgery-india): Brain and spine specialist care
+- [Cosmetic and plastic surgery](https://www.medicaltoursindia.com/treatments/cosmetic-plastic-surgery-india): Aesthetic and reconstructive procedures
+- [Hematology and BMT](https://www.medicaltoursindia.com/treatments/hematology-bone-marrow-india): Bone marrow transplant and blood disorders
+- [Dermatology](https://www.medicaltoursindia.com/treatments/dermatology-skin-care-india): Skin care and dermatology
+- [Dental](https://www.medicaltoursindia.com/treatments/dental-treatments-india): Dental implants and oral care
+- [Eye care](https://www.medicaltoursindia.com/treatments/eye-care-ophthalmology-india): LASIK, cataract, and ophthalmology
 
 ## Partner hospitals
 
-- [Olive Hospitals](https://medicaltoursindia.com/hospital-network/olive-hospitals): Partner hospital in Hyderabad
-- [TX Hospitals](https://medicaltoursindia.com/hospital-network/tx-hospitals): Partner hospital in Hyderabad
-- [Medicover Hospitals](https://medicaltoursindia.com/hospital-network/medicover-hospitals): Partner hospital in Hyderabad
-- [Max Healthcare Delhi](https://medicaltoursindia.com/hospital-network/max-healthcare-delhi): Partner hospital in Delhi
+- [Olive Hospitals](https://www.medicaltoursindia.com/hospital-network/olive-hospitals): Partner hospital in Hyderabad
+- [TX Hospitals](https://www.medicaltoursindia.com/hospital-network/tx-hospitals): Partner hospital in Hyderabad
+- [Medicover Hospitals](https://www.medicaltoursindia.com/hospital-network/medicover-hospitals): Partner hospital in Hyderabad
+- [Max Healthcare Delhi](https://www.medicaltoursindia.com/hospital-network/max-healthcare-delhi): Partner hospital in Delhi
 
 ## Optional
 
-- [Cities](https://medicaltoursindia.com/cities/hyderabad): City medical tourism guides (Hyderabad and other metros)
-- [India / Hyderabad domestic](https://medicaltoursindia.com/india/hyderabad): Domestic Hyderabad surgery guides for Indian patients
-- [Blog](https://medicaltoursindia.com/blog): Guides on visas, hospital selection, scams, and costs
+- [Cities](https://www.medicaltoursindia.com/cities/hyderabad): City medical tourism guides (Hyderabad and other metros)
+- [India / Hyderabad domestic](https://www.medicaltoursindia.com/india/hyderabad): Domestic Hyderabad surgery guides for Indian patients
+- [Blog](https://www.medicaltoursindia.com/blog): Guides on visas, hospital selection, scams, and costs

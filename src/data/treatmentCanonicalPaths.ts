@@ -58,6 +58,13 @@ export const COST_CANONICAL_PATH: Record<string, string> = {
   "eye-surgery-india": "/cost-comparison/lasik-eye-surgery-cost-india",
   "cosmetic-surgery-india": "/treatments/cosmetic-plastic-surgery-india",
   "organ-transplant-india": "/treatments/general-advanced-surgeries-india",
+  // Confidential clinical pages — no public cost-comparison routes (avoid 404s)
+  "mtp-treatment-india":
+    "/treatments/gynecology-womens-health-india/mtp-treatment-india",
+  "cosmetic-gynecology-india":
+    "/treatments/gynecology-womens-health-india/cosmetic-gynecology-india",
+  "vaginal-rejuvenation-india":
+    "/treatments/gynecology-womens-health-india/vaginal-rejuvenation-india",
 };
 
 export function treatmentCanonicalHref(slug: string): string {

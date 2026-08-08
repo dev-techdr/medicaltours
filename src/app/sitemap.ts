@@ -8,6 +8,7 @@ import {
   getAllCityHubs,
   getAllHospitals,
   getAllProcedures,
+  getCostComparableProcedures,
   getStoryCountries,
   getStoryProcedures,
   procedurePath,
@@ -17,6 +18,7 @@ import { SITE } from "@/lib/site";
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
   const procedures = getAllProcedures();
+  const costComparable = getCostComparableProcedures();
   const categories = getAllCategories();
   const hospitals = getAllHospitals();
   const cities = getAllCityHubs();
@@ -69,20 +71,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  const procedureRoutes = procedures.flatMap((p) => [
-    {
-      url: `${SITE.url}${procedurePath(p)}`,
-      lastModified,
-      changeFrequency: "weekly" as const,
-      priority: 0.9,
-    },
-    {
-      url: `${SITE.url}/cost-comparison/${p.slug}`,
-      lastModified,
-      changeFrequency: "weekly" as const,
-      priority: 0.85,
-    },
-  ]);
+  const procedureRoutes = procedures.map((p) => ({
+    url: `${SITE.url}${procedurePath(p)}`,
+    lastModified,
+    changeFrequency: "weekly" as const,
+    priority: 0.9,
+  }));
+
+  // Only procedures that actually render /cost-comparison/[slug] (excludes confidential-clinical)
+  const costComparisonRoutes = costComparable.map((p) => ({
+    url: `${SITE.url}/cost-comparison/${p.slug}`,
+    lastModified,
+    changeFrequency: "weekly" as const,
+    priority: 0.85,
+  }));
 
   const hospitalCityRoutes = cities.map((c) => ({
     url: `${SITE.url}/hospitals/${c.slug}`,
@@ -151,6 +153,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...staticRoutes,
     ...categoryRoutes,
     ...procedureRoutes,
+    ...costComparisonRoutes,
     ...hospitalCityRoutes,
     ...hospitalNetworkRoutes,
     ...storyRoutes,
