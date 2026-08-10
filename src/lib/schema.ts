@@ -204,7 +204,7 @@ export function reviewSchema({
       worstRating: 1,
     },
     itemReviewed: {
-      "@type": "MedicalProcedure",
+      "@type": ["Product", "MedicalProcedure"],
       name: itemName,
     },
   };
