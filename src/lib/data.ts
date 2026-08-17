@@ -193,8 +193,12 @@ export function getRelatedProcedures(procedure: Procedure): Procedure[] {
     .filter((p): p is Procedure => Boolean(p));
 }
 
+function byHospitalName<T extends { name: string }>(a: T, b: T) {
+  return a.name.localeCompare(b.name, "en", { sensitivity: "base" });
+}
+
 export function getAllHospitals(): ContentHospital[] {
-  return hospitals;
+  return [...hospitals].sort(byHospitalName);
 }
 
 export function getHospitalBySlug(slug: string): ContentHospital | undefined {
@@ -208,7 +212,7 @@ export function getHospitalsBySlugs(slugs: string[]): ContentHospital[] {
 }
 
 export function getHospitalsByCity(citySlug: string): ContentHospital[] {
-  return hospitals.filter((h) => h.citySlug === citySlug);
+  return getAllHospitals().filter((h) => h.citySlug === citySlug);
 }
 
 export function getAllCityHubs(): CityHub[] {

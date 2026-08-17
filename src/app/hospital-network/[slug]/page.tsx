@@ -3,23 +3,18 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AnswerBlock } from "@/components/AnswerBlock";
 import { Breadcrumb } from "@/components/Breadcrumb";
-import { CaseFileCard } from "@/components/CaseFileCard";
 import { Container } from "@/components/Container";
 import { CTASection } from "@/components/CTASection";
-import { FAQAccordion } from "@/components/FAQAccordion";
-import { MediaImage } from "@/components/MediaImage";
+import { HospitalProfile } from "@/components/HospitalProfile";
 import { MdxContent } from "@/components/MdxContent";
-import { Reveal } from "@/components/Reveal";
-import { VerifiedPartnerBadge } from "@/components/VerifiedPartnerBadge";
-import { JsonLd } from "@/components/seo/JsonLd";
-import { hospitalImage } from "@/lib/media";
+import { buildMetadata } from "@/lib/seo";
 import { getAllCitySlugs, getCityBySlug } from "@/data/cities";
 import {
   getAllHospitalSlugs,
+  getAllHospitals,
   getHospitalBySlug,
   getHospitalsByCity,
 } from "@/data/hospitals";
-import { buildMetadata, hospitalSchema } from "@/lib/seo";
 import type { FAQItem } from "@/lib/types";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -35,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const hospital = getHospitalBySlug(slug);
   if (hospital) {
     return buildMetadata({
-      title: `${hospital.name} for International Patients`,
+      title: `${hospital.name}, ${hospital.city} — Address & Appointment`,
       description: hospital.shortAnswer,
       path: `/hospital-network/${hospital.slug}`,
       keywords: [
@@ -56,6 +51,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {};
+}
+
+function getAllHospitalsByCityExcept(citySlug: string, exceptSlug: string) {
+  const sameCity = getHospitalsByCity(citySlug).filter((hospital) => hospital.slug !== exceptSlug);
+  if (sameCity.length >= 2) return sameCity.slice(0, 4);
+  const others = getAllHospitals().filter(
+    (hospital) => hospital.slug !== exceptSlug && hospital.citySlug !== citySlug
+  );
+  return [...sameCity, ...others].slice(0, 4);
 }
 
 function hospitalFaqs(name: string): FAQItem[] {
@@ -87,168 +91,14 @@ export default async function HospitalNetworkSlugPage({ params }: Props) {
 
   if (hospital) {
     const faqs = hospitalFaqs(hospital.name);
+    const similarHospitals = getAllHospitalsByCityExcept(hospital.citySlug, hospital.slug);
 
     return (
-      <Container className="py-10 sm:py-14">
-        <JsonLd
-          data={hospitalSchema({
-            name: hospital.name,
-            description: hospital.shortAnswer,
-            url: `/hospital-network/${hospital.slug}`,
-            city: hospital.city,
-            rating: hospital.rating,
-            reviewCount: hospital.reviewCount,
-            accreditation: hospital.accreditation,
-          })}
-        />
-        <Breadcrumb
-          items={[
-            { name: "Hospital Network", href: "/hospital-network" },
-            { name: hospital.name, href: `/hospital-network/${hospital.slug}` },
-          ]}
-        />
-
-        <Reveal className="mb-8 overflow-hidden border border-line">
-          <MediaImage
-            src={hospitalImage(hospital.slug)}
-            alt={`${hospital.name} campus`}
-            aspect="aspect-[21/9] min-h-[200px]"
-            className="rounded-none"
-            priority
-            sizes="100vw"
-          />
-        </Reveal>
-
-        <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
-          <div>
-            <div className="flex flex-wrap items-center gap-3">
-              <p className="data-label text-accent">{hospital.city}</p>
-              <VerifiedPartnerBadge mouYear={hospital.mouYear} />
-            </div>
-            <h1 className="mt-2 font-display text-4xl font-medium tracking-tight text-navy">
-              {hospital.name} for International Patients
-            </h1>
-            <div className="mt-6">
-              <AnswerBlock>{hospital.shortAnswer}</AnswerBlock>
-            </div>
-          </div>
-
-          <CaseFileCard
-            label="Partner hospital"
-            referenceId={`${hospital.city} · since ${hospital.mouYear}`}
-            rows={[
-              { label: "City", value: hospital.city },
-              {
-                label: "Accreditation",
-                value: hospital.accreditation.join(" · "),
-                accent: true,
-              },
-              {
-                label: "Specialties",
-                value: hospital.specialties.slice(0, 3).join(" · "),
-              },
-              {
-                label: "Partnership since",
-                value: String(hospital.mouYear),
-                accent: true,
-              },
-              {
-                label: "Patient rating",
-                value: `★ ${hospital.rating} · ${hospital.reviewCount}`,
-              },
-            ]}
-          />
-        </div>
-
-        <section className="mt-12">
-          <p className="data-label">About</p>
-          <h2 className="mt-1 font-display text-2xl font-medium text-navy">
-            About the hospital
-          </h2>
-          <div className="mt-4">
-            <MdxContent source={hospital.content} />
-          </div>
-        </section>
-
-        <section className="mt-12">
-          <p className="data-label">Clinical focus</p>
-          <h2 className="mt-1 font-display text-2xl font-medium text-navy">
-            Specialties
-          </h2>
-          <div className="mt-4 flex flex-wrap gap-2">
-            {hospital.specialties.map((s) => (
-              <span
-                key={s}
-                className="rounded-full border border-line bg-white px-3 py-1.5 text-sm font-medium text-ink"
-              >
-                {s}
-              </span>
-            ))}
-          </div>
-        </section>
-
-        <section className="mt-12">
-          <p className="data-label">Campus</p>
-          <h2 className="mt-1 font-display text-2xl font-medium text-navy">Facilities</h2>
-          <div className="divider-grid mt-4 sm:grid-cols-2">
-            {hospital.facilities.map((f) => (
-              <div key={f}>
-                <p className="text-sm font-medium text-navy">{f}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section className="mt-12">
-          <p className="data-label">Reviews</p>
-          <h2 className="mt-1 font-display text-2xl font-medium text-navy">
-            Patient reviews & ratings
-          </h2>
-          <CaseFileCard
-            className="mt-4 max-w-md"
-            label="Patient ratings"
-            referenceId={`${hospital.name}`}
-            rows={[
-              {
-                label: "Rating",
-                value: `★ ${hospital.rating} / 5`,
-                accent: true,
-              },
-              {
-                label: "Reviews",
-                value: hospital.reviewCount.toLocaleString(),
-              },
-              {
-                label: "Network status",
-                value: "Verified partner",
-                accent: true,
-              },
-            ]}
-          />
-        </section>
-
-        <section className="mt-12">
-          <p className="data-label">International care</p>
-          <h2 className="mt-1 font-display text-2xl font-medium text-navy">
-            International patient services
-          </h2>
-          <div className="divider-grid mt-4 sm:grid-cols-2 lg:grid-cols-3">
-            {hospital.internationalServices.map((s) => (
-              <div key={s}>
-                <p className="text-sm font-medium text-navy">{s}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <div className="mt-12">
-          <FAQAccordion faqs={faqs} title={`FAQs about ${hospital.name}`} />
-        </div>
-
-        <div className="mt-12">
-          <CTASection title={`Enquire about treatment at ${hospital.name}`} />
-        </div>
-      </Container>
+      <HospitalProfile
+        hospital={hospital}
+        similarHospitals={similarHospitals}
+        faqs={faqs}
+      />
     );
   }
 

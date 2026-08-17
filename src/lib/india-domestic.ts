@@ -1,4 +1,4 @@
-import { SITE } from "@/lib/site";
+import { canonicalUrl } from "@/lib/seo";
 
 export type IndiaDomesticTier =
   | "hub"
@@ -251,13 +251,13 @@ export function getPagesByTier(tier: IndiaDomesticTier) {
 export function getDomesticHreflangAlternates(slug: string) {
   const enPath = getIndiaDomesticPath(slug, "en");
   const meta = getIndiaDomesticPageMeta(slug);
-  const enUrl = `${SITE.url}${enPath}`;
+  const enUrl = canonicalUrl(enPath);
   const alternates: Record<string, string> = {
     en: enUrl,
     "x-default": enUrl,
   };
   if (meta?.telugu) {
-    alternates.te = `${SITE.url}${getIndiaDomesticPath(slug, "te")}`;
+    alternates.te = canonicalUrl(getIndiaDomesticPath(slug, "te"));
   }
   return alternates;
 }

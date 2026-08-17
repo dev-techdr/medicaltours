@@ -16,7 +16,7 @@
       "Urology"
     ],
     "rating": 4.5,
-    "reviewCount": 420,
+    "reviewCount": 5800,
     "shortAnswer": "Hyderabad multi-specialty hospital partner for domestic and international patients, with TechdrHealth-coordinated admission and package support.",
     "image": "/images/services/olive-hospitals.jpg"
   },
@@ -35,8 +35,8 @@
       "Oncology",
       "Gastroenterology"
     ],
-    "rating": 4.5,
-    "reviewCount": 380,
+    "rating": 4.7,
+    "reviewCount": 7900,
     "shortAnswer": "Hyderabad tertiary-care partner hospital for surgical and critical care pathways coordinated by TechdrHealth.",
     "image": "/images/services/tx-hospitals.jpg"
   },
@@ -57,7 +57,7 @@
       "Gastroenterology"
     ],
     "rating": 4.6,
-    "reviewCount": 510,
+    "reviewCount": 16000,
     "shortAnswer": "Hyderabad multi-specialty Medicover campus supporting cardiac, oncology, and orthopaedic packages for Indian and international patients.",
     "image": "/images/services/medicover-hospitals.jpg"
   },
@@ -81,5 +81,58 @@
     "reviewCount": 1700,
     "shortAnswer": "Max network hospitals in Delhi NCR for oncology and multi-specialty medical tourism packages.",
     "image": "/images/services/max-healthcare-delhi.jpg"
+  },
+  {
+    "slug": "star-hospitals",
+    "name": "Star Hospitals",
+    "city": "Hyderabad",
+    "citySlug": "hyderabad",
+    "accreditation": [
+      "NABH"
+    ],
+    "specialties": [
+      "Cardiology",
+      "Orthopedics",
+      "Neurosurgery",
+      "Gastroenterology",
+      "Nephrology",
+      "Pulmonology"
+    ],
+    "rating": 4.7,
+    "reviewCount": 11000,
+    "shortAnswer": "NABH-accredited multi-specialty hospital in Banjara Hills, Hyderabad, for cardiac, orthopaedic, neuro, and critical-care packages coordinated by TechdrHealth.",
+    "image": "/images/hospitals/star-hospitals.jpg"
+  },
+  {
+    "slug": "american-oncology-institute",
+    "name": "American Oncology Institute",
+    "city": "Hyderabad",
+    "citySlug": "hyderabad",
+    "accreditation": [
+      "NABH"
+    ],
+    "specialties": [
+      "Oncology"
+    ],
+    "rating": 4.7,
+    "reviewCount": 2350,
+    "shortAnswer": "NABH-accredited cancer hospital in Nallagandla, Hyderabad, for medical, surgical, and radiation oncology packages coordinated by TechdrHealth.",
+    "image": "/images/hospitals/AOI-hospital-photo.webp"
+  },
+  {
+    "slug": "pushpagiri-vitreo-retina-institute",
+    "name": "Pushpagiri Vitreo Retina Institute",
+    "city": "Hyderabad",
+    "citySlug": "hyderabad",
+    "accreditation": [
+      "NABH"
+    ],
+    "specialties": [
+      "Ophthalmology"
+    ],
+    "rating": 4.7,
+    "reviewCount": 4000,
+    "shortAnswer": "NABH-recognised super-specialty eye hospital in West Marredpally, Hyderabad, for retina, cataract, cornea, and glaucoma care coordinated by TechdrHealth.",
+    "image": "/images/hospitals/pvri-hospital-photo.avif"
   }
 ]

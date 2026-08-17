@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import Link from "next/link";
+import { useState, type ReactNode } from "react";
 import type { FAQItem } from "@/lib/types";
 import { faqSchema } from "@/lib/seo";
 
@@ -11,6 +12,50 @@ type FAQAccordionProps = {
   includeSchema?: boolean;
 };
 
+function toPlainText(text: string): string {
+  return text.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/\s+/g, " ").trim();
+}
+
+function InlineMarkdown({ text }: { text: string }) {
+  const nodes: ReactNode[] = [];
+  let lastIndex = 0;
+  const re = /\[([^\]]+)\]\(([^)]+)\)/g;
+
+  for (const match of text.matchAll(re)) {
+    const index = match.index ?? 0;
+    if (index > lastIndex) {
+      nodes.push(text.slice(lastIndex, index));
+    }
+    const label = match[1];
+    const href = match[2];
+    const className = "font-medium text-accent underline-offset-2 hover:underline";
+    nodes.push(
+      href.startsWith("/") || href.startsWith("#") ? (
+        <Link key={`${href}-${index}`} href={href} className={className}>
+          {label}
+        </Link>
+      ) : (
+        <a
+          key={`${href}-${index}`}
+          href={href}
+          className={className}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {label}
+        </a>
+      ),
+    );
+    lastIndex = index + match[0].length;
+  }
+
+  if (lastIndex < text.length) {
+    nodes.push(text.slice(lastIndex));
+  }
+
+  return <>{nodes}</>;
+}
+
 export function FAQAccordion({
   faqs,
   title = "Frequently Asked Questions",
@@ -20,12 +65,17 @@ export function FAQAccordion({
 
   if (!faqs.length) return null;
 
+  const schemaFaqs = faqs.map((faq) => ({
+    question: faq.question,
+    answer: toPlainText(faq.answer),
+  }));
+
   return (
     <section className="w-full" aria-labelledby="faq-heading">
       {includeSchema && (
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(schemaFaqs)) }}
         />
       )}
       <h2 id="faq-heading" className="font-display text-2xl font-medium tracking-tight text-navy sm:text-3xl">
@@ -52,7 +102,7 @@ export function FAQAccordion({
               </button>
               {isOpen && (
                 <p className="pb-4 text-sm leading-relaxed text-muted sm:text-base">
-                  {faq.answer}
+                  <InlineMarkdown text={faq.answer} />
                 </p>
               )}
             </div>

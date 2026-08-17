@@ -51,6 +51,7 @@ type PatientEnquiryFormProps = {
   audience?: "default" | "western";
   defaultCountry?: string;
   defaultTreatment?: (typeof TREATMENT_OPTIONS)[number] | "";
+  defaultPreferredCity?: string;
 };
 
 export function PatientEnquiryForm({
@@ -66,6 +67,7 @@ export function PatientEnquiryForm({
   audience = "default",
   defaultCountry = "",
   defaultTreatment = "",
+  defaultPreferredCity = "",
 }: PatientEnquiryFormProps) {
   const router = useRouter();
   const formRef = useRef<HTMLFormElement | null>(null);
@@ -132,7 +134,7 @@ export function PatientEnquiryForm({
     >
       <p className="data-label">{label}</p>
       <h2 className="mt-2 font-display text-2xl font-medium tracking-tight text-navy">{title}</h2>
-      {!compact && (
+      {(description || !compact) && (
         <p className="mt-2 text-sm leading-relaxed text-muted">
           {description ?? (
             emailFirst ? (
@@ -295,6 +297,7 @@ export function PatientEnquiryForm({
             type="text"
             className="form-field"
             placeholder="Hyderabad, Delhi, Mumbai, Chennai, Bangalore…"
+            defaultValue={defaultPreferredCity}
           />
         </label>
       </div>

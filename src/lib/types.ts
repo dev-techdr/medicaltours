@@ -25,6 +25,18 @@ export type Treatment = {
   content: string;
 };
 
+export type HospitalLocationLandmark = {
+  name: string;
+  distanceKm: number;
+  timeMinutes: number;
+};
+
+export type HospitalFacilityGroup = {
+  id: string;
+  title: string;
+  items: string[];
+};
+
 export type Hospital = {
   slug: string;
   name: string;
@@ -40,10 +52,31 @@ export type Hospital = {
   facilities: string[];
   internationalServices: string[];
   content: string;
+  establishedYear: number;
+  beds: number;
+  specialtyType: string;
+  address: string;
+  pincode?: string;
+  infrastructure: string;
+  teamNote: string;
+  locationLandmarks: HospitalLocationLandmark[];
+  facilityGroups: HospitalFacilityGroup[];
 };
 
 /** Serializable hospital fields for client filters (no MDX body). */
-export type HospitalSummary = Omit<Hospital, "content" | "shortAnswer" | "facilities" | "internationalServices">;
+export type HospitalSummary = Omit<
+  Hospital,
+  | "content"
+  | "shortAnswer"
+  | "facilities"
+  | "internationalServices"
+  | "infrastructure"
+  | "teamNote"
+  | "address"
+  | "pincode"
+  | "locationLandmarks"
+  | "facilityGroups"
+>;
 
 export type City = {
   slug: string;
@@ -112,6 +145,9 @@ export type BlogPost = {
   excerpt: string;
   date: string;
   content: string;
+  faqs: FAQItem[];
+  /** MDX after the FAQ block (author byline / closing CTA) */
+  footer: string;
 };
 
 export type ContentPage = {

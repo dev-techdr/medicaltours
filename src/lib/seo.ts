@@ -1,10 +1,21 @@
 import type { Metadata } from "next";
-import { SITE, SOCIAL_SAME_AS } from "@/lib/site";
+import { BLOG_AUTHOR, SITE, SOCIAL_SAME_AS } from "@/lib/site";
 import type { BreadcrumbItem, FAQItem } from "@/lib/types";
 
 export function absoluteUrl(path = "/"): string {
   if (path.startsWith("http")) return path;
   return `${SITE.url}${path.startsWith("/") ? path : `/${path}`}`;
+}
+
+/** Trailing-slash-free canonical (homepage keeps a single trailing slash). */
+export function canonicalUrl(path = "/"): string {
+  const raw = path.startsWith("http") ? new URL(path).pathname : path;
+  const withSlash = raw.startsWith("/") ? raw : `/${raw}`;
+  const normalized =
+    withSlash.length > 1 && withSlash.endsWith("/")
+      ? withSlash.slice(0, -1)
+      : withSlash;
+  return absoluteUrl(normalized);
 }
 
 export function buildMetadata({
@@ -14,6 +25,11 @@ export function buildMetadata({
   keywords,
   noIndex = false,
   ogLocale = "en_US",
+  authors,
+  creator,
+  ogType = "website",
+  publishedTime,
+  languages,
 }: {
   title: string;
   description: string;
@@ -22,8 +38,14 @@ export function buildMetadata({
   noIndex?: boolean;
   /** Open Graph locale, e.g. en_GB / en_US / en_IN */
   ogLocale?: string;
+  authors?: { name: string; url?: string }[];
+  creator?: string;
+  ogType?: "website" | "article";
+  publishedTime?: string;
+  /** Real language variants only (e.g. en + te). Omit on English-only pages. */
+  languages?: Record<string, string>;
 }): Metadata {
-  const url = absoluteUrl(path);
+  const url = canonicalUrl(path);
   const brandSuffix = ` | ${SITE.name}`;
   let fullTitle = title.includes(SITE.name) ? title : `${title}${brandSuffix}`;
   if (!title.includes(SITE.name) && fullTitle.length > 60) {
@@ -40,14 +62,11 @@ export function buildMetadata({
     title: fullTitle,
     description: metaDescription,
     keywords: keywords?.join(", "),
+    ...(authors?.length ? { authors } : {}),
+    ...(creator ? { creator } : {}),
     alternates: {
       canonical: url,
-      // Only advertise locales that actually exist as crawlable pages.
-      // LanguageSwitcher may offer translate UX; do not invent /ar|/fr|/bn|/sw routes.
-      languages: {
-        en: url,
-        "x-default": url,
-      },
+      ...(languages ? { languages } : {}),
     },
     openGraph: {
       title: fullTitle,
@@ -55,8 +74,14 @@ export function buildMetadata({
       url,
       siteName: SITE.name,
       locale: ogLocale,
-      type: "website",
+      type: ogType,
       images: [{ url: ogImage, alt: SITE.name }],
+      ...(ogType === "article"
+        ? {
+            ...(publishedTime ? { publishedTime } : {}),
+            ...(authors?.length ? { authors: authors.map((author) => author.name) } : {}),
+          }
+        : {}),
     },
     twitter: {
       card: "summary_large_image",
@@ -271,9 +296,17 @@ export function blogPostingSchema({
     datePublished,
     dateModified: dateModified ?? datePublished,
     author: {
-      "@type": "Organization",
-      name: SITE.name,
-      url: SITE.url,
+      "@type": "Person",
+      name: BLOG_AUTHOR.name,
+      jobTitle: BLOG_AUTHOR.role,
+      url: absoluteUrl(BLOG_AUTHOR.profilePath),
+      image: absoluteUrl(BLOG_AUTHOR.image),
+      description: BLOG_AUTHOR.bio,
+      worksFor: {
+        "@type": "Organization",
+        name: SITE.name,
+        url: SITE.url,
+      },
     },
     publisher: {
       "@type": "Organization",

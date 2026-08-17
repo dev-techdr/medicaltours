@@ -327,6 +327,21 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/hospitals/star-hospitals",
+        destination: "/hospital-network/star-hospitals",
+        permanent: true,
+      },
+      {
+        source: "/hospitals/american-oncology-institute",
+        destination: "/hospital-network/american-oncology-institute",
+        permanent: true,
+      },
+      {
+        source: "/hospitals/pushpagiri-vitreo-retina-institute",
+        destination: "/hospital-network/pushpagiri-vitreo-retina-institute",
+        permanent: true,
+      },
+      {
         source: "/send-medical-reports",
         destination: "/free-second-opinion",
         permanent: true,
@@ -623,6 +638,12 @@ const nextConfig: NextConfig = {
         source: "/cost-comparison/vaginal-rejuvenation-india",
         destination:
           "/treatments/gynecology-womens-health-india/vaginal-rejuvenation-india",
+        permanent: true,
+      },
+      // Remaining legacy /cost/* calculator URLs (specific remaps above run first)
+      {
+        source: "/cost/:slug",
+        destination: "/cost-comparison/:slug",
         permanent: true,
       },
     ];

@@ -40,7 +40,8 @@
     "hospitalSlugs": [
       "medicover-hospitals",
       "max-healthcare-delhi",
-      "olive-hospitals"
+      "olive-hospitals",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-rajesh-kumar-cardiologist"
@@ -110,7 +111,8 @@
     "hospitalSlugs": [
       "max-healthcare-delhi",
       "olive-hospitals",
-      "tx-hospitals"
+      "tx-hospitals",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-rajesh-kumar-cardiologist"
@@ -179,7 +181,8 @@
     "hospitalSlugs": [
       "olive-hospitals",
       "tx-hospitals",
-      "medicover-hospitals"
+      "medicover-hospitals",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-rajesh-kumar-cardiologist"
@@ -248,7 +251,8 @@
     "hospitalSlugs": [
       "olive-hospitals",
       "tx-hospitals",
-      "max-healthcare-delhi"
+      "max-healthcare-delhi",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-rajesh-kumar-cardiologist"
@@ -316,7 +320,8 @@
     "hospitalSlugs": [
       "olive-hospitals",
       "tx-hospitals",
-      "medicover-hospitals"
+      "medicover-hospitals",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-rajesh-kumar-cardiologist"
@@ -384,7 +389,8 @@
     "hospitalSlugs": [
       "tx-hospitals",
       "medicover-hospitals",
-      "max-healthcare-delhi"
+      "max-healthcare-delhi",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-rajesh-kumar-cardiologist"
@@ -452,7 +458,8 @@
     "hospitalSlugs": [
       "medicover-hospitals",
       "max-healthcare-delhi",
-      "olive-hospitals"
+      "olive-hospitals",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-rajesh-kumar-cardiologist",
@@ -522,7 +529,8 @@
     "hospitalSlugs": [
       "max-healthcare-delhi",
       "olive-hospitals",
-      "tx-hospitals"
+      "tx-hospitals",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-rajesh-kumar-cardiologist"
@@ -590,7 +598,8 @@
     "hospitalSlugs": [
       "olive-hospitals",
       "tx-hospitals",
-      "medicover-hospitals"
+      "medicover-hospitals",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-vikram-singh-orthopedic"
@@ -660,7 +669,8 @@
     "hospitalSlugs": [
       "tx-hospitals",
       "medicover-hospitals",
-      "max-healthcare-delhi"
+      "max-healthcare-delhi",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-vikram-singh-orthopedic"
@@ -729,7 +739,8 @@
     "hospitalSlugs": [
       "tx-hospitals",
       "medicover-hospitals",
-      "max-healthcare-delhi"
+      "max-healthcare-delhi",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-vikram-singh-orthopedic",
@@ -799,7 +810,8 @@
     "hospitalSlugs": [
       "tx-hospitals",
       "medicover-hospitals",
-      "max-healthcare-delhi"
+      "max-healthcare-delhi",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-vikram-singh-orthopedic"
@@ -867,7 +879,8 @@
     "hospitalSlugs": [
       "medicover-hospitals",
       "max-healthcare-delhi",
-      "olive-hospitals"
+      "olive-hospitals",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-vikram-singh-orthopedic"
@@ -935,7 +948,8 @@
     "hospitalSlugs": [
       "max-healthcare-delhi",
       "olive-hospitals",
-      "tx-hospitals"
+      "tx-hospitals",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-vikram-singh-orthopedic"
@@ -1003,7 +1017,8 @@
     "hospitalSlugs": [
       "olive-hospitals",
       "tx-hospitals",
-      "medicover-hospitals"
+      "medicover-hospitals",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-vikram-singh-orthopedic"
@@ -1071,7 +1086,8 @@
     "hospitalSlugs": [
       "olive-hospitals",
       "max-healthcare-delhi",
-      "tx-hospitals"
+      "tx-hospitals",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-vikram-singh-orthopedic",
@@ -1139,7 +1155,8 @@
     ],
     "hospitalSlugs": [
       "max-healthcare-delhi",
-      "olive-hospitals"
+      "olive-hospitals",
+      "american-oncology-institute"
     ],
     "doctorSlugs": [
       "dr-anita-sharma-oncologist"
@@ -1207,7 +1224,8 @@
     ],
     "hospitalSlugs": [
       "medicover-hospitals",
-      "max-healthcare-delhi"
+      "max-healthcare-delhi",
+      "american-oncology-institute"
     ],
     "doctorSlugs": [
       "dr-anita-sharma-oncologist"
@@ -1276,7 +1294,8 @@
     "hospitalSlugs": [
       "tx-hospitals",
       "medicover-hospitals",
-      "max-healthcare-delhi"
+      "max-healthcare-delhi",
+      "american-oncology-institute"
     ],
     "doctorSlugs": [
       "dr-anita-sharma-oncologist"
@@ -1345,7 +1364,8 @@
     "hospitalSlugs": [
       "tx-hospitals",
       "medicover-hospitals",
-      "max-healthcare-delhi"
+      "max-healthcare-delhi",
+      "american-oncology-institute"
     ],
     "doctorSlugs": [
       "dr-anita-sharma-oncologist"
@@ -1430,7 +1450,8 @@
     "hospitalSlugs": [
       "medicover-hospitals",
       "max-healthcare-delhi",
-      "olive-hospitals"
+      "olive-hospitals",
+      "american-oncology-institute"
     ],
     "doctorSlugs": [
       "dr-anita-sharma-oncologist"
@@ -1497,7 +1518,8 @@
     ],
     "hospitalSlugs": [
       "max-healthcare-delhi",
-      "medicover-hospitals"
+      "medicover-hospitals",
+      "american-oncology-institute"
     ],
     "doctorSlugs": [
       "dr-anita-sharma-oncologist"
@@ -1565,7 +1587,8 @@
     "hospitalSlugs": [
       "tx-hospitals",
       "max-healthcare-delhi",
-      "medicover-hospitals"
+      "medicover-hospitals",
+      "american-oncology-institute"
     ],
     "doctorSlugs": [
       "dr-anita-sharma-oncologist"
@@ -1633,7 +1656,8 @@
     "hospitalSlugs": [
       "tx-hospitals",
       "medicover-hospitals",
-      "max-healthcare-delhi"
+      "max-healthcare-delhi",
+      "american-oncology-institute"
     ],
     "doctorSlugs": [
       "dr-anita-sharma-oncologist"
@@ -2113,7 +2137,8 @@
     ],
     "hospitalSlugs": [
       "max-healthcare-delhi",
-      "olive-hospitals"
+      "olive-hospitals",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-meera-nair-neurosurgeon"
@@ -2181,7 +2206,8 @@
     ],
     "hospitalSlugs": [
       "medicover-hospitals",
-      "max-healthcare-delhi"
+      "max-healthcare-delhi",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-meera-nair-neurosurgeon"
@@ -2250,7 +2276,8 @@
     "hospitalSlugs": [
       "medicover-hospitals",
       "max-healthcare-delhi",
-      "olive-hospitals"
+      "olive-hospitals",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-meera-nair-neurosurgeon"
@@ -2317,7 +2344,8 @@
     ],
     "hospitalSlugs": [
       "medicover-hospitals",
-      "max-healthcare-delhi"
+      "max-healthcare-delhi",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-meera-nair-neurosurgeon"
@@ -2385,7 +2413,8 @@
     "hospitalSlugs": [
       "medicover-hospitals",
       "max-healthcare-delhi",
-      "olive-hospitals"
+      "olive-hospitals",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-meera-nair-neurosurgeon"
@@ -2452,7 +2481,8 @@
     ],
     "hospitalSlugs": [
       "medicover-hospitals",
-      "max-healthcare-delhi"
+      "max-healthcare-delhi",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-meera-nair-neurosurgeon"
@@ -3461,7 +3491,8 @@
     "hospitalSlugs": [
       "tx-hospitals",
       "medicover-hospitals",
-      "max-healthcare-delhi"
+      "max-healthcare-delhi",
+      "pushpagiri-vitreo-retina-institute"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "lasik-eye-surgery-cost-india",
@@ -3527,7 +3558,8 @@
     "hospitalSlugs": [
       "medicover-hospitals",
       "max-healthcare-delhi",
-      "olive-hospitals"
+      "olive-hospitals",
+      "pushpagiri-vitreo-retina-institute"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "cataract-surgery-india",
@@ -3593,7 +3625,8 @@
     ],
     "hospitalSlugs": [
       "medicover-hospitals",
-      "max-healthcare-delhi"
+      "max-healthcare-delhi",
+      "pushpagiri-vitreo-retina-institute"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "retina-surgery-india",
@@ -3659,7 +3692,8 @@
     "hospitalSlugs": [
       "medicover-hospitals",
       "max-healthcare-delhi",
-      "olive-hospitals"
+      "olive-hospitals",
+      "pushpagiri-vitreo-retina-institute"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "cornea-transplant-india",
@@ -3725,7 +3759,8 @@
     "hospitalSlugs": [
       "max-healthcare-delhi",
       "olive-hospitals",
-      "tx-hospitals"
+      "tx-hospitals",
+      "pushpagiri-vitreo-retina-institute"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "glaucoma-treatment-india",
@@ -5835,7 +5870,8 @@
     "hospitalSlugs": [
       "tx-hospitals",
       "medicover-hospitals",
-      "max-healthcare-delhi"
+      "max-healthcare-delhi",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-kavita-rao-gastroenterologist"
@@ -5907,7 +5943,8 @@
     "hospitalSlugs": [
       "medicover-hospitals",
       "max-healthcare-delhi",
-      "olive-hospitals"
+      "olive-hospitals",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-kavita-rao-gastroenterologist"
@@ -5979,7 +6016,8 @@
     "hospitalSlugs": [
       "max-healthcare-delhi",
       "olive-hospitals",
-      "tx-hospitals"
+      "tx-hospitals",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-kavita-rao-gastroenterologist",
@@ -6052,7 +6090,8 @@
     "hospitalSlugs": [
       "olive-hospitals",
       "tx-hospitals",
-      "medicover-hospitals"
+      "medicover-hospitals",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-kavita-rao-gastroenterologist"
@@ -6123,7 +6162,8 @@
     "hospitalSlugs": [
       "tx-hospitals",
       "medicover-hospitals",
-      "max-healthcare-delhi"
+      "max-healthcare-delhi",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-kavita-rao-gastroenterologist"
@@ -7204,7 +7244,8 @@
     "hospitalSlugs": [
       "tx-hospitals",
       "medicover-hospitals",
-      "max-healthcare-delhi"
+      "max-healthcare-delhi",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-anita-sharma-oncologist"
@@ -7276,7 +7317,8 @@
     "hospitalSlugs": [
       "tx-hospitals",
       "medicover-hospitals",
-      "max-healthcare-delhi"
+      "max-healthcare-delhi",
+      "star-hospitals"
     ],
     "doctorSlugs": [
       "dr-anita-sharma-oncologist"
@@ -7348,7 +7390,8 @@
     "hospitalSlugs": [
       "medicover-hospitals",
       "max-healthcare-delhi",
-      "olive-hospitals"
+      "olive-hospitals",
+      "star-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "bronchoscopy-cost-india",
@@ -7416,7 +7459,8 @@
     ],
     "hospitalSlugs": [
       "medicover-hospitals",
-      "max-healthcare-delhi"
+      "max-healthcare-delhi",
+      "star-hospitals"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "copd-asthma-treatment-india",
@@ -9035,7 +9079,8 @@
       "max-healthcare-delhi",
       "olive-hospitals",
       "tx-hospitals",
-      "medicover-hospitals"
+      "medicover-hospitals",
+      "american-oncology-institute"
     ],
     "doctorSlugs": [
       "dr-anita-sharma-oncologist"
@@ -9120,7 +9165,8 @@
       "olive-hospitals",
       "tx-hospitals",
       "medicover-hospitals",
-      "max-healthcare-delhi"
+      "max-healthcare-delhi",
+      "american-oncology-institute"
     ],
     "doctorSlugs": [
       "dr-anita-sharma-oncologist"
@@ -9205,7 +9251,8 @@
       "tx-hospitals",
       "medicover-hospitals",
       "max-healthcare-delhi",
-      "olive-hospitals"
+      "olive-hospitals",
+      "american-oncology-institute"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "thalassemia-treatment-india",
@@ -9288,7 +9335,8 @@
       "medicover-hospitals",
       "max-healthcare-delhi",
       "olive-hospitals",
-      "tx-hospitals"
+      "tx-hospitals",
+      "american-oncology-institute"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "sickle-cell-treatment-india",
@@ -9371,7 +9419,8 @@
       "max-healthcare-delhi",
       "olive-hospitals",
       "tx-hospitals",
-      "medicover-hospitals"
+      "medicover-hospitals",
+      "american-oncology-institute"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "aplastic-anemia-treatment-india",
@@ -9454,7 +9503,8 @@
       "olive-hospitals",
       "tx-hospitals",
       "medicover-hospitals",
-      "max-healthcare-delhi"
+      "max-healthcare-delhi",
+      "american-oncology-institute"
     ],
     "doctorSlugs": [
       "dr-anita-sharma-oncologist"
@@ -9539,7 +9589,8 @@
       "tx-hospitals",
       "medicover-hospitals",
       "max-healthcare-delhi",
-      "olive-hospitals"
+      "olive-hospitals",
+      "american-oncology-institute"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "car-t-cell-therapy-india",
@@ -9622,7 +9673,8 @@
       "medicover-hospitals",
       "max-healthcare-delhi",
       "olive-hospitals",
-      "tx-hospitals"
+      "tx-hospitals",
+      "american-oncology-institute"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "autologous-stem-cell-transplant-india",
@@ -9705,7 +9757,8 @@
       "max-healthcare-delhi",
       "olive-hospitals",
       "tx-hospitals",
-      "medicover-hospitals"
+      "medicover-hospitals",
+      "american-oncology-institute"
     ],
     "doctorSlugs": [],
     "faqSlugKey": "allogeneic-stem-cell-transplant-india",

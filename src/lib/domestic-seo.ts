@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getDomesticHreflangAlternates } from "@/lib/india-domestic";
+import { canonicalUrl } from "@/lib/seo";
 import { SITE } from "@/lib/site";
 
 export function buildDomesticMetadata({
@@ -15,7 +16,7 @@ export function buildDomesticMetadata({
   keywords?: string[];
   hreflangSlug: string;
 }): Metadata {
-  const url = `${SITE.url}${path}`;
+  const url = canonicalUrl(path);
   const fullTitle = title.includes(SITE.name) ? title : `${title} | ${SITE.name}`;
 
   return {

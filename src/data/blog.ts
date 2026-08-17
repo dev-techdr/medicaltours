@@ -1,3 +1,4 @@
+import { extractBlogFaqs } from "@/lib/blog-faqs";
 import { getAllMdx, getMdxBySlug, getMdxSlugs } from "@/lib/mdx";
 import type { BlogPost } from "@/lib/types";
 
@@ -13,6 +14,7 @@ type BlogFrontmatter = {
 function normalize(
   doc: NonNullable<ReturnType<typeof getMdxBySlug<BlogFrontmatter>>>
 ): BlogPost {
+  const { body, faqs, footer } = extractBlogFaqs(doc.content);
   return {
     slug: doc.slug,
     title: doc.title,
@@ -21,7 +23,9 @@ function normalize(
     keywords: doc.keywords,
     excerpt: doc.excerpt,
     date: doc.date,
-    content: doc.content,
+    content: body,
+    faqs,
+    footer,
   };
 }
 

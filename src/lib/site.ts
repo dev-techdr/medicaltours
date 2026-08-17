@@ -121,6 +121,12 @@ export const FOUNDERS = [
   },
 ] as const;
 
+export const BLOG_AUTHOR = {
+  ...FOUNDERS[0],
+  profilePath: "/our-team",
+  bio: "Co-Founder of Medical Tours India. Writes practical guides for international patients on hospitals, visas, costs, and how to choose a trustworthy facilitator.",
+} as const;
+
 export const NAV_LINKS = [
   { href: "/treatments", label: "Treatments" },
   { href: "/hospitals", label: "Hospitals" },

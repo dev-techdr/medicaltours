@@ -6,6 +6,7 @@ import { Reveal } from "@/components/Reveal";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { getAllPosts } from "@/data/blog";
 import { blogCollectionSchema, buildMetadata } from "@/lib/seo";
+import { BLOG_AUTHOR, SITE } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
   title: "Medical Tourism Blog — Guides & Advice",
@@ -34,7 +35,7 @@ export default function BlogIndexPage() {
         </h1>
         <p className="mt-3 max-w-2xl text-muted">
           Practical guides for families planning treatment in India — visas, hospitals, costs, and
-          how to stay safe.
+          how to stay safe. Written by {BLOG_AUTHOR.name}, {BLOG_AUTHOR.role} of {SITE.name}.
         </p>
       </Reveal>
       <div className="mt-10 grid gap-5 md:grid-cols-2">
@@ -45,6 +46,10 @@ export default function BlogIndexPage() {
               className="lift-card block rounded-[var(--radius)] border border-line bg-white p-6 shadow-[var(--shadow-soft)]"
             >
               <time className="text-sm text-muted">{post.date}</time>
+              <p className="mt-1 text-xs font-medium text-navy">
+                By {BLOG_AUTHOR.name}
+                <span className="font-normal text-muted"> · {BLOG_AUTHOR.role}</span>
+              </p>
               <h2 className="mt-2 text-lg font-semibold text-navy">{post.title}</h2>
               <p className="mt-2 text-sm text-muted">{post.excerpt}</p>
               <p className="mt-4 text-sm font-semibold text-accent">Read article →</p>

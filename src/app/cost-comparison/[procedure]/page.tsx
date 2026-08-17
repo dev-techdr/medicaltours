@@ -14,7 +14,7 @@ import {
   procedurePath,
 } from "@/lib/data";
 import { buildMetadata } from "@/lib/metadata";
-import { medicalProcedureSchema } from "@/lib/schema";
+import { webPageSchema } from "@/lib/seo";
 
 type Props = { params: Promise<{ procedure: string }> };
 
@@ -65,12 +65,10 @@ export default async function CostComparisonPage({ params }: Props) {
   return (
     <Container className="py-10 sm:py-14">
       <JsonLd
-        data={medicalProcedureSchema({
-          name: procedure.name,
-          description: procedure.overview,
+        data={webPageSchema({
+          name: `${procedure.name} cost: India vs USA, UK & UAE`,
+          description: `Compare ${procedure.name.toLowerCase()} package costs in India with typical USA, UK, and UAE prices for international patients.`,
           url: path,
-          costMin: procedure.costIndia.min,
-          costMax: procedure.costIndia.max,
         })}
       />
       <Breadcrumb

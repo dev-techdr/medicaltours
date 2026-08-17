@@ -1,10 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { MediaImage } from "@/components/MediaImage";
+import { StarRating } from "@/components/StarRating";
 import { VerifiedPartnerBadge } from "@/components/VerifiedPartnerBadge";
-import { hospitalImage } from "@/lib/media";
+import { hospitalImage, hospitalLogo } from "@/lib/media";
 import { SITE } from "@/lib/site";
 import type { HospitalSummary } from "@/lib/types";
 
@@ -118,56 +120,75 @@ export function HospitalNetworkDirectory({ hospitals }: HospitalNetworkDirectory
       </div>
 
       <div className="mt-6 grid gap-4 sm:grid-cols-1 lg:grid-cols-2">
-        {filtered.map((h) => (
-          <div
-            key={h.slug}
-            className="group lift-card grid overflow-hidden border border-line bg-white sm:grid-cols-[140px_1fr]"
-          >
-            <MediaImage
-              src={hospitalImage(h.slug)}
-              alt={`${h.name} partner hospital`}
-              aspect="aspect-[4/3] sm:aspect-auto sm:h-full sm:min-h-[160px]"
-              className="rounded-none"
-              sizes="(max-width: 640px) 100vw, 140px"
-            />
-            <div className="flex flex-col gap-3 p-4 sm:p-5">
-              <div className="flex flex-wrap items-start justify-between gap-2">
-                <p className="data-label">{h.city}</p>
-                <VerifiedPartnerBadge mouYear={h.mouYear} />
-              </div>
-              <h3 className="text-base font-semibold text-navy">{h.name}</h3>
-              <div className="flex flex-wrap gap-1.5">
-                {h.accreditation.map((a) => (
-                  <span
-                    key={a}
-                    className="rounded-full bg-accent-light px-2.5 py-0.5 text-xs font-semibold text-accent"
-                  >
-                    {a}
-                  </span>
-                ))}
-              </div>
-              <div className="flex flex-wrap gap-1.5">
-                {h.specialties.map((s) => (
-                  <span
-                    key={s}
-                    className="rounded-full border border-line px-2.5 py-0.5 text-xs font-medium text-muted"
-                  >
-                    {s}
-                  </span>
-                ))}
-              </div>
-              <p className="text-xs text-muted">
-                ★ {h.rating} · {h.reviewCount.toLocaleString()} reviews
-              </p>
-              <Link
-                href={`/hospital-network/${h.slug}`}
-                className="text-sm font-semibold text-accent transition-colors duration-150 hover:text-navy"
-              >
-                View details →
+        {filtered.map((h) => {
+          const logo = hospitalLogo(h.slug);
+          const href = `/hospital-network/${h.slug}`;
+          return (
+            <div
+              key={h.slug}
+              className="group lift-card grid overflow-hidden border border-line bg-white sm:grid-cols-[140px_1fr]"
+            >
+              <Link href={href} className="relative block h-full min-h-[160px]">
+                <MediaImage
+                  src={hospitalImage(h.slug)}
+                  alt={`${h.name} partner hospital`}
+                  aspect="aspect-[4/3] sm:aspect-auto sm:h-full sm:min-h-[160px]"
+                  className="rounded-none"
+                  sizes="(max-width: 640px) 100vw, 140px"
+                />
+                {logo ? (
+                  <div className="absolute bottom-2 left-2 flex h-10 w-10 items-center justify-center rounded-md bg-white/95 p-1 shadow-sm">
+                    <Image
+                      src={logo}
+                      alt=""
+                      width={40}
+                      height={40}
+                      className="h-full w-full object-contain"
+                    />
+                  </div>
+                ) : null}
               </Link>
+              <div className="flex flex-col gap-3 p-4 sm:p-5">
+                <div className="flex flex-wrap items-start justify-between gap-2">
+                  <p className="data-label">{h.city}</p>
+                  <VerifiedPartnerBadge mouYear={h.mouYear} />
+                </div>
+                <h3 className="text-base font-semibold text-navy">
+                  <Link href={href} className="hover:text-accent">
+                    {h.name}
+                  </Link>
+                </h3>
+                <div className="flex flex-wrap gap-1.5">
+                  {h.accreditation.map((a) => (
+                    <span
+                      key={a}
+                      className="rounded-full bg-accent-light px-2.5 py-0.5 text-xs font-semibold text-accent"
+                    >
+                      {a}
+                    </span>
+                  ))}
+                </div>
+                <div className="flex flex-wrap gap-1.5">
+                  {h.specialties.map((s) => (
+                    <span
+                      key={s}
+                      className="rounded-full border border-line px-2.5 py-0.5 text-xs font-medium text-muted"
+                    >
+                      {s}
+                    </span>
+                  ))}
+                </div>
+                <StarRating rating={h.rating} count={h.reviewCount} size="sm" />
+                <Link
+                  href={href}
+                  className="text-sm font-semibold text-accent transition-colors duration-150 hover:text-navy"
+                >
+                  View details →
+                </Link>
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
       {filtered.length === 0 && (

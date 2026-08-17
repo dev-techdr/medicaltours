@@ -1,5 +1,14 @@
 import { getAllMdx, getMdxBySlug, getMdxSlugs } from "@/lib/mdx";
-import type { Hospital, HospitalSummary } from "@/lib/types";
+import {
+  defaultFacilityGroups,
+  defaultLandmarks,
+} from "@/lib/hospital-profile";
+import type {
+  Hospital,
+  HospitalFacilityGroup,
+  HospitalLocationLandmark,
+  HospitalSummary,
+} from "@/lib/types";
 
 const DEFAULT_FACILITIES = [
   "ICU & critical care",
@@ -29,33 +38,72 @@ type HospitalFrontmatter = {
   mouYear?: number;
   facilities?: string[];
   internationalServices?: string[];
+  establishedYear?: number;
+  beds?: number;
+  specialtyType?: string;
+  address?: string;
+  pincode?: string;
+  infrastructure?: string;
+  teamNote?: string;
+  locationLandmarks?: HospitalLocationLandmark[];
+  facilityGroups?: HospitalFacilityGroup[];
 };
+
+function defaultInfrastructure(name: string, city: string) {
+  return `${name} is equipped for tertiary and planned surgical care, with ICU capacity, diagnostics on campus, and an international patient pathway coordinated by TechdrHealth. Dedicated reception, waiting, and family areas help patients from overseas move through admission, treatment, and discharge in ${city} without logistical guesswork.`;
+}
+
+function defaultTeamNote(name: string, specialties: string[]) {
+  const focus = specialties.slice(0, 4).join(", ");
+  return `${name} works with a multidisciplinary clinical team — physicians, specialists, and nursing staff — covering ${focus}${specialties.length > 4 ? ", and related specialties" : ""}. TechdrHealth stays with you from first report review through discharge and follow-up.`;
+}
+
+function byHospitalName<T extends { name: string }>(a: T, b: T) {
+  return a.name.localeCompare(b.name, "en", { sensitivity: "base" });
+}
 
 function normalize(
   doc: NonNullable<ReturnType<typeof getMdxBySlug<HospitalFrontmatter>>>
 ): Hospital {
+  const facilities = doc.facilities?.length ? doc.facilities : DEFAULT_FACILITIES;
+  const internationalServices = doc.internationalServices?.length
+    ? doc.internationalServices
+    : DEFAULT_IP_SERVICES;
+  const specialties = doc.specialties ?? [];
+
   return {
     slug: doc.slug,
     name: doc.name,
     city: doc.city,
     citySlug: doc.citySlug,
     accreditation: doc.accreditation ?? [],
-    specialties: doc.specialties ?? [],
+    specialties,
     rating: Number(doc.rating),
     reviewCount: Number(doc.reviewCount),
     shortAnswer: doc.shortAnswer,
     internationalPatients: doc.internationalPatients ?? true,
     mouYear: Number(doc.mouYear ?? 2019),
-    facilities: doc.facilities?.length ? doc.facilities : DEFAULT_FACILITIES,
-    internationalServices: doc.internationalServices?.length
-      ? doc.internationalServices
-      : DEFAULT_IP_SERVICES,
+    facilities,
+    internationalServices,
     content: doc.content,
+    establishedYear: Number(doc.establishedYear ?? doc.mouYear ?? 2010),
+    beds: Number(doc.beds ?? 200),
+    specialtyType: doc.specialtyType ?? "Multi Specialty",
+    address: doc.address ?? `${doc.city}, India`,
+    pincode: doc.pincode,
+    infrastructure: doc.infrastructure ?? defaultInfrastructure(doc.name, doc.city),
+    teamNote: doc.teamNote ?? defaultTeamNote(doc.name, specialties),
+    locationLandmarks: doc.locationLandmarks?.length
+      ? doc.locationLandmarks
+      : defaultLandmarks(doc.citySlug),
+    facilityGroups: doc.facilityGroups?.length
+      ? doc.facilityGroups
+      : defaultFacilityGroups(facilities, internationalServices),
   };
 }
 
 export function getAllHospitals(): Hospital[] {
-  return getAllMdx<HospitalFrontmatter>("hospitals").map(normalize);
+  return getAllMdx<HospitalFrontmatter>("hospitals").map(normalize).sort(byHospitalName);
 }
 
 export function getHospitalBySlug(slug: string): Hospital | undefined {
@@ -91,6 +139,9 @@ export function getHospitalSummaries(): HospitalSummary[] {
       reviewCount,
       internationalPatients,
       mouYear,
+      establishedYear,
+      beds,
+      specialtyType,
     }) => ({
       slug,
       name,
@@ -102,6 +153,9 @@ export function getHospitalSummaries(): HospitalSummary[] {
       reviewCount,
       internationalPatients,
       mouYear,
+      establishedYear,
+      beds,
+      specialtyType,
     })
   );
 }

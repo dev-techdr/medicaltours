@@ -75,6 +75,15 @@ export const HOSPITAL_IMAGES: Record<string, string> = {
   "tx-hospitals": s("tx-hospitals.jpg"),
   "medicover-hospitals": s("medicover-hospitals.jpg"),
   "max-healthcare-delhi": s("max-healthcare-delhi.jpg"),
+  "star-hospitals": "/images/hospitals/star-hospitals.jpg",
+  "american-oncology-institute": "/images/hospitals/AOI-hospital-photo.webp",
+  "pushpagiri-vitreo-retina-institute": "/images/hospitals/pvri-hospital-photo.avif",
+};
+
+export const HOSPITAL_LOGOS: Record<string, string> = {
+  "star-hospitals": "/images/hospitals/Star-hospitals-logo.png",
+  "american-oncology-institute": "/images/hospitals/AOI-logo.png",
+  "pushpagiri-vitreo-retina-institute": "/images/hospitals/PVRI-logo.png",
 };
 
 /** Domestic Hyderabad page slug → optional hero image. */
@@ -103,6 +112,10 @@ export function cityImage(slug: string): string {
 
 export function hospitalImage(slug: string): string {
   return HOSPITAL_IMAGES[slug] ?? MEDIA.hospitalLobby;
+}
+
+export function hospitalLogo(slug: string): string | undefined {
+  return HOSPITAL_LOGOS[slug];
 }
 
 export function domesticPageImage(slug: string): string | undefined {

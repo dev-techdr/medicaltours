@@ -3,7 +3,7 @@ import Script from "next/script";
 import { Fraunces, IBM_Plex_Mono, Source_Sans_3 } from "next/font/google";
 import { AppChrome } from "@/components/AppChrome";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { organizationSchema, buildMetadata } from "@/lib/seo";
+import { organizationSchema } from "@/lib/seo";
 import { SITE } from "@/lib/site";
 import "./globals.css";
 
@@ -34,18 +34,6 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  ...buildMetadata({
-    title: `${SITE.name} | Medical Tourism India for International Patients`,
-    description: SITE.description,
-    path: "/",
-    keywords: [
-      "medical tourism india",
-      "medical tourism in india",
-      "best medical tourism company in india",
-      "medical treatment in india for foreigners",
-      "international patient services india",
-    ],
-  }),
   metadataBase: new URL(SITE.url),
   applicationName: SITE.name,
   authors: [{ name: SITE.name, url: SITE.url }],

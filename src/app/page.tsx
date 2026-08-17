@@ -24,8 +24,21 @@ import {
   procedurePath,
 } from "@/lib/data";
 import { cityImage, MEDIA } from "@/lib/media";
-import { faqSchema, webSiteSchema } from "@/lib/seo";
+import { buildMetadata, faqSchema, webSiteSchema } from "@/lib/seo";
 import { SITE } from "@/lib/site";
+
+export const metadata = buildMetadata({
+  title: `${SITE.name} | Medical Tourism India for International Patients`,
+  description: SITE.description,
+  path: "/",
+  keywords: [
+    "medical tourism india",
+    "medical tourism in india",
+    "best medical tourism company in india",
+    "medical treatment in india for foreigners",
+    "international patient services india",
+  ],
+});
 
 /** One flagship procedure per major specialty — not the raw JSON order (all cardiac). */
 const FEATURED_TREATMENT_SLUGS = [
