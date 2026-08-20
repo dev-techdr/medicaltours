@@ -1,6 +1,7 @@
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Link from "next/link";
 import type { ReactNode } from "react";
+import remarkGfm from "remark-gfm";
 
 const components = {
   h2: (props: { children?: ReactNode }) => (
@@ -47,6 +48,24 @@ const components = {
       {...props}
     />
   ),
+  table: (props: { children?: ReactNode }) => (
+    <div className="mt-6 overflow-x-auto rounded-[var(--radius)] border border-line">
+      <table className="w-full min-w-[520px] border-collapse text-left text-sm text-ink" {...props} />
+    </div>
+  ),
+  thead: (props: { children?: ReactNode }) => (
+    <thead className="bg-navy/5 text-navy" {...props} />
+  ),
+  tbody: (props: { children?: ReactNode }) => <tbody {...props} />,
+  tr: (props: { children?: ReactNode }) => (
+    <tr className="border-b border-line last:border-b-0" {...props} />
+  ),
+  th: (props: { children?: ReactNode }) => (
+    <th className="px-4 py-3 font-semibold" {...props} />
+  ),
+  td: (props: { children?: ReactNode }) => (
+    <td className="px-4 py-3 align-top leading-relaxed" {...props} />
+  ),
 };
 
 type MdxContentProps = {
@@ -59,7 +78,15 @@ export function MdxContent({ source, className = "" }: MdxContentProps) {
 
   return (
     <div className={`max-w-3xl ${className}`}>
-      <MDXRemote source={source} components={components} />
+      <MDXRemote
+        source={source}
+        components={components}
+        options={{
+          mdxOptions: {
+            remarkPlugins: [remarkGfm],
+          },
+        }}
+      />
     </div>
   );
 }
