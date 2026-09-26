@@ -1,0 +1,90 @@
+import Link from "next/link";
+import { SocialLinks } from "@/components/SocialLinks";
+import { MEDICAL_FACILITATOR_NOTICE, SITE } from "@/lib/site";
+import {
+  getIndiaDomesticPath,
+  getPagesByTier,
+  TIER_LABELS,
+  type IndiaDomesticTier,
+} from "@/lib/india-domestic";
+
+const FOOTER_TIERS: IndiaDomesticTier[] = [
+  "tier1",
+  "tier3",
+  "budget",
+  "logistics",
+];
+
+export function IndiaFooter() {
+  return (
+    <footer className="border-t border-line bg-surface">
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          {FOOTER_TIERS.map((tier) => {
+            const pages = getPagesByTier(tier);
+            if (!pages.length) return null;
+            return (
+              <div key={tier}>
+                <p className="data-label">{TIER_LABELS[tier]}</p>
+                <ul className="mt-3 space-y-2">
+                  {pages.slice(0, 6).map((page) => (
+                    <li key={page.slug}>
+                      <Link
+                        href={getIndiaDomesticPath(page.slug)}
+                        className="text-sm text-ink transition-colors hover:text-accent"
+                      >
+                        {page.title.replace(" in Hyderabad", "").replace("Hyderabad ", "")}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
+          <div>
+            <p className="data-label">Contact</p>
+            <ul className="mt-3 space-y-2 text-sm text-ink">
+              <li>
+                <a href={`tel:${SITE.phone}`} className="hover:text-accent">
+                  {SITE.phoneDisplay}
+                </a>
+              </li>
+              <li>
+                <a href={SITE.whatsappUrl} className="hover:text-accent">
+                  WhatsApp
+                </a>
+              </li>
+              <li>
+                <a href={`mailto:${SITE.email}`} className="hover:text-accent">
+                  {SITE.email}
+                </a>
+              </li>
+              <li>Hyderabad, Telangana</li>
+            </ul>
+            <div className="mt-4">
+              <p className="data-label">Follow us</p>
+              <div className="mt-2">
+                <SocialLinks variant="light" />
+              </div>
+            </div>
+            <p className="mt-4 text-xs text-muted">
+              International patients:{" "}
+              <Link href="/" className="text-accent hover:underline">
+                medicaltoursindia.com
+              </Link>
+            </p>
+          </div>
+        </div>
+        <div className="mt-10 space-y-3 border-t border-line pt-6 text-center text-xs text-muted">
+          <p>© {new Date().getFullYear()} {SITE.legalName}. Domestic patient services — Hyderabad.</p>
+          <p className="mx-auto max-w-4xl leading-relaxed">
+            {MEDICAL_FACILITATOR_NOTICE}{" "}
+            <Link href="/medical-disclaimer" className="font-semibold text-accent hover:underline">
+              Read our medical disclaimer.
+            </Link>
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}

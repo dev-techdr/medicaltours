@@ -1,0 +1,2790 @@
+{
+  "heart-bypass-surgery-cost-india": [
+    {
+      "question": "How much does heart bypass surgery (cabg) cost in India?",
+      "answer": "Heart Bypass Surgery (CABG) packages for international patients typically range from $4,500–$8,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after heart bypass surgery (cabg)?",
+      "answer": "Hospital stay 5–8 days; light activity in 4–6 weeks; full recovery often 8–12 weeks"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "angioplasty-stent-placement-cost-india": [
+    {
+      "question": "How much does angioplasty / stent placement cost in India?",
+      "answer": "Angioplasty / Stent Placement packages for international patients typically range from $2,800–$6,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after angioplasty / stent placement?",
+      "answer": "Typically 1–3 hospital days; most patients resume light activity within a week"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "heart-valve-replacement-surgery-india": [
+    {
+      "question": "How much does heart valve replacement / repair cost in India?",
+      "answer": "Heart Valve Replacement / Repair packages for international patients typically range from $5,500–$11,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after heart valve replacement / repair?",
+      "answer": "Hospital stay often 7–10 days; graded recovery over 6–12 weeks"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "pacemaker-implantation-india": [
+    {
+      "question": "How much does pacemaker implantation cost in India?",
+      "answer": "Pacemaker Implantation packages for international patients typically range from $3,500–$7,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after pacemaker implantation?",
+      "answer": "Often overnight stay; arm restrictions for 1–2 weeks; device checks scheduled before travel"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "pediatric-heart-surgery-india": [
+    {
+      "question": "How much does pediatric heart surgery cost in India?",
+      "answer": "Pediatric Heart Surgery packages for international patients typically range from $4,500–$12,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after pediatric heart surgery?",
+      "answer": "ICU and ward stay vary by defect complexity; plan multi-week stay with a parent/attendant"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "asd-vsd-closure-surgery-india": [
+    {
+      "question": "How much does asd / vsd closure surgery cost in India?",
+      "answer": "ASD / VSD Closure Surgery packages for international patients typically range from $4,000–$9,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after asd / vsd closure surgery?",
+      "answer": "Typically several hospital days; return to school/work guided by cardiology timeline"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "heart-transplant-india": [
+    {
+      "question": "How much does heart transplant cost in India?",
+      "answer": "Heart Transplant packages for international patients typically range from $35,000–$65,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after heart transplant?",
+      "answer": "Extended ICU and hospital stay; months of close follow-up and monitoring"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "tavr-india": [
+    {
+      "question": "How much does tavr (transcatheter aortic valve replacement) cost in India?",
+      "answer": "TAVR (Transcatheter Aortic Valve Replacement) packages for international patients typically range from $18,000–$32,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after tavr (transcatheter aortic valve replacement)?",
+      "answer": "Often shorter stay than open valve surgery; many patients mobilize within days"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "total-knee-replacement-surgery-india": [
+    {
+      "question": "How much does total knee replacement cost in India?",
+      "answer": "Total Knee Replacement packages for international patients typically range from $4,000–$7,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after total knee replacement?",
+      "answer": "Hospital stay 3–5 days; walking with support within days; most patients travel home in 10–14 days"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "hip-replacement-surgery-india": [
+    {
+      "question": "How much does hip replacement cost in India?",
+      "answer": "Hip Replacement packages for international patients typically range from $4,200–$8,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after hip replacement?",
+      "answer": "Hospital stay 3–5 days; most travel home within 2 weeks if cleared"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "spine-surgery-india": [
+    {
+      "question": "How much does spine surgery (discectomy / fusion) cost in India?",
+      "answer": "Spine Surgery (Discectomy / Fusion) packages for international patients typically range from $4,500–$10,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after spine surgery (discectomy / fusion)?",
+      "answer": "Stay varies by procedure; fusion patients often need longer rehab than simple discectomy"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "acl-reconstruction-surgery-india": [
+    {
+      "question": "How much does acl reconstruction cost in India?",
+      "answer": "ACL Reconstruction packages for international patients typically range from $2,500–$4,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after acl reconstruction?",
+      "answer": "Day-care or short stay; months of progressive physiotherapy for return to sport"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "shoulder-replacement-surgery-india": [
+    {
+      "question": "How much does shoulder replacement cost in India?",
+      "answer": "Shoulder Replacement packages for international patients typically range from $4,500–$8,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after shoulder replacement?",
+      "answer": "Hospital stay several days; arm activity restrictions for weeks under surgeon guidance"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "bilateral-knee-replacement-india": [
+    {
+      "question": "How much does bilateral knee replacement cost in India?",
+      "answer": "Bilateral Knee Replacement packages for international patients typically range from $7,000–$13,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after bilateral knee replacement?",
+      "answer": "Longer stay than single knee; expect intensive physio before clearance to fly"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "sports-injury-surgery-india": [
+    {
+      "question": "How much does sports injury surgery cost in India?",
+      "answer": "Sports Injury Surgery packages for international patients typically range from $2,000–$5,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after sports injury surgery?",
+      "answer": "Often short hospital stay; return-to-play depends on injury and sport"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "scoliosis-correction-surgery-india": [
+    {
+      "question": "How much does scoliosis correction surgery cost in India?",
+      "answer": "Scoliosis Correction Surgery packages for international patients typically range from $8,000–$18,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after scoliosis correction surgery?",
+      "answer": "Hospital stay often 1–2 weeks; months of activity modification and follow-up"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "chemotherapy-cost-india": [
+    {
+      "question": "How much does chemotherapy cost in India?",
+      "answer": "Chemotherapy packages for international patients typically range from $800–$3,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after chemotherapy?",
+      "answer": "Cycle-dependent; many day-care infusions with rest days between cycles"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "radiation-therapy-india": [
+    {
+      "question": "How much does radiation therapy cost in India?",
+      "answer": "Radiation Therapy packages for international patients typically range from $2,000–$7,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after radiation therapy?",
+      "answer": "Daily outpatient sessions over days to weeks; fatigue is common during course"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "breast-cancer-treatment-india": [
+    {
+      "question": "How much does breast cancer treatment cost in India?",
+      "answer": "Breast Cancer Treatment packages for international patients typically range from $3,500–$12,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after breast cancer treatment?",
+      "answer": "Depends on modality mix; surgical recovery often days to weeks plus adjuvant therapy schedule"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "bone-marrow-transplant-india": [
+    {
+      "question": "How much does bone marrow transplant cost in India?",
+      "answer": "Bone Marrow Transplant packages for international patients typically range from $18,000–$45,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after bone marrow transplant?",
+      "answer": "Weeks in hospital isolation; months of outpatient monitoring after discharge"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    },
+    {
+      "question": "Is bone marrow transplant available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals in Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore — including second opinions, written estimates, visa support, and travel logistics."
+    }
+  ],
+  "robotic-cancer-surgery-india": [
+    {
+      "question": "How much does robotic cancer surgery (da vinci) cost in India?",
+      "answer": "Robotic Cancer Surgery (da Vinci) packages for international patients typically range from $6,000–$14,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after robotic cancer surgery (da vinci)?",
+      "answer": "Often shorter stay than open surgery; exact timeline depends on cancer site"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "immunotherapy-cost-india": [
+    {
+      "question": "How much does immunotherapy cost in India?",
+      "answer": "Immunotherapy packages for international patients typically range from $2,500–$9,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after immunotherapy?",
+      "answer": "Usually outpatient infusions on a repeating cycle with monitoring visits"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "oral-throat-cancer-treatment-india": [
+    {
+      "question": "How much does oral / throat cancer treatment cost in India?",
+      "answer": "Oral / Throat Cancer Treatment packages for international patients typically range from $4,000–$12,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after oral / throat cancer treatment?",
+      "answer": "Depends on surgery extent and adjuvant therapy; feeding and speech support may be needed"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "prostate-cancer-treatment-india": [
+    {
+      "question": "How much does prostate cancer treatment cost in India?",
+      "answer": "Prostate Cancer Treatment packages for international patients typically range from $4,500–$12,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after prostate cancer treatment?",
+      "answer": "Surgery patients often stay several days; radiation is typically outpatient over weeks"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "ivf-treatment-cost-india": [
+    {
+      "question": "How much does IVF cost in India for foreigners?",
+      "answer": "Base cycle packages vary by clinic; medications, ICSI, freezing, FET, and genetic tests are often extra. Itemise before comparing with USA/UK private prices."
+    },
+    {
+      "question": "What success rates should I expect?",
+      "answer": "Age and diagnosis dominate. Ask for age-banded clinic counselling rather than a single marketing percentage."
+    },
+    {
+      "question": "How long do I need to stay?",
+      "answer": "Many patients stay through stimulation, retrieval, and transfer — often multi-week presence or a planned split protocol. Confirm monitoring requirements before booking."
+    },
+    {
+      "question": "Is ICSI always included?",
+      "answer": "Not always. Male factor and certain lab policies drive ICSI; check the quote."
+    },
+    {
+      "question": "What are OHSS symptoms to watch for?",
+      "answer": "Rapid bloating, severe abdominal pain, vomiting, shortness of breath — seek urgent care. Prevention protocols should be discussed if you have high reserve."
+    },
+    {
+      "question": "Can I freeze embryos to transfer later?",
+      "answer": "Often yes, with storage fees and FET costs. Cross-border storage contracts need careful reading."
+    },
+    {
+      "question": "How do I choose a clinic?",
+      "answer": "Registration, embryology quality, transparent counselling, and named clinicians matter. We help shortlist partner units after report review."
+    },
+    {
+      "question": "Is surrogacy available for foreign patients?",
+      "answer": "Indian law tightly regulates surrogacy. Do not assume access — read the surrogacy page and current legal advice."
+    }
+  ],
+  "icsi-treatment-india": [
+    {
+      "question": "How much does icsi treatment cost in India?",
+      "answer": "ICSI Treatment packages for international patients typically range from $2,800–$6,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after icsi treatment?",
+      "answer": "Same as IVF cycle timeline; retrieval and transfer are day-care procedures"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "surrogacy-india-for-foreigners": [
+    {
+      "question": "How much does surrogacy for foreigners cost in India?",
+      "answer": "Surrogacy for Foreigners packages for international patients typically range from $15,000–$35,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after surrogacy for foreigners?",
+      "answer": "Multi-month process involving screening, contracts, pregnancy, and neonatal care timelines"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "egg-donation-freezing-india": [
+    {
+      "question": "What is included under egg donation and freezing programmes?",
+      "answer": "Autologous freezing and donor-egg pathways are different. Confirm which programme your quote describes and what Indian law allows in your situation."
+    },
+    {
+      "question": "How much do these programmes cost?",
+      "answer": "Autologous freeze cycles differ from donor-egg IVF pricing. Storage and recipient medications may be separate."
+    },
+    {
+      "question": "What screening do donors undergo?",
+      "answer": "Reputable programmes follow medical and infectious screening plus counselling — ask the clinic for their protocol summary."
+    },
+    {
+      "question": "What are the legal considerations?",
+      "answer": "Donor and surrogacy-adjacent rules change; obtain clinic legal counselling and independent advice when needed."
+    },
+    {
+      "question": "How long is recovery after retrieval?",
+      "answer": "Usually short; avoid same-day long-haul flights when possible."
+    },
+    {
+      "question": "Can foreign patients access donor eggs in India?",
+      "answer": "Access depends on current regulations and clinic policy — verify before travel."
+    },
+    {
+      "question": "How do I compare clinics?",
+      "answer": "Lab quality, counselling transparency, legal clarity, and itemised contracts matter more than headline discounts."
+    }
+  ],
+  "iui-treatment-cost-india": [
+    {
+      "question": "How much does IUI cost in India?",
+      "answer": "Per-cycle fees are typically much lower than IVF, but travel and repeated cycles add up. Compare against moving to IVF when odds are poor."
+    },
+    {
+      "question": "How many IUI cycles should I try?",
+      "answer": "Often a limited planned series before escalation — exact numbers depend on age and diagnosis. Agree the stop-rule before you start."
+    },
+    {
+      "question": "Do I need to stay in India for the whole cycle?",
+      "answer": "You must be present for critical monitoring and insemination days. Hybrid monitoring is sometimes possible — ask the clinic."
+    },
+    {
+      "question": "What sperm parameters are needed?",
+      "answer": "Clinics assess processed sample metrics; very low counts usually favour IVF/ICSI instead."
+    },
+    {
+      "question": "What are the risks?",
+      "answer": "Multiple pregnancy with stimulation is the main medical risk; infection is uncommon."
+    },
+    {
+      "question": "When is IUI not suitable?",
+      "answer": "Blocked tubes, severe male factor, and some advanced age/reserve scenarios usually need IVF pathways."
+    },
+    {
+      "question": "Can international patients do IUI in India?",
+      "answer": "Yes, with calendar planning, visa timing, and clear escalation criteria written into the plan."
+    }
+  ],
+  "male-infertility-treatment-india": [
+    {
+      "question": "How much does male infertility treatment cost in India?",
+      "answer": "Male Infertility Treatment packages for international patients typically range from $800–$4,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after male infertility treatment?",
+      "answer": "Depends on pathway — many procedures are day-care"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "brain-tumor-surgery-india": [
+    {
+      "question": "How much does brain tumor surgery cost in India?",
+      "answer": "Brain Tumor Surgery packages for international patients typically range from $6,000–$12,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after brain tumor surgery?",
+      "answer": "ICU 1–3 days typical; hospital stay often 5–10 days; rehab depends on tumor location"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "spine-neurosurgery-india": [
+    {
+      "question": "How much does spine neurosurgery cost in India?",
+      "answer": "Spine Neurosurgery packages for international patients typically range from $5,000–$12,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after spine neurosurgery?",
+      "answer": "Hospital stay several days to over a week depending on complexity"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "epilepsy-surgery-india": [
+    {
+      "question": "How much does epilepsy surgery cost in India?",
+      "answer": "Epilepsy Surgery packages for international patients typically range from $7,000–$16,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after epilepsy surgery?",
+      "answer": "Evaluation stay plus surgical recovery; timeline is highly individualized"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "deep-brain-stimulation-india": [
+    {
+      "question": "How much does deep brain stimulation (parkinson's) cost in India?",
+      "answer": "Deep Brain Stimulation (Parkinson's) packages for international patients typically range from $18,000–$32,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after deep brain stimulation (parkinson's)?",
+      "answer": "Hospital stay typically about a week; programming visits follow over weeks"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "stroke-treatment-rehab-india": [
+    {
+      "question": "How much does stroke treatment & rehab cost in India?",
+      "answer": "Stroke Treatment & Rehab packages for international patients typically range from $2,000–$8,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after stroke treatment & rehab?",
+      "answer": "Acute stay varies; rehab programs often planned in weeks"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "aneurysm-surgery-india": [
+    {
+      "question": "How much does aneurysm surgery cost in India?",
+      "answer": "Aneurysm Surgery packages for international patients typically range from $7,000–$16,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after aneurysm surgery?",
+      "answer": "ICU monitoring common; hospital stay often 1–2 weeks depending on approach"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "rhinoplasty-cost-india": [
+    {
+      "question": "How much does rhinoplasty (nose job) cost in India?",
+      "answer": "Rhinoplasty (Nose Job) packages for international patients typically range from $1,800–$4,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after rhinoplasty (nose job)?",
+      "answer": "Outpatient or overnight; swelling settles over weeks; avoid flights if advised early postop"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    },
+    {
+      "question": "Is rhinoplasty available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals in Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore — including second opinions, written estimates, visa support, and travel logistics."
+    }
+  ],
+  "liposuction-cost-india": [
+    {
+      "question": "How much does liposuction cost in India?",
+      "answer": "Liposuction packages for international patients typically range from $1,500–$4,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after liposuction?",
+      "answer": "Day-care or short stay; compression garments for weeks"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    },
+    {
+      "question": "Is liposuction available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals in Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore — including second opinions, written estimates, visa support, and travel logistics."
+    }
+  ],
+  "breast-augmentation-reduction-india": [
+    {
+      "question": "How much does breast augmentation / reduction cost in India?",
+      "answer": "Breast Augmentation / Reduction packages for international patients typically range from $2,500–$5,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after breast augmentation / reduction?",
+      "answer": "Short hospital stay; activity limits for several weeks"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    },
+    {
+      "question": "Is breast augmentation reduction available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals in Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore — including second opinions, written estimates, visa support, and travel logistics."
+    }
+  ],
+  "tummy-tuck-abdominoplasty-india": [
+    {
+      "question": "How much does tummy tuck (abdominoplasty) cost in India?",
+      "answer": "Tummy Tuck (Abdominoplasty) packages for international patients typically range from $2,800–$5,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after tummy tuck (abdominoplasty)?",
+      "answer": "Hospital stay 1–3 days; restricted activity for several weeks"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    },
+    {
+      "question": "Is tummy tuck abdominoplasty available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals in Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore — including second opinions, written estimates, visa support, and travel logistics."
+    }
+  ],
+  "hair-transplant-cost-india": [
+    {
+      "question": "How much does hair transplant cost in India?",
+      "answer": "Hair Transplant packages for international patients typically range from $1,200–$3,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after hair transplant?",
+      "answer": "Outpatient; scabbing settles in 7–10 days; final density over months"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    },
+    {
+      "question": "Is hair transplant available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals in Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore — including second opinions, written estimates, visa support, and travel logistics."
+    }
+  ],
+  "facelift-surgery-india": [
+    {
+      "question": "How much does facelift surgery cost in India?",
+      "answer": "Facelift Surgery packages for international patients typically range from $3,000–$7,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after facelift surgery?",
+      "answer": "Short stay; visible swelling/bruising for 1–2 weeks"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    },
+    {
+      "question": "Is facelift surgery available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals in Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore — including second opinions, written estimates, visa support, and travel logistics."
+    }
+  ],
+  "gynecomastia-surgery-india": [
+    {
+      "question": "How much does gynecomastia surgery cost in India?",
+      "answer": "Gynecomastia Surgery packages for international patients typically range from $1,200–$2,800 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after gynecomastia surgery?",
+      "answer": "Mostly day-care; light activity within days"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    },
+    {
+      "question": "Is gynecomastia surgery available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals in Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore — including second opinions, written estimates, visa support, and travel logistics."
+    }
+  ],
+  "bariatric-weight-loss-surgery-india": [
+    {
+      "question": "How much does bariatric / weight loss surgery cost in India?",
+      "answer": "Bariatric / Weight Loss Surgery packages for international patients typically range from $4,500–$8,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after bariatric / weight loss surgery?",
+      "answer": "Hospital stay 2–4 days; dietary progression over weeks; follow-up essential"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "gallbladder-removal-laparoscopic-india": [
+    {
+      "question": "How much does gallbladder removal (laparoscopic) cost in India?",
+      "answer": "Gallbladder Removal (Laparoscopic) packages for international patients typically range from $1,500–$3,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after gallbladder removal (laparoscopic)?",
+      "answer": "Often 1–2 nights in hospital; return to desk work within 1–2 weeks"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "kidney-transplant-india": [
+    {
+      "question": "How much does kidney transplant cost in India?",
+      "answer": "Kidney Transplant packages for international patients typically range from $12,000–$22,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after kidney transplant?",
+      "answer": "Hospital stay often 1–3 weeks; lifelong immunosuppression and follow-up"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "liver-transplant-india": [
+    {
+      "question": "How much does liver transplant cost in India?",
+      "answer": "Liver Transplant packages for international patients typically range from $25,000–$45,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after liver transplant?",
+      "answer": "Extended ICU and ward stay; months of close monitoring"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "hernia-repair-surgery-india": [
+    {
+      "question": "How much does hernia repair surgery cost in India?",
+      "answer": "Hernia Repair Surgery packages for international patients typically range from $1,200–$3,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after hernia repair surgery?",
+      "answer": "Often 1–2 nights; lifting restrictions for weeks"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "appendix-surgery-india": [
+    {
+      "question": "How much does appendix surgery cost in India?",
+      "answer": "Appendix Surgery packages for international patients typically range from $1,200–$2,800 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after appendix surgery?",
+      "answer": "Usually 1–3 hospital days for uncomplicated cases"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "lasik-eye-surgery-cost-india": [
+    {
+      "question": "How much does lasik eye surgery cost in India?",
+      "answer": "LASIK Eye Surgery packages for international patients typically range from $600–$1,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after lasik eye surgery?",
+      "answer": "Outpatient; most resume desk work in 1–3 days"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "cataract-surgery-india": [
+    {
+      "question": "How much does cataract surgery cost in India?",
+      "answer": "Cataract Surgery packages for international patients typically range from $400–$1,800 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after cataract surgery?",
+      "answer": "Day-care; vision stabilizes over days to weeks; second eye often staged"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "retina-surgery-india": [
+    {
+      "question": "How much does retina surgery cost in India?",
+      "answer": "Retina Surgery packages for international patients typically range from $1,500–$4,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after retina surgery?",
+      "answer": "Stay and positioning depend on procedure; flights may be delayed per surgeon advice"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "cornea-transplant-india": [
+    {
+      "question": "How much does cornea transplant cost in India?",
+      "answer": "Cornea Transplant packages for international patients typically range from $1,800–$4,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after cornea transplant?",
+      "answer": "Hospital observation then weeks of steroid drops and reviews"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "glaucoma-treatment-india": [
+    {
+      "question": "How much does glaucoma treatment cost in India?",
+      "answer": "Glaucoma Treatment packages for international patients typically range from $500–$2,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after glaucoma treatment?",
+      "answer": "Laser often outpatient; surgery may need short observation"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "dental-implants-cost-india": [
+    {
+      "question": "How much does dental implants cost in India?",
+      "answer": "Dental Implants packages for international patients typically range from $400–$1,200 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after dental implants?",
+      "answer": "Osseointegration months; temporary teeth options discussed case by case"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "full-mouth-rehabilitation-india": [
+    {
+      "question": "How much does full mouth rehabilitation cost in India?",
+      "answer": "Full Mouth Rehabilitation packages for international patients typically range from $4,000–$12,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after full mouth rehabilitation?",
+      "answer": "Multi-visit plan over weeks to months depending on implants and healing"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "root-canal-treatment-india": [
+    {
+      "question": "How much does root canal treatment cost in India?",
+      "answer": "Root Canal Treatment packages for international patients typically range from $80–$250 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after root canal treatment?",
+      "answer": "Usually 1–2 outpatient visits per tooth"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "smile-makeover-veneers-india": [
+    {
+      "question": "How much does smile makeover / veneers cost in India?",
+      "answer": "Smile Makeover / Veneers packages for international patients typically range from $150–$400 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after smile makeover / veneers?",
+      "answer": "Usually 2 visits spaced days apart for prep and bonding"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "orthodontic-treatment-india": [
+    {
+      "question": "How much does orthodontic treatment (braces / invisalign) cost in India?",
+      "answer": "Orthodontic Treatment (Braces / Invisalign) packages for international patients typically range from $800–$3,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after orthodontic treatment (braces / invisalign)?",
+      "answer": "Multi-month treatment; travel plans should align with adjustment schedule"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "ayurveda-panchakarma-packages-india": [
+    {
+      "question": "How much does ayurveda panchakarma packages cost in India?",
+      "answer": "Ayurveda Panchakarma Packages packages for international patients typically range from $800–$3,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after ayurveda panchakarma packages?",
+      "answer": "Programs often 7–21 days residential"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "yoga-wellness-retreats-india": [
+    {
+      "question": "How much does yoga & wellness retreats cost in India?",
+      "answer": "Yoga & Wellness Retreats packages for international patients typically range from $500–$2,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after yoga & wellness retreats?",
+      "answer": "Retreat lengths typically 5–14 days"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "post-surgery-rehab-recovery-india": [
+    {
+      "question": "How much does post-surgery rehab & recovery cost in India?",
+      "answer": "Post-Surgery Rehab & Recovery packages for international patients typically range from $600–$4,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after post-surgery rehab & recovery?",
+      "answer": "Often 1–4 weeks depending on surgery and goals"
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. TechdrHealth coordinates remote report review and written package estimates from partner hospitals before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "prostate-surgery-turp-cost-india": [
+    {
+      "question": "How much does prostate surgery (turp) cost in India?",
+      "answer": "Prostate Surgery (TURP) packages for international patients typically range from $2,500–$5,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after prostate surgery (turp)?",
+      "answer": "Hospital stay 2–4 days; catheter period and activity limits as advised"
+    },
+    {
+      "question": "Is prostate surgery (turp) available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "robotic-prostatectomy-cost-india": [
+    {
+      "question": "How much does robotic prostatectomy cost in India?",
+      "answer": "Robotic Prostatectomy packages for international patients typically range from $7,000–$14,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after robotic prostatectomy?",
+      "answer": "Usually several hospital days; urinary recovery timeline individualized"
+    },
+    {
+      "question": "Is robotic prostatectomy available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "kidney-stone-treatment-india": [
+    {
+      "question": "How much does kidney stone treatment cost in India?",
+      "answer": "Kidney Stone Treatment packages for international patients typically range from $1,200–$4,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after kidney stone treatment?",
+      "answer": "Often 1–3 nights; stone clearance follow-up before travel"
+    },
+    {
+      "question": "Is kidney stone treatment available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "varicocele-surgery-india": [
+    {
+      "question": "What is the cost of varicocele surgery in India for foreigners?",
+      "answer": "Indicative microsurgical packages commonly range $1,000–$2,500 USD depending on unilateral versus bilateral repair and hospital."
+    },
+    {
+      "question": "How long should I stay in India?",
+      "answer": "Plan about 4–7 days for consult, day-care or overnight surgery, and early review before flying home."
+    },
+    {
+      "question": "Will surgery fix infertility immediately?",
+      "answer": "No. When semen improves, it usually takes months. Some couples pursue IVF in parallel rather than waiting only on varicocele response."
+    },
+    {
+      "question": "Is microsurgery necessary?",
+      "answer": "Microsurgical subinguinal repair is widely preferred for lower recurrence and hydrocele rates. Confirm microscope use in your package."
+    },
+    {
+      "question": "Can pain-only varicoceles be repaired?",
+      "answer": "Yes, selected men with refractory ache after conservative care may be candidates after other causes are excluded."
+    },
+    {
+      "question": "What are common complications?",
+      "answer": "Hydrocele, recurrence, haematoma, and persistent pain are discussed in consent. Arterial injury is uncommon with careful microsurgery."
+    }
+  ],
+  "urethral-stricture-surgery-india": [
+    {
+      "question": "How much does urethral stricture surgery cost in India?",
+      "answer": "Urethral Stricture Surgery packages for international patients typically range from $2,000–$5,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after urethral stricture surgery?",
+      "answer": "Hospital stay several days; catheter timeline depends on repair type"
+    },
+    {
+      "question": "Is urethral stricture surgery available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "bladder-cancer-surgery-india": [
+    {
+      "question": "How much does bladder cancer surgery cost in India?",
+      "answer": "Bladder Cancer Surgery packages for international patients typically range from $3,500–$12,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after bladder cancer surgery?",
+      "answer": "Depends on TURBT vs major resection; ICU possible after cystectomy"
+    },
+    {
+      "question": "Is bladder cancer surgery available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "male-sexual-health-treatment-india": [
+    {
+      "question": "What does male sexual health treatment cost in India?",
+      "answer": "Pathways commonly span about $800–$8,000 USD because care ranges from consult-and-medicine plans to procedures. Implants are quoted on a separate page."
+    },
+    {
+      "question": "How many days should I stay?",
+      "answer": "Plan about 3–7 days for evaluation and treatment start. Surgical implant pathways need roughly 7–10 days."
+    },
+    {
+      "question": "Is this the same as erectile dysfunction treatment?",
+      "answer": "ED is one part of male sexual health. PE, low desire, Peyronie's, and hormonal issues may coexist and need combined planning."
+    },
+    {
+      "question": "Will my visit be confidential?",
+      "answer": "Yes. Discreet coordination is standard. Share clinically relevant history so care remains safe."
+    },
+    {
+      "question": "Which page should I read next?",
+      "answer": "After initial triage, use focused guides for erectile dysfunction, premature ejaculation, Peyronie's disease, testosterone therapy, or penile implant surgery."
+    },
+    {
+      "question": "Do I need a partner present?",
+      "answer": "Not mandatory, but partner involvement often improves PE and relationship-related pathways. Decide based on your goals."
+    }
+  ],
+  "hysterectomy-cost-india": [
+    {
+      "question": "What is the typical cost of hysterectomy in India for foreign patients?",
+      "answer": "Indicative packages often range about $2,500–$6,000 USD depending on open versus laparoscopic/robotic approach, hospital, room class, and complexity. Oncology or combined procedures cost more. Final quotes follow imaging review."
+    },
+    {
+      "question": "How long will I stay in India after hysterectomy?",
+      "answer": "Many laparoscopic cases need several inpatient days plus buffer nights before long-haul flights. Open surgery usually needs a longer recovery stay. Your surgeon’s fit-to-fly advice should drive tickets — not the earliest fare."
+    },
+    {
+      "question": "Is laparoscopic hysterectomy always possible?",
+      "answer": "No. Large uteri, dense adhesions, certain cancer operations, or medical factors may favour open or vaginal routes. Remote triage reduces surprises but consent always includes conversion risk for keyhole cases."
+    },
+    {
+      "question": "Will I need hormone therapy after surgery?",
+      "answer": "Only if ovaries are removed before natural menopause, or if other indications exist. Uterus removal alone does not require estrogen for contraception — contraception is unnecessary after hysterectomy — but menopausal symptoms should be planned if ovaries go."
+    },
+    {
+      "question": "What documents should I bring?",
+      "answer": "Passport, prior imaging (USB/cloud), operative notes, medication list, allergy list, and any histology. Hospitals will add consent and routine pre-op forms."
+    },
+    {
+      "question": "What are the main risks?",
+      "answer": "Bleeding, infection, clot risk, injury to bladder/ureter/bowel, anaesthetic complications, and later vault or hormonal issues depending on ovary management. Personalised consent is essential."
+    },
+    {
+      "question": "How do I choose a surgeon in India?",
+      "answer": "Look for approach-specific volume, accredited hospital infrastructure (ICU, blood bank), and named-surgeon clarity on the estimate. For cancer, insist on gynae-oncology pathways."
+    },
+    {
+      "question": "Can I get a second opinion before flying?",
+      "answer": "Yes. Share reports through our free second opinion pathway for hospital options and a written estimate before you book non-refundable travel."
+    }
+  ],
+  "fibroid-removal-myomectomy-india": [
+    {
+      "question": "What does fibroid treatment (myomectomy) cost in India?",
+      "answer": "International packages commonly fall in the mid-thousands of USD, varying with fibroid number and size, approach (hysteroscopic, laparoscopic, open), and hospital. Itemise blood products, nights, and co-surgery for endometriosis."
+    },
+    {
+      "question": "Will fibroids come back after myomectomy?",
+      "answer": "Recurrence is possible, especially with multiple fibroids and longer follow-up horizons. Surveillance plans should be agreed with your home gynaecologist."
+    },
+    {
+      "question": "When can I try for pregnancy after myomectomy?",
+      "answer": "Often after several months if the myometrium or cavity was entered — exact timing is surgeon-specific. Ask about caesarean recommendations for later delivery."
+    },
+    {
+      "question": "Is myomectomy better than hysterectomy for me?",
+      "answer": "If you want to preserve the uterus or fertility, myomectomy is usually preferred when technically suitable. If childbearing is complete and symptoms are severe, hysterectomy may be more definitive — that trade-off belongs in specialist counselling."
+    },
+    {
+      "question": "What imaging do I need before travel?",
+      "answer": "Pelvic ultrasound is a minimum; MRI helps map complex or multiple fibroids. Bring haemoglobin trends if you have heavy bleeding."
+    },
+    {
+      "question": "What are key surgical risks?",
+      "answer": "Bleeding, transfusion, infection, adhesions, incomplete symptom relief, recurrence, and rare emergency hysterectomy. Morcellation practices should be explained in consent."
+    },
+    {
+      "question": "How soon can I fly home?",
+      "answer": "After uncomplicated laparoscopic myomectomy, many patients need a week or more of buffer depending on haemoglobin and symptoms; open surgery needs longer. Confirm fit-to-fly before rebooking."
+    }
+  ],
+  "endometriosis-treatment-india": [
+    {
+      "question": "How much does endometriosis surgery cost in India?",
+      "answer": "Ranges vary sharply between diagnostic laparoscopy and deep excision with multi-specialty standby. Ask which disease extent the quote assumes after MRI/note review."
+    },
+    {
+      "question": "Will surgery cure endometriosis?",
+      "answer": "Surgery can reduce disease burden and pain for many patients, but recurrence and ongoing medical management are common. Fertility outcomes vary."
+    },
+    {
+      "question": "Should I do IVF instead of surgery?",
+      "answer": "Sometimes yes, sometimes surgery first — age, ovarian reserve, pain severity, and endometrioma size matter. Request a joint surgical–fertility opinion."
+    },
+    {
+      "question": "What is deep infiltrating endometriosis?",
+      "answer": "Disease involving structures such as bowel, bladder, or ureters. It needs experienced teams and sometimes collaborative surgery; not every hospital package is appropriate."
+    },
+    {
+      "question": "How long is recovery?",
+      "answer": "Often one to three weeks for light activity after laparoscopy; longer after deep surgery. Plan IVF or conception timing before you leave India."
+    },
+    {
+      "question": "What should I send for remote review?",
+      "answer": "Prior operative notes, MRI if done, symptom history, AMH if fertility matters, and medication list."
+    },
+    {
+      "question": "Is endometriosis surgery available for foreign patients?",
+      "answer": "Yes, at partner hospitals with international patient coordination for estimates, visa letters, and recovery stay planning."
+    }
+  ],
+  "ovarian-cyst-removal-india": [
+    {
+      "question": "When does an ovarian cyst need surgery in India?",
+      "answer": "When it is persistent, large, symptomatic, suspicious on imaging, or affecting fertility plans — after specialist review. Many simple cysts resolve without surgery."
+    },
+    {
+      "question": "What is the cost of ovarian cystectomy for foreigners?",
+      "answer": "Often a few thousand USD for benign laparoscopic cases, depending on laterality and stay. Suspicious masses follow different oncology pathways and pricing."
+    },
+    {
+      "question": "Will surgery affect my fertility?",
+      "answer": "Ovary-sparing technique aims to protect tissue, but any ovarian surgery can reduce reserve. Discuss fertility goals before the operation."
+    },
+    {
+      "question": "How long is the hospital stay?",
+      "answer": "Many laparoscopic cystectomies are short-stay. Your quote should state planned nights and conversion plans."
+    },
+    {
+      "question": "What are the risks?",
+      "answer": "Bleeding, infection, tissue loss, recurrence, adhesions, and spillage-related issues for dermoids. Consent should be specific to cyst type."
+    },
+    {
+      "question": "Can I travel if I had sudden severe pain?",
+      "answer": "Sudden severe pain may be torsion — seek emergency care locally. Elective medical travel is for stable, planned cases."
+    },
+    {
+      "question": "What follow-up do I need?",
+      "answer": "Histology review, wound check, and menstrual/fertility follow-up with home clinicians using your operative report."
+    }
+  ],
+  "laparoscopic-gynecology-surgery-india": [
+    {
+      "question": "What procedures are done laparoscopically?",
+      "answer": "Commonly ovarian cystectomy, endometriosis treatment, adhesiolysis, hysterectomy, and myomectomy when anatomy allows. Your primary diagnosis page has condition-specific detail."
+    },
+    {
+      "question": "Is laparoscopic surgery cheaper in India?",
+      "answer": "Often yes versus Western private care for the same operation, but price follows the underlying procedure and complexity — not the word laparoscopy alone."
+    },
+    {
+      "question": "What if keyhole surgery cannot be completed?",
+      "answer": "Conversion to open surgery is a safety option discussed in consent. Hospital stay and recovery then change."
+    },
+    {
+      "question": "How soon can I return to work?",
+      "answer": "Desk work often within one to two weeks for uncomplicated cases; lifting and exercise take longer after uterine repair."
+    },
+    {
+      "question": "Do I need robotic surgery?",
+      "answer": "Not always. Robotics is a tool; outcomes depend on surgeon experience and case selection. Ask why it is proposed for your anatomy."
+    },
+    {
+      "question": "What accreditation should hospitals have?",
+      "answer": "Look for recognised accreditation such as JCI/NABH where available, plus ICU and blood bank support for major pelvic surgery."
+    },
+    {
+      "question": "How do I start?",
+      "answer": "Share imaging and diagnosis for remote triage, then request a written estimate and visa support letter timeline."
+    }
+  ],
+  "cervical-cancer-treatment-india": [
+    {
+      "question": "How much does cervical cancer treatment cost in India?",
+      "answer": "Cervical Cancer Treatment packages for international patients typically range from $3,500–$12,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after cervical cancer treatment?",
+      "answer": "Depends on surgery vs chemo-radiation pathway"
+    },
+    {
+      "question": "Is cervical cancer treatment available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "pcos-treatment-india": [
+    {
+      "question": "Is PCOS the same as PCOD?",
+      "answer": "PCOD is a commonly used regional term; clinically, care follows PCOS diagnostic frameworks after excluding other causes. Labels matter less than a clear metabolic and fertility plan."
+    },
+    {
+      "question": "What does PCOS treatment cost in India?",
+      "answer": "Consult-and-lab packages are relatively modest; costs rise if ovulation induction or IVF is required. Compare what is included."
+    },
+    {
+      "question": "Can PCOS be cured in one trip?",
+      "answer": "No. PCOS is managed over time. A trip can complete evaluation and start therapy, with home follow-up for months afterward."
+    },
+    {
+      "question": "Do I need ovarian drilling?",
+      "answer": "Rarely first-line today. It needs specific specialist justification — do not travel solely for drilling without that rationale."
+    },
+    {
+      "question": "How does PCOS affect IVF?",
+      "answer": "Protocols and OHSS risk differ. Share AMH and prior response records when enquiring."
+    },
+    {
+      "question": "What lifestyle changes matter most?",
+      "answer": "Nutrition, activity, sleep, and weight optimisation where relevant — often as important as prescriptions for metabolic health."
+    },
+    {
+      "question": "Can international patients get PCOS care in India?",
+      "answer": "Yes. Partner clinics provide evaluation, medicines planning, and fertility escalation with coordination support."
+    }
+  ],
+  "high-risk-pregnancy-care-india": [
+    {
+      "question": "How much does high-risk pregnancy care cost in India?",
+      "answer": "High-Risk Pregnancy Care packages for international patients typically range from $2,000–$8,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after high-risk pregnancy care?",
+      "answer": "Care plan individualized; delivery admission separate"
+    },
+    {
+      "question": "Is high-risk pregnancy care available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "cochlear-implant-cost-india": [
+    {
+      "question": "How much does cochlear implant cost in India?",
+      "answer": "Cochlear Implant packages for international patients typically range from $8,000–$18,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after cochlear implant?",
+      "answer": "Short hospital stay; months of auditory rehab and mapping"
+    },
+    {
+      "question": "Is cochlear implant available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "sinus-surgery-fess-india": [
+    {
+      "question": "How much does sinus surgery (fess) cost in India?",
+      "answer": "Sinus Surgery (FESS) packages for international patients typically range from $1,500–$3,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after sinus surgery (fess)?",
+      "answer": "Usually overnight or day-care; nasal care for weeks"
+    },
+    {
+      "question": "Is sinus surgery (fess) available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "septoplasty-cost-india": [
+    {
+      "question": "How much does septoplasty cost in India?",
+      "answer": "Septoplasty packages for international patients typically range from $1,000–$2,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after septoplasty?",
+      "answer": "Day-care or overnight; avoid strenuous activity for 1–2 weeks"
+    },
+    {
+      "question": "Is septoplasty available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "tonsillectomy-cost-india": [
+    {
+      "question": "How much does tonsillectomy cost in India?",
+      "answer": "Tonsillectomy packages for international patients typically range from $800–$2,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after tonsillectomy?",
+      "answer": "Usually overnight; sore throat for 1–2 weeks"
+    },
+    {
+      "question": "Is tonsillectomy available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "thyroidectomy-cost-india": [
+    {
+      "question": "How much does thyroidectomy cost in India?",
+      "answer": "Thyroidectomy packages for international patients typically range from $2,000–$5,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after thyroidectomy?",
+      "answer": "Usually 2–4 hospital days; hormone replacement planning if needed"
+    },
+    {
+      "question": "Is thyroidectomy available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "hearing-loss-treatment-india": [
+    {
+      "question": "How much does hearing loss treatment cost in India?",
+      "answer": "Hearing Loss Treatment packages for international patients typically range from $500–$18,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after hearing loss treatment?",
+      "answer": "Depends on device vs surgical pathway"
+    },
+    {
+      "question": "Is hearing loss treatment available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "gi-endoscopy-colonoscopy-india": [
+    {
+      "question": "How much does gi endoscopy & colonoscopy cost in India?",
+      "answer": "GI Endoscopy & Colonoscopy packages for international patients typically range from $200–$800 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after gi endoscopy & colonoscopy?",
+      "answer": "Same-day outpatient for most cases"
+    },
+    {
+      "question": "Is gi endoscopy & colonoscopy available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "ercp-treatment-india": [
+    {
+      "question": "How much does ercp treatment cost in India?",
+      "answer": "ERCP Treatment packages for international patients typically range from $800–$2,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after ercp treatment?",
+      "answer": "Often overnight observation"
+    },
+    {
+      "question": "Is ercp treatment available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "liver-disease-treatment-india": [
+    {
+      "question": "How much does liver disease treatment cost in India?",
+      "answer": "Liver Disease Treatment packages for international patients typically range from $500–$8,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after liver disease treatment?",
+      "answer": "Outpatient to multi-week stay depending on decompensation"
+    },
+    {
+      "question": "Is liver disease treatment available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "ibd-treatment-india": [
+    {
+      "question": "How much does ibd treatment (crohn's / ulcerative colitis) cost in India?",
+      "answer": "IBD Treatment (Crohn's / Ulcerative Colitis) packages for international patients typically range from $400–$5,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after ibd treatment (crohn's / ulcerative colitis)?",
+      "answer": "Mostly outpatient; admissions for flares as needed"
+    },
+    {
+      "question": "Is ibd treatment (crohn's / ulcerative colitis) available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "pancreatitis-treatment-india": [
+    {
+      "question": "How much does pancreatitis treatment cost in India?",
+      "answer": "Pancreatitis Treatment packages for international patients typically range from $1,500–$10,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after pancreatitis treatment?",
+      "answer": "Highly variable — days to weeks based on severity"
+    },
+    {
+      "question": "Is pancreatitis treatment available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "thyroid-treatment-india": [
+    {
+      "question": "How much does thyroid treatment cost in India?",
+      "answer": "Thyroid Treatment packages for international patients typically range from $200–$5,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after thyroid treatment?",
+      "answer": "Medical therapy outpatient; surgery has short stay"
+    },
+    {
+      "question": "Is thyroid treatment available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "diabetes-treatment-package-india": [
+    {
+      "question": "How much does diabetes treatment package cost in India?",
+      "answer": "Diabetes Treatment Package packages for international patients typically range from $300–$1,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after diabetes treatment package?",
+      "answer": "Usually 1–3 day outpatient package"
+    },
+    {
+      "question": "Is diabetes treatment package available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "diabetic-foot-treatment-india": [
+    {
+      "question": "How much does diabetic foot treatment cost in India?",
+      "answer": "Diabetic Foot Treatment packages for international patients typically range from $800–$6,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after diabetic foot treatment?",
+      "answer": "Days to weeks depending on wound severity and procedures"
+    },
+    {
+      "question": "Is diabetic foot treatment available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "pituitary-tumor-treatment-india": [
+    {
+      "question": "How much does pituitary tumor treatment cost in India?",
+      "answer": "Pituitary Tumor Treatment packages for international patients typically range from $5,000–$12,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after pituitary tumor treatment?",
+      "answer": "Hospital stay several days; hormone monitoring continues after discharge"
+    },
+    {
+      "question": "Is pituitary tumor treatment available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "varicose-vein-treatment-india": [
+    {
+      "question": "How much does varicose vein treatment cost in India?",
+      "answer": "Varicose Vein Treatment packages for international patients typically range from $800–$2,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after varicose vein treatment?",
+      "answer": "Usually day-care; walking encouraged immediately"
+    },
+    {
+      "question": "Is varicose vein treatment available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "peripheral-angioplasty-india": [
+    {
+      "question": "How much does peripheral angioplasty cost in India?",
+      "answer": "Peripheral Angioplasty packages for international patients typically range from $2,500–$7,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after peripheral angioplasty?",
+      "answer": "Typically 1–3 hospital days"
+    },
+    {
+      "question": "Is peripheral angioplasty available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "aortic-aneurysm-surgery-india": [
+    {
+      "question": "How much does aortic aneurysm surgery cost in India?",
+      "answer": "Aortic Aneurysm Surgery packages for international patients typically range from $8,000–$20,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after aortic aneurysm surgery?",
+      "answer": "ICU then ward; stay often 5–10+ days"
+    },
+    {
+      "question": "Is aortic aneurysm surgery available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "av-fistula-dialysis-access-india": [
+    {
+      "question": "How much does av fistula / dialysis access surgery cost in India?",
+      "answer": "AV Fistula / Dialysis Access Surgery packages for international patients typically range from $800–$2,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after av fistula / dialysis access surgery?",
+      "answer": "Usually day-care or overnight; maturation weeks for new fistulas"
+    },
+    {
+      "question": "Is av fistula / dialysis access surgery available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "skin-cancer-surgery-india": [
+    {
+      "question": "How much does skin cancer surgery cost in India?",
+      "answer": "Skin Cancer Surgery packages for international patients typically range from $500–$4,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after skin cancer surgery?",
+      "answer": "Often day-care; reconstruction cases may stay longer"
+    },
+    {
+      "question": "Is skin cancer surgery available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "vitiligo-treatment-india": [
+    {
+      "question": "How much does vitiligo treatment cost in India?",
+      "answer": "Vitiligo Treatment packages for international patients typically range from $300–$3,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after vitiligo treatment?",
+      "answer": "Outpatient sessions over weeks/months for many pathways"
+    },
+    {
+      "question": "Is vitiligo treatment available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "psoriasis-treatment-india": [
+    {
+      "question": "How much does psoriasis treatment cost in India?",
+      "answer": "Psoriasis Treatment packages for international patients typically range from $200–$4,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after psoriasis treatment?",
+      "answer": "Mostly outpatient continuing care"
+    },
+    {
+      "question": "Is psoriasis treatment available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "pediatric-surgery-india": [
+    {
+      "question": "How much does pediatric surgery cost in India?",
+      "answer": "Pediatric Surgery packages for international patients typically range from $1,500–$8,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after pediatric surgery?",
+      "answer": "Varies widely by procedure; parent rooming-in common"
+    },
+    {
+      "question": "Is pediatric surgery available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "pediatric-cancer-treatment-india": [
+    {
+      "question": "How much does pediatric cancer treatment cost in India?",
+      "answer": "Pediatric Cancer Treatment packages for international patients typically range from $3,000–$25,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after pediatric cancer treatment?",
+      "answer": "Protocol-dependent; often multi-month pathways"
+    },
+    {
+      "question": "Is pediatric cancer treatment available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "pediatric-orthopedic-surgery-india": [
+    {
+      "question": "How much does pediatric orthopedic surgery cost in India?",
+      "answer": "Pediatric Orthopedic Surgery packages for international patients typically range from $1,500–$7,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after pediatric orthopedic surgery?",
+      "answer": "Casting/brace periods often extend beyond hospital stay"
+    },
+    {
+      "question": "Is pediatric orthopedic surgery available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "lung-surgery-cost-india": [
+    {
+      "question": "How much does lung surgery cost in India?",
+      "answer": "Lung Surgery packages for international patients typically range from $4,500–$12,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after lung surgery?",
+      "answer": "Hospital stay often 4–8 days; breathing physio important"
+    },
+    {
+      "question": "Is lung surgery available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "lung-cancer-treatment-india": [
+    {
+      "question": "How much does lung cancer treatment cost in India?",
+      "answer": "Lung Cancer Treatment packages for international patients typically range from $4,000–$15,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after lung cancer treatment?",
+      "answer": "Depends on stage and modality mix"
+    },
+    {
+      "question": "Is lung cancer treatment available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "bronchoscopy-cost-india": [
+    {
+      "question": "How much does bronchoscopy cost in India?",
+      "answer": "Bronchoscopy packages for international patients typically range from $300–$1,200 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after bronchoscopy?",
+      "answer": "Usually same-day outpatient"
+    },
+    {
+      "question": "Is bronchoscopy available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "copd-asthma-treatment-india": [
+    {
+      "question": "How much does copd & asthma treatment cost in India?",
+      "answer": "COPD & Asthma Treatment packages for international patients typically range from $250–$2,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after copd & asthma treatment?",
+      "answer": "Mostly outpatient assessment packages"
+    },
+    {
+      "question": "Is copd & asthma treatment available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, and travel logistics."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "blepharoplasty-eyelid-surgery-india": [
+    {
+      "question": "How much does blepharoplasty (eyelid surgery) cost in India?",
+      "answer": "Blepharoplasty (Eyelid Surgery) packages for international patients typically range from $1,200–$3,200 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after blepharoplasty (eyelid surgery)?",
+      "answer": "Day-care or overnight; bruising/swelling 1–2 weeks; avoid early flights if advised"
+    },
+    {
+      "question": "Is blepharoplasty (eyelid surgery) available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "mommy-makeover-india": [
+    {
+      "question": "How much does mommy makeover cost in India?",
+      "answer": "Mommy Makeover packages for international patients typically range from $4,500–$9,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after mommy makeover?",
+      "answer": "Hospital 2–4 days; limited activity 4–6 weeks; plan extended stay in India"
+    },
+    {
+      "question": "Is mommy makeover available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "brazilian-butt-lift-bbl-india": [
+    {
+      "question": "How much does brazilian butt lift (bbl) cost in India?",
+      "answer": "Brazilian Butt Lift (BBL) packages for international patients typically range from $3,000–$6,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after brazilian butt lift (bbl)?",
+      "answer": "Short stay; no sitting directly for weeks; compression garments required"
+    },
+    {
+      "question": "Is brazilian butt lift (bbl) available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "chin-augmentation-genioplasty-india": [
+    {
+      "question": "How much does chin augmentation (genioplasty) cost in India?",
+      "answer": "Chin Augmentation (Genioplasty) packages for international patients typically range from $1,500–$3,800 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after chin augmentation (genioplasty)?",
+      "answer": "Overnight or short stay; soft diet initially; swelling settles over weeks"
+    },
+    {
+      "question": "Is chin augmentation (genioplasty) available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "brow-lift-forehead-lift-india": [
+    {
+      "question": "How much does brow lift (forehead lift) cost in India?",
+      "answer": "Brow Lift (Forehead Lift) packages for international patients typically range from $2,200–$5,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after brow lift (forehead lift)?",
+      "answer": "Short stay; bruising 1–2 weeks; hairline care as advised"
+    },
+    {
+      "question": "Is brow lift (forehead lift) available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "ear-reshaping-otoplasty-india": [
+    {
+      "question": "How much does ear reshaping (otoplasty) cost in India?",
+      "answer": "Ear Reshaping (Otoplasty) packages for international patients typically range from $1,000–$2,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after ear reshaping (otoplasty)?",
+      "answer": "Day-care; headband for 1–2 weeks; avoid contact sports initially"
+    },
+    {
+      "question": "Is ear reshaping (otoplasty) available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "breast-lift-mastopexy-india": [
+    {
+      "question": "How much does breast lift (mastopexy) cost in India?",
+      "answer": "Breast Lift (Mastopexy) packages for international patients typically range from $2,400–$5,200 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after breast lift (mastopexy)?",
+      "answer": "Short hospital stay; support bra and activity limits for several weeks"
+    },
+    {
+      "question": "Is breast lift (mastopexy) available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "body-contouring-after-weight-loss-india": [
+    {
+      "question": "How much does body contouring after weight loss cost in India?",
+      "answer": "Body Contouring After Weight Loss packages for international patients typically range from $3,500–$12,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after body contouring after weight loss?",
+      "answer": "Hospital 2–5 days per stage; weeks of limited mobility; plan multi-week stay"
+    },
+    {
+      "question": "Is body contouring after weight loss available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "fat-grafting-transfer-india": [
+    {
+      "question": "How much does fat grafting / fat transfer cost in India?",
+      "answer": "Fat Grafting / Fat Transfer packages for international patients typically range from $1,800–$4,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after fat grafting / fat transfer?",
+      "answer": "Day-care or overnight; swelling weeks; avoid pressure on grafted areas"
+    },
+    {
+      "question": "Is fat grafting / fat transfer available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "scar-revision-surgery-india": [
+    {
+      "question": "How much does scar revision surgery cost in India?",
+      "answer": "Scar Revision Surgery packages for international patients typically range from $400–$3,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after scar revision surgery?",
+      "answer": "Often day-care; scar maturation months; sun protection essential"
+    },
+    {
+      "question": "Is scar revision surgery available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "acne-scar-treatment-india": [
+    {
+      "question": "How much does acne scar treatment cost in India?",
+      "answer": "Acne Scar Treatment packages for international patients typically range from $300–$2,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after acne scar treatment?",
+      "answer": "Outpatient sessions; redness days after lasers; sun avoidance critical"
+    },
+    {
+      "question": "Is acne scar treatment available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "laser-skin-resurfacing-india": [
+    {
+      "question": "How much does laser skin resurfacing cost in India?",
+      "answer": "Laser Skin Resurfacing packages for international patients typically range from $400–$3,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after laser skin resurfacing?",
+      "answer": "Outpatient; peeling/redness days to 2 weeks depending on depth"
+    },
+    {
+      "question": "Is laser skin resurfacing available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "mole-skin-lesion-removal-india": [
+    {
+      "question": "How much does mole & skin lesion removal cost in India?",
+      "answer": "Mole & Skin Lesion Removal packages for international patients typically range from $100–$800 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after mole & skin lesion removal?",
+      "answer": "Day-care; stitches if excised; wound care 7–14 days"
+    },
+    {
+      "question": "Is mole & skin lesion removal available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "eczema-atopic-dermatitis-treatment-india": [
+    {
+      "question": "How much does eczema / atopic dermatitis treatment cost in India?",
+      "answer": "Eczema / Atopic Dermatitis Treatment packages for international patients typically range from $200–$2,500 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after eczema / atopic dermatitis treatment?",
+      "answer": "Mostly outpatient; flare control over weeks"
+    },
+    {
+      "question": "Is eczema / atopic dermatitis treatment available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "chemical-peel-india": [
+    {
+      "question": "How much does chemical peel cost in India?",
+      "answer": "Chemical Peel packages for international patients typically range from $80–$600 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after chemical peel?",
+      "answer": "Outpatient; peeling 3–7 days; strict sun protection"
+    },
+    {
+      "question": "Is chemical peel available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "hair-loss-treatment-prp-india": [
+    {
+      "question": "How much does hair loss treatment (prp / medical) cost in India?",
+      "answer": "Hair Loss Treatment (PRP / Medical) packages for international patients typically range from $150–$1,200 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after hair loss treatment (prp / medical)?",
+      "answer": "Outpatient; mild scalp tenderness 1–2 days after PRP"
+    },
+    {
+      "question": "Is hair loss treatment (prp / medical) available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "keloid-scar-treatment-india": [
+    {
+      "question": "How much does keloid scar treatment cost in India?",
+      "answer": "Keloid Scar Treatment packages for international patients typically range from $150–$2,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after keloid scar treatment?",
+      "answer": "Outpatient series; surgical cases need wound care weeks"
+    },
+    {
+      "question": "Is keloid scar treatment available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "hyperpigmentation-melasma-treatment-india": [
+    {
+      "question": "How much does hyperpigmentation & melasma treatment cost in India?",
+      "answer": "Hyperpigmentation & Melasma Treatment packages for international patients typically range from $200–$2,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after hyperpigmentation & melasma treatment?",
+      "answer": "Outpatient sessions over weeks; sun avoidance mandatory"
+    },
+    {
+      "question": "Is hyperpigmentation & melasma treatment available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "burn-scar-reconstruction-india": [
+    {
+      "question": "How much does burn scar reconstruction cost in India?",
+      "answer": "Burn Scar Reconstruction packages for international patients typically range from $1,500–$12,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after burn scar reconstruction?",
+      "answer": "Hospital stay varies; physiotherapy often essential; multi-stage possible"
+    },
+    {
+      "question": "Is burn scar reconstruction available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "leukemia-treatment-india": [
+    {
+      "question": "How much does leukemia treatment cost in India?",
+      "answer": "Leukemia Treatment packages for international patients typically range from $8,000–$35,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after leukemia treatment?",
+      "answer": "Weeks of inpatient/outpatient chemo cycles; transplant adds isolation weeks"
+    },
+    {
+      "question": "Is leukemia treatment available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "lymphoma-treatment-india": [
+    {
+      "question": "How much does lymphoma treatment cost in India?",
+      "answer": "Lymphoma Treatment packages for international patients typically range from $6,000–$28,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after lymphoma treatment?",
+      "answer": "Outpatient/inpatient cycles over months; transplant extends stay"
+    },
+    {
+      "question": "Is lymphoma treatment available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "thalassemia-treatment-india": [
+    {
+      "question": "How much does thalassemia treatment cost in India?",
+      "answer": "Thalassemia Treatment packages for international patients typically range from $5,000–$45,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after thalassemia treatment?",
+      "answer": "Transfusion day-care; BMT requires weeks of isolation and months of follow-up"
+    },
+    {
+      "question": "Is thalassemia treatment available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "sickle-cell-treatment-india": [
+    {
+      "question": "How much does sickle cell disease treatment cost in India?",
+      "answer": "Sickle Cell Disease Treatment packages for international patients typically range from $3,000–$40,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after sickle cell disease treatment?",
+      "answer": "Varies: outpatient disease management vs weeks of transplant isolation"
+    },
+    {
+      "question": "Is sickle cell disease treatment available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "aplastic-anemia-treatment-india": [
+    {
+      "question": "How much does aplastic anemia treatment cost in India?",
+      "answer": "Aplastic Anemia Treatment packages for international patients typically range from $10,000–$45,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after aplastic anemia treatment?",
+      "answer": "Prolonged cytopenia monitoring; transplant isolation weeks to months"
+    },
+    {
+      "question": "Is aplastic anemia treatment available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "multiple-myeloma-treatment-india": [
+    {
+      "question": "How much does multiple myeloma treatment cost in India?",
+      "answer": "Multiple Myeloma Treatment packages for international patients typically range from $12,000–$40,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after multiple myeloma treatment?",
+      "answer": "Induction months; auto-transplant adds hospital isolation weeks"
+    },
+    {
+      "question": "Is multiple myeloma treatment available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "car-t-cell-therapy-india": [
+    {
+      "question": "How much does car-t cell therapy cost in India?",
+      "answer": "CAR-T Cell Therapy packages for international patients typically range from $40,000–$80,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after car-t cell therapy?",
+      "answer": "Hospital stay for infusion and CRS monitoring; weeks of close follow-up"
+    },
+    {
+      "question": "Is car-t cell therapy available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "autologous-stem-cell-transplant-india": [
+    {
+      "question": "How much does autologous stem cell transplant cost in India?",
+      "answer": "Autologous Stem Cell Transplant packages for international patients typically range from $15,000–$30,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after autologous stem cell transplant?",
+      "answer": "2–4 weeks hospital isolation typical; outpatient follow-up months"
+    },
+    {
+      "question": "Is autologous stem cell transplant available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "allogeneic-stem-cell-transplant-india": [
+    {
+      "question": "How much does allogeneic stem cell transplant cost in India?",
+      "answer": "Allogeneic Stem Cell Transplant packages for international patients typically range from $25,000–$55,000 USD depending on hospital, room class, and clinical complexity. Final quotes follow medical review."
+    },
+    {
+      "question": "How long is recovery after allogeneic stem cell transplant?",
+      "answer": "Weeks in isolation; months of immunosuppression and infection monitoring"
+    },
+    {
+      "question": "Is allogeneic stem cell transplant available for foreign patients in India?",
+      "answer": "Yes. TechdrHealth coordinates care for international patients at partner hospitals — including second opinions, written estimates, visa support, interpreters, and travel logistics across Hyderabad, Delhi NCR, Mumbai, Chennai, and Bangalore."
+    },
+    {
+      "question": "Can I get a written estimate before I travel?",
+      "answer": "Yes. Share your reports and we’ll help obtain package estimates from partner centers before you book flights whenever clinical information is sufficient."
+    }
+  ],
+  "mtp-treatment-india": [
+    {
+      "question": "What is the legal gestational limit for MTP in India?",
+      "answer": "Under the MTP Act as amended in 2021: up to 20 weeks with one registered medical practitioner’s opinion; above 20 and up to 24 weeks with two practitioners’ opinions for Rule 3B categories (and as interpreted by the Supreme Court for unmarried women facing changed circumstances); beyond 24 weeks where a Medical Board diagnoses substantial fetal abnormalities necessitating termination. Confirm current details with the treating hospital and counsel."
+    },
+    {
+      "question": "Is the process confidential?",
+      "answer": "Yes. The Act protects confidentiality of the woman’s particulars except as authorised by law. Our coordination treats enquiries as confidential patient information."
+    },
+    {
+      "question": "What documents or reports do I need?",
+      "answer": "Passport/ID, gestational dating ultrasound, relevant labs, and prior obstetric records. Hospitals complete required MTP opinion and consent forms."
+    },
+    {
+      "question": "What are the risks and how are they managed?",
+      "answer": "Incomplete abortion, bleeding, infection, uterine injury (surgical methods), anaesthesia risks, and emotional distress. Screening, sterile technique, monitoring, and clear warning-sign education mitigate risk."
+    },
+    {
+      "question": "Is counselling available before and after?",
+      "answer": "Yes — pre- and post-procedure counselling can be arranged through the hospital team, with optional private video discussion before travel when appropriate."
+    },
+    {
+      "question": "How soon can I travel after the procedure?",
+      "answer": "Fit-to-fly depends on method, gestation, and recovery. Many early cases need short observation plus buffer days; only the treating doctor clears flights."
+    },
+    {
+      "question": "Do you lead with cost on MTP pages?",
+      "answer": "No. This pathway is clinical and legal — not price-led marketing."
+    },
+    {
+      "question": "How do I contact you privately?",
+      "answer": "Use the confidential form or email; public WhatsApp click-to-chat is not required for this page."
+    }
+  ],
+  "infertility-treatment-india": [
+    {
+      "question": "What is the first step for infertility treatment in India?",
+      "answer": "A complete evaluation: semen analysis, ovarian reserve/ovulation assessment, and tubal/uterine evaluation — then a written stepwise plan."
+    },
+    {
+      "question": "How much should I budget?",
+      "answer": "Diagnostics first (often hundreds to low thousands USD), then IUI or IVF tiers. Surgery adds separate quotes when needed."
+    },
+    {
+      "question": "Should I start with IVF immediately?",
+      "answer": "Not always. Age, duration of infertility, and test results decide. Jumping to IVF without a work-up can miss fixable factors — delaying IVF when clearly indicated also costs time."
+    },
+    {
+      "question": "Can fibroids or endometriosis be treated in the same trip?",
+      "answer": "Sometimes. Sequencing should be agreed by surgical and fertility teams before you fly."
+    },
+    {
+      "question": "What reports should I upload?",
+      "answer": "Prior labs, semen analysis, ultrasound/HSG, operative notes, and medication list."
+    },
+    {
+      "question": "How long does evaluation take?",
+      "answer": "Some tests align with menstrual timing; compressed plans are possible with longer stays. Ask for a calendar."
+    },
+    {
+      "question": "Do you treat male infertility too?",
+      "answer": "Yes — male factor assessment runs in parallel via andrology pathways linked from fertility care."
+    },
+    {
+      "question": "How do I start with TechdrHealth?",
+      "answer": "Send reports for triage; we help match partner clinics and return itemised options."
+    }
+  ],
+  "egg-freezing-india": [
+    {
+      "question": "What is the cost of egg freezing in India?",
+      "answer": "Freeze-cycle packages often land in the low-to-mid thousands of USD before storage and future IVF. Always separate those line items."
+    },
+    {
+      "question": "What age is best for egg freezing?",
+      "answer": "Younger ages generally yield better later odds, but decisions are personal after counselling on probabilities — not social media averages."
+    },
+    {
+      "question": "How many eggs should I freeze?",
+      "answer": "Targets depend on age and goals; clinics counsel using expected euploid probabilities. One cycle may not meet the target."
+    },
+    {
+      "question": "How long can eggs be stored?",
+      "answer": "Contract terms vary. Read duration, fees, and continuity clauses carefully as a cross-border patient."
+    },
+    {
+      "question": "What are the medical risks?",
+      "answer": "Stimulation and retrieval risks similar to IVF, including OHSS in higher-risk responses."
+    },
+    {
+      "question": "Is egg freezing the same as embryo freezing?",
+      "answer": "No. Eggs are frozen before fertilisation; embryos require sperm and different consents."
+    },
+    {
+      "question": "Can I use frozen eggs in another country later?",
+      "answer": "Sometimes, with shipping/regulatory hurdles. Plan the intended thaw clinic early."
+    }
+  ],
+  "menstrual-disorders-treatment-india": [
+    {
+      "question": "What causes heavy or irregular periods?",
+      "answer": "Hormonal imbalance, PCOS, fibroids, adenomyosis, bleeding disorders, thyroid disease, medications, and structural lesions — diagnosis guides therapy."
+    },
+    {
+      "question": "When is post-menopausal bleeding urgent?",
+      "answer": "Always evaluate promptly to exclude malignancy. Do not treat it as a routine elective package without diagnostics."
+    },
+    {
+      "question": "What will my India evaluation include?",
+      "answer": "Typically history, exam, ultrasound, labs, and hysteroscopy/biopsy when indicated."
+    },
+    {
+      "question": "What medical treatments are used?",
+      "answer": "Options may include antifibrinolytics, hormonal therapies, and LNG-IUS where appropriate — personalised after assessment."
+    },
+    {
+      "question": "When is surgery needed?",
+      "answer": "When structural disease (for example fibroids) drives symptoms, or when medical therapy fails and histology is clear."
+    },
+    {
+      "question": "How much does care cost?",
+      "answer": "Diagnostic packages differ from surgical packages. Match the quote to the pathway after triage."
+    },
+    {
+      "question": "Can anaemia be corrected before travel home?",
+      "answer": "Yes — iron therapy or other measures may be part of the plan; confirm before flying."
+    }
+  ],
+  "cosmetic-gynecology-india": [
+    {
+      "question": "Is cosmetic gynecology confidential?",
+      "answer": "Yes. Enquiries can use private form or email. Clinical details are shared only with the coordinating care team and treating specialists."
+    },
+    {
+      "question": "What procedures are commonly discussed?",
+      "answer": "Labiaplasty and related soft-tissue aesthetic procedures after examination. Exact recommendations are individual."
+    },
+    {
+      "question": "Who should avoid rushing into surgery?",
+      "answer": "Anyone under coercion, with untreated body-image distress, or with primary pain/prolapse issues better served by other pathways. Specialists should be willing to decline."
+    },
+    {
+      "question": "What are the main risks?",
+      "answer": "Bleeding, infection, scarring, asymmetry, sensation change, and dissatisfaction requiring revision."
+    },
+    {
+      "question": "How long is recovery?",
+      "answer": "Often one to two weeks before light exercise; sexual activity only when cleared, commonly several weeks."
+    },
+    {
+      "question": "Do you quote prices before examination?",
+      "answer": "Indicative ranges may be discussed, but final planning needs in-person assessment. We avoid price-led marketing for this category."
+    },
+    {
+      "question": "How do I enquire discreetly?",
+      "answer": "Use the confidential form on this page or email with a private subject line — WhatsApp-first outreach is optional, not required."
+    }
+  ],
+  "vaginal-rejuvenation-india": [
+    {
+      "question": "What does vaginal rejuvenation mean clinically?",
+      "answer": "It is an umbrella for surgical tightening/repair and some energy-based treatments. Examination decides what, if anything, is appropriate."
+    },
+    {
+      "question": "Is laser rejuvenation the same as surgery?",
+      "answer": "No. Evidence, downtime, and indications differ. Be wary of one-size device packages."
+    },
+    {
+      "question": "Could physiotherapy help instead?",
+      "answer": "Often yes for pelvic-floor issues. Good clinicians discuss non-surgical options first when relevant."
+    },
+    {
+      "question": "What are the risks?",
+      "answer": "Pain, infection, scarring, dyspareunia, unmet expectations, and rare injury depending on method."
+    },
+    {
+      "question": "How long before I can fly or resume intercourse?",
+      "answer": "Device sessions often have short downtime; surgical repair needs longer. Follow surgeon-specific clearance."
+    },
+    {
+      "question": "Is this confidential?",
+      "answer": "Yes — private form/email pathways are preferred for sensitive enquiries."
+    },
+    {
+      "question": "How is this different from cosmetic gynecology?",
+      "answer": " overlapping topics; rejuvenation often emphasises functional laxity/atrophy symptoms, while cosmetic pages emphasise aesthetic soft-tissue procedures. Many patients need both counselled together."
+    }
+  ],
+  "erectile-dysfunction-treatment-india": [
+    {
+      "question": "What is the cost of erectile dysfunction treatment in India for foreigners?",
+      "answer": "Indicative packages commonly range about $500–$3,500 USD for evaluation and medical or injection pathways. Penile implants are quoted separately at higher ranges. Final prices follow clinical review."
+    },
+    {
+      "question": "How many days should I stay in India for ED treatment?",
+      "answer": "Plan about 3–7 days for assessment, labs, counselling, and treatment start. Implant surgery needs a longer 7–10 day stay — see the penile implant page."
+    },
+    {
+      "question": "Can I get ED treatment if I take heart medicines?",
+      "answer": "Maybe not oral PDE5 inhibitors if you use nitrates. Always disclose chest-pain drugs. Your andrology and cardiology teams will advise safe options."
+    },
+    {
+      "question": "Is erectile dysfunction treatment confidential for international patients?",
+      "answer": "Yes. Partner centres and TechdrHealth coordinate discreet scheduling and documentation. Share only what clinicians need for safe care."
+    },
+    {
+      "question": "When is a penile implant considered?",
+      "answer": "When organic ED is refractory to or unsuitable for tablets and injections, and you accept surgical risks after counselling. It is not a first-line step for most men."
+    },
+    {
+      "question": "Will insurance cover ED treatment in India?",
+      "answer": "Many international plans exclude elective sexual-medicine care. Confirm with your insurer; most travellers self-pay packages."
+    }
+  ],
+  "penile-implant-surgery-india": [
+    {
+      "question": "What does penile implant surgery cost in India?",
+      "answer": "Indicative packages often range $4,500–$12,000 USD including the device, depending on malleable versus inflatable models and hospital. USA self-pay is frequently much higher."
+    },
+    {
+      "question": "How long is the hospital and India stay?",
+      "answer": "Hospital stay is commonly 1–2 nights. Plan about 7–10 days in India for surgery, early wound review, and fit-to-fly clearance."
+    },
+    {
+      "question": "Malleable or inflatable — which is better?",
+      "answer": "Neither is universally better. Inflatable devices offer a more natural flaccid appearance; malleable devices are simpler to use and often cost less. Dexterity, cost, and surgeon advice guide the choice."
+    },
+    {
+      "question": "What is the infection risk?",
+      "answer": "Infection is the most serious early complication and may require device removal. Diabetes control, antibiotic protocols, and experienced implanters reduce risk. Your surgeon will quote personalised counselling."
+    },
+    {
+      "question": "When can I resume sexual activity?",
+      "answer": "Usually after several weeks when your surgeon clears healing — often around 4–6 weeks for many primary implants. Follow your operative instructions, not forum timelines."
+    },
+    {
+      "question": "Can Peyronie's disease be treated at the same time?",
+      "answer": "Often yes — implant with modelling or adjunctive correction may be planned when ED and curvature coexist. This can change package cost and stay length."
+    }
+  ],
+  "peyronies-disease-treatment-india": [
+    {
+      "question": "What is the cost of Peyronie's treatment in India?",
+      "answer": "Packages commonly span about $800–$8,000 USD depending on injectables versus plication, grafting, or combined implant surgery."
+    },
+    {
+      "question": "How long should I stay in India?",
+      "answer": "Plan roughly 5–10 days. Injection pathways may cluster outpatient visits; surgery usually needs day-care or 1–2 nights plus a recovery buffer."
+    },
+    {
+      "question": "Can I have surgery during the painful acute phase?",
+      "answer": "Usually no. Surgery is preferred when deformity is stable. Acute disease may need medical measures and reassessment."
+    },
+    {
+      "question": "Will surgery shorten the penis?",
+      "answer": "Plication can reduce length as a trade-off for straightening. Grafting and implant strategies have different length profiles. Consent must cover this explicitly."
+    },
+    {
+      "question": "What if I also have erectile dysfunction?",
+      "answer": "Combined pathways including penile implant may be more appropriate than curvature surgery alone. Tell your surgeon about erection quality honestly."
+    },
+    {
+      "question": "Are injectable therapies available?",
+      "answer": "Availability of specific branded injectables varies by regulation and hospital. Ask during remote review which options your centre currently offers."
+    }
+  ],
+  "micro-tese-sperm-retrieval-india": [
+    {
+      "question": "What does micro-TESE cost in India for foreigners?",
+      "answer": "Indicative retrieval packages often range $1,500–$4,500 USD, usually excluding a full IVF/ICSI cycle unless bundled."
+    },
+    {
+      "question": "How many days do I need in India?",
+      "answer": "Plan about 4–7 days for consults, procedure, and early follow-up. Fresh ICSI with a partner may require a longer couple stay aligned to stimulation."
+    },
+    {
+      "question": "Is sperm retrieval guaranteed?",
+      "answer": "No. Micro-TESE improves odds in non-obstructive azoospermia but cannot guarantee sperm. Discuss failure counselling and donor backup before surgery."
+    },
+    {
+      "question": "TESA, PESA, or micro-TESE — which do I need?",
+      "answer": "Obstructive cases may use PESA/TESA; many non-obstructive cases favour micro-TESE. Classification after labs and exam decides the method."
+    },
+    {
+      "question": "Can sperm be frozen for later IVF abroad?",
+      "answer": "Often yes, subject to lab protocols and shipping/storage rules. Clarify cryostorage duration, fees, and export options in writing before travel."
+    },
+    {
+      "question": "Should I do genetic tests first?",
+      "answer": "For non-obstructive azoospermia, karyotype and Y-microdeletion testing are commonly advised before or as part of planning. Results can change counselling."
+    }
+  ],
+  "vasectomy-reversal-india": [
+    {
+      "question": "What is the cost of vasectomy reversal in India?",
+      "answer": "Indicative microsurgical packages commonly range $2,500–$5,500 USD depending on complexity and hospital."
+    },
+    {
+      "question": "How long is the stay?",
+      "answer": "Overnight observation is typical. Plan about 5–8 days in India including pre-op and early wound review before flying home."
+    },
+    {
+      "question": "Is reversal better than IVF?",
+      "answer": "It depends on time since vasectomy, partner age, cost, and preference for natural conception attempts. Many couples benefit from joint andrology–IVF counselling before choosing."
+    },
+    {
+      "question": "When will sperm return to the semen?",
+      "answer": "If successful, sperm may appear over months. Semen analyses usually start weeks to months after surgery per your surgeon’s schedule — not during the hospital week."
+    },
+    {
+      "question": "What is vaso-epididymostomy?",
+      "answer": "A more complex microsurgical connection used when epididymal blowout prevents standard vaso-vasostomy. It requires high microsurgical skill and may be decided intraoperatively."
+    },
+    {
+      "question": "Can sperm be frozen during reversal?",
+      "answer": "Some centres offer intraoperative cryopreservation as backup for future ICSI. Ask whether it is included in your package."
+    }
+  ],
+  "hydrocele-surgery-india": [
+    {
+      "question": "What does hydrocele surgery cost in India?",
+      "answer": "Indicative packages commonly range $800–$2,000 USD for repair, with bilateral cases toward the higher end."
+    },
+    {
+      "question": "How many days should I stay?",
+      "answer": "Plan about 4–6 days for assessment, day-care or overnight surgery, and a wound check before long-haul flights."
+    },
+    {
+      "question": "Will the swelling go away immediately?",
+      "answer": "Bulk from fluid is addressed at surgery, but postoperative swelling and firmness can last weeks and are often normal. Recurrence is different and is assessed later."
+    },
+    {
+      "question": "Is aspiration a good alternative before travel?",
+      "answer": "Aspiration often recurs. It may be discussed but is usually not a durable substitute for definitive repair when symptoms are significant."
+    },
+    {
+      "question": "Can hydrocele surgery affect fertility?",
+      "answer": "Careful technique aims to protect vessels and vas. Discuss fertility plans so the surgical approach remains fertility-conscious."
+    },
+    {
+      "question": "Do I need ultrasound first?",
+      "answer": "Yes — ultrasound confirms hydrocele and helps exclude other scrotal pathology before elective packaging."
+    }
+  ],
+  "circumcision-phimosis-treatment-india": [
+    {
+      "question": "What is the cost of adult circumcision in India?",
+      "answer": "Indicative packages commonly range $400–$1,200 USD depending on anaesthesia and hospital."
+    },
+    {
+      "question": "How long do I need to stay in India?",
+      "answer": "Plan about 3–5 days so a wound check can occur before you fly. Full healing takes longer at home."
+    },
+    {
+      "question": "Can phimosis be treated without surgery?",
+      "answer": "Early, non-scarred phimosis may respond to steroid creams. Established scarring usually needs circumcision after counselling."
+    },
+    {
+      "question": "Is adult circumcision painful?",
+      "answer": "Anaesthesia covers the procedure; postoperative soreness is expected for days and managed with medicines and loose clothing."
+    },
+    {
+      "question": "What about diabetes and healing?",
+      "answer": "Uncontrolled diabetes raises infection risk. Optimise glucose before elective circumcision whenever possible."
+    },
+    {
+      "question": "When is paraphimosis an emergency?",
+      "answer": "If the foreskin is trapped behind the glans causing pain and swelling, seek urgent local care — do not wait for elective medical-tourism scheduling."
+    }
+  ],
+  "testosterone-replacement-therapy-india": [
+    {
+      "question": "What does TRT evaluation cost in India for foreigners?",
+      "answer": "Workup and treatment-start packages commonly range about $300–$1,500 USD. Ongoing medicine costs continue after discharge and vary by country."
+    },
+    {
+      "question": "How many days should I stay?",
+      "answer": "Plan about 3–5 days for confirmatory labs, counselling, and supervised therapy initiation."
+    },
+    {
+      "question": "Will TRT affect fertility?",
+      "answer": "Standard testosterone therapy typically suppresses sperm production. Tell your doctor if you want children — alternatives may be more appropriate."
+    },
+    {
+      "question": "Can I start TRT on one low lab value?",
+      "answer": "No. Diagnosis needs compatible symptoms plus properly timed, usually repeated morning testosterone testing and clinical judgement."
+    },
+    {
+      "question": "What monitoring is required?",
+      "answer": "Schedules often include haematocrit, testosterone levels, and age-appropriate prostate assessment. Your discharge letter should specify intervals."
+    },
+    {
+      "question": "Can I take testosterone home on the plane?",
+      "answer": "Rules differ by country and formulation. Check customs and carry prescriptions; ask the clinic for travel documentation."
+    }
+  ],
+  "premature-ejaculation-treatment-india": [
+    {
+      "question": "What is the cost of PE treatment in India?",
+      "answer": "Indicative packages commonly range $400–$2,000 USD for evaluation and treatment start, depending on counselling and medicines."
+    },
+    {
+      "question": "How long is the stay?",
+      "answer": "Plan about 3–5 outpatient days. Lasting improvement usually continues with practice after you return home."
+    },
+    {
+      "question": "Are medicines enough on their own?",
+      "answer": "Medicines help many men, but combined behavioural techniques generally produce more durable results. Your plan should include both when appropriate."
+    },
+    {
+      "question": "Is PE treatment confidential?",
+      "answer": "Yes. Discreet scheduling and documentation are standard for sexual-medicine pathways coordinated for international patients."
+    },
+    {
+      "question": "What if I also have erectile dysfunction?",
+      "answer": "Combined assessment is important. Treating only PE or only ED when both exist often fails. Tell your clinician about both symptom sets."
+    },
+    {
+      "question": "How soon will I see results?",
+      "answer": "Some medicine effects appear with correct dosing; behavioural gains build over weeks. Be wary of one-day permanent-cure claims."
+    }
+  ],
+  "azoospermia-treatment-india": [
+    {
+      "question": "What does azoospermia treatment cost in India?",
+      "answer": "Male evaluation and surgical components commonly span about $1,000–$6,000 USD; full IVF/ICSI cycles are usually separate unless bundled."
+    },
+    {
+      "question": "How many days should we stay in India?",
+      "answer": "Plan about 5–10 days depending on whether the trip is workup-only or includes reconstruction/micro-TESE, and whether a fresh ICSI cycle is coordinated."
+    },
+    {
+      "question": "Obstructive vs non-obstructive — why does it matter?",
+      "answer": "Obstruction may be treatable with reconstruction or simpler retrieval; non-obstructive disease often needs micro-TESE and has different genetic counselling needs."
+    },
+    {
+      "question": "Is sperm always found with micro-TESE?",
+      "answer": "No. Retrieval rates depend on underlying diagnosis. Discuss failure plans and donor options before surgery."
+    },
+    {
+      "question": "Should my partner travel with me?",
+      "answer": "Usually yes if IVF/ICSI is planned in the same window. Even for male-only surgery, partner counselling improves decisions."
+    },
+    {
+      "question": "Do I need genetic tests?",
+      "answer": "Often yes for non-obstructive azoospermia. Karyotype and Y-microdeletion results can change prognosis and embryo counselling."
+    }
+  ]
+}
